@@ -1,0 +1,100 @@
+[0.018s] Invoking command in '/root/working/ros2_ws/build/joy_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4
+[0.045s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.202s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.275s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.284s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.299s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.322s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.348s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.426s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.431s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.564s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.600s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.659s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.678s] -- Looking for pthread.h
+[0.770s] -- Looking for pthread.h - found
+[0.770s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.860s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.862s] -- Found Threads: TRUE  
+[0.944s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.985s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.071s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.071s] -- Configured cppcheck include dirs: 
+[1.071s] -- Configured cppcheck exclude dirs and/or files: 
+[1.072s] -- Added test 'lint_cmake' to check CMake code style
+[1.073s] -- Added test 'uncrustify' to check C / C++ code style
+[1.073s] -- Configured uncrustify additional arguments: 
+[1.074s] -- Added test 'xmllint' to check XML markup files
+[1.075s] -- Configuring done
+[1.091s] -- Generating done
+[1.098s] -- Build files have been written to: /root/working/ros2_ws/build/joy_controller
+[1.145s] [ 50%] [32mBuilding CXX object CMakeFiles/sub.dir/src/my_joy.cpp.o[0m
+[3.816s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.816s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.816s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.816s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.816s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.816s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.817s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.817s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.817s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.817s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.817s]                  from [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:6[m[K:
+[3.817s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:[m[K In member function ‘[01m[Kvoid JoySubscriber::joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.818s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before string constant
+[3.818s]    28 |                               RCLCPP_INFO(this->get_logger() [01;31m[K"%d"[m[K, button);
+[3.818s]       |                                                              [01;31m[K^~~~[m[K
+[3.818s] 
+[3.818s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[3.818s]    28 |                                 [01;36m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.818s]       |                                 [01;36m[K^~~~~~~~~~~[m[K
+[3.819s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.819s]    28 |                                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.819s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[3.819s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.819s]    28 |                                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.819s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[3.819s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.819s]    28 |                                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.819s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[3.820s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.821s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.821s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.821s]                  from [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:6[m[K:
+[3.821s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before string constant
+[3.821s]    28 |                               RCLCPP_INFO(this->get_logger() [01;31m[K"%d"[m[K, button);
+[3.821s]       |                                                              [01;31m[K^~~~[m[K
+[3.821s] 
+[3.821s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[3.821s]    28 |                                 [01;36m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.821s]       |                                 [01;36m[K^~~~~~~~~~~[m[K
+[3.821s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K}[m[K’ token
+[3.821s]    28 |                                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.821s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[3.821s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[3.822s]    28 |                                 [01;36m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.822s]       |                                 [01;36m[K^~~~~~~~~~~[m[K
+[3.822s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K}[m[K’ token
+[3.822s]    28 |                                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.822s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[3.822s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[3.822s]    28 |                                 [01;36m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.822s]       |                                 [01;36m[K^~~~~~~~~~~[m[K
+[3.822s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:28:33:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+[3.822s]    28 |                                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger() "%d", button);
+[3.822s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[3.822s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:27:43:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbutton[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.822s]    27 |                         for (const auto & [01;35m[Kbutton[m[K : msg->buttons) {
+[3.822s]       |                                           [01;35m[K^~~~~~[m[K
+[6.387s] gmake[2]: *** [CMakeFiles/sub.dir/build.make:76: CMakeFiles/sub.dir/src/my_joy.cpp.o] Error 1
+[6.387s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sub.dir/all] Error 2
+[6.387s] gmake: *** [Makefile:146: all] Error 2
+[6.390s] Invoked command in '/root/working/ros2_ws/build/joy_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4

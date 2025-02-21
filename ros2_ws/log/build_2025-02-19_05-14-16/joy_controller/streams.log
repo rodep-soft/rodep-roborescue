@@ -1,0 +1,26 @@
+[0.019s] Invoking command in '/root/working/ros2_ws/build/joy_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4
+[0.069s] [35m[1mConsolidate compiler generated dependencies of target sub[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/sub.dir/src/my_joy.cpp.o[0m
+[8.965s] [100%] [32m[1mLinking CXX executable sub[0m
+[9.478s] [100%] Built target sub
+[9.491s] Invoked command in '/root/working/ros2_ws/build/joy_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4
+[9.503s] Invoking command in '/root/working/ros2_ws/build/joy_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/ros2_ws/build/joy_controller
+[9.512s] -- Install configuration: ""
+[9.513s] -- Installing: /root/working/ros2_ws/install/joy_controller/lib/joy_controller/sub
+[9.517s] -- Set runtime path of "/root/working/ros2_ws/install/joy_controller/lib/joy_controller/sub" to ""
+[9.517s] -- Installing: /root/working/ros2_ws/install/joy_controller/share/ament_index/resource_index/package_run_dependencies/joy_controller
+[9.517s] -- Installing: /root/working/ros2_ws/install/joy_controller/share/ament_index/resource_index/parent_prefix_path/joy_controller
+[9.518s] -- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/environment/ament_prefix_path.sh
+[9.518s] -- Installing: /root/working/ros2_ws/install/joy_controller/share/joy_controller/environment/ament_prefix_path.dsv
+[9.518s] -- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/environment/path.sh
+[9.518s] -- Installing: /root/working/ros2_ws/install/joy_controller/share/joy_controller/environment/path.dsv
+[9.519s] -- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/local_setup.bash
+[9.519s] -- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/local_setup.sh
+[9.519s] -- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/local_setup.zsh
+[9.520s] -- Installing: /root/working/ros2_ws/install/joy_controller/share/joy_controller/local_setup.dsv
+[9.520s] -- Installing: /root/working/ros2_ws/install/joy_controller/share/joy_controller/package.dsv
+[9.520s] -- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/ament_index/resource_index/packages/joy_controller
+[9.520s] -- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/cmake/joy_controllerConfig.cmake
+[9.520s] -- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/cmake/joy_controllerConfig-version.cmake
+[9.520s] -- Installing: /root/working/ros2_ws/install/joy_controller/share/joy_controller/package.xml
+[9.523s] Invoked command in '/root/working/ros2_ws/build/joy_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/ros2_ws/build/joy_controller

@@ -1,0 +1,3 @@
+[0.000000] (-) TimerEvent: {}
+[0.000181] (-) JobUnselected: {'identifier': 'joy_controller'}
+[0.000480] (-) EventReactorShutdown: {}

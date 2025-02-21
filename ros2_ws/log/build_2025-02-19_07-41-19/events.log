@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000293] (joy_controller) JobQueued: {'identifier': 'joy_controller', 'dependencies': OrderedDict()}
+[0.000393] (joy_controller) JobStarted: {'identifier': 'joy_controller'}
+[0.014707] (joy_controller) JobProgress: {'identifier': 'joy_controller', 'progress': 'cmake'}
+[0.015693] (joy_controller) JobProgress: {'identifier': 'joy_controller', 'progress': 'build'}
+[0.016852] (joy_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/ros2_ws/build/joy_controller', '--', '-j4', '-l4'], 'cwd': '/root/working/ros2_ws/build/joy_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', '2b7b9c6e6b89'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '12'), ('OLDPWD', '/root/.config/fish'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/root/working/ros2_ws/install'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/ros2_ws/install/joy_controller:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/ros2_ws/build/joy_controller'), ('LC_ALL', 'C.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/ros2_ws/install/joy_controller:/opt/ros/humble')]), 'shell': False}
+[0.070653] (joy_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sub\x1b[0m\n'}
+[0.093427] (joy_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/my_joy.cpp.o\x1b[0m\n'}
+[0.099017] (-) TimerEvent: {}
+[0.199379] (-) TimerEvent: {}
+[0.299823] (-) TimerEvent: {}
+[0.400149] (-) TimerEvent: {}
+[0.500503] (-) TimerEvent: {}
+[0.600862] (-) TimerEvent: {}
+[0.701235] (-) TimerEvent: {}
+[0.801592] (-) TimerEvent: {}
+[0.901955] (-) TimerEvent: {}
+[1.002322] (-) TimerEvent: {}
+[1.102759] (-) TimerEvent: {}
+[1.203120] (-) TimerEvent: {}
+[1.303431] (-) TimerEvent: {}
+[1.403777] (-) TimerEvent: {}
+[1.504077] (-) TimerEvent: {}
+[1.604528] (-) TimerEvent: {}
+[1.704867] (-) TimerEvent: {}
+[1.805193] (-) TimerEvent: {}
+[1.905526] (-) TimerEvent: {}
+[2.005850] (-) TimerEvent: {}
+[2.106185] (-) TimerEvent: {}
+[2.206471] (-) TimerEvent: {}
+[2.306818] (-) TimerEvent: {}
+[2.407206] (-) TimerEvent: {}
+[2.507652] (-) TimerEvent: {}
+[2.608012] (-) TimerEvent: {}
+[2.708414] (-) TimerEvent: {}
+[2.808749] (-) TimerEvent: {}
+[2.909099] (-) TimerEvent: {}
+[3.009493] (-) TimerEvent: {}
+[3.109810] (-) TimerEvent: {}
+[3.210130] (-) TimerEvent: {}
+[3.310462] (-) TimerEvent: {}
+[3.410773] (-) TimerEvent: {}
+[3.511120] (-) TimerEvent: {}
+[3.611433] (-) TimerEvent: {}
+[3.711767] (-) TimerEvent: {}
+[3.812107] (-) TimerEvent: {}
+[3.912430] (-) TimerEvent: {}
+[4.012768] (-) TimerEvent: {}
+[4.113097] (-) TimerEvent: {}
+[4.213410] (-) TimerEvent: {}
+[4.313734] (-) TimerEvent: {}
+[4.414074] (-) TimerEvent: {}
+[4.514399] (-) TimerEvent: {}
+[4.614688] (-) TimerEvent: {}
+[4.715046] (-) TimerEvent: {}
+[4.815380] (-) TimerEvent: {}
+[4.915711] (-) TimerEvent: {}
+[5.016067] (-) TimerEvent: {}
+[5.116444] (-) TimerEvent: {}
+[5.216790] (-) TimerEvent: {}
+[5.317179] (-) TimerEvent: {}
+[5.417529] (-) TimerEvent: {}
+[5.517892] (-) TimerEvent: {}
+[5.618233] (-) TimerEvent: {}
+[5.718615] (-) TimerEvent: {}
+[5.818980] (-) TimerEvent: {}
+[5.919323] (-) TimerEvent: {}
+[6.019674] (-) TimerEvent: {}
+[6.120031] (-) TimerEvent: {}
+[6.220354] (-) TimerEvent: {}
+[6.320716] (-) TimerEvent: {}
+[6.421057] (-) TimerEvent: {}
+[6.521424] (-) TimerEvent: {}
+[6.621755] (-) TimerEvent: {}
+[6.722131] (-) TimerEvent: {}
+[6.822469] (-) TimerEvent: {}
+[6.922822] (-) TimerEvent: {}
+[7.023197] (-) TimerEvent: {}
+[7.123526] (-) TimerEvent: {}
+[7.223882] (-) TimerEvent: {}
+[7.324224] (-) TimerEvent: {}
+[7.424574] (-) TimerEvent: {}
+[7.524915] (-) TimerEvent: {}
+[7.625260] (-) TimerEvent: {}
+[7.725561] (-) TimerEvent: {}
+[7.825885] (-) TimerEvent: {}
+[7.926213] (-) TimerEvent: {}
+[8.026535] (-) TimerEvent: {}
+[8.126881] (-) TimerEvent: {}
+[8.227199] (-) TimerEvent: {}
+[8.327514] (-) TimerEvent: {}
+[8.427822] (-) TimerEvent: {}
+[8.528149] (-) TimerEvent: {}
+[8.628428] (-) TimerEvent: {}
+[8.728779] (-) TimerEvent: {}
+[8.829106] (-) TimerEvent: {}
+[8.929456] (-) TimerEvent: {}
+[9.029782] (-) TimerEvent: {}
+[9.130103] (-) TimerEvent: {}
+[9.194338] (joy_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sub\x1b[0m\n'}
+[9.230248] (-) TimerEvent: {}
+[9.330594] (-) TimerEvent: {}
+[9.430946] (-) TimerEvent: {}
+[9.531276] (-) TimerEvent: {}
+[9.631601] (-) TimerEvent: {}
+[9.731901] (-) TimerEvent: {}
+[9.738667] (joy_controller) StdoutLine: {'line': b'[100%] Built target sub\n'}
+[9.753403] (joy_controller) CommandEnded: {'returncode': 0}
+[9.754148] (joy_controller) JobProgress: {'identifier': 'joy_controller', 'progress': 'install'}
+[9.765016] (joy_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/ros2_ws/build/joy_controller'], 'cwd': '/root/working/ros2_ws/build/joy_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', '2b7b9c6e6b89'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '12'), ('OLDPWD', '/root/.config/fish'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/root/working/ros2_ws/install'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/ros2_ws/install/joy_controller:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/ros2_ws/build/joy_controller'), ('LC_ALL', 'C.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/ros2_ws/install/joy_controller:/opt/ros/humble')]), 'shell': False}
+[9.775631] (joy_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.776053] (joy_controller) StdoutLine: {'line': b'-- Installing: /root/working/ros2_ws/install/joy_controller/lib/joy_controller/sub\n'}
+[9.781108] (joy_controller) StdoutLine: {'line': b'-- Set runtime path of "/root/working/ros2_ws/install/joy_controller/lib/joy_controller/sub" to ""\n'}
+[9.781528] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/ament_index/resource_index/package_run_dependencies/joy_controller\n'}
+[9.781757] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/ament_index/resource_index/parent_prefix_path/joy_controller\n'}
+[9.781882] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/environment/ament_prefix_path.sh\n'}
+[9.782015] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/environment/ament_prefix_path.dsv\n'}
+[9.782143] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/environment/path.sh\n'}
+[9.782319] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/environment/path.dsv\n'}
+[9.782465] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/local_setup.bash\n'}
+[9.782660] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/local_setup.sh\n'}
+[9.782790] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/local_setup.zsh\n'}
+[9.782907] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/local_setup.dsv\n'}
+[9.783023] (joy_controller) StdoutLine: {'line': b'-- Installing: /root/working/ros2_ws/install/joy_controller/share/joy_controller/package.dsv\n'}
+[9.783167] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/ament_index/resource_index/packages/joy_controller\n'}
+[9.783285] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/cmake/joy_controllerConfig.cmake\n'}
+[9.783401] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/cmake/joy_controllerConfig-version.cmake\n'}
+[9.783517] (joy_controller) StdoutLine: {'line': b'-- Up-to-date: /root/working/ros2_ws/install/joy_controller/share/joy_controller/package.xml\n'}
+[9.785033] (joy_controller) CommandEnded: {'returncode': 0}
+[9.806241] (joy_controller) JobEnded: {'identifier': 'joy_controller', 'rc': 0}
+[9.807322] (-) EventReactorShutdown: {}

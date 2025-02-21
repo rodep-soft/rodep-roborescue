@@ -1,0 +1,43 @@
+[35m[1mConsolidate compiler generated dependencies of target sub[0m
+[  3%] Built target joy_controller__cpp
+[ 12%] Built target joy_controller__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_joy_controller
+[ 27%] Built target joy_controller__rosidl_typesupport_fastrtps_cpp
+[ 30%] Built target joy_controller__rosidl_typesupport_cpp
+[ 33%] [32mBuilding CXX object CMakeFiles/sub.dir/src/my_joy.cpp.o[0m
+[ 42%] Built target joy_controller__rosidl_typesupport_introspection_c
+[ 51%] Built target joy_controller__rosidl_typesupport_c
+[ 60%] Built target joy_controller__rosidl_typesupport_introspection_cpp
+[ 69%] Built target joy_controller__rosidl_typesupport_fastrtps_c
+[ 69%] Built target joy_controller
+[ 72%] Built target joy_controller__py
+[ 78%] Built target joy_controller__rosidl_generator_py
+[ 84%] Built target joy_controller__rosidl_typesupport_fastrtps_c__pyext
+[ 90%] Built target joy_controller__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target joy_controller__rosidl_typesupport_c__pyext
+running egg_info
+writing joy_controller.egg-info/PKG-INFO
+writing dependency_links to joy_controller.egg-info/dependency_links.txt
+writing top-level names to joy_controller.egg-info/top_level.txt
+reading manifest file 'joy_controller.egg-info/SOURCES.txt'
+writing manifest file 'joy_controller.egg-info/SOURCES.txt'
+[ 96%] Built target ament_cmake_python_build_joy_controller_egg
+[01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:[m[K In member function ‘[01m[Kvoid Roboclaw::Open()[m[K’:
+[01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:60:25:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kboost::asio::basic_serial_port<>::open(boost::asio::execution_context&)[m[K’
+   60 |             [01;31m[Kserial_.open(serial_.get_executor().context())[m[K;  // Fixed for Boost.Asio
+      |             [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/asio.hpp:29[m[K,
+                 from [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:1[m[K:
+[01m[K/usr/include/boost/asio/basic_serial_port.hpp:345:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid boost::asio::basic_serial_port<Executor>::open(const string&) [with Executor = boost::asio::execution::any_executor<boost::asio::execution::context_as_t<boost::asio::execution_context&>, boost::asio::execution::detail::blocking::never_t<0>, boost::asio::execution::prefer_only<boost::asio::execution::detail::blocking::possibly_t<0> >, boost::asio::execution::prefer_only<boost::asio::execution::detail::outstanding_work::tracked_t<0> >, boost::asio::execution::prefer_only<boost::asio::execution::detail::outstanding_work::untracked_t<0> >, boost::asio::execution::prefer_only<boost::asio::execution::detail::relationship::fork_t<0> >, boost::asio::execution::prefer_only<boost::asio::execution::detail::relationship::continuation_t<0> > >; std::string = std::__cxx11::basic_string<char>][m[K’
+  345 |   void [01;36m[Kopen[m[K(const std::string& device)
+      |        [01;36m[K^~~~[m[K
+[01m[K/usr/include/boost/asio/basic_serial_port.hpp:345:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kboost::asio::execution_context[m[K’ to ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+  345 |   void open([01;36m[Kconst std::string& device[m[K)
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/include/boost/asio/basic_serial_port.hpp:361:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kboost::system::error_code boost::asio::basic_serial_port<Executor>::open(const string&, boost::system::error_code&) [with Executor = boost::asio::execution::any_executor<boost::asio::execution::context_as_t<boost::asio::execution_context&>, boost::asio::execution::detail::blocking::never_t<0>, boost::asio::execution::prefer_only<boost::asio::execution::detail::blocking::possibly_t<0> >, boost::asio::execution::prefer_only<boost::asio::execution::detail::outstanding_work::tracked_t<0> >, boost::asio::execution::prefer_only<boost::asio::execution::detail::outstanding_work::untracked_t<0> >, boost::asio::execution::prefer_only<boost::asio::execution::detail::relationship::fork_t<0> >, boost::asio::execution::prefer_only<boost::asio::execution::detail::relationship::continuation_t<0> > >; std::string = std::__cxx11::basic_string<char>][m[K’
+  361 |   BOOST_ASIO_SYNC_OP_VOID [01;36m[Kopen[m[K(const std::string& device,
+      |                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/boost/asio/basic_serial_port.hpp:361:27:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/sub.dir/build.make:76: CMakeFiles/sub.dir/src/my_joy.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:182: CMakeFiles/sub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

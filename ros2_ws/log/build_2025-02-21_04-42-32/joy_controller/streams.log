@@ -1,0 +1,87 @@
+[0.029s] Invoking command in '/root/working/ros2_ws/build/joy_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4
+[0.167s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_generator_c[0m
+[0.186s] [  3%] Built target joy_controller__cpp
+[0.188s] [ 12%] Built target joy_controller__rosidl_generator_c
+[0.212s] [ 15%] [32mBuilding CXX object CMakeFiles/sub.dir/src/my_joy.cpp.o[0m
+[0.219s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_typesupport_cpp[0m
+[0.232s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_typesupport_fastrtps_cpp[0m
+[0.233s] [ 15%] Built target ament_cmake_python_copy_joy_controller
+[0.252s] [ 24%] Built target joy_controller__rosidl_typesupport_cpp
+[0.263s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_typesupport_introspection_c[0m
+[0.265s] [ 33%] Built target joy_controller__rosidl_typesupport_fastrtps_cpp
+[0.276s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_typesupport_c[0m
+[0.290s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_typesupport_introspection_cpp[0m
+[0.291s] [ 42%] Built target joy_controller__rosidl_typesupport_introspection_c
+[0.303s] [ 51%] Built target joy_controller__rosidl_typesupport_c
+[0.334s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_typesupport_fastrtps_c[0m
+[0.334s] [ 60%] Built target joy_controller__rosidl_typesupport_introspection_cpp
+[0.360s] [ 69%] Built target joy_controller__rosidl_typesupport_fastrtps_c
+[0.399s] [ 69%] Built target joy_controller
+[0.443s] [ 72%] Built target joy_controller__py
+[0.464s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_generator_py[0m
+[0.489s] [ 78%] Built target joy_controller__rosidl_generator_py
+[0.518s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.536s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_typesupport_introspection_c__pyext[0m
+[0.564s] [ 84%] Built target joy_controller__rosidl_typesupport_introspection_c__pyext
+[0.567s] [ 90%] Built target joy_controller__rosidl_typesupport_fastrtps_c__pyext
+[0.587s] [35m[1mConsolidate compiler generated dependencies of target joy_controller__rosidl_typesupport_c__pyext[0m
+[0.627s] [ 96%] Built target joy_controller__rosidl_typesupport_c__pyext
+[0.773s] running egg_info
+[0.774s] writing joy_controller.egg-info/PKG-INFO
+[0.775s] writing dependency_links to joy_controller.egg-info/dependency_links.txt
+[0.775s] writing top-level names to joy_controller.egg-info/top_level.txt
+[0.780s] reading manifest file 'joy_controller.egg-info/SOURCES.txt'
+[0.781s] writing manifest file 'joy_controller.egg-info/SOURCES.txt'
+[0.835s] [ 96%] Built target ament_cmake_python_build_joy_controller_egg
+[5.608s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:[m[K In member function ‘[01m[Kvoid Roboclaw::Open()[m[K’:
+[5.609s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:61:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kboost::asio::serial_port[m[K’ {aka ‘[01m[Kclass boost::asio::basic_serial_port<>[m[K’} has no member named ‘[01m[Kget_io_service[m[K’
+[5.609s]    61 |             serial_.open(serial_.[01;31m[Kget_io_service[m[K().run());
+[5.609s]       |                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.677s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:[m[K In constructor ‘[01m[KMaxonCtl::MaxonCtl()[m[K’:
+[5.677s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:134:60:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kplaceholders[m[K’ is ambiguous
+[5.677s]   134 |       "/joy", 10, bind(&MaxonCtl::joyCallback, this, [01;31m[Kplaceholders[m[K::_1)
+[5.677s]       |                                                      [01;31m[K^~~~~~~~~~~~[m[K
+[5.677s] 
+[5.683s] In file included from [01m[K/usr/include/boost/asio.hpp:135[m[K,
+[5.683s]                  from [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:1[m[K:
+[5.683s] [01m[K/usr/include/boost/asio/placeholders.hpp:28:11:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Knamespace boost::asio::placeholders { }[m[K’
+[5.683s]    28 | namespace [01;36m[Kplaceholders[m[K {
+[5.683s]       |           [01;36m[K^~~~~~~~~~~~[m[K
+[5.683s] In file included from [01m[K/usr/include/boost/system/error_code.hpp:19[m[K,
+[5.683s]                  from [01m[K/usr/include/boost/asio/detail/throw_error.hpp:19[m[K,
+[5.683s]                  from [01m[K/usr/include/boost/asio/detail/impl/posix_event.ipp:23[m[K,
+[5.683s]                  from [01m[K/usr/include/boost/asio/detail/posix_event.hpp:172[m[K,
+[5.683s]                  from [01m[K/usr/include/boost/asio/detail/event.hpp:25[m[K,
+[5.683s]                  from [01m[K/usr/include/boost/asio/execution/blocking_adaptation.hpp:19[m[K,
+[5.684s]                  from [01m[K/usr/include/boost/asio/execution.hpp:22[m[K,
+[5.684s]                  from [01m[K/usr/include/boost/asio/system_executor.hpp:20[m[K,
+[5.684s]                  from [01m[K/usr/include/boost/asio/associated_executor.hpp:22[m[K,
+[5.684s]                  from [01m[K/usr/include/boost/asio.hpp:21[m[K,
+[5.684s]                  from [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:1[m[K:
+[5.684s] [01m[K/usr/include/c++/11/functional:219:13:[m[K [01;36m[Knote: [m[K                ‘[01m[Knamespace std::placeholders { }[m[K’
+[5.684s]   219 |   namespace [01;36m[Kplaceholders[m[K
+[5.684s]       |             [01;36m[K^~~~~~~~~~~~[m[K
+[5.697s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:[m[K In member function ‘[01m[Kvoid MaxonCtl::joyCallback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.697s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:152:13:[m[K [01;31m[Kerror: [m[K‘[01m[KvelM1[m[K’ was not declared in this scope
+[5.697s]   152 |             [01;31m[KvelM1[m[K = 1000;
+[5.697s]       |             [01;31m[K^~~~~[m[K
+[5.706s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:155:13:[m[K [01;31m[Kerror: [m[K‘[01m[KvelM2[m[K’ was not declared in this scope
+[5.707s]   155 |             [01;31m[KvelM2[m[K = 1000;
+[5.707s]       |             [01;31m[K^~~~~[m[K
+[5.716s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:158:29:[m[K [01;31m[Kerror: [m[K‘[01m[KvelM1[m[K’ was not declared in this scope
+[5.716s]   158 |         roboclaw_.SpeedM1M2([01;31m[KvelM1[m[K, velM2);
+[5.716s]       |                             [01;31m[K^~~~~[m[K
+[5.728s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:158:36:[m[K [01;31m[Kerror: [m[K‘[01m[KvelM2[m[K’ was not declared in this scope
+[5.728s]   158 |         roboclaw_.SpeedM1M2(velM1, [01;31m[KvelM2[m[K);
+[5.728s]       |                                    [01;31m[K^~~~~[m[K
+[5.733s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.733s] [01m[K/root/working/ros2_ws/src/joy_controller/src/my_joy.cpp:167:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Krclcpp[m[K’
+[5.733s]   167 |     rclcpp::spin(std::make_shared<MaxonCtl>())
+[5.733s]       |                                               [01;31m[K^[m[K
+[5.733s]       |                                               [32m[K;[m[K
+[5.733s]   168 |     [32m[Krclcpp[m[K::shutdown();
+[5.733s]       |     [32m[K~~~~~~[m[K                                     
+[7.192s] gmake[2]: *** [CMakeFiles/sub.dir/build.make:76: CMakeFiles/sub.dir/src/my_joy.cpp.o] Error 1
+[7.192s] gmake[1]: *** [CMakeFiles/Makefile2:182: CMakeFiles/sub.dir/all] Error 2
+[7.192s] gmake: *** [Makefile:146: all] Error 2
+[7.196s] Invoked command in '/root/working/ros2_ws/build/joy_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4

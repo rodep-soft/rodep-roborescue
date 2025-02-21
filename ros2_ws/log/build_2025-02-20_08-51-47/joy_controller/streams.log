@@ -1,0 +1,82 @@
+[0.022s] Invoking command in '/root/working/ros2_ws/build/joy_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4
+[0.059s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.276s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.352s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.358s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.374s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.396s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.426s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.500s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.504s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.695s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.808s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.875s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.251s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.694s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.866s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.902s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.910s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.953s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.953s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.953s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.954s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.982s] -- Found PythonExtra: .so  
+[2.035s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.067s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.068s] -- Configured cppcheck include dirs: 
+[2.068s] -- Configured cppcheck exclude dirs and/or files: 
+[2.070s] -- Added test 'lint_cmake' to check CMake code style
+[2.073s] -- Added test 'uncrustify' to check C / C++ code style
+[2.073s] -- Configured uncrustify additional arguments: 
+[2.074s] -- Added test 'xmllint' to check XML markup files
+[2.078s] -- Configuring done
+[2.141s] -- Generating done
+[2.158s] -- Build files have been written to: /root/working/ros2_ws/build/joy_controller
+[2.199s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.200s] [35m[1mConsolidate compiler generated dependencies of target sub[0m
+[2.222s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.238s] [  9%] [32mBuilding CXX object CMakeFiles/sub.dir/src/my_joy.cpp.o[0m
+[2.241s] [  9%] Built target ament_cmake_python_copy_joy_controller
+[2.721s] running egg_info
+[2.726s] creating joy_controller.egg-info
+[2.727s] writing joy_controller.egg-info/PKG-INFO
+[2.728s] writing dependency_links to joy_controller.egg-info/dependency_links.txt
+[2.731s] writing top-level names to joy_controller.egg-info/top_level.txt
+[2.735s] writing manifest file 'joy_controller.egg-info/SOURCES.txt'
+[2.755s] reading manifest file 'joy_controller.egg-info/SOURCES.txt'
+[2.756s] writing manifest file 'joy_controller.egg-info/SOURCES.txt'
+[2.809s] [  9%] Built target ament_cmake_python_build_joy_controller_egg
+[2.836s] [  9%] Built target joy_controller__cpp
+[2.856s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.856s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.964s] [ 18%] [32mBuilding C object CMakeFiles/joy_controller__rosidl_generator_c.dir/rosidl_generator_c/joy_controller/msg/detail/my_custom_message__functions.c.o[0m
+[2.996s] In file included from [01m[K/root/working/ros2_ws/build/joy_controller/rosidl_generator_c/joy_controller/msg/detail/my_custom_message__functions.h:19[m[K,
+[2.997s]                  from [01m[K/root/working/ros2_ws/build/joy_controller/rosidl_generator_c/joy_controller/msg/detail/my_custom_message__functions.c:4[m[K:
+[2.997s] [01m[K/root/working/ros2_ws/build/joy_controller/rosidl_generator_c/joy_controller/msg/detail/my_custom_message__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kjoy_controller/msg/detail/header__struct.h: No such file or directory
+[2.997s]    22 | #include [01;31m[K"joy_controller/msg/detail/header__struct.h"[m[K
+[2.997s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.997s] compilation terminated.
+[2.997s] gmake[2]: *** [CMakeFiles/joy_controller__rosidl_generator_c.dir/build.make:105: CMakeFiles/joy_controller__rosidl_generator_c.dir/rosidl_generator_c/joy_controller/msg/detail/my_custom_message__functions.c.o] Error 1
+[2.998s] gmake[1]: *** [CMakeFiles/Makefile2:241: CMakeFiles/joy_controller__rosidl_generator_c.dir/all] Error 2
+[2.998s] gmake[1]: *** Waiting for unfinished jobs....
+[3.281s] [ 21%] [32mBuilding CXX object CMakeFiles/joy_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/joy_controller/msg/my_custom_message__type_support.cpp.o[0m
+[3.380s] In file included from [01m[K/root/working/ros2_ws/build/joy_controller/rosidl_typesupport_cpp/joy_controller/msg/my_custom_message__type_support.cpp:7[m[K:
+[3.381s] [01m[K/root/working/ros2_ws/build/joy_controller/rosidl_generator_cpp/joy_controller/msg/detail/my_custom_message__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kjoy_controller/msg/detail/header__struct.hpp: No such file or directory
+[3.381s]    20 | #include [01;31m[K"joy_controller/msg/detail/header__struct.hpp"[m[K
+[3.381s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.381s] compilation terminated.
+[3.383s] gmake[2]: *** [CMakeFiles/joy_controller__rosidl_typesupport_cpp.dir/build.make:86: CMakeFiles/joy_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/joy_controller/msg/my_custom_message__type_support.cpp.o] Error 1
+[3.383s] gmake[1]: *** [CMakeFiles/Makefile2:423: CMakeFiles/joy_controller__rosidl_typesupport_cpp.dir/all] Error 2
+[3.400s] [ 24%] [32mBuilding CXX object CMakeFiles/joy_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/joy_controller/msg/detail/dds_fastrtps/my_custom_message__type_support.cpp.o[0m
+[3.486s] In file included from [01m[K/root/working/ros2_ws/build/joy_controller/rosidl_typesupport_fastrtps_cpp/joy_controller/msg/detail/my_custom_message__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[3.486s]                  from [01m[K/root/working/ros2_ws/build/joy_controller/rosidl_typesupport_fastrtps_cpp/joy_controller/msg/detail/dds_fastrtps/my_custom_message__type_support.cpp:4[m[K:
+[3.486s] [01m[K/root/working/ros2_ws/build/joy_controller/rosidl_generator_cpp/joy_controller/msg/detail/my_custom_message__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kjoy_controller/msg/detail/header__struct.hpp: No such file or directory
+[3.486s]    20 | #include [01;31m[K"joy_controller/msg/detail/header__struct.hpp"[m[K
+[3.486s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.487s] compilation terminated.
+[3.487s] gmake[2]: *** [CMakeFiles/joy_controller__rosidl_typesupport_fastrtps_cpp.dir/build.make:91: CMakeFiles/joy_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/joy_controller/msg/detail/dds_fastrtps/my_custom_message__type_support.cpp.o] Error 1
+[3.487s] gmake[1]: *** [CMakeFiles/Makefile2:319: CMakeFiles/joy_controller__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[14.205s] [ 27%] [32m[1mLinking CXX executable sub[0m
+[14.877s] [ 27%] Built target sub
+[14.879s] gmake: *** [Makefile:146: all] Error 2
+[14.883s] Invoked command in '/root/working/ros2_ws/build/joy_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4

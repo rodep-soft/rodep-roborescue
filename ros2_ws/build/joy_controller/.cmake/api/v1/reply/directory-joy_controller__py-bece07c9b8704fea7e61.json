@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "joy_controller__py",
+		"source" : "/root/working/ros2_ws/build/joy_controller/joy_controller__py"
+	}
+}

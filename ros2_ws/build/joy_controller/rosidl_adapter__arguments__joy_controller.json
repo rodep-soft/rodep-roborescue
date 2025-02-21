@@ -1,0 +1,6 @@
+{
+  "package_name": "joy_controller",
+  "non_idl_tuples": [
+    "/root/working/ros2_ws/src/joy_controller:my_msg/msg/MyCustomMessage.msg"
+  ]
+}

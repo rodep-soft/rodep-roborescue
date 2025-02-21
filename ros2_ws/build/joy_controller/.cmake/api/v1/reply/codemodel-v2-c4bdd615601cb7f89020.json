@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f12825a208c849a35c95.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "joy_controller__py",
+					"jsonFile" : "directory-joy_controller__py-bece07c9b8704fea7e61.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/root/working/ros2_ws/build/joy_controller/joy_controller__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "joy_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_joy_controller_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_joy_controller_egg-8467cce1ff7d81d98446.json",
+					"name" : "ament_cmake_python_build_joy_controller_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_joy_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_joy_controller-f5e4b873888ea1fe0d59.json",
+					"name" : "ament_cmake_python_copy_joy_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller-e5d29b8c5333af059439.json",
+					"name" : "joy_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__cpp-1d316c6c2251a3c6b1ad.json",
+					"name" : "joy_controller__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "joy_controller__py::@abafd29f809372ff0afd",
+					"jsonFile" : "target-joy_controller__py-a100d73e4dc357eef143.json",
+					"name" : "joy_controller__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_generator_c-0c122a63fc81720e9300.json",
+					"name" : "joy_controller__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_generator_py-19977d56905acbcc122c.json",
+					"name" : "joy_controller__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_typesupport_c-f004c875f7ba5545ac68.json",
+					"name" : "joy_controller__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_typesupport_c__pyext-240d0ff5311070bfaf0c.json",
+					"name" : "joy_controller__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_typesupport_cpp-d9dccea56499aff4f323.json",
+					"name" : "joy_controller__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_typesupport_fastrtps_c-f27a98b91c2c423f5108.json",
+					"name" : "joy_controller__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_typesupport_fastrtps_c__pyext-ea36a1fb50ef38e54b9a.json",
+					"name" : "joy_controller__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_typesupport_fastrtps_cpp-d239d1cf4f6f93f88f63.json",
+					"name" : "joy_controller__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_typesupport_introspection_c-9322bed8d9198298c289.json",
+					"name" : "joy_controller__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_typesupport_introspection_c__pyext-876ab8a687bc7218cfdf.json",
+					"name" : "joy_controller__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller__rosidl_typesupport_introspection_cpp-32cce6ed755a6f56829f.json",
+					"name" : "joy_controller__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_controller_uninstall-cb210c8780bbeb6847a0.json",
+					"name" : "joy_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sub-8236466d908290f89edb.json",
+					"name" : "sub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e00f4b9b816c0afdb04a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/working/ros2_ws/build/joy_controller",
+		"source" : "/root/working/ros2_ws/src/joy_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

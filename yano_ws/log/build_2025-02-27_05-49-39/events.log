@@ -1,0 +1,177 @@
+[0.000000] (-) TimerEvent: {}
+[0.000241] (driver) JobQueued: {'identifier': 'driver', 'dependencies': OrderedDict()}
+[0.000296] (operator) JobQueued: {'identifier': 'operator', 'dependencies': OrderedDict()}
+[0.001022] (driver) JobStarted: {'identifier': 'driver'}
+[0.016864] (operator) JobStarted: {'identifier': 'operator'}
+[0.023418] (driver) JobProgress: {'identifier': 'driver', 'progress': 'cmake'}
+[0.024430] (driver) JobProgress: {'identifier': 'driver', 'progress': 'build'}
+[0.025319] (driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/rodep_ros2/yano_ws/build/driver', '--', '-j4', '-l4'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.030203] (operator) JobProgress: {'identifier': 'operator', 'progress': 'cmake'}
+[0.031116] (operator) JobProgress: {'identifier': 'operator', 'progress': 'build'}
+[0.031485] (operator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/rodep_ros2/yano_ws/build/operator', '--', '-j4', '-l4'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/operator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/operator'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.061875] (driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.068594] (operator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.100380] (-) TimerEvent: {}
+[0.200714] (-) TimerEvent: {}
+[0.236800] (driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.241542] (operator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.276366] (operator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.279761] (operator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.287679] (operator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.299993] (operator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.300795] (-) TimerEvent: {}
+[0.309736] (driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.320397] (operator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.320674] (driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.335524] (driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.355050] (driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.361980] (operator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.363643] (operator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.381887] (driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.400916] (-) TimerEvent: {}
+[0.457307] (driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.462959] (driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.501019] (-) TimerEvent: {}
+[0.509537] (operator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.575707] (operator) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.583353] (driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.601120] (-) TimerEvent: {}
+[0.625845] (operator) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.627322] (driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.687330] (driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.701206] (-) TimerEvent: {}
+[0.707920] (driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.714636] (operator) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.714976] (operator) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.715126] (operator) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.715559] (operator) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.716318] (operator) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.716925] (operator) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.718537] (operator) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.718768] (operator) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.719258] (operator) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.720329] (operator) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.734283] (operator) StdoutLine: {'line': b'-- Generating done\n'}
+[0.739586] (operator) StdoutLine: {'line': b'-- Build files have been written to: /root/working/rodep_ros2/yano_ws/build/operator\n'}
+[0.770816] (operator) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target operator_node\x1b[0m\n'}
+[0.794191] (operator) StdoutLine: {'line': b'[100%] Built target operator_node\n'}
+[0.799732] (driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.800147] (driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.801284] (-) TimerEvent: {}
+[0.811429] (operator) CommandEnded: {'returncode': 0}
+[0.812263] (operator) JobProgress: {'identifier': 'operator', 'progress': 'install'}
+[0.822956] (operator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/rodep_ros2/yano_ws/build/operator'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/operator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/operator'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.832755] (operator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.833168] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/lib/operator/operator_node\n'}
+[0.833567] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator\n'}
+[0.833782] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator\n'}
+[0.834025] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh\n'}
+[0.834272] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv\n'}
+[0.834480] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.sh\n'}
+[0.834690] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.dsv\n'}
+[0.834948] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.bash\n'}
+[0.835146] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.sh\n'}
+[0.835393] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.zsh\n'}
+[0.835544] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.dsv\n'}
+[0.835757] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.dsv\n'}
+[0.835962] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/packages/operator\n'}
+[0.836203] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake\n'}
+[0.836372] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake\n'}
+[0.836524] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.xml\n'}
+[0.838627] (operator) CommandEnded: {'returncode': 0}
+[0.864398] (operator) JobEnded: {'identifier': 'operator', 'rc': 0}
+[0.901397] (-) TimerEvent: {}
+[0.904002] (driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.906598] (driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.985436] (driver) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.001529] (-) TimerEvent: {}
+[1.003592] (driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.089896] (driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.090279] (driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.090420] (driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.091282] (driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.092636] (driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.092741] (driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.093387] (driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.094738] (driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.101649] (-) TimerEvent: {}
+[1.110830] (driver) StdoutLine: {'line': b'-- Generating done\n'}
+[1.116299] (driver) StdoutLine: {'line': b'-- Build files have been written to: /root/working/rodep_ros2/yano_ws/build/driver\n'}
+[1.159100] (driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/driver_node.dir/src/driver.cpp.o\x1b[0m\n'}
+[1.201773] (-) TimerEvent: {}
+[1.302177] (-) TimerEvent: {}
+[1.402532] (-) TimerEvent: {}
+[1.502929] (-) TimerEvent: {}
+[1.603231] (-) TimerEvent: {}
+[1.703532] (-) TimerEvent: {}
+[1.803837] (-) TimerEvent: {}
+[1.904124] (-) TimerEvent: {}
+[2.004526] (-) TimerEvent: {}
+[2.104997] (-) TimerEvent: {}
+[2.205254] (-) TimerEvent: {}
+[2.305574] (-) TimerEvent: {}
+[2.405873] (-) TimerEvent: {}
+[2.506234] (-) TimerEvent: {}
+[2.606612] (-) TimerEvent: {}
+[2.706969] (-) TimerEvent: {}
+[2.807336] (-) TimerEvent: {}
+[2.907732] (-) TimerEvent: {}
+[3.008120] (-) TimerEvent: {}
+[3.108488] (-) TimerEvent: {}
+[3.208823] (-) TimerEvent: {}
+[3.309185] (-) TimerEvent: {}
+[3.409558] (-) TimerEvent: {}
+[3.509921] (-) TimerEvent: {}
+[3.610310] (-) TimerEvent: {}
+[3.710664] (-) TimerEvent: {}
+[3.811033] (-) TimerEvent: {}
+[3.911370] (-) TimerEvent: {}
+[4.011719] (-) TimerEvent: {}
+[4.112003] (-) TimerEvent: {}
+[4.212348] (-) TimerEvent: {}
+[4.312662] (-) TimerEvent: {}
+[4.412965] (-) TimerEvent: {}
+[4.513339] (-) TimerEvent: {}
+[4.613697] (-) TimerEvent: {}
+[4.714115] (-) TimerEvent: {}
+[4.814500] (-) TimerEvent: {}
+[4.914882] (-) TimerEvent: {}
+[5.015314] (-) TimerEvent: {}
+[5.115631] (-) TimerEvent: {}
+[5.215988] (-) TimerEvent: {}
+[5.227876] (driver) StderrLine: {'line': b'\x1b[01m\x1b[K/root/working/rodep_ros2/yano_ws/src/driver/src/driver.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDriver::Driver()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.228162] (driver) StderrLine: {'line': b'\x1b[01m\x1b[K/root/working/rodep_ros2/yano_ws/src/driver/src/driver.cpp:86:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.228248] (driver) StderrLine: {'line': b'   86 |             "/cmd_vel", 10, std::bind(&Driver::driver_callback, this, \x1b[01;31m\x1b[K_1\x1b[m\x1b[K));\n'}
+[5.228334] (driver) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.228446] (driver) StderrLine: {'line': b'      |                                                                       \x1b[32m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\n'}
+[5.228557] (driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/system/error_code.hpp:19\x1b[m\x1b[K,\n'}
+[5.228667] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/throw_error.hpp:19\x1b[m\x1b[K,\n'}
+[5.228760] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/impl/posix_event.ipp:23\x1b[m\x1b[K,\n'}
+[5.228833] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/posix_event.hpp:172\x1b[m\x1b[K,\n'}
+[5.228895] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/event.hpp:25\x1b[m\x1b[K,\n'}
+[5.228957] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/execution/blocking_adaptation.hpp:19\x1b[m\x1b[K,\n'}
+[5.229019] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/execution.hpp:22\x1b[m\x1b[K,\n'}
+[5.229080] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/system_executor.hpp:20\x1b[m\x1b[K,\n'}
+[5.229140] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/associated_executor.hpp:22\x1b[m\x1b[K,\n'}
+[5.229202] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio.hpp:21\x1b[m\x1b[K,\n'}
+[5.229263] (driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/working/rodep_ros2/yano_ws/src/driver/src/driver.cpp:5\x1b[m\x1b[K:\n'}
+[5.229323] (driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:225:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[5.229391] (driver) StderrLine: {'line': b'  225 |     extern const _Placeholder<1> \x1b[01;36m\x1b[K_1\x1b[m\x1b[K;\n'}
+[5.229453] (driver) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.316141] (-) TimerEvent: {}
+[5.416435] (-) TimerEvent: {}
+[5.516784] (-) TimerEvent: {}
+[5.617104] (-) TimerEvent: {}
+[5.717452] (-) TimerEvent: {}
+[5.817777] (-) TimerEvent: {}
+[5.918083] (-) TimerEvent: {}
+[6.018392] (-) TimerEvent: {}
+[6.118727] (-) TimerEvent: {}
+[6.219054] (-) TimerEvent: {}
+[6.319394] (-) TimerEvent: {}
+[6.372530] (driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/driver_node.dir/build.make:76: CMakeFiles/driver_node.dir/src/driver.cpp.o] Error 1\n'}
+[6.372837] (driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/driver_node.dir/all] Error 2\n'}
+[6.373042] (driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.375649] (driver) CommandEnded: {'returncode': 2}
+[6.383294] (driver) JobEnded: {'identifier': 'driver', 'rc': 2}
+[6.394046] (-) EventReactorShutdown: {}

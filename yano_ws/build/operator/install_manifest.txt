@@ -1,0 +1,16 @@
+/root/working/rodep_ros2/yano_ws/install/operator/lib/operator/operator_node
+/root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator
+/root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.sh
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.dsv
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.bash
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.sh
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.zsh
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.dsv
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.dsv
+/root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/packages/operator
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake
+/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.xml

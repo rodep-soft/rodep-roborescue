@@ -1,6 +1,0 @@
-Invoking command in '/root/working/ros2_ws/build/joy_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/working/ros2_ws/src/joy_controller -DCMAKE_INSTALL_PREFIX=/root/working/ros2_ws/install/joy_controller
-Invoked command in '/root/working/ros2_ws/build/joy_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/working/ros2_ws/src/joy_controller -DCMAKE_INSTALL_PREFIX=/root/working/ros2_ws/install/joy_controller
-Invoking command in '/root/working/ros2_ws/build/joy_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4
-Invoked command in '/root/working/ros2_ws/build/joy_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/working/ros2_ws/build/joy_controller -- -j4 -l4
-Invoking command in '/root/working/ros2_ws/build/joy_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/working/ros2_ws/build/joy_controller
-Invoked command in '/root/working/ros2_ws/build/joy_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/working/ros2_ws/build/joy_controller

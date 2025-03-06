@@ -75,7 +75,7 @@ class Operator : public rclcpp::Node
 
     const double DEADZONE = 0.1;
 
-    void applyDeadzone(double val, double threshold) {
+    double applyDeadzone(double val, double threshold) {
       return (std::abs(val) < threshold) ? 0.0 : val;
     }
 

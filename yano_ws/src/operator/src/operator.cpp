@@ -81,12 +81,8 @@ class Operator : public rclcpp::Node
 
     void joy_callback(const sensor_msgs::msg::Joy& msg) 
     {
-      m1_axis_y = std::clamp(msg.axes[1], -0.95f, 0.95f);
-      m2_axis_y = std::clamp(msg.axes[3], -0.95f, 0.95f);
-
-      applyDeadzone(m1_axis_y, DEADZONE);
-      applyDeadzone(m2_axis_y, DEADZONE);
-
+      m1_axis_y = applyDeadzone(std::clamp(msg.axes[1], -0.95f, 0.95f), DEADZONE);
+      m2_axis_y = applyDeadzone(std::clamp(msg.axes[3], -0.95f, 0.95f), DEADZONE);
 
       RCLCPP_INFO(this->get_logger(), "values \nm1_axis_y: %f \nm2_axis_y: %f", m1_axis_y, m2_axis_y);
 

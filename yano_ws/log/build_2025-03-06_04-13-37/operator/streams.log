@@ -1,0 +1,47 @@
+[0.032s] Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4
+[0.069s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.292s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.328s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.333s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.345s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.361s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.377s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.425s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.427s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.589s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.654s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.699s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.801s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.801s] -- Configured cppcheck include dirs: 
+[0.802s] -- Configured cppcheck exclude dirs and/or files: 
+[0.802s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.803s] -- Added test 'lint_cmake' to check CMake code style
+[0.803s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.805s] -- Added test 'uncrustify' to check C / C++ code style
+[0.805s] -- Configured uncrustify additional arguments: 
+[0.806s] -- Added test 'xmllint' to check XML markup files
+[0.808s] -- Configuring done
+[0.827s] -- Generating done
+[0.832s] -- Build files have been written to: /root/working/rodep_ros2/yano_ws/build/operator
+[0.865s] [35m[1mConsolidate compiler generated dependencies of target operator_node[0m
+[0.891s] [100%] Built target operator_node
+[0.906s] Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4
+[0.909s] Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/operator
+[0.918s] -- Install configuration: ""
+[0.919s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/lib/operator/operator_node
+[0.920s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator
+[0.920s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator
+[0.920s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh
+[0.920s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv
+[0.921s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.sh
+[0.921s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.dsv
+[0.921s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.bash
+[0.921s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.sh
+[0.921s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.zsh
+[0.921s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.dsv
+[0.921s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.dsv
+[0.922s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/packages/operator
+[0.922s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake
+[0.922s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake
+[0.922s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.xml
+[0.925s] Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/operator

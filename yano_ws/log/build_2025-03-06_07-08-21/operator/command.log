@@ -1,0 +1,4 @@
+Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/operator
+Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/operator
+Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4
+Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4

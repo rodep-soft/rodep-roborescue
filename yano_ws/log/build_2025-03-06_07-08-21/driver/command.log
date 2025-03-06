@@ -1,0 +1,3 @@
+Invoking command in '/root/working/rodep_ros2/yano_ws/build/driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/driver -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/driver
+Invoked command in '/root/working/rodep_ros2/yano_ws/build/driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/driver -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/driver
+Invoking command in '/root/working/rodep_ros2/yano_ws/build/driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/driver -- -j4 -l4

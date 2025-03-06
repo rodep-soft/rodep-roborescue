@@ -1,0 +1,7 @@
+[01m[K/root/working/rodep_ros2/yano_ws/src/operator/src/operator.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kcustom_interfaces/msg/driver_velocity.hpp: No such file or directory
+   12 | #include [01;31m[K"custom_interfaces/msg/driver_velocity.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/operator_node.dir/build.make:76: CMakeFiles/operator_node.dir/src/operator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/operator_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

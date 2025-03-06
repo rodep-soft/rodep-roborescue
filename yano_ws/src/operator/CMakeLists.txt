@@ -14,9 +14,10 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(custom_interfaces REQUIRED)
 
 add_executable(operator_node src/operator.cpp)
-ament_target_dependencies(operator_node rclcpp sensor_msgs geometry_msgs)
+ament_target_dependencies(operator_node rclcpp sensor_msgs geometry_msgs custom_interfaces)
 
 install(TARGETS
 	operator_node

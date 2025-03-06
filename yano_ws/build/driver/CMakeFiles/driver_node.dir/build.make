@@ -148,13 +148,13 @@ driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c
 driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 driver_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 driver_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so

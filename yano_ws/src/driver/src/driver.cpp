@@ -3,6 +3,7 @@
 #include <memory>
 #include <boost/asio.hpp>
 #include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/bool.hpp> 
 #include <custom_interfaces/msg/driver_velocity.hpp>
 
 using namespace std;
@@ -120,6 +121,9 @@ public:
         subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(
             "/operator", 10, bind(&Driver::driver_callback, this, _1));
 
+        estop_subscription_ = create_subscription<std_msgs::msg::Bool>(
+            "/emergency_stop", 10, bind(&Driver::estop_callback, this, _1));
+
         init();
     }
 
@@ -130,7 +134,10 @@ private:
     int gearhead_ratio_;
     int pulley_ratio_;
     double pulse_per_meter_;
+    bool estop_active_ = false;  // E-stop state
+
     rclcpp::Subscription<custom_interfaces::msg::DriverVelocity>::SharedPtr subscription_;
+    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr estop_subscription_;
 
     double velocity_to_pulse_per_sec(double velocity) const {
         return velocity * pulse_per_meter_;
@@ -145,6 +152,11 @@ private:
     }
 
     void driver_callback(const custom_interfaces::msg::DriverVelocity& msg) {
+        if (estop_active_) {
+            RCLCPP_WARN(get_logger(), "E-stop is active. Ignoring motor commands.");
+            return;
+        }
+
         double M1_pulse = velocity_to_pulse_per_sec(msg.m1_vel);
         double M2_pulse = velocity_to_pulse_per_sec(msg.m2_vel);
 
@@ -153,6 +165,20 @@ private:
         }
         if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_pulse)) {
             RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");
+        }
+    }
+
+    void estop_callback(const std_msgs::msg::Bool::SharedPtr msg) {
+        estop_active_ = msg->data;
+
+        if (estop_active_) {
+            RCLCPP_WARN(get_logger(), "E-stop activated. Stopping all motors.");
+
+            // Send zero velocity commands to stop motors
+            roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);
+            roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);
+        } else {
+            RCLCPP_INFO(get_logger(), "E-stop deactivated. Resuming normal operation.");
         }
     }
 };

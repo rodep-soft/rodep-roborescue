@@ -86,8 +86,9 @@ class Operator : public rclcpp::Node
 
       RCLCPP_INFO(this->get_logger(), "values \nm1_axis_y: %f \nm2_axis_y: %f", m1_axis_y, m2_axis_y);
 
-      m1_vel = m1_axis_y * MAX_SPEED;
-      m2_vel = m2_axis_y * MAX_SPEED;
+      m1_vel = std::clamp(m1_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
+      m2_vel = std::clamp(m2_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
+
 
       auto message = custom_interfaces::msg::DriverVelocity();
 

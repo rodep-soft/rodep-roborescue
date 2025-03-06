@@ -38,17 +38,17 @@ class Operator : public rclcpp::Node
     double WIDTH = 0.29;           // [m] Distance between the two crawlers
     double MAX_SPEED = 0.5;       // [m/s] Maximum linear speed
     double MAX_ANGULAR = 0.2;     // Maximum angular speed
-    // double left_joy, right_joy, linear_x, angular_z;
+    // double m1_joy, m2_joy, linear_x, angular_z;
 
     // void joy_callback(const sensor_msgs::msg::Joy & msg)
     // {
     //   // Read joystick inputs
-    //   left_joy = msg.axes[1];   // Adjust index if necessary
-    //   right_joy = msg.axes[3];  // Adjust index if necessary
+    //   m1_joy = msg.axes[1];   // Adjust index if necessary
+    //   m2_joy = msg.axes[3];  // Adjust index if necessary
 
     //   // Calculate linear and angular velocities
-    //   linear_x = (left_joy + right_joy) * MAX_SPEED / 2; // use average
-    //   angular_z = (right_joy - left_joy) * MAX_ANGULAR / WIDTH;
+    //   linear_x = (m1_joy + m2_joy) * MAX_SPEED / 2; // use average
+    //   angular_z = (m2_joy - m1_joy) * MAX_ANGULAR / WIDTH;
 
     //   // Create and populate the Twist message
     //   auto twist_msg = geometry_msgs::msg::Twist();
@@ -68,37 +68,37 @@ class Operator : public rclcpp::Node
 
 
     // declare variables
-    float left_axis_y = 0;
-    float right_axis_y = 0;
+    float m1_axis_y = 0;
+    float m2_axis_y = 0;
 
-    float left_vel, right_vel;
+    float m1_vel, m2_vel;
 
     void joy_callback(const sensor_msgs::msg::Joy& msg) 
     {
-      left_axis_y = std::clamp(msg.axes[1], -0.9f, 0.9f);
-      right_axis_y = std::clamp(msg.axes[3], -0.9f, 0.9f);
+      m1_axis_y = std::clamp(msg.axes[1], -0.9f, 0.9f);
+      m2_axis_y = std::clamp(msg.axes[3], -0.9f, 0.9f);
 
-      // if (left_axis_y > 0.9) {
-      //   left_axis_y = 0.9;
-      // } else if (left_axis_y < -0.9) {
-      //   left_axis_y = -0.9;
+      // if (m1_axis_y > 0.9) {
+      //   m1_axis_y = 0.9;
+      // } else if (m1_axis_y < -0.9) {
+      //   m1_axis_y = -0.9;
       // }
 
-      // if (right_axis_y > 0.9) {
-      //   right_axis_y = 0.9;
-      // } else if (right_axis_y < -0.9) {
-      //   right_axis_y = -0.9;
+      // if (m2_axis_y > 0.9) {
+      //   m2_axis_y = 0.9;
+      // } else if (m2_axis_y < -0.9) {
+      //   m2_axis_y = -0.9;
       // }
 
-      RCLCPP_INFO(this->get_logger(), "values \nleft_axis_y: %f \nright_axis_y: %f", left_axis_y, right_axis_y);
+      RCLCPP_INFO(this->get_logger(), "values \nm1_axis_y: %f \nm2_axis_y: %f", m1_axis_y, m2_axis_y);
 
-      left_vel = left_axis_y * MAX_SPEED;
-      right_vel = right_axis_y * MAX_SPEED;
+      m1_vel = m1_axis_y * MAX_SPEED;
+      m2_vel = m2_axis_y * MAX_SPEED;
 
       auto message = custom_interfaces::msg::DriverVelocity();
 
-      message.left_vel = left_vel;
-      message.right_vel = right_vel;
+      message.m1_vel = m1_vel;
+      message.m2_vel = m2_vel;
       publisher_->publish(message);
     }
 

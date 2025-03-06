@@ -1,0 +1,14 @@
+[0.014s] Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target operator_node[0m
+[0.095s] [ 50%] [32mBuilding CXX object CMakeFiles/operator_node.dir/src/operator.cpp.o[0m
+[2.912s] [01m[K/root/working/rodep_ros2/yano_ws/src/operator/src/operator.cpp:[m[K In member function ‘[01m[Kvoid Operator::joy_callback(const Joy&)[m[K’:
+[2.912s] [01m[K/root/working/rodep_ros2/yano_ws/src/operator/src/operator.cpp:100:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct custom_interfaces::msg::DriverVelocity_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kleft_vel[m[K’
+[2.912s]   100 |       message.[01;31m[Kleft_vel[m[K = left_vel;
+[2.913s]       |               [01;31m[K^~~~~~~~[m[K
+[2.913s] [01m[K/root/working/rodep_ros2/yano_ws/src/operator/src/operator.cpp:101:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct custom_interfaces::msg::DriverVelocity_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kright_vel[m[K’
+[2.913s]   101 |       message.[01;31m[Kright_vel[m[K = right_vel;
+[2.913s]       |               [01;31m[K^~~~~~~~~[m[K
+[5.878s] gmake[2]: *** [CMakeFiles/operator_node.dir/build.make:76: CMakeFiles/operator_node.dir/src/operator.cpp.o] Error 1
+[5.878s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/operator_node.dir/all] Error 2
+[5.878s] gmake: *** [Makefile:146: all] Error 2
+[5.881s] Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4

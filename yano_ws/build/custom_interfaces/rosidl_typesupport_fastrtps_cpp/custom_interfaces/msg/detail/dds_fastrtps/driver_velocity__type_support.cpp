@@ -32,10 +32,10 @@ cdr_serialize(
   const custom_interfaces::msg::DriverVelocity & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: left_vel
-  cdr << ros_message.left_vel;
-  // Member: right_vel
-  cdr << ros_message.right_vel;
+  // Member: m1_vel
+  cdr << ros_message.m1_vel;
+  // Member: m2_vel
+  cdr << ros_message.m2_vel;
   return true;
 }
 
@@ -45,11 +45,11 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   custom_interfaces::msg::DriverVelocity & ros_message)
 {
-  // Member: left_vel
-  cdr >> ros_message.left_vel;
+  // Member: m1_vel
+  cdr >> ros_message.m1_vel;
 
-  // Member: right_vel
-  cdr >> ros_message.right_vel;
+  // Member: m2_vel
+  cdr >> ros_message.m2_vel;
 
   return true;
 }
@@ -67,15 +67,15 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: left_vel
+  // Member: m1_vel
   {
-    size_t item_size = sizeof(ros_message.left_vel);
+    size_t item_size = sizeof(ros_message.m1_vel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: right_vel
+  // Member: m2_vel
   {
-    size_t item_size = sizeof(ros_message.right_vel);
+    size_t item_size = sizeof(ros_message.m2_vel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -103,7 +103,7 @@ max_serialized_size_DriverVelocity(
   is_plain = true;
 
 
-  // Member: left_vel
+  // Member: m1_vel
   {
     size_t array_size = 1;
 
@@ -112,7 +112,7 @@ max_serialized_size_DriverVelocity(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: right_vel
+  // Member: m2_vel
   {
     size_t array_size = 1;
 
@@ -129,7 +129,7 @@ max_serialized_size_DriverVelocity(
     using DataType = custom_interfaces::msg::DriverVelocity;
     is_plain =
       (
-      offsetof(DataType, right_vel) +
+      offsetof(DataType, m2_vel) +
       last_member_size
       ) == ret_val;
   }

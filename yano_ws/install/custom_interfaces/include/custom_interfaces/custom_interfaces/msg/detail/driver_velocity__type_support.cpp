@@ -39,14 +39,14 @@ void DriverVelocity_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember DriverVelocity_message_member_array[2] = {
   {
-    "left_vel",  // name
+    "m1_vel",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_interfaces::msg::DriverVelocity, left_vel),  // bytes offset in struct
+    offsetof(custom_interfaces::msg::DriverVelocity, m1_vel),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -56,14 +56,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember DriverVelocit
     nullptr  // resize(index) function pointer
   },
   {
-    "right_vel",  // name
+    "m2_vel",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_interfaces::msg::DriverVelocity, right_vel),  // bytes offset in struct
+    offsetof(custom_interfaces::msg::DriverVelocity, m2_vel),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

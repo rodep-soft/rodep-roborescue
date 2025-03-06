@@ -49,14 +49,14 @@ static bool _DriverVelocity__cdr_serialize(
     return false;
   }
   const _DriverVelocity__ros_msg_type * ros_message = static_cast<const _DriverVelocity__ros_msg_type *>(untyped_ros_message);
-  // Field name: left_vel
+  // Field name: m1_vel
   {
-    cdr << ros_message->left_vel;
+    cdr << ros_message->m1_vel;
   }
 
-  // Field name: right_vel
+  // Field name: m2_vel
   {
-    cdr << ros_message->right_vel;
+    cdr << ros_message->m2_vel;
   }
 
   return true;
@@ -71,14 +71,14 @@ static bool _DriverVelocity__cdr_deserialize(
     return false;
   }
   _DriverVelocity__ros_msg_type * ros_message = static_cast<_DriverVelocity__ros_msg_type *>(untyped_ros_message);
-  // Field name: left_vel
+  // Field name: m1_vel
   {
-    cdr >> ros_message->left_vel;
+    cdr >> ros_message->m1_vel;
   }
 
-  // Field name: right_vel
+  // Field name: m2_vel
   {
-    cdr >> ros_message->right_vel;
+    cdr >> ros_message->m2_vel;
   }
 
   return true;
@@ -98,15 +98,15 @@ size_t get_serialized_size_custom_interfaces__msg__DriverVelocity(
   (void)padding;
   (void)wchar_size;
 
-  // field.name left_vel
+  // field.name m1_vel
   {
-    size_t item_size = sizeof(ros_message->left_vel);
+    size_t item_size = sizeof(ros_message->m1_vel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name right_vel
+  // field.name m2_vel
   {
-    size_t item_size = sizeof(ros_message->right_vel);
+    size_t item_size = sizeof(ros_message->m2_vel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -139,7 +139,7 @@ size_t max_serialized_size_custom_interfaces__msg__DriverVelocity(
   full_bounded = true;
   is_plain = true;
 
-  // member: left_vel
+  // member: m1_vel
   {
     size_t array_size = 1;
 
@@ -147,7 +147,7 @@ size_t max_serialized_size_custom_interfaces__msg__DriverVelocity(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: right_vel
+  // member: m2_vel
   {
     size_t array_size = 1;
 
@@ -164,7 +164,7 @@ size_t max_serialized_size_custom_interfaces__msg__DriverVelocity(
     using DataType = custom_interfaces__msg__DriverVelocity;
     is_plain =
       (
-      offsetof(DataType, right_vel) +
+      offsetof(DataType, m2_vel) +
       last_member_size
       ) == ret_val;
   }

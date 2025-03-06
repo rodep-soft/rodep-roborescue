@@ -25,17 +25,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: left_vel
+  // member: m1_vel
   {
-    out << "left_vel: ";
-    rosidl_generator_traits::value_to_yaml(msg.left_vel, out);
+    out << "m1_vel: ";
+    rosidl_generator_traits::value_to_yaml(msg.m1_vel, out);
     out << ", ";
   }
 
-  // member: right_vel
+  // member: m2_vel
   {
-    out << "right_vel: ";
-    rosidl_generator_traits::value_to_yaml(msg.right_vel, out);
+    out << "m2_vel: ";
+    rosidl_generator_traits::value_to_yaml(msg.m2_vel, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -44,23 +44,23 @@ inline void to_block_style_yaml(
   const DriverVelocity & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: left_vel
+  // member: m1_vel
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "left_vel: ";
-    rosidl_generator_traits::value_to_yaml(msg.left_vel, out);
+    out << "m1_vel: ";
+    rosidl_generator_traits::value_to_yaml(msg.m1_vel, out);
     out << "\n";
   }
 
-  // member: right_vel
+  // member: m2_vel
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "right_vel: ";
-    rosidl_generator_traits::value_to_yaml(msg.right_vel, out);
+    out << "m2_vel: ";
+    rosidl_generator_traits::value_to_yaml(msg.m2_vel, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

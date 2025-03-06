@@ -57,13 +57,13 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
     """Message class 'DriverVelocity'."""
 
     __slots__ = [
-        '_left_vel',
-        '_right_vel',
+        '_m1_vel',
+        '_m2_vel',
     ]
 
     _fields_and_field_types = {
-        'left_vel': 'float',
-        'right_vel': 'float',
+        'm1_vel': 'float',
+        'm2_vel': 'float',
     }
 
     SLOT_TYPES = (
@@ -75,8 +75,8 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.left_vel = kwargs.get('left_vel', float())
-        self.right_vel = kwargs.get('right_vel', float())
+        self.m1_vel = kwargs.get('m1_vel', float())
+        self.m2_vel = kwargs.get('m2_vel', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -107,9 +107,9 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.left_vel != other.left_vel:
+        if self.m1_vel != other.m1_vel:
             return False
-        if self.right_vel != other.right_vel:
+        if self.m2_vel != other.m2_vel:
             return False
         return True
 
@@ -119,31 +119,31 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def left_vel(self):
-        """Message field 'left_vel'."""
-        return self._left_vel
+    def m1_vel(self):
+        """Message field 'm1_vel'."""
+        return self._m1_vel
 
-    @left_vel.setter
-    def left_vel(self, value):
+    @m1_vel.setter
+    def m1_vel(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'left_vel' field must be of type 'float'"
+                "The 'm1_vel' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'left_vel' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._left_vel = value
+                "The 'm1_vel' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._m1_vel = value
 
     @builtins.property
-    def right_vel(self):
-        """Message field 'right_vel'."""
-        return self._right_vel
+    def m2_vel(self):
+        """Message field 'm2_vel'."""
+        return self._m2_vel
 
-    @right_vel.setter
-    def right_vel(self, value):
+    @m2_vel.setter
+    def m2_vel(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'right_vel' field must be of type 'float'"
+                "The 'm2_vel' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'right_vel' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._right_vel = value
+                "The 'm2_vel' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._m2_vel = value

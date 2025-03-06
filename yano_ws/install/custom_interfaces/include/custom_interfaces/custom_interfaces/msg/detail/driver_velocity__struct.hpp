@@ -38,8 +38,8 @@ struct DriverVelocity_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->left_vel = 0.0f;
-      this->right_vel = 0.0f;
+      this->m1_vel = 0.0f;
+      this->m2_vel = 0.0f;
     }
   }
 
@@ -49,30 +49,30 @@ struct DriverVelocity_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->left_vel = 0.0f;
-      this->right_vel = 0.0f;
+      this->m1_vel = 0.0f;
+      this->m2_vel = 0.0f;
     }
   }
 
   // field types and members
-  using _left_vel_type =
+  using _m1_vel_type =
     float;
-  _left_vel_type left_vel;
-  using _right_vel_type =
+  _m1_vel_type m1_vel;
+  using _m2_vel_type =
     float;
-  _right_vel_type right_vel;
+  _m2_vel_type m2_vel;
 
   // setters for named parameter idiom
-  Type & set__left_vel(
+  Type & set__m1_vel(
     const float & _arg)
   {
-    this->left_vel = _arg;
+    this->m1_vel = _arg;
     return *this;
   }
-  Type & set__right_vel(
+  Type & set__m2_vel(
     const float & _arg)
   {
-    this->right_vel = _arg;
+    this->m2_vel = _arg;
     return *this;
   }
 
@@ -118,10 +118,10 @@ struct DriverVelocity_
   // comparison operators
   bool operator==(const DriverVelocity_ & other) const
   {
-    if (this->left_vel != other.left_vel) {
+    if (this->m1_vel != other.m1_vel) {
       return false;
     }
-    if (this->right_vel != other.right_vel) {
+    if (this->m2_vel != other.m2_vel) {
       return false;
     }
     return true;

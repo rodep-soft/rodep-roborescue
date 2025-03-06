@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_DriverVelocity_right_vel
+class Init_DriverVelocity_m2_vel
 {
 public:
-  explicit Init_DriverVelocity_right_vel(::custom_interfaces::msg::DriverVelocity & msg)
+  explicit Init_DriverVelocity_m2_vel(::custom_interfaces::msg::DriverVelocity & msg)
   : msg_(msg)
   {}
-  ::custom_interfaces::msg::DriverVelocity right_vel(::custom_interfaces::msg::DriverVelocity::_right_vel_type arg)
+  ::custom_interfaces::msg::DriverVelocity m2_vel(::custom_interfaces::msg::DriverVelocity::_m2_vel_type arg)
   {
-    msg_.right_vel = std::move(arg);
+    msg_.m2_vel = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,16 +37,16 @@ private:
   ::custom_interfaces::msg::DriverVelocity msg_;
 };
 
-class Init_DriverVelocity_left_vel
+class Init_DriverVelocity_m1_vel
 {
 public:
-  Init_DriverVelocity_left_vel()
+  Init_DriverVelocity_m1_vel()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_DriverVelocity_right_vel left_vel(::custom_interfaces::msg::DriverVelocity::_left_vel_type arg)
+  Init_DriverVelocity_m2_vel m1_vel(::custom_interfaces::msg::DriverVelocity::_m1_vel_type arg)
   {
-    msg_.left_vel = std::move(arg);
-    return Init_DriverVelocity_right_vel(msg_);
+    msg_.m1_vel = std::move(arg);
+    return Init_DriverVelocity_m2_vel(msg_);
   }
 
 private:
@@ -64,7 +64,7 @@ template<>
 inline
 auto build<::custom_interfaces::msg::DriverVelocity>()
 {
-  return custom_interfaces::msg::builder::Init_DriverVelocity_left_vel();
+  return custom_interfaces::msg::builder::Init_DriverVelocity_m1_vel();
 }
 
 }  // namespace custom_interfaces

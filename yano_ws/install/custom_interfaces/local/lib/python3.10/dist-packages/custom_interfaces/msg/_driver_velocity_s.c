@@ -50,22 +50,22 @@ bool custom_interfaces__msg__driver_velocity__convert_from_py(PyObject * _pymsg,
     assert(strncmp("custom_interfaces.msg._driver_velocity.DriverVelocity", full_classname_dest, 53) == 0);
   }
   custom_interfaces__msg__DriverVelocity * ros_message = _ros_message;
-  {  // left_vel
-    PyObject * field = PyObject_GetAttrString(_pymsg, "left_vel");
+  {  // m1_vel
+    PyObject * field = PyObject_GetAttrString(_pymsg, "m1_vel");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->left_vel = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->m1_vel = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // right_vel
-    PyObject * field = PyObject_GetAttrString(_pymsg, "right_vel");
+  {  // m2_vel
+    PyObject * field = PyObject_GetAttrString(_pymsg, "m2_vel");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->right_vel = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->m2_vel = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -90,22 +90,22 @@ PyObject * custom_interfaces__msg__driver_velocity__convert_to_py(void * raw_ros
     }
   }
   custom_interfaces__msg__DriverVelocity * ros_message = (custom_interfaces__msg__DriverVelocity *)raw_ros_message;
-  {  // left_vel
+  {  // m1_vel
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->left_vel);
+    field = PyFloat_FromDouble(ros_message->m1_vel);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "left_vel", field);
+      int rc = PyObject_SetAttrString(_pymessage, "m1_vel", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // right_vel
+  {  // m2_vel
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->right_vel);
+    field = PyFloat_FromDouble(ros_message->m2_vel);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "right_vel", field);
+      int rc = PyObject_SetAttrString(_pymessage, "m2_vel", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

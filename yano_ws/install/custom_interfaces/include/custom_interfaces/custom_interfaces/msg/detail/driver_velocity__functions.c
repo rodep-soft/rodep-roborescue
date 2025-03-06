@@ -17,8 +17,8 @@ custom_interfaces__msg__DriverVelocity__init(custom_interfaces__msg__DriverVeloc
   if (!msg) {
     return false;
   }
-  // left_vel
-  // right_vel
+  // m1_vel
+  // m2_vel
   return true;
 }
 
@@ -28,8 +28,8 @@ custom_interfaces__msg__DriverVelocity__fini(custom_interfaces__msg__DriverVeloc
   if (!msg) {
     return;
   }
-  // left_vel
-  // right_vel
+  // m1_vel
+  // m2_vel
 }
 
 bool
@@ -38,12 +38,12 @@ custom_interfaces__msg__DriverVelocity__are_equal(const custom_interfaces__msg__
   if (!lhs || !rhs) {
     return false;
   }
-  // left_vel
-  if (lhs->left_vel != rhs->left_vel) {
+  // m1_vel
+  if (lhs->m1_vel != rhs->m1_vel) {
     return false;
   }
-  // right_vel
-  if (lhs->right_vel != rhs->right_vel) {
+  // m2_vel
+  if (lhs->m2_vel != rhs->m2_vel) {
     return false;
   }
   return true;
@@ -57,10 +57,10 @@ custom_interfaces__msg__DriverVelocity__copy(
   if (!input || !output) {
     return false;
   }
-  // left_vel
-  output->left_vel = input->left_vel;
-  // right_vel
-  output->right_vel = input->right_vel;
+  // m1_vel
+  output->m1_vel = input->m1_vel;
+  // m2_vel
+  output->m2_vel = input->m2_vel;
   return true;
 }
 

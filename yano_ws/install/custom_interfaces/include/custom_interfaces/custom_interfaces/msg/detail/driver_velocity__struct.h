@@ -24,9 +24,9 @@ extern "C"
 typedef struct custom_interfaces__msg__DriverVelocity
 {
   /// velocity for the left crawler
-  float left_vel;
+  float m1_vel;
   /// velocity for the right crawler
-  float right_vel;
+  float m2_vel;
 } custom_interfaces__msg__DriverVelocity;
 
 // Struct for a sequence of custom_interfaces__msg__DriverVelocity.

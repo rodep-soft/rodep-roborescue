@@ -13,9 +13,10 @@ find_package(ament_cmake REQUIRED)
 
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(custom_interfaces REQUIRED)
 
 add_executable(driver_node src/driver.cpp)
-ament_target_dependencies(driver_node rclcpp geometry_msgs)
+ament_target_dependencies(driver_node rclcpp geometry_msgs custom_interfaces)
 
 install(TARGETS driver_node
 	DESTINATION lib/${PROJECT_NAME})	

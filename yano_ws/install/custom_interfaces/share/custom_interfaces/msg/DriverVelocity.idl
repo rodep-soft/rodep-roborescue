@@ -10,11 +10,11 @@ module custom_interfaces {
     struct DriverVelocity {
       @verbatim (language="comment", text=
         "velocity for the left crawler")
-      float left_vel;
+      float m1_vel;
 
       @verbatim (language="comment", text=
         "velocity for the right crawler")
-      float right_vel;
+      float m2_vel;
     };
   };
 };

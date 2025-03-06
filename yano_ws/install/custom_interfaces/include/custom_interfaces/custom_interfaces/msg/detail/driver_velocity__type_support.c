@@ -33,14 +33,14 @@ void custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c_
 
 static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_message_member_array[2] = {
   {
-    "left_vel",  // name
+    "m1_vel",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_interfaces__msg__DriverVelocity, left_vel),  // bytes offset in struct
+    offsetof(custom_interfaces__msg__DriverVelocity, m1_vel),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -50,14 +50,14 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     NULL  // resize(index) function pointer
   },
   {
-    "right_vel",  // name
+    "m2_vel",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_interfaces__msg__DriverVelocity, right_vel),  // bytes offset in struct
+    offsetof(custom_interfaces__msg__DriverVelocity, m2_vel),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

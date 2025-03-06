@@ -73,22 +73,20 @@ class Operator : public rclcpp::Node
 
     float m1_vel, m2_vel;
 
+    const double DEADZONE = 0.1;
+
+    void applyDeadzone(double val, double threshold) {
+      return (std::abs(val) < threshold) ? 0.0 : val;
+    }
+
     void joy_callback(const sensor_msgs::msg::Joy& msg) 
     {
-      m1_axis_y = std::clamp(msg.axes[1], -0.9f, 0.9f);
-      m2_axis_y = std::clamp(msg.axes[3], -0.9f, 0.9f);
+      m1_axis_y = std::clamp(msg.axes[1], -0.95f, 0.95f);
+      m2_axis_y = std::clamp(msg.axes[3], -0.95f, 0.95f);
 
-      // if (m1_axis_y > 0.9) {
-      //   m1_axis_y = 0.9;
-      // } else if (m1_axis_y < -0.9) {
-      //   m1_axis_y = -0.9;
-      // }
+      applyDeadzone(m1_axis_y, DEADZONE);
+      applyDeadzone(m2_axis_y, DEADZONE);
 
-      // if (m2_axis_y > 0.9) {
-      //   m2_axis_y = 0.9;
-      // } else if (m2_axis_y < -0.9) {
-      //   m2_axis_y = -0.9;
-      // }
 
       RCLCPP_INFO(this->get_logger(), "values \nm1_axis_y: %f \nm2_axis_y: %f", m1_axis_y, m2_axis_y);
 

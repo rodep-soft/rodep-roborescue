@@ -38,9 +38,9 @@ public:
         }
     }
 
-    bool setMotorVelocity(int command, double pulse_per_sec) {
+    bool setMotorVelocity(int command, double counts_per_sec) {
         vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};
-        appendInt32(data, static_cast<int>(pulse_per_sec));
+        appendInt32(data, static_cast<int>(counts_per_sec));
         appendCRC(data);
         return sendRoboclawCommand(data);
     }
@@ -108,17 +108,17 @@ class Driver : public rclcpp::Node {
 public:
     Driver() : Node("driver"), roboclaw("/dev/ttyACM0") { 
         declare_parameter("crawler_circumference", 0.39);
-        declare_parameter("pulse_per_rev",256); // quad encoderだから256 * 2
+        declare_parameter("counts_per_rev", 256); // quad pulses per rev = counts per rev
         declare_parameter("gearhead_ratio", 66); // 減速比
         declare_parameter("pulley_ratio", 2);
 
         crawler_circumference_ = get_parameter("crawler_circumference").as_double();
-        pulse_per_rev_ = get_parameter("pulse_per_rev").as_int();
+        counts_per_rev_ = get_parameter("counts_per_rev").as_int();
         gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();
         pulley_ratio_ = get_parameter("pulley_ratio").as_int();
 
-        // velocityをppsに変換する際に用いる定数
-        pulse_per_meter_ = (pulse_per_rev_ * gearhead_ratio_ * pulley_ratio_) / crawler_circumference_;
+        // velocityをqppsに変換する際に用いる定数
+        counts_per_meter_ = (counts_per_rev_ * gearhead_ratio_ * pulley_ratio_) / crawler_circumference_;
 
         subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(
             "/operator", 10, bind(&Driver::driver_callback, this, _1));
@@ -132,17 +132,17 @@ public:
 private:
     RoboclawDriver roboclaw;
     double crawler_circumference_;
-    int pulse_per_rev_;
+    int counts_per_rev_;
     int gearhead_ratio_;
     int pulley_ratio_;
-    double pulse_per_meter_;
+    double counts_per_meter_;
     bool estop_active_ = false;  // E-stop state
 
     rclcpp::Subscription<custom_interfaces::msg::DriverVelocity>::SharedPtr subscription_;
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr estop_subscription_;
 
-    double velocity_to_pulse_per_sec(double velocity) const {
-        return velocity * pulse_per_meter_;
+    double velocity_to_counts_per_sec(double velocity) const {
+        return velocity * counts_per_meter_;
     }
 
     void init() {
@@ -159,13 +159,13 @@ private:
             return;
         }
 
-        double M1_pulse = velocity_to_pulse_per_sec(msg.m1_vel);
-        double M2_pulse = velocity_to_pulse_per_sec(msg.m2_vel);
+        double M1_counts_per_sec = velocity_to_counts_per_sec(msg.m1_vel);
+        double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);
 
-        if (!roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_pulse)) {
+        if (!roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec)) {
             RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");
         }
-        if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_pulse)) {
+        if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec)) {
             RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");
         }
     }

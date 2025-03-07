@@ -47,4 +47,4 @@ jobs:
           -v ${{ github.workspace }}:/workspace \
           -w /workspace \
           osrf/ros:humble-desktop \
-          bash -c "cat /tmp/test_results/test_*.xml"
+          bash -c "cat /workspace/test_results/test_*.xml"  # テスト結果の保存先を修正

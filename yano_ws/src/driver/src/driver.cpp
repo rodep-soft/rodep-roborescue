@@ -108,7 +108,7 @@ class Driver : public rclcpp::Node {
 public:
     Driver() : Node("driver"), roboclaw("/dev/ttyACM0") { 
         declare_parameter("crawler_circumference", 0.39);
-        declare_parameter("pulse_per_rev", 512); // quad encoderだから256 * 2
+        declare_parameter("pulse_per_rev",256); // quad encoderだから256 * 2
         declare_parameter("gearhead_ratio", 66); // 減速比
         declare_parameter("pulley_ratio", 2);
 

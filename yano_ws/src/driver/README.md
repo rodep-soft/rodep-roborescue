@@ -70,7 +70,7 @@ ros2 topic pub /emergency_stop std_msgs/msg/Bool "{data: true}"
 | パラメータ名            | デフォルト値 | 説明 |
 |----------------|---------|--------------------------------------|
 | `crawler_circumference` | 0.39    | クローラーの円周（m） |
-| `pulse_per_rev`        | 512     | 1回転あたりのパルス数（エンコーダー） |
+| `pulse_per_rev`        | 256     | 1回転あたりのパルス数（エンコーダー） |
 | `gearhead_ratio`       | 66      | 減速機の比率 |
 | `pulley_ratio`         | 2       | プーリーの比率 |
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/working/rodep_ros2/yano_ws/custom_interfaces
+CMAKE_SOURCE_DIR = /root/test_ws/yano_ws/src/custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/working/rodep_ros2/yano_ws/build/custom_interfaces
+CMAKE_BINARY_DIR = /root/test_ws/yano_ws/build/custom_interfaces
 
 # Utility rule file for ament_cmake_python_copy_custom_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_custom_interfaces.dir/compiler_depend
 include CMakeFiles/ament_cmake_python_copy_custom_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_custom_interfaces:
-	/usr/bin/cmake -E copy_directory /root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces /root/working/rodep_ros2/yano_ws/build/custom_interfaces/ament_cmake_python/custom_interfaces/custom_interfaces
+	/usr/bin/cmake -E copy_directory /root/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces/ament_cmake_python/custom_interfaces/custom_interfaces
 
 ament_cmake_python_copy_custom_interfaces: CMakeFiles/ament_cmake_python_copy_custom_interfaces
 ament_cmake_python_copy_custom_interfaces: CMakeFiles/ament_cmake_python_copy_custom_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_custom_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_custom_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_custom_interfaces.dir/depend:
-	cd /root/working/rodep_ros2/yano_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/rodep_ros2/yano_ws/custom_interfaces /root/working/rodep_ros2/yano_ws/custom_interfaces /root/working/rodep_ros2/yano_ws/build/custom_interfaces /root/working/rodep_ros2/yano_ws/build/custom_interfaces /root/working/rodep_ros2/yano_ws/build/custom_interfaces/CMakeFiles/ament_cmake_python_copy_custom_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/test_ws/yano_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/test_ws/yano_ws/src/custom_interfaces /root/test_ws/yano_ws/src/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces/CMakeFiles/ament_cmake_python_copy_custom_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_custom_interfaces.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /root/working/rodep_ros2/yano_ws/src/driver
+# Install script for directory: /root/test_ws/yano_ws/src/driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/working/rodep_ros2/yano_ws/install/driver")
+  set(CMAKE_INSTALL_PREFIX "/root/test_ws/yano_ws/install/driver")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/driver/driver_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/driver" TYPE EXECUTABLE FILES "/root/working/rodep_ros2/yano_ws/build/driver/driver_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/driver" TYPE EXECUTABLE FILES "/root/test_ws/yano_ws/build/driver/driver_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/driver/driver_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/driver/driver_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/driver/driver_node"
-         OLD_RPATH "/opt/ros/humble/lib:/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/root/test_ws/yano_ws/install/custom_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/driver/driver_node")
@@ -63,11 +63,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,7 +75,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver/environment" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver/environment" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,42 +83,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver/environment" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver/environment" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_index/share/ament_index/resource_index/packages/driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/root/test_ws/yano_ws/build/driver/ament_cmake_index/share/ament_index/resource_index/packages/driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver/cmake" TYPE FILE FILES
-    "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_core/driverConfig.cmake"
-    "/root/working/rodep_ros2/yano_ws/build/driver/ament_cmake_core/driverConfig-version.cmake"
+    "/root/test_ws/yano_ws/build/driver/ament_cmake_core/driverConfig.cmake"
+    "/root/test_ws/yano_ws/build/driver/ament_cmake_core/driverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/working/rodep_ros2/yano_ws/src/driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/driver" TYPE FILE FILES "/root/test_ws/yano_ws/src/driver/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -129,5 +129,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/working/rodep_ros2/yano_ws/build/driver/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/test_ws/yano_ws/build/driver/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"custom_interfaces\" -Dcustom_interfaces__rosidl_generator_py_EXPORTS
 
-C_INCLUDES = -I/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_c -I/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py -I/usr/include/python3.10 -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
+C_INCLUDES = -I/root/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_c -I/root/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py -I/usr/include/python3.10 -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
 
 C_FLAGS = -fPIC -Wall -Wextra
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_GENERATOR_C_BUILDING_DLL_custom_interfaces -DROS_PACKAGE_NAME=\"custom_interfaces\"
 
-CXX_INCLUDES = -I/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_c
+CXX_INCLUDES = -I/root/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_c
 
 CXX_FLAGS = -fPIC -Wall -std=gnu++14
 

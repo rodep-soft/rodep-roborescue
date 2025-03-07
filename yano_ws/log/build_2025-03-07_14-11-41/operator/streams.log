@@ -1,0 +1,72 @@
+[0.005s] Invoking command in '/root/test_ws/yano_ws/build/operator': AMENT_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/test_ws/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/test_ws/yano_ws/install/operator
+[0.035s] -- The C compiler identification is GNU 11.4.0
+[0.068s] -- The CXX compiler identification is GNU 11.4.0
+[0.072s] -- Detecting C compiler ABI info
+[0.117s] -- Detecting C compiler ABI info - done
+[0.124s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.124s] -- Detecting C compile features
+[0.125s] -- Detecting C compile features - done
+[0.126s] -- Detecting CXX compiler ABI info
+[0.180s] -- Detecting CXX compiler ABI info - done
+[0.184s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.184s] -- Detecting CXX compile features
+[0.184s] -- Detecting CXX compile features - done
+[0.187s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.283s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.350s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.391s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.395s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.402s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.410s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.422s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.467s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.470s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.556s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.575s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.604s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.616s] -- Looking for pthread.h
+[0.657s] -- Looking for pthread.h - found
+[0.657s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.700s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.701s] -- Found Threads: TRUE  
+[0.753s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.775s] -- Found custom_interfaces: 0.0.0 (/root/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[0.783s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.836s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.836s] -- Configured cppcheck include dirs: 
+[0.836s] -- Configured cppcheck exclude dirs and/or files: 
+[0.837s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.837s] -- Added test 'lint_cmake' to check CMake code style
+[0.837s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.838s] -- Added test 'uncrustify' to check C / C++ code style
+[0.838s] -- Configured uncrustify additional arguments: 
+[0.838s] -- Added test 'xmllint' to check XML markup files
+[0.839s] -- Configuring done
+[0.845s] -- Generating done
+[0.847s] -- Build files have been written to: /root/test_ws/yano_ws/build/operator
+[0.853s] Invoked command in '/root/test_ws/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/test_ws/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/test_ws/yano_ws/install/operator
+[0.853s] Invoking command in '/root/test_ws/yano_ws/build/operator': AMENT_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/test_ws/yano_ws/build/operator -- -j16 -l16
+[0.880s] [ 50%] [32mBuilding CXX object CMakeFiles/operator_node.dir/src/operator.cpp.o[0m
+[6.236s] [100%] [32m[1mLinking CXX executable operator_node[0m
+[6.521s] [100%] Built target operator_node
+[6.531s] Invoked command in '/root/test_ws/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/test_ws/yano_ws/build/operator -- -j16 -l16
+[6.532s] Invoking command in '/root/test_ws/yano_ws/build/operator': AMENT_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/test_ws/yano_ws/build/operator
+[6.537s] -- Install configuration: ""
+[6.537s] -- Installing: /root/test_ws/yano_ws/install/operator/lib/operator/operator_node
+[6.538s] -- Set runtime path of "/root/test_ws/yano_ws/install/operator/lib/operator/operator_node" to ""
+[6.538s] -- Installing: /root/test_ws/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/environment/path.sh
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/environment/path.dsv
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/local_setup.bash
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/local_setup.sh
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/local_setup.zsh
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/local_setup.dsv
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/package.dsv
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/ament_index/resource_index/packages/operator
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake
+[6.539s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake
+[6.540s] -- Installing: /root/test_ws/yano_ws/install/operator/share/operator/package.xml
+[6.541s] Invoked command in '/root/test_ws/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/test_ws/yano_ws/build/operator

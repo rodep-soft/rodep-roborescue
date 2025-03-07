@@ -1,8 +1,0 @@
--- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':
- - /opt/ros/humble/bin/ament_cppcheck --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml
-
-cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml'

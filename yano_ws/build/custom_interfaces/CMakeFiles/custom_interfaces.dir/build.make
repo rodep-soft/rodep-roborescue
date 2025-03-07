@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/working/rodep_ros2/yano_ws/custom_interfaces
+CMAKE_SOURCE_DIR = /root/test_ws/yano_ws/src/custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/working/rodep_ros2/yano_ws/build/custom_interfaces
+CMAKE_BINARY_DIR = /root/test_ws/yano_ws/build/custom_interfaces
 
 # Utility rule file for custom_interfaces.
 
@@ -66,8 +66,8 @@ include CMakeFiles/custom_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/custom_interfaces.dir/progress.make
 
-CMakeFiles/custom_interfaces: /root/working/rodep_ros2/yano_ws/custom_interfaces/msg/DriverVelocity.msg
-CMakeFiles/custom_interfaces: /root/working/rodep_ros2/yano_ws/custom_interfaces/srv/SetMode.srv
+CMakeFiles/custom_interfaces: /root/test_ws/yano_ws/src/custom_interfaces/msg/DriverVelocity.msg
+CMakeFiles/custom_interfaces: /root/test_ws/yano_ws/src/custom_interfaces/srv/SetMode.srv
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/SetMode_Request.msg
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/SetMode_Response.msg
 
@@ -84,6 +84,6 @@ CMakeFiles/custom_interfaces.dir/clean:
 .PHONY : CMakeFiles/custom_interfaces.dir/clean
 
 CMakeFiles/custom_interfaces.dir/depend:
-	cd /root/working/rodep_ros2/yano_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/rodep_ros2/yano_ws/custom_interfaces /root/working/rodep_ros2/yano_ws/custom_interfaces /root/working/rodep_ros2/yano_ws/build/custom_interfaces /root/working/rodep_ros2/yano_ws/build/custom_interfaces /root/working/rodep_ros2/yano_ws/build/custom_interfaces/CMakeFiles/custom_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/test_ws/yano_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/test_ws/yano_ws/src/custom_interfaces /root/test_ws/yano_ws/src/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces/CMakeFiles/custom_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_interfaces.dir/depend
 

@@ -1,7 +1,7 @@
 {
   "package_name": "custom_interfaces",
   "non_idl_tuples": [
-    "/root/working/rodep_ros2/yano_ws/custom_interfaces:msg/DriverVelocity.msg",
-    "/root/working/rodep_ros2/yano_ws/custom_interfaces:srv/SetMode.srv"
+    "/root/test_ws/yano_ws/src/custom_interfaces:msg/DriverVelocity.msg",
+    "/root/test_ws/yano_ws/src/custom_interfaces:srv/SetMode.srv"
   ]
 }

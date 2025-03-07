@@ -1,2 +1,6 @@
 msg/DriverVelocity.idl
 msg/DriverVelocity.msg
+srv/SetMode.idl
+srv/SetMode.srv
+srv/SetMode_Request.msg
+srv/SetMode_Response.msg

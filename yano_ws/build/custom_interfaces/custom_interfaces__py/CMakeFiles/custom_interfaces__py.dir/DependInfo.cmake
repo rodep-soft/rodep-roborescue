@@ -17,6 +17,9 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/__init__.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_driver_velocity.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_driver_velocity_s.c" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/__init__.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/_set_mode.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/_set_mode_s.c" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

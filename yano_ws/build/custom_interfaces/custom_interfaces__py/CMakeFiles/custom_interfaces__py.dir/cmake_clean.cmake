@@ -5,6 +5,9 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_interfaces/msg/__init__.py"
   "../rosidl_generator_py/custom_interfaces/msg/_driver_velocity.py"
   "../rosidl_generator_py/custom_interfaces/msg/_driver_velocity_s.c"
+  "../rosidl_generator_py/custom_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/custom_interfaces/srv/_set_mode.py"
+  "../rosidl_generator_py/custom_interfaces/srv/_set_mode_s.c"
   "CMakeFiles/custom_interfaces__py"
 )
 

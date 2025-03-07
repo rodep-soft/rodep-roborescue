@@ -3,7 +3,8 @@
   "output_dir": "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_typesupport_introspection_c/custom_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
-    "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/DriverVelocity.idl"
+    "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/DriverVelocity.idl",
+    "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/SetMode.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
@@ -14,6 +15,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
-    "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/DriverVelocity.idl"
+    "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/DriverVelocity.idl",
+    "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/SetMode.idl"
   ]
 }

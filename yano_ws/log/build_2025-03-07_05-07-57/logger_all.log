@@ -1,0 +1,310 @@
+[0.171s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.171s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x728825bc66b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x728825cb3670>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x728825cb3670>>, mixin_verb=('build',))
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.424s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.424s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.425s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.425s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/working/rodep_ros2/yano_ws'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'ignore_ament_install'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['colcon_pkg']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'colcon_pkg'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['colcon_meta']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'colcon_meta'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['ros']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'ros'
+[0.444s] DEBUG:colcon.colcon_core.package_identification:Package 'custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore_ament_install'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_pkg']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_pkg'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_meta']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_meta'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ros']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ros'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['cmake', 'python']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'cmake'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['python_setup_py']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python_setup_py'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver) by extensions ['ignore', 'ignore_ament_install']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver) by extension 'ignore'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver) by extension 'ignore_ament_install'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver) by extensions ['colcon_pkg']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver) by extension 'colcon_pkg'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver) by extensions ['colcon_meta']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver) by extension 'ros'
+[0.449s] DEBUG:colcon.colcon_core.package_identification:Package 'src/driver' with type 'ros.ament_cmake' and name 'driver'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extensions ['ignore', 'ignore_ament_install']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'ignore'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'ignore_ament_install'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extensions ['colcon_pkg']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'colcon_pkg'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extensions ['colcon_meta']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'colcon_meta'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extensions ['ros']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'ros'
+[0.450s] DEBUG:colcon.colcon_core.package_identification:Package 'src/operator' with type 'ros.ament_cmake' and name 'operator'
+[0.450s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.450s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.450s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.483s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/working/rodep_ros2/yano_ws/build/custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/working/rodep_ros2/yano_ws/install/custom_interfaces', 'merge_install': False, 'path': '/root/working/rodep_ros2/yano_ws/custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.484s] Level 5:colcon.colcon_core.verb:set package 'driver' build argument 'cmake_args' from command line to 'None'
+[0.484s] Level 5:colcon.colcon_core.verb:set package 'driver' build argument 'cmake_target' from command line to 'None'
+[0.484s] Level 5:colcon.colcon_core.verb:set package 'driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.484s] Level 5:colcon.colcon_core.verb:set package 'driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.484s] Level 5:colcon.colcon_core.verb:set package 'driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.484s] Level 5:colcon.colcon_core.verb:set package 'driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.484s] Level 5:colcon.colcon_core.verb:set package 'driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.484s] Level 5:colcon.colcon_core.verb:set package 'driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.484s] Level 5:colcon.colcon_core.verb:set package 'driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.484s] DEBUG:colcon.colcon_core.verb:Building package 'driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/working/rodep_ros2/yano_ws/build/driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/working/rodep_ros2/yano_ws/install/driver', 'merge_install': False, 'path': '/root/working/rodep_ros2/yano_ws/src/driver', 'symlink_install': False, 'test_result_base': None}
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_args' from command line to 'None'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_target' from command line to 'None'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_clean_first' from command line to 'False'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_force_configure' from command line to 'False'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'ament_cmake_args' from command line to 'None'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.485s] DEBUG:colcon.colcon_core.verb:Building package 'operator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/working/rodep_ros2/yano_ws/build/operator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/working/rodep_ros2/yano_ws/install/operator', 'merge_install': False, 'path': '/root/working/rodep_ros2/yano_ws/src/operator', 'symlink_install': False, 'test_result_base': None}
+[0.485s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.487s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.487s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/working/rodep_ros2/yano_ws/custom_interfaces' with build type 'ament_cmake'
+[0.487s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/working/rodep_ros2/yano_ws/custom_interfaces'
+[0.491s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.492s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.492s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/rodep_ros2/yano_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/working/rodep_ros2/yano_ws/custom_interfaces -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/custom_interfaces
+[2.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/rodep_ros2/yano_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/working/rodep_ros2/yano_ws/custom_interfaces -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/custom_interfaces
+[2.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/rodep_ros2/yano_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/custom_interfaces -- -j4 -l4
+[7.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/rodep_ros2/yano_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/custom_interfaces -- -j4 -l4
+[7.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/rodep_ros2/yano_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/custom_interfaces
+[7.389s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[7.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/rodep_ros2/yano_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/custom_interfaces
+[7.392s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces' for CMake module files
+[7.393s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces' for CMake config files
+[7.394s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[7.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[7.395s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[7.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[7.397s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib'
+[7.397s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[7.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[7.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[7.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[7.398s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/bin'
+[7.398s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[7.401s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/python3.10/site-packages'
+[7.401s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/bin'
+[7.401s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[7.403s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[7.403s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.sh'
+[7.404s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.bash'
+[7.405s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[7.406s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[7.406s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[7.407s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces' for CMake module files
+[7.407s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces' for CMake config files
+[7.408s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[7.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[7.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[7.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[7.410s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib'
+[7.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[7.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[7.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[7.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[7.412s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/bin'
+[7.412s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[7.412s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/python3.10/site-packages'
+[7.412s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/bin'
+[7.413s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[7.413s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[7.414s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.sh'
+[7.414s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.bash'
+[7.415s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[7.415s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[7.416s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/working/rodep_ros2/yano_ws/src/driver' with build type 'ament_cmake'
+[7.416s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/working/rodep_ros2/yano_ws/src/driver'
+[7.416s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.416s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.423s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/working/rodep_ros2/yano_ws/src/operator' with build type 'ament_cmake'
+[7.424s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/working/rodep_ros2/yano_ws/src/operator'
+[7.424s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.424s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/rodep_ros2/yano_ws/build/driver': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/driver -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/driver
+[7.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/operator
+[9.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/rodep_ros2/yano_ws/build/driver' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/driver -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/driver
+[9.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/rodep_ros2/yano_ws/build/driver': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/driver -- -j4 -l4
+[9.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/operator
+[9.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4
+[22.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4
+[22.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/operator
+[22.445s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(operator)
+[22.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/operator
+[22.446s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator' for CMake module files
+[22.447s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator' for CMake config files
+[22.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('operator', 'cmake_prefix_path')
+[22.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.ps1'
+[22.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.dsv'
+[22.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.sh'
+[22.449s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/lib'
+[22.449s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/bin'
+[22.450s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/lib/pkgconfig/operator.pc'
+[22.450s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/lib/python3.10/site-packages'
+[22.450s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/bin'
+[22.450s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.ps1'
+[22.451s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.dsv'
+[22.452s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.sh'
+[22.452s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.bash'
+[22.453s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.zsh'
+[22.453s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/rodep_ros2/yano_ws/install/operator/share/colcon-core/packages/operator)
+[22.454s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(operator)
+[22.454s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator' for CMake module files
+[22.455s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator' for CMake config files
+[22.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('operator', 'cmake_prefix_path')
+[22.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.ps1'
+[22.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.dsv'
+[22.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.sh'
+[22.457s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/lib'
+[22.457s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/bin'
+[22.457s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/lib/pkgconfig/operator.pc'
+[22.457s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/lib/python3.10/site-packages'
+[22.458s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/operator/bin'
+[22.458s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.ps1'
+[22.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.dsv'
+[22.459s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.sh'
+[22.460s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.bash'
+[22.460s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.zsh'
+[22.461s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/rodep_ros2/yano_ws/install/operator/share/colcon-core/packages/operator)
+[27.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/rodep_ros2/yano_ws/build/driver' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/driver -- -j4 -l4
+[27.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/rodep_ros2/yano_ws/build/driver': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/driver
+[27.410s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(driver)
+[27.410s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver' for CMake module files
+[27.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/rodep_ros2/yano_ws/build/driver' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/driver
+[27.412s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver' for CMake config files
+[27.412s] Level 1:colcon.colcon_core.shell:create_environment_hook('driver', 'cmake_prefix_path')
+[27.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/hook/cmake_prefix_path.ps1'
+[27.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/hook/cmake_prefix_path.dsv'
+[27.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/hook/cmake_prefix_path.sh'
+[27.414s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/lib'
+[27.414s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/bin'
+[27.414s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/lib/pkgconfig/driver.pc'
+[27.414s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/lib/python3.10/site-packages'
+[27.415s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/bin'
+[27.415s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.ps1'
+[27.415s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.dsv'
+[27.416s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.sh'
+[27.416s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.bash'
+[27.417s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.zsh'
+[27.417s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/rodep_ros2/yano_ws/install/driver/share/colcon-core/packages/driver)
+[27.418s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(driver)
+[27.418s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver' for CMake module files
+[27.419s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver' for CMake config files
+[27.420s] Level 1:colcon.colcon_core.shell:create_environment_hook('driver', 'cmake_prefix_path')
+[27.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/hook/cmake_prefix_path.ps1'
+[27.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/hook/cmake_prefix_path.dsv'
+[27.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/hook/cmake_prefix_path.sh'
+[27.422s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/lib'
+[27.422s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/bin'
+[27.422s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/lib/pkgconfig/driver.pc'
+[27.422s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/lib/python3.10/site-packages'
+[27.422s] Level 1:colcon.colcon_core.environment:checking '/root/working/rodep_ros2/yano_ws/install/driver/bin'
+[27.423s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.ps1'
+[27.423s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.dsv'
+[27.424s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.sh'
+[27.425s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.bash'
+[27.425s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.zsh'
+[27.426s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/rodep_ros2/yano_ws/install/driver/share/colcon-core/packages/driver)
+[27.426s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[27.426s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[27.427s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[27.427s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[27.440s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[27.440s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[27.440s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[27.440s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[27.441s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[27.441s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[27.442s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/working/rodep_ros2/yano_ws/install/local_setup.ps1'
+[27.459s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/working/rodep_ros2/yano_ws/install/_local_setup_util_ps1.py'
+[27.461s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/working/rodep_ros2/yano_ws/install/setup.ps1'
+[27.463s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/working/rodep_ros2/yano_ws/install/local_setup.sh'
+[27.463s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/working/rodep_ros2/yano_ws/install/_local_setup_util_sh.py'
+[27.464s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/working/rodep_ros2/yano_ws/install/setup.sh'
+[27.465s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/working/rodep_ros2/yano_ws/install/local_setup.bash'
+[27.466s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/working/rodep_ros2/yano_ws/install/setup.bash'
+[27.467s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/working/rodep_ros2/yano_ws/install/local_setup.zsh'
+[27.468s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/working/rodep_ros2/yano_ws/install/setup.zsh'

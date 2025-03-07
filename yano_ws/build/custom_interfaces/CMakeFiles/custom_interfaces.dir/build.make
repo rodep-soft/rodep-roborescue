@@ -67,6 +67,9 @@ include CMakeFiles/custom_interfaces.dir/compiler_depend.make
 include CMakeFiles/custom_interfaces.dir/progress.make
 
 CMakeFiles/custom_interfaces: /root/working/rodep_ros2/yano_ws/custom_interfaces/msg/DriverVelocity.msg
+CMakeFiles/custom_interfaces: /root/working/rodep_ros2/yano_ws/custom_interfaces/srv/SetMode.srv
+CMakeFiles/custom_interfaces: rosidl_cmake/srv/SetMode_Request.msg
+CMakeFiles/custom_interfaces: rosidl_cmake/srv/SetMode_Response.msg
 
 custom_interfaces: CMakeFiles/custom_interfaces
 custom_interfaces: CMakeFiles/custom_interfaces.dir/build.make

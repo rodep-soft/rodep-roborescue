@@ -15,6 +15,7 @@ find_package(rosidl_default_generators REQUIRED)
 # define custom messages
 rosidl_generate_interfaces(${PROJECT_NAME}
 		msg/DriverVelocity.msg
+		srv/SetMode.srv
 )
 
 install(

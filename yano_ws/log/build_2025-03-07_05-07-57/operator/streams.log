@@ -1,0 +1,72 @@
+[0.018s] Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/operator
+[0.108s] -- The C compiler identification is GNU 11.4.0
+[0.181s] -- The CXX compiler identification is GNU 11.4.0
+[0.190s] -- Detecting C compiler ABI info
+[0.287s] -- Detecting C compiler ABI info - done
+[0.297s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.297s] -- Detecting C compile features
+[0.298s] -- Detecting C compile features - done
+[0.303s] -- Detecting CXX compiler ABI info
+[0.413s] -- Detecting CXX compiler ABI info - done
+[0.434s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.434s] -- Detecting CXX compile features
+[0.436s] -- Detecting CXX compile features - done
+[0.442s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.653s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.815s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.917s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.929s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.945s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.966s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.994s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.114s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.123s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.283s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.325s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.390s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.417s] -- Looking for pthread.h
+[1.515s] -- Looking for pthread.h - found
+[1.515s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.613s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.615s] -- Found Threads: TRUE  
+[1.728s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.779s] -- Found custom_interfaces: 0.0.0 (/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[1.796s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.948s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.948s] -- Configured cppcheck include dirs: 
+[1.948s] -- Configured cppcheck exclude dirs and/or files: 
+[1.949s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.950s] -- Added test 'lint_cmake' to check CMake code style
+[1.951s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.954s] -- Added test 'uncrustify' to check C / C++ code style
+[1.954s] -- Configured uncrustify additional arguments: 
+[1.955s] -- Added test 'xmllint' to check XML markup files
+[1.957s] -- Configuring done
+[1.974s] -- Generating done
+[1.979s] -- Build files have been written to: /root/working/rodep_ros2/yano_ws/build/operator
+[1.991s] Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/working/rodep_ros2/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/operator
+[1.994s] Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4
+[2.065s] [ 50%] [32mBuilding CXX object CMakeFiles/operator_node.dir/src/operator.cpp.o[0m
+[14.204s] [100%] [32m[1mLinking CXX executable operator_node[0m
+[14.984s] [100%] Built target operator_node
+[14.999s] Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/operator -- -j4 -l4
+[15.001s] Invoking command in '/root/working/rodep_ros2/yano_ws/build/operator': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/operator
+[15.010s] -- Install configuration: ""
+[15.011s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/lib/operator/operator_node
+[15.016s] -- Set runtime path of "/root/working/rodep_ros2/yano_ws/install/operator/lib/operator/operator_node" to ""
+[15.016s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator
+[15.016s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator
+[15.017s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh
+[15.017s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv
+[15.017s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.sh
+[15.017s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.dsv
+[15.018s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.bash
+[15.018s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.sh
+[15.018s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.zsh
+[15.018s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.dsv
+[15.019s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.dsv
+[15.019s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/packages/operator
+[15.019s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake
+[15.020s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake
+[15.020s] -- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.xml
+[15.022s] Invoked command in '/root/working/rodep_ros2/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/operator

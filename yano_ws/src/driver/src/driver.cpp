@@ -7,8 +7,8 @@
 #include <custom_interfaces/msg/driver_velocity.hpp>
 
 using namespace std;
-using namespace boost::asio;
-using std::placeholders::_1;
+using namespace boost::asio; // Serial communication
+using std::placeholders::_1; // std::bind
 
 // Constants
 constexpr int ROBOCLAW_ADDRESS = 0x80;
@@ -89,6 +89,7 @@ private:
         return crc;
     }
 
+    // CRC追加
     void appendCRC(vector<uint8_t>& data) {
         uint16_t crc = calculateCRC(data);
         data.push_back(static_cast<uint8_t>(crc >> 8));
@@ -105,10 +106,10 @@ private:
 // ROS2 Driver Node
 class Driver : public rclcpp::Node {
 public:
-    Driver() : Node("driver"), roboclaw("/dev/ttyACM0") {
+    Driver() : Node("driver"), roboclaw("/dev/ttyACM0") { 
         declare_parameter("crawler_circumference", 0.39);
-        declare_parameter("pulse_per_rev", 512);
-        declare_parameter("gearhead_ratio", 66);
+        declare_parameter("pulse_per_rev", 512); // quad encoderだから256 * 2
+        declare_parameter("gearhead_ratio", 66); // 減速比
         declare_parameter("pulley_ratio", 2);
 
         crawler_circumference_ = get_parameter("crawler_circumference").as_double();
@@ -116,6 +117,7 @@ public:
         gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();
         pulley_ratio_ = get_parameter("pulley_ratio").as_int();
 
+        // velocityをppsに変換する際に用いる定数
         pulse_per_meter_ = (pulse_per_rev_ * gearhead_ratio_ * pulley_ratio_) / crawler_circumference_;
 
         subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(

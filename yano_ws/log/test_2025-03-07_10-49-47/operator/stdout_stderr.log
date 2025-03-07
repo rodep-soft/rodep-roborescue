@@ -1,0 +1,376 @@
+UpdateCTestConfiguration  from :/root/working/rodep_ros2/yano_ws/build/operator/CTestConfiguration.ini
+Parse Config file:/root/working/rodep_ros2/yano_ws/build/operator/CTestConfiguration.ini
+   Site: cf33789d9224
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20250307-1049 - Experimental
+UpdateCTestConfiguration  from :/root/working/rodep_ros2/yano_ws/build/operator/CTestConfiguration.ini
+Parse Config file:/root/working/rodep_ros2/yano_ws/build/operator/CTestConfiguration.ini
+Test project /root/working/rodep_ros2/yano_ws/build/operator
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: cppcheck
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/cppcheck.xunit.xml" "--package-name" "operator" "--output-file" "/root/working/rodep_ros2/yano_ws/build/operator/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/cppcheck.xunit.xml"
+1: Test timeout computed to be: 300
+1: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/operator':
+1:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/cppcheck.xunit.xml
+1: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+1: -- run_test.py: return code 0
+1: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/cppcheck.xunit.xml'
+1/6 Test #1: cppcheck .........................   Passed    0.24 sec
+test 2
+    Start 2: flake8
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/flake8.xunit.xml" "--package-name" "operator" "--output-file" "/root/working/rodep_ros2/yano_ws/build/operator/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/flake8.xunit.xml"
+2: Test timeout computed to be: 60
+2: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/operator':
+2:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/flake8.xunit.xml
+2: def generate_launch_description():
+2: ^
+2: 	return LaunchDescription([
+2: ^
+2:         Node(
+2: ^
+2:         Node(
+2:         ^
+2:             package="joy",
+2: ^
+2:             # namespace="",
+2: ^
+2:             executable="joy_node",
+2: ^
+2:             name="pub_joy"
+2: ^
+2:         ),
+2: ^
+2: 		Node(
+2: ^
+2: 			package='operator',
+2: ^
+2: 			executable='operator_node',
+2: ^
+2: 			name='operator_node',
+2: ^
+2: 			output='screen',
+2: ^
+2: 		),
+2: ^
+2: 	])
+2: ^
+2: 6     E101 indentation contains mixed spaces and tabs
+2: 1     E122 continuation line missing indentation or outdented
+2: 1     E302 expected 2 blank lines, found 1
+2: 8     W191 indentation contains tabs
+2: 
+2: ./launch/operator_launch.py:4:1: E302 expected 2 blank lines, found 1
+2: 
+2: ./launch/operator_launch.py:5:1: W191 indentation contains tabs
+2: 
+2: ./launch/operator_launch.py:6:1: E101 indentation contains mixed spaces and tabs
+2: 
+2: ./launch/operator_launch.py:6:9: E122 continuation line missing indentation or outdented
+2: 
+2: ./launch/operator_launch.py:7:1: E101 indentation contains mixed spaces and tabs
+2: 
+2: ./launch/operator_launch.py:8:1: E101 indentation contains mixed spaces and tabs
+2: 
+2: ./launch/operator_launch.py:9:1: E101 indentation contains mixed spaces and tabs
+2: 
+2: ./launch/operator_launch.py:10:1: E101 indentation contains mixed spaces and tabs
+2: 
+2: ./launch/operator_launch.py:11:1: E101 indentation contains mixed spaces and tabs
+2: 
+2: ./launch/operator_launch.py:12:1: W191 indentation contains tabs
+2: 
+2: ./launch/operator_launch.py:13:1: W191 indentation contains tabs
+2: 
+2: ./launch/operator_launch.py:14:1: W191 indentation contains tabs
+2: 
+2: ./launch/operator_launch.py:15:1: W191 indentation contains tabs
+2: 
+2: ./launch/operator_launch.py:16:1: W191 indentation contains tabs
+2: 
+2: ./launch/operator_launch.py:17:1: W191 indentation contains tabs
+2: 
+2: ./launch/operator_launch.py:18:1: W191 indentation contains tabs
+2: 
+2: 
+2: 1 files checked
+2: 16 errors
+2: 
+2: 'E'-type errors: 8
+2: 'W'-type errors: 8
+2: 
+2: Checked files:
+2: 
+2: * ./launch/operator_launch.py
+2: -- run_test.py: return code 1
+2: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/flake8.xunit.xml'
+2/6 Test #2: flake8 ...........................***Failed    0.36 sec
+test 3
+    Start 3: lint_cmake
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/lint_cmake.xunit.xml" "--package-name" "operator" "--output-file" "/root/working/rodep_ros2/yano_ws/build/operator/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/lint_cmake.xunit.xml"
+3: Test timeout computed to be: 60
+3: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/operator':
+3:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/lint_cmake.xunit.xml
+3: CMakeLists.txt:23: Tab found; please use spaces [whitespace/tabs]
+3: CMakeLists.txt:24: Tab found; please use spaces [whitespace/tabs]
+3: CMakeLists.txt:24: Line ends in whitespace [whitespace/eol]
+3: 
+3: 
+3: 3 errors
+3: -- run_test.py: return code 1
+3: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/lint_cmake.xunit.xml'
+3/6 Test #3: lint_cmake .......................***Failed    0.26 sec
+test 4
+    Start 4: pep257
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/pep257.xunit.xml" "--package-name" "operator" "--output-file" "/root/working/rodep_ros2/yano_ws/build/operator/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/pep257.xunit.xml"
+4: Test timeout computed to be: 60
+4: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/operator':
+4:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/pep257.xunit.xml
+4: checking ./launch/operator_launch.py
+4: No problems found
+4: -- run_test.py: return code 0
+4: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/pep257.xunit.xml'
+4/6 Test #4: pep257 ...........................   Passed    0.29 sec
+test 5
+    Start 5: uncrustify
+
+5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/uncrustify.xunit.xml" "--package-name" "operator" "--output-file" "/root/working/rodep_ros2/yano_ws/build/operator/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/uncrustify.xunit.xml"
+5: Test timeout computed to be: 60
+5: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/operator':
+5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/uncrustify.xunit.xml
+5: Code style divergence in file 'src/operator.cpp':
+5: 
+5: --- src/operator.cpp
+5: +++ src/operator.cpp.uncrustify
+5: @@ -19 +19 @@
+5: -    enum class Mode { STOP, DRIVE };
+5: +  enum class Mode { STOP, DRIVE };
+5: @@ -21,5 +21,5 @@
+5: -    Operator()
+5: -        : Node("operator"), m1_vel(0.0f), m2_vel(0.0f), mode_(Mode::STOP)
+5: -    {
+5: -        subscription_ = this->create_subscription<sensor_msgs::msg::Joy>(
+5: -            "/joy", 10, std::bind(&Operator::joy_callback, this, _1));
+5: +  Operator()
+5: +  : Node("operator"), m1_vel(0.0f), m2_vel(0.0f), mode_(Mode::STOP)
+5: +  {
+5: +    subscription_ = this->create_subscription<sensor_msgs::msg::Joy>(
+5: +      "/joy", 10, std::bind(&Operator::joy_callback, this, _1));
+5: @@ -27,4 +27,31 @@
+5: -        publisher_ = this->create_publisher<custom_interfaces::msg::DriverVelocity>("/driver", 10);
+5: -        
+5: -        service_ = this->create_service<custom_interfaces::srv::SetMode>(
+5: -            "/set_mode", std::bind(&Operator::set_mode_callback, this, _1, _2));
+5: +    publisher_ = this->create_publisher<custom_interfaces::msg::DriverVelocity>("/driver", 10);
+5: +
+5: +    service_ = this->create_service<custom_interfaces::srv::SetMode>(
+5: +      "/set_mode", std::bind(&Operator::set_mode_callback, this, _1, _2));
+5: +  }
+5: +
+5: +private:
+5: +  static constexpr float WIDTH = 0.29f;
+5: +  static constexpr float MAX_SPEED = 0.5f;
+5: +  static constexpr float DEADZONE = 0.1f;
+5: +
+5: +  float m1_vel, m2_vel;
+5: +  Mode mode_;
+5: +
+5: +  static float applyDeadzone(float val, float threshold)
+5: +  {
+5: +    return (std::abs(val) < threshold) ? 0.0f : val;
+5: +  }
+5: +
+5: +  void joy_callback(const sensor_msgs::msg::Joy & msg)
+5: +  {
+5: +    // ボタンをチェックしてモードを切り替える
+5: +    if (msg.buttons.size() > 0) {
+5: +      // テスト
+5: +      if (msg.buttons[4] == 1) {      // ボタン0が押された場合
+5: +        mode_ = Mode::STOP;
+5: +        RCLCPP_INFO(this->get_logger(), "Mode switched to STOP");
+5: +      } else if (msg.buttons[6] == 1) {    // ボタン1が押された場合
+5: +        mode_ = Mode::DRIVE;
+5: +        RCLCPP_INFO(this->get_logger(), "Mode switched to DRIVE");
+5: +      }
+5: @@ -33,4 +60,9 @@
+5: -private:
+5: -    static constexpr float WIDTH = 0.29f;
+5: -    static constexpr float MAX_SPEED = 0.5f;
+5: -    static constexpr float DEADZONE = 0.1f;
+5: +    // モードがSTOPの場合は速度を0に設定
+5: +    if (mode_ == Mode::STOP) {
+5: +      m1_vel = 0.0f;
+5: +      m2_vel = 0.0f;
+5: +    } else if (mode_ == Mode::DRIVE) {
+5: +      if (msg.axes.size() < 4) {
+5: +        RCLCPP_WARN(this->get_logger(), "Joystick axes array is too small!");
+5: +        return;
+5: +      }
+5: @@ -38,2 +70,2 @@
+5: -    float m1_vel, m2_vel;
+5: -    Mode mode_;
+5: +      float m1_axis_y = applyDeadzone(std::clamp<float>(msg.axes[1], -0.95f, 0.95f), DEADZONE);
+5: +      float m2_axis_y = applyDeadzone(std::clamp<float>(msg.axes[3], -0.95f, 0.95f), DEADZONE);
+5: @@ -41,3 +73,2 @@
+5: -    static float applyDeadzone(float val, float threshold)
+5: -    {
+5: -        return (std::abs(val) < threshold) ? 0.0f : val;
+5: +      m1_vel = std::clamp<float>(m1_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
+5: +      m2_vel = std::clamp<float>(m2_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
+5: @@ -46,17 +77,5 @@
+5: -    void joy_callback(const sensor_msgs::msg::Joy &msg)
+5: -    {
+5: -        // ボタンをチェックしてモードを切り替える
+5: -        if (msg.buttons.size() > 0)
+5: -        {
+5: -            // テスト
+5: -            if (msg.buttons[4] == 1)  // ボタン0が押された場合
+5: -            {
+5: -                mode_ = Mode::STOP;
+5: -                RCLCPP_INFO(this->get_logger(), "Mode switched to STOP");
+5: -            }
+5: -            else if (msg.buttons[6] == 1)  // ボタン1が押された場合
+5: -            {
+5: -                mode_ = Mode::DRIVE;
+5: -                RCLCPP_INFO(this->get_logger(), "Mode switched to DRIVE");
+5: -            }
+5: -        }
+5: +    auto message = custom_interfaces::msg::DriverVelocity();
+5: +    message.m1_vel = m1_vel;
+5: +    message.m2_vel = m2_vel;
+5: +    publisher_->publish(message);
+5: +  }
+5: @@ -64,13 +83,17 @@
+5: -        // モードがSTOPの場合は速度を0に設定
+5: -        if (mode_ == Mode::STOP)
+5: -        {
+5: -            m1_vel = 0.0f;
+5: -            m2_vel = 0.0f;
+5: -        }
+5: -        else if (mode_ == Mode::DRIVE)
+5: -        {
+5: -            if (msg.axes.size() < 4)
+5: -            {
+5: -                RCLCPP_WARN(this->get_logger(), "Joystick axes array is too small!");
+5: -                return;
+5: -            }
+5: +  void set_mode_callback(
+5: +    const std::shared_ptr<custom_interfaces::srv::SetMode::Request> request,
+5: +    std::shared_ptr<custom_interfaces::srv::SetMode::Response> response)
+5: +  {
+5: +    if (request->mode == "STOP") {
+5: +      mode_ = Mode::STOP;
+5: +      response->success = true;
+5: +      RCLCPP_INFO(this->get_logger(), "Mode set to STOP");
+5: +    } else if (request->mode == "DRIVE") {
+5: +      mode_ = Mode::DRIVE;
+5: +      response->success = true;
+5: +      RCLCPP_INFO(this->get_logger(), "Mode set to DRIVE");
+5: +    } else {
+5: +      response->success = false;
+5: +      RCLCPP_WARN(this->get_logger(), "Invalid mode requested");
+5: +    }
+5: +  }
+5: @@ -78,38 +101,3 @@
+5: -            float m1_axis_y = applyDeadzone(std::clamp<float>(msg.axes[1], -0.95f, 0.95f), DEADZONE);
+5: -            float m2_axis_y = applyDeadzone(std::clamp<float>(msg.axes[3], -0.95f, 0.95f), DEADZONE);
+5: -
+5: -            m1_vel = std::clamp<float>(m1_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
+5: -            m2_vel = std::clamp<float>(m2_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
+5: -        }
+5: -
+5: -        auto message = custom_interfaces::msg::DriverVelocity();
+5: -        message.m1_vel = m1_vel;
+5: -        message.m2_vel = m2_vel;
+5: -        publisher_->publish(message);
+5: -    }
+5: -
+5: -    void set_mode_callback(const std::shared_ptr<custom_interfaces::srv::SetMode::Request> request,
+5: -                           std::shared_ptr<custom_interfaces::srv::SetMode::Response> response)
+5: -    {
+5: -        if (request->mode == "STOP")
+5: -        {
+5: -            mode_ = Mode::STOP;
+5: -            response->success = true;
+5: -            RCLCPP_INFO(this->get_logger(), "Mode set to STOP");
+5: -        }
+5: -        else if (request->mode == "DRIVE")
+5: -        {
+5: -            mode_ = Mode::DRIVE;
+5: -            response->success = true;
+5: -            RCLCPP_INFO(this->get_logger(), "Mode set to DRIVE");
+5: -        }
+5: -        else
+5: -        {
+5: -            response->success = false;
+5: -            RCLCPP_WARN(this->get_logger(), "Invalid mode requested");
+5: -        }
+5: -    }
+5: -
+5: -    rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr subscription_;
+5: -    rclcpp::Publisher<custom_interfaces::msg::DriverVelocity>::SharedPtr publisher_;
+5: -    rclcpp::Service<custom_interfaces::srv::SetMode>::SharedPtr service_;
+5: +  rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr subscription_;
+5: +  rclcpp::Publisher<custom_interfaces::msg::DriverVelocity>::SharedPtr publisher_;
+5: +  rclcpp::Service<custom_interfaces::srv::SetMode>::SharedPtr service_;
+5: @@ -118 +106 @@
+5: -int main(int argc, char *argv[])
+5: +int main(int argc, char * argv[])
+5: @@ -120,4 +108,4 @@
+5: -    rclcpp::init(argc, argv);
+5: -    rclcpp::spin(std::make_shared<Operator>());
+5: -    rclcpp::shutdown();
+5: -    return 0;
+5: +  rclcpp::init(argc, argv);
+5: +  rclcpp::spin(std::make_shared<Operator>());
+5: +  rclcpp::shutdown();
+5: +  return 0;
+5: 
+5: 1 files with code style divergence
+5: -- run_test.py: return code 1
+5: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/uncrustify.xunit.xml'
+5/6 Test #5: uncrustify .......................***Failed    0.21 sec
+test 6
+    Start 6: xmllint
+
+6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/xmllint.xunit.xml" "--package-name" "operator" "--output-file" "/root/working/rodep_ros2/yano_ws/build/operator/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/xmllint.xunit.xml"
+6: Test timeout computed to be: 60
+6: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/operator':
+6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/xmllint.xunit.xml
+6: File 'package.xml' is valid
+6: 
+6: No problems found
+6: -- run_test.py: return code 0
+6: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/xmllint.xunit.xml'
+6/6 Test #6: xmllint ..........................   Passed    0.52 sec
+
+50% tests passed[0;0m, [0;31m3 tests failed[0;0m out of 6
+
+Label Time Summary:
+cppcheck      =   0.24 sec*proc (1 test)
+flake8        =   0.36 sec*proc (1 test)
+lint_cmake    =   0.26 sec*proc (1 test)
+linter        =   1.87 sec*proc (6 tests)
+pep257        =   0.29 sec*proc (1 test)
+uncrustify    =   0.21 sec*proc (1 test)
+xmllint       =   0.52 sec*proc (1 test)
+
+Total Test time (real) =   1.88 sec
+
+The following tests FAILED:
+	[0;31m  2 - flake8 (Failed)[0;0m
+	[0;31m  3 - lint_cmake (Failed)[0;0m
+	[0;31m  5 - uncrustify (Failed)[0;0m
+Errors while running CTest
+Output from these tests are in: /root/working/rodep_ros2/yano_ws/build/operator/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.

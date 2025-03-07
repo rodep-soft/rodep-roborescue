@@ -1,0 +1,86 @@
+-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/operator':
+ - /opt/ros/humble/bin/ament_flake8 --xunit-file /root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/flake8.xunit.xml
+
+def generate_launch_description():
+^
+	return LaunchDescription([
+^
+        Node(
+^
+        Node(
+        ^
+            package="joy",
+^
+            # namespace="",
+^
+            executable="joy_node",
+^
+            name="pub_joy"
+^
+        ),
+^
+		Node(
+^
+			package='operator',
+^
+			executable='operator_node',
+^
+			name='operator_node',
+^
+			output='screen',
+^
+		),
+^
+	])
+^
+6     E101 indentation contains mixed spaces and tabs
+1     E122 continuation line missing indentation or outdented
+1     E302 expected 2 blank lines, found 1
+8     W191 indentation contains tabs
+
+./launch/operator_launch.py:4:1: E302 expected 2 blank lines, found 1
+
+./launch/operator_launch.py:5:1: W191 indentation contains tabs
+
+./launch/operator_launch.py:6:1: E101 indentation contains mixed spaces and tabs
+
+./launch/operator_launch.py:6:9: E122 continuation line missing indentation or outdented
+
+./launch/operator_launch.py:7:1: E101 indentation contains mixed spaces and tabs
+
+./launch/operator_launch.py:8:1: E101 indentation contains mixed spaces and tabs
+
+./launch/operator_launch.py:9:1: E101 indentation contains mixed spaces and tabs
+
+./launch/operator_launch.py:10:1: E101 indentation contains mixed spaces and tabs
+
+./launch/operator_launch.py:11:1: E101 indentation contains mixed spaces and tabs
+
+./launch/operator_launch.py:12:1: W191 indentation contains tabs
+
+./launch/operator_launch.py:13:1: W191 indentation contains tabs
+
+./launch/operator_launch.py:14:1: W191 indentation contains tabs
+
+./launch/operator_launch.py:15:1: W191 indentation contains tabs
+
+./launch/operator_launch.py:16:1: W191 indentation contains tabs
+
+./launch/operator_launch.py:17:1: W191 indentation contains tabs
+
+./launch/operator_launch.py:18:1: W191 indentation contains tabs
+
+
+1 files checked
+16 errors
+
+'E'-type errors: 8
+'W'-type errors: 8
+
+Checked files:
+
+* ./launch/operator_launch.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/flake8.xunit.xml'

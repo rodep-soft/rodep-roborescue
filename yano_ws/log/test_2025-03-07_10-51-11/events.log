@@ -1,0 +1,908 @@
+[0.000000] (-) TimerEvent: {}
+[0.000423] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict([('custom_interfaces', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces')])}
+[0.000656] (driver) JobQueued: {'identifier': 'driver', 'dependencies': OrderedDict([('custom_interfaces', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces'), ('driver', '/root/working/rodep_ros2/yano_ws/install/driver')])}
+[0.000710] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.033103] (custom_interfaces) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '--output-on-failure'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/custom_interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces')]), 'shell': False}
+[0.045330] (custom_interfaces) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/root/working/rodep_ros2/yano_ws/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.045576] (custom_interfaces) StdoutLine: {'line': b'Parse Config file:/root/working/rodep_ros2/yano_ws/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.045691] (custom_interfaces) StdoutLine: {'line': b'   Site: cf33789d9224\n'}
+[0.045818] (custom_interfaces) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.046031] (custom_interfaces) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.046259] (custom_interfaces) StdoutLine: {'line': b'Create new tag: 20250307-1051 - Experimental\n'}
+[0.046389] (custom_interfaces) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/root/working/rodep_ros2/yano_ws/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.046511] (custom_interfaces) StdoutLine: {'line': b'Parse Config file:/root/working/rodep_ros2/yano_ws/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.046619] (custom_interfaces) StdoutLine: {'line': b'Test project /root/working/rodep_ros2/yano_ws/build/custom_interfaces\n'}
+[0.046758] (custom_interfaces) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.046951] (custom_interfaces) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.047212] (custom_interfaces) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.047334] (custom_interfaces) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.047446] (custom_interfaces) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.047557] (custom_interfaces) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.047696] (custom_interfaces) StdoutLine: {'line': b'test 1\n'}
+[0.047807] (custom_interfaces) StdoutLine: {'line': b'    Start 1: lint_cmake\n'}
+[0.047918] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.048030] (custom_interfaces) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml"\n'}
+[0.048148] (custom_interfaces) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.099120] (-) TimerEvent: {}
+[0.123133] (custom_interfaces) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/custom_interfaces':\n"}
+[0.123333] (custom_interfaces) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml\n'}
+[0.199271] (-) TimerEvent: {}
+[0.213019] (custom_interfaces) StdoutLine: {'line': b'1: CMakeLists.txt:17: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.213226] (custom_interfaces) StdoutLine: {'line': b'1: CMakeLists.txt:18: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.213301] (custom_interfaces) StdoutLine: {'line': b'1: CMakeLists.txt:22: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.213368] (custom_interfaces) StdoutLine: {'line': b'1: CMakeLists.txt:23: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.213431] (custom_interfaces) StdoutLine: {'line': b'1: \n'}
+[0.213496] (custom_interfaces) StdoutLine: {'line': b'1: \n'}
+[0.213557] (custom_interfaces) StdoutLine: {'line': b'1: 4 errors\n'}
+[0.225274] (custom_interfaces) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.225597] (custom_interfaces) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml'\n"}
+[0.236677] (custom_interfaces) StdoutLine: {'line': b'1/2 Test #1: lint_cmake .......................***Failed    0.19 sec\n'}
+[0.237182] (custom_interfaces) StdoutLine: {'line': b"-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/custom_interfaces':\n"}
+[0.237341] (custom_interfaces) StdoutLine: {'line': b' - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml\n'}
+[0.237416] (custom_interfaces) StdoutLine: {'line': b'CMakeLists.txt:17: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.237481] (custom_interfaces) StdoutLine: {'line': b'CMakeLists.txt:18: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.237551] (custom_interfaces) StdoutLine: {'line': b'CMakeLists.txt:22: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.237612] (custom_interfaces) StdoutLine: {'line': b'CMakeLists.txt:23: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.237673] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.237735] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.237797] (custom_interfaces) StdoutLine: {'line': b'4 errors\n'}
+[0.237879] (custom_interfaces) StdoutLine: {'line': b'-- run_test.py: return code 1\n'}
+[0.237956] (custom_interfaces) StdoutLine: {'line': b"-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml'\n"}
+[0.238087] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.238172] (custom_interfaces) StdoutLine: {'line': b'test 2\n'}
+[0.238235] (custom_interfaces) StdoutLine: {'line': b'    Start 2: xmllint\n'}
+[0.238297] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.238360] (custom_interfaces) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml"\n'}
+[0.238435] (custom_interfaces) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.299319] (-) TimerEvent: {}
+[0.310032] (custom_interfaces) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/custom_interfaces':\n"}
+[0.310196] (custom_interfaces) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml\n'}
+[0.399411] (-) TimerEvent: {}
+[0.499763] (-) TimerEvent: {}
+[0.600175] (-) TimerEvent: {}
+[0.700614] (-) TimerEvent: {}
+[0.801050] (-) TimerEvent: {}
+[0.901497] (-) TimerEvent: {}
+[0.905306] (custom_interfaces) StdoutLine: {'line': b"2: File 'package.xml' is invalid:\n"}
+[0.905697] (custom_interfaces) StdoutLine: {'line': b"2: /root/working/rodep_ros2/yano_ws/custom_interfaces/package.xml:15: element test_depend: Schemas validity error : Element 'test_depend': This element is not expected. Expected is one of ( member_of_group, export ).\n"}
+[0.905856] (custom_interfaces) StdoutLine: {'line': b'2: /root/working/rodep_ros2/yano_ws/custom_interfaces/package.xml fails to validate\n'}
+[0.906040] (custom_interfaces) StdoutLine: {'line': b'2: \n'}
+[0.906162] (custom_interfaces) StdoutLine: {'line': b'2: 1 files are invalid\n'}
+[0.922641] (custom_interfaces) StdoutLine: {'line': b'2: -- run_test.py: return code 1\n'}
+[0.922990] (custom_interfaces) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml'\n"}
+[0.933809] (custom_interfaces) StdoutLine: {'line': b'2/2 Test #2: xmllint ..........................***Failed    0.70 sec\n'}
+[0.933987] (custom_interfaces) StdoutLine: {'line': b"-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/custom_interfaces':\n"}
+[0.934248] (custom_interfaces) StdoutLine: {'line': b' - /opt/ros/humble/bin/ament_xmllint --xunit-file /root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml\n'}
+[0.934375] (custom_interfaces) StdoutLine: {'line': b"File 'package.xml' is invalid:\n"}
+[0.934495] (custom_interfaces) StdoutLine: {'line': b"/root/working/rodep_ros2/yano_ws/custom_interfaces/package.xml:15: element test_depend: Schemas validity error : Element 'test_depend': This element is not expected. Expected is one of ( member_of_group, export ).\n"}
+[0.934655] (custom_interfaces) StdoutLine: {'line': b'/root/working/rodep_ros2/yano_ws/custom_interfaces/package.xml fails to validate\n'}
+[0.934777] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.934898] (custom_interfaces) StdoutLine: {'line': b'1 files are invalid\n'}
+[0.935016] (custom_interfaces) StdoutLine: {'line': b'-- run_test.py: return code 1\n'}
+[0.935125] (custom_interfaces) StdoutLine: {'line': b"-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml'\n"}
+[0.935239] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.935307] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.935370] (custom_interfaces) StdoutLine: {'line': b'0% tests passed\x1b[0;0m, \x1b[0;31m2 tests failed\x1b[0;0m out of 2\n'}
+[0.935448] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.935517] (custom_interfaces) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.935586] (custom_interfaces) StdoutLine: {'line': b'lint_cmake    =   0.19 sec*proc (1 test)\n'}
+[0.935656] (custom_interfaces) StdoutLine: {'line': b'linter        =   0.89 sec*proc (2 tests)\n'}
+[0.935726] (custom_interfaces) StdoutLine: {'line': b'xmllint       =   0.70 sec*proc (1 test)\n'}
+[0.935837] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.936028] (custom_interfaces) StdoutLine: {'line': b'Total Test time (real) =   0.89 sec\n'}
+[0.936145] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.936254] (custom_interfaces) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[0.936343] (custom_interfaces) StdoutLine: {'line': b'\t\x1b[0;31m  1 - lint_cmake (Failed)\x1b[0;0m\n'}
+[0.936408] (custom_interfaces) StdoutLine: {'line': b'\t\x1b[0;31m  2 - xmllint (Failed)\x1b[0;0m\n'}
+[0.936469] (custom_interfaces) StderrLine: {'line': b'Errors while running CTest\n'}
+[0.938126] (custom_interfaces) CommandEnded: {'returncode': 8}
+[0.938710] (custom_interfaces) TestFailure: {'identifier': 'custom_interfaces'}
+[0.938759] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[0.941100] (driver) JobStarted: {'identifier': 'driver'}
+[0.968944] (driver) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process', '--output-on-failure'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/driver:/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/driver:/root/working/rodep_ros2/yano_ws/install/custom_interfaces')]), 'shell': False}
+[0.979220] (driver) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/root/working/rodep_ros2/yano_ws/build/driver/CTestConfiguration.ini\n'}
+[0.979709] (driver) StdoutLine: {'line': b'Parse Config file:/root/working/rodep_ros2/yano_ws/build/driver/CTestConfiguration.ini\n'}
+[0.979983] (driver) StdoutLine: {'line': b'   Site: cf33789d9224\n'}
+[0.980318] (driver) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.980474] (driver) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.980595] (driver) StdoutLine: {'line': b'Create new tag: 20250307-1051 - Experimental\n'}
+[0.980713] (driver) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/root/working/rodep_ros2/yano_ws/build/driver/CTestConfiguration.ini\n'}
+[0.980836] (driver) StdoutLine: {'line': b'Parse Config file:/root/working/rodep_ros2/yano_ws/build/driver/CTestConfiguration.ini\n'}
+[0.981159] (driver) StdoutLine: {'line': b'Test project /root/working/rodep_ros2/yano_ws/build/driver\n'}
+[0.981395] (driver) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.981540] (driver) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.981697] (driver) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.981855] (driver) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.981956] (driver) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.982062] (driver) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.982129] (driver) StdoutLine: {'line': b'test 1\n'}
+[0.982192] (driver) StdoutLine: {'line': b'    Start 1: cppcheck\n'}
+[0.982254] (driver) StdoutLine: {'line': b'\n'}
+[0.982318] (driver) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml" "--package-name" "driver" "--output-file" "/root/working/rodep_ros2/yano_ws/build/driver/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml"\n'}
+[0.982386] (driver) StdoutLine: {'line': b'1: Test timeout computed to be: 300\n'}
+[1.001611] (-) TimerEvent: {}
+[1.053262] (driver) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':\n"}
+[1.053474] (driver) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml\n'}
+[1.101755] (-) TimerEvent: {}
+[1.148811] (driver) StdoutLine: {'line': b'1: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[1.161853] (driver) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[1.162105] (driver) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml'\n"}
+[1.173013] (driver) StdoutLine: {'line': b'1/4 Test #1: cppcheck .........................   Passed    0.19 sec\n'}
+[1.173314] (driver) StdoutLine: {'line': b'test 2\n'}
+[1.173407] (driver) StdoutLine: {'line': b'    Start 2: lint_cmake\n'}
+[1.173476] (driver) StdoutLine: {'line': b'\n'}
+[1.173542] (driver) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml" "--package-name" "driver" "--output-file" "/root/working/rodep_ros2/yano_ws/build/driver/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml"\n'}
+[1.173611] (driver) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[1.201881] (-) TimerEvent: {}
+[1.245744] (driver) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':\n"}
+[1.245973] (driver) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml\n'}
+[1.301936] (-) TimerEvent: {}
+[1.332331] (driver) StdoutLine: {'line': b'2: CMakeLists.txt:23: Tab found; please use spaces [whitespace/tabs]\n'}
+[1.332536] (driver) StdoutLine: {'line': b'2: CMakeLists.txt:23: Line ends in whitespace [whitespace/eol]\n'}
+[1.332710] (driver) StdoutLine: {'line': b'2: \n'}
+[1.332828] (driver) StdoutLine: {'line': b'2: \n'}
+[1.332945] (driver) StdoutLine: {'line': b'2: 2 errors\n'}
+[1.345085] (driver) StdoutLine: {'line': b'2: -- run_test.py: return code 1\n'}
+[1.345361] (driver) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml'\n"}
+[1.355975] (driver) StdoutLine: {'line': b'2/4 Test #2: lint_cmake .......................***Failed    0.18 sec\n'}
+[1.356258] (driver) StdoutLine: {'line': b"-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':\n"}
+[1.356340] (driver) StdoutLine: {'line': b' - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml\n'}
+[1.356411] (driver) StdoutLine: {'line': b'CMakeLists.txt:23: Tab found; please use spaces [whitespace/tabs]\n'}
+[1.356474] (driver) StdoutLine: {'line': b'CMakeLists.txt:23: Line ends in whitespace [whitespace/eol]\n'}
+[1.356535] (driver) StdoutLine: {'line': b'\n'}
+[1.356596] (driver) StdoutLine: {'line': b'\n'}
+[1.356687] (driver) StdoutLine: {'line': b'2 errors\n'}
+[1.356805] (driver) StdoutLine: {'line': b'-- run_test.py: return code 1\n'}
+[1.356898] (driver) StdoutLine: {'line': b"-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml'\n"}
+[1.356964] (driver) StdoutLine: {'line': b'\n'}
+[1.357026] (driver) StdoutLine: {'line': b'test 3\n'}
+[1.357087] (driver) StdoutLine: {'line': b'    Start 3: uncrustify\n'}
+[1.357147] (driver) StdoutLine: {'line': b'\n'}
+[1.357210] (driver) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml" "--package-name" "driver" "--output-file" "/root/working/rodep_ros2/yano_ws/build/driver/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml"\n'}
+[1.357277] (driver) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[1.402029] (-) TimerEvent: {}
+[1.429726] (driver) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':\n"}
+[1.429990] (driver) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml\n'}
+[1.502168] (-) TimerEvent: {}
+[1.543897] (driver) StdoutLine: {'line': b"3: Code style divergence in file 'src/driver.cpp':\n"}
+[1.544156] (driver) StdoutLine: {'line': b'3: \n'}
+[1.544323] (driver) StdoutLine: {'line': b'3: --- src/driver.cpp\n'}
+[1.544474] (driver) StdoutLine: {'line': b'3: +++ src/driver.cpp.uncrustify\n'}
+[1.544629] (driver) StdoutLine: {'line': b'3: @@ -6 +6 @@\n'}
+[1.544780] (driver) StdoutLine: {'line': b'3: -#include <std_msgs/msg/bool.hpp> \n'}
+[1.544931] (driver) StdoutLine: {'line': b'3: +#include <std_msgs/msg/bool.hpp>\n'}
+[1.545087] (driver) StdoutLine: {'line': b'3: @@ -27 +27,2 @@\n'}
+[1.545236] (driver) StdoutLine: {'line': b'3: -class RoboclawDriver {\n'}
+[1.545387] (driver) StdoutLine: {'line': b'3: +class RoboclawDriver\n'}
+[1.545532] (driver) StdoutLine: {'line': b'3: +{\n'}
+[1.545685] (driver) StdoutLine: {'line': b'3: @@ -29,34 +30,39 @@\n'}
+[1.545838] (driver) StdoutLine: {'line': b'3: -    explicit RoboclawDriver(const string& port) : io(), serial(io, port) {\n'}
+[1.546063] (driver) StdoutLine: {'line': b'3: -        try {\n'}
+[1.546225] (driver) StdoutLine: {'line': b'3: -            serial.set_option(serial_port_base::baud_rate(SERIAL_BAUD_RATE));\n'}
+[1.546380] (driver) StdoutLine: {'line': b'3: -            serial.set_option(serial_port_base::character_size(8));\n'}
+[1.546533] (driver) StdoutLine: {'line': b'3: -            serial.set_option(serial_port_base::parity(serial_port_base::parity::none));\n'}
+[1.546680] (driver) StdoutLine: {'line': b'3: -            serial.set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));\n'}
+[1.546828] (driver) StdoutLine: {'line': b'3: -            serial.set_option(serial_port_base::flow_control(serial_port_base::flow_control::none));\n'}
+[1.546967] (driver) StdoutLine: {'line': b'3: -        } catch (const boost::system::system_error& e) {\n'}
+[1.547503] (driver) StdoutLine: {'line': b'3: -            throw runtime_error("Failed to configure serial port: " + string(e.what()));\n'}
+[1.547687] (driver) StdoutLine: {'line': b'3: -        }\n'}
+[1.547828] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.547964] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.548102] (driver) StdoutLine: {'line': b'3: -    bool setMotorVelocity(int command, double counts_per_sec) {\n'}
+[1.548239] (driver) StdoutLine: {'line': b'3: -        vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};\n'}
+[1.548373] (driver) StdoutLine: {'line': b'3: -        appendInt32(data, static_cast<int>(counts_per_sec));\n'}
+[1.548508] (driver) StdoutLine: {'line': b'3: -        appendCRC(data);\n'}
+[1.548640] (driver) StdoutLine: {'line': b'3: -        return sendRoboclawCommand(data);\n'}
+[1.548773] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.548907] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.549039] (driver) StdoutLine: {'line': b'3: -    bool setPIDConstants(int command, int K_p, int K_i, int K_d, int qpps) {\n'}
+[1.549176] (driver) StdoutLine: {'line': b'3: -        vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};\n'}
+[1.551315] (driver) StdoutLine: {'line': b'3: -        appendInt32(data, K_d);\n'}
+[1.551466] (driver) StdoutLine: {'line': b'3: -        appendInt32(data, K_p);\n'}
+[1.551586] (driver) StdoutLine: {'line': b'3: -        appendInt32(data, K_i);\n'}
+[1.551698] (driver) StdoutLine: {'line': b'3: -        appendInt32(data, qpps);\n'}
+[1.551807] (driver) StdoutLine: {'line': b'3: -        appendCRC(data);\n'}
+[1.551917] (driver) StdoutLine: {'line': b'3: -        return sendRoboclawCommand(data);\n'}
+[1.552028] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.552137] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.552245] (driver) StdoutLine: {'line': b'3: -    bool resetEncoders() {\n'}
+[1.552354] (driver) StdoutLine: {'line': b'3: -        vector<uint8_t> data = {ROBOCLAW_ADDRESS, RESET_QUAD_ENCODER};\n'}
+[1.552472] (driver) StdoutLine: {'line': b'3: -        appendCRC(data);\n'}
+[1.552602] (driver) StdoutLine: {'line': b'3: -        return sendRoboclawCommand(data);\n'}
+[1.552700] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.552769] (driver) StdoutLine: {'line': b'3: +  explicit RoboclawDriver(const string & port)\n'}
+[1.552831] (driver) StdoutLine: {'line': b'3: +  : io(), serial(io, port)\n'}
+[1.552891] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.552952] (driver) StdoutLine: {'line': b'3: +    try {\n'}
+[1.553013] (driver) StdoutLine: {'line': b'3: +      serial.set_option(serial_port_base::baud_rate(SERIAL_BAUD_RATE));\n'}
+[1.553073] (driver) StdoutLine: {'line': b'3: +      serial.set_option(serial_port_base::character_size(8));\n'}
+[1.553139] (driver) StdoutLine: {'line': b'3: +      serial.set_option(serial_port_base::parity(serial_port_base::parity::none));\n'}
+[1.553201] (driver) StdoutLine: {'line': b'3: +      serial.set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));\n'}
+[1.553261] (driver) StdoutLine: {'line': b'3: +      serial.set_option(serial_port_base::flow_control(serial_port_base::flow_control::none));\n'}
+[1.553322] (driver) StdoutLine: {'line': b'3: +    } catch (const boost::system::system_error & e) {\n'}
+[1.553382] (driver) StdoutLine: {'line': b'3: +      throw runtime_error("Failed to configure serial port: " + string(e.what()));\n'}
+[1.553448] (driver) StdoutLine: {'line': b'3: +    }\n'}
+[1.553565] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.553673] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.553780] (driver) StdoutLine: {'line': b'3: +  bool setMotorVelocity(int command, double counts_per_sec)\n'}
+[1.553887] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.553994] (driver) StdoutLine: {'line': b'3: +    vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};\n'}
+[1.554103] (driver) StdoutLine: {'line': b'3: +    appendInt32(data, static_cast<int>(counts_per_sec));\n'}
+[1.554211] (driver) StdoutLine: {'line': b'3: +    appendCRC(data);\n'}
+[1.554318] (driver) StdoutLine: {'line': b'3: +    return sendRoboclawCommand(data);\n'}
+[1.554428] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.554541] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.554650] (driver) StdoutLine: {'line': b'3: +  bool setPIDConstants(int command, int K_p, int K_i, int K_d, int qpps)\n'}
+[1.554760] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.554867] (driver) StdoutLine: {'line': b'3: +    vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};\n'}
+[1.554975] (driver) StdoutLine: {'line': b'3: +    appendInt32(data, K_d);\n'}
+[1.555083] (driver) StdoutLine: {'line': b'3: +    appendInt32(data, K_p);\n'}
+[1.555192] (driver) StdoutLine: {'line': b'3: +    appendInt32(data, K_i);\n'}
+[1.555299] (driver) StdoutLine: {'line': b'3: +    appendInt32(data, qpps);\n'}
+[1.555407] (driver) StdoutLine: {'line': b'3: +    appendCRC(data);\n'}
+[1.555514] (driver) StdoutLine: {'line': b'3: +    return sendRoboclawCommand(data);\n'}
+[1.555638] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.555748] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.555855] (driver) StdoutLine: {'line': b'3: +  bool resetEncoders()\n'}
+[1.555973] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.556041] (driver) StdoutLine: {'line': b'3: +    vector<uint8_t> data = {ROBOCLAW_ADDRESS, RESET_QUAD_ENCODER};\n'}
+[1.556103] (driver) StdoutLine: {'line': b'3: +    appendCRC(data);\n'}
+[1.556165] (driver) StdoutLine: {'line': b'3: +    return sendRoboclawCommand(data);\n'}
+[1.556227] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.556287] (driver) StdoutLine: {'line': b'3: @@ -65,39 +71,45 @@\n'}
+[1.556347] (driver) StdoutLine: {'line': b'3: -    io_service io;\n'}
+[1.556407] (driver) StdoutLine: {'line': b'3: -    serial_port serial;\n'}
+[1.556467] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.556526] (driver) StdoutLine: {'line': b'3: -    bool sendRoboclawCommand(const vector<uint8_t>& data) {\n'}
+[1.556586] (driver) StdoutLine: {'line': b'3: -        try {\n'}
+[1.556646] (driver) StdoutLine: {'line': b'3: -            write(serial, buffer(data));\n'}
+[1.556728] (driver) StdoutLine: {'line': b'3: -            uint8_t response;\n'}
+[1.556801] (driver) StdoutLine: {'line': b'3: -            read(serial, buffer(&response, 1));\n'}
+[1.556862] (driver) StdoutLine: {'line': b'3: -            RCLCPP_DEBUG(rclcpp::get_logger("RoboclawDriver"), "Received Response: 0x%02X", response);\n'}
+[1.556932] (driver) StdoutLine: {'line': b'3: -            return true;\n'}
+[1.556993] (driver) StdoutLine: {'line': b'3: -        } catch (const boost::system::system_error& e) {\n'}
+[1.557053] (driver) StdoutLine: {'line': b'3: -            RCLCPP_ERROR(rclcpp::get_logger("RoboclawDriver"), "Serial Communication Error: %s", e.what());\n'}
+[1.557114] (driver) StdoutLine: {'line': b'3: -            return false;\n'}
+[1.557174] (driver) StdoutLine: {'line': b'3: -        }\n'}
+[1.557234] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.557293] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.557352] (driver) StdoutLine: {'line': b'3: -    uint16_t calculateCRC(const vector<uint8_t>& data) {\n'}
+[1.557411] (driver) StdoutLine: {'line': b'3: -        uint16_t crc = 0;\n'}
+[1.557470] (driver) StdoutLine: {'line': b'3: -        for (auto byte : data) {\n'}
+[1.557530] (driver) StdoutLine: {'line': b'3: -            crc ^= static_cast<uint16_t>(byte) << 8;\n'}
+[1.557590] (driver) StdoutLine: {'line': b'3: -            for (int i = 0; i < 8; i++) {\n'}
+[1.557649] (driver) StdoutLine: {'line': b'3: -                crc = (crc & 0x8000) ? (crc << 1) ^ 0x1021 : (crc << 1);\n'}
+[1.557709] (driver) StdoutLine: {'line': b'3: -            }\n'}
+[1.557793] (driver) StdoutLine: {'line': b'3: -        }\n'}
+[1.557856] (driver) StdoutLine: {'line': b'3: -        return crc;\n'}
+[1.557916] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.557976] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.558036] (driver) StdoutLine: {'line': b'3: -    // CRC\xe8\xbf\xbd\xe5\x8a\xa0\n'}
+[1.558098] (driver) StdoutLine: {'line': b'3: -    void appendCRC(vector<uint8_t>& data) {\n'}
+[1.558158] (driver) StdoutLine: {'line': b'3: -        uint16_t crc = calculateCRC(data);\n'}
+[1.558218] (driver) StdoutLine: {'line': b'3: -        data.push_back(static_cast<uint8_t>(crc >> 8));\n'}
+[1.558278] (driver) StdoutLine: {'line': b'3: -        data.push_back(static_cast<uint8_t>(crc & 0xFF));\n'}
+[1.558337] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.558396] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.558455] (driver) StdoutLine: {'line': b'3: -    void appendInt32(vector<uint8_t>& data, int value) {\n'}
+[1.558514] (driver) StdoutLine: {'line': b'3: -        for (int i = 3; i >= 0; --i) {\n'}
+[1.558573] (driver) StdoutLine: {'line': b'3: -            data.push_back(static_cast<uint8_t>((value >> (8 * i)) & 0xFF));\n'}
+[1.558632] (driver) StdoutLine: {'line': b'3: -        }\n'}
+[1.558692] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.558751] (driver) StdoutLine: {'line': b'3: +  io_service io;\n'}
+[1.558826] (driver) StdoutLine: {'line': b'3: +  serial_port serial;\n'}
+[1.558893] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.558953] (driver) StdoutLine: {'line': b'3: +  bool sendRoboclawCommand(const vector<uint8_t> & data)\n'}
+[1.559014] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.559073] (driver) StdoutLine: {'line': b'3: +    try {\n'}
+[1.559132] (driver) StdoutLine: {'line': b'3: +      write(serial, buffer(data));\n'}
+[1.559191] (driver) StdoutLine: {'line': b'3: +      uint8_t response;\n'}
+[1.559277] (driver) StdoutLine: {'line': b'3: +      read(serial, buffer(&response, 1));\n'}
+[1.559343] (driver) StdoutLine: {'line': b'3: +      RCLCPP_DEBUG(rclcpp::get_logger("RoboclawDriver"), "Received Response: 0x%02X", response);\n'}
+[1.559425] (driver) StdoutLine: {'line': b'3: +      return true;\n'}
+[1.559573] (driver) StdoutLine: {'line': b'3: +    } catch (const boost::system::system_error & e) {\n'}
+[1.559708] (driver) StdoutLine: {'line': b'3: +      RCLCPP_ERROR(\n'}
+[1.559839] (driver) StdoutLine: {'line': b'3: +        rclcpp::get_logger("RoboclawDriver"), "Serial Communication Error: %s",\n'}
+[1.560051] (driver) StdoutLine: {'line': b'3: +        e.what());\n'}
+[1.560170] (driver) StdoutLine: {'line': b'3: +      return false;\n'}
+[1.560283] (driver) StdoutLine: {'line': b'3: +    }\n'}
+[1.560391] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.560499] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.560607] (driver) StdoutLine: {'line': b'3: +  uint16_t calculateCRC(const vector<uint8_t> & data)\n'}
+[1.560717] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.560824] (driver) StdoutLine: {'line': b'3: +    uint16_t crc = 0;\n'}
+[1.560936] (driver) StdoutLine: {'line': b'3: +    for (auto byte : data) {\n'}
+[1.561054] (driver) StdoutLine: {'line': b'3: +      crc ^= static_cast<uint16_t>(byte) << 8;\n'}
+[1.561164] (driver) StdoutLine: {'line': b'3: +      for (int i = 0; i < 8; i++) {\n'}
+[1.561273] (driver) StdoutLine: {'line': b'3: +        crc = (crc & 0x8000) ? (crc << 1) ^ 0x1021 : (crc << 1);\n'}
+[1.561382] (driver) StdoutLine: {'line': b'3: +      }\n'}
+[1.561490] (driver) StdoutLine: {'line': b'3: +    }\n'}
+[1.561599] (driver) StdoutLine: {'line': b'3: +    return crc;\n'}
+[1.561707] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.561819] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.561927] (driver) StdoutLine: {'line': b'3: +  // CRC\xe8\xbf\xbd\xe5\x8a\xa0\n'}
+[1.562044] (driver) StdoutLine: {'line': b'3: +  void appendCRC(vector<uint8_t> & data)\n'}
+[1.562155] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.562263] (driver) StdoutLine: {'line': b'3: +    uint16_t crc = calculateCRC(data);\n'}
+[1.562372] (driver) StdoutLine: {'line': b'3: +    data.push_back(static_cast<uint8_t>(crc >> 8));\n'}
+[1.562481] (driver) StdoutLine: {'line': b'3: +    data.push_back(static_cast<uint8_t>(crc & 0xFF));\n'}
+[1.562649] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.562765] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.562875] (driver) StdoutLine: {'line': b'3: +  void appendInt32(vector<uint8_t> & data, int value)\n'}
+[1.562983] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.563095] (driver) StdoutLine: {'line': b'3: +    for (int i = 3; i >= 0; --i) {\n'}
+[1.563171] (driver) StdoutLine: {'line': b'3: +      data.push_back(static_cast<uint8_t>((value >> (8 * i)) & 0xFF));\n'}
+[1.563235] (driver) StdoutLine: {'line': b'3: +    }\n'}
+[1.563296] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.563356] (driver) StdoutLine: {'line': b'3: @@ -107 +119,2 @@\n'}
+[1.563419] (driver) StdoutLine: {'line': b'3: -class Driver : public rclcpp::Node {\n'}
+[1.563480] (driver) StdoutLine: {'line': b'3: +class Driver : public rclcpp::Node\n'}
+[1.563540] (driver) StdoutLine: {'line': b'3: +{\n'}
+[1.563654] (driver) StdoutLine: {'line': b'3: @@ -109,22 +122,25 @@\n'}
+[1.563762] (driver) StdoutLine: {'line': b'3: -    Driver() : Node("driver"), roboclaw("/dev/ttyACM0") { \n'}
+[1.563870] (driver) StdoutLine: {'line': b'3: -        declare_parameter("crawler_circumference", 0.39);\n'}
+[1.563978] (driver) StdoutLine: {'line': b'3: -        declare_parameter("counts_per_rev", 256); // quad pulses per rev = counts per rev\n'}
+[1.564086] (driver) StdoutLine: {'line': b'3: -        declare_parameter("gearhead_ratio", 66); // \xe6\xb8\x9b\xe9\x80\x9f\xe6\xaf\x94\n'}
+[1.564196] (driver) StdoutLine: {'line': b'3: -        declare_parameter("pulley_ratio", 2);\n'}
+[1.564264] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.564326] (driver) StdoutLine: {'line': b'3: -        crawler_circumference_ = get_parameter("crawler_circumference").as_double();\n'}
+[1.564387] (driver) StdoutLine: {'line': b'3: -        counts_per_rev_ = get_parameter("counts_per_rev").as_int();\n'}
+[1.564448] (driver) StdoutLine: {'line': b'3: -        gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();\n'}
+[1.564508] (driver) StdoutLine: {'line': b'3: -        pulley_ratio_ = get_parameter("pulley_ratio").as_int();\n'}
+[1.564569] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.564628] (driver) StdoutLine: {'line': b'3: -        // velocity\xe3\x82\x92qpps\xe3\x81\xab\xe5\xa4\x89\xe6\x8f\x9b\xe3\x81\x99\xe3\x82\x8b\xe9\x9a\x9b\xe3\x81\xab\xe7\x94\xa8\xe3\x81\x84\xe3\x82\x8b\xe5\xae\x9a\xe6\x95\xb0\n'}
+[1.564690] (driver) StdoutLine: {'line': b'3: -        counts_per_meter_ = (counts_per_rev_ * gearhead_ratio_ * pulley_ratio_) / crawler_circumference_;\n'}
+[1.564763] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.564822] (driver) StdoutLine: {'line': b'3: -        subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(\n'}
+[1.564882] (driver) StdoutLine: {'line': b'3: -            "/operator", 10, bind(&Driver::driver_callback, this, _1));\n'}
+[1.564940] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.565001] (driver) StdoutLine: {'line': b'3: -        estop_subscription_ = create_subscription<std_msgs::msg::Bool>(\n'}
+[1.565060] (driver) StdoutLine: {'line': b'3: -            "/emergency_stop", 10, bind(&Driver::estop_callback, this, _1));\n'}
+[1.565120] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.565179] (driver) StdoutLine: {'line': b'3: -        init();\n'}
+[1.565254] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.565319] (driver) StdoutLine: {'line': b'3: +  Driver()\n'}
+[1.565378] (driver) StdoutLine: {'line': b'3: +  : Node("driver"), roboclaw("/dev/ttyACM0")\n'}
+[1.565437] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.565496] (driver) StdoutLine: {'line': b'3: +    declare_parameter("crawler_circumference", 0.39);\n'}
+[1.565555] (driver) StdoutLine: {'line': b'3: +    declare_parameter("counts_per_rev", 256);     // quad pulses per rev = counts per rev\n'}
+[1.565614] (driver) StdoutLine: {'line': b'3: +    declare_parameter("gearhead_ratio", 66);     // \xe6\xb8\x9b\xe9\x80\x9f\xe6\xaf\x94\n'}
+[1.565685] (driver) StdoutLine: {'line': b'3: +    declare_parameter("pulley_ratio", 2);\n'}
+[1.565746] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.565806] (driver) StdoutLine: {'line': b'3: +    crawler_circumference_ = get_parameter("crawler_circumference").as_double();\n'}
+[1.565865] (driver) StdoutLine: {'line': b'3: +    counts_per_rev_ = get_parameter("counts_per_rev").as_int();\n'}
+[1.565977] (driver) StdoutLine: {'line': b'3: +    gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();\n'}
+[1.566087] (driver) StdoutLine: {'line': b'3: +    pulley_ratio_ = get_parameter("pulley_ratio").as_int();\n'}
+[1.566195] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.566306] (driver) StdoutLine: {'line': b'3: +    // velocity\xe3\x82\x92qpps\xe3\x81\xab\xe5\xa4\x89\xe6\x8f\x9b\xe3\x81\x99\xe3\x82\x8b\xe9\x9a\x9b\xe3\x81\xab\xe7\x94\xa8\xe3\x81\x84\xe3\x82\x8b\xe5\xae\x9a\xe6\x95\xb0\n'}
+[1.566384] (driver) StdoutLine: {'line': b'3: +    counts_per_meter_ = (counts_per_rev_ * gearhead_ratio_ * pulley_ratio_) /\n'}
+[1.566447] (driver) StdoutLine: {'line': b'3: +      crawler_circumference_;\n'}
+[1.566508] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.566568] (driver) StdoutLine: {'line': b'3: +    subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(\n'}
+[1.566627] (driver) StdoutLine: {'line': b'3: +      "/operator", 10, bind(&Driver::driver_callback, this, _1));\n'}
+[1.566687] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.566746] (driver) StdoutLine: {'line': b'3: +    estop_subscription_ = create_subscription<std_msgs::msg::Bool>(\n'}
+[1.566806] (driver) StdoutLine: {'line': b'3: +      "/emergency_stop", 10, bind(&Driver::estop_callback, this, _1));\n'}
+[1.566867] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.566926] (driver) StdoutLine: {'line': b'3: +    init();\n'}
+[1.566994] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.567054] (driver) StdoutLine: {'line': b'3: @@ -133,53 +149,57 @@\n'}
+[1.567115] (driver) StdoutLine: {'line': b'3: -    RoboclawDriver roboclaw;\n'}
+[1.567175] (driver) StdoutLine: {'line': b'3: -    double crawler_circumference_;\n'}
+[1.567235] (driver) StdoutLine: {'line': b'3: -    int counts_per_rev_;\n'}
+[1.567294] (driver) StdoutLine: {'line': b'3: -    int gearhead_ratio_;\n'}
+[1.567353] (driver) StdoutLine: {'line': b'3: -    int pulley_ratio_;\n'}
+[1.567434] (driver) StdoutLine: {'line': b'3: -    double counts_per_meter_;\n'}
+[1.567496] (driver) StdoutLine: {'line': b'3: -    bool estop_active_ = false;  // E-stop state\n'}
+[1.567565] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.567633] (driver) StdoutLine: {'line': b'3: -    rclcpp::Subscription<custom_interfaces::msg::DriverVelocity>::SharedPtr subscription_;\n'}
+[1.567701] (driver) StdoutLine: {'line': b'3: -    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr estop_subscription_;\n'}
+[1.567762] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.567821] (driver) StdoutLine: {'line': b'3: -    double velocity_to_counts_per_sec(double velocity) const {\n'}
+[1.567881] (driver) StdoutLine: {'line': b'3: -        return velocity * counts_per_meter_;\n'}
+[1.567941] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.568001] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.568060] (driver) StdoutLine: {'line': b'3: -    void init() {\n'}
+[1.568119] (driver) StdoutLine: {'line': b'3: -        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);\n'}
+[1.568180] (driver) StdoutLine: {'line': b'3: -        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);\n'}
+[1.568239] (driver) StdoutLine: {'line': b'3: -        roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);\n'}
+[1.568299] (driver) StdoutLine: {'line': b'3: -        roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);\n'}
+[1.568359] (driver) StdoutLine: {'line': b'3: -        roboclaw.resetEncoders();\n'}
+[1.568418] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.568501] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.568564] (driver) StdoutLine: {'line': b'3: -    void driver_callback(const custom_interfaces::msg::DriverVelocity& msg) {\n'}
+[1.568625] (driver) StdoutLine: {'line': b'3: -        if (estop_active_) {\n'}
+[1.568685] (driver) StdoutLine: {'line': b'3: -            RCLCPP_WARN(get_logger(), "E-stop is active. Ignoring motor commands.");\n'}
+[1.568745] (driver) StdoutLine: {'line': b'3: -            return;\n'}
+[1.568805] (driver) StdoutLine: {'line': b'3: -        }\n'}
+[1.568864] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.568923] (driver) StdoutLine: {'line': b'3: -        double M1_counts_per_sec = velocity_to_counts_per_sec(msg.m1_vel);\n'}
+[1.568984] (driver) StdoutLine: {'line': b'3: -        double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);\n'}
+[1.569044] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.569104] (driver) StdoutLine: {'line': b'3: -        if (!roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec)) {\n'}
+[1.569165] (driver) StdoutLine: {'line': b'3: -            RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");\n'}
+[1.569246] (driver) StdoutLine: {'line': b'3: -        }\n'}
+[1.569368] (driver) StdoutLine: {'line': b'3: -        if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec)) {\n'}
+[1.569476] (driver) StdoutLine: {'line': b'3: -            RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");\n'}
+[1.569568] (driver) StdoutLine: {'line': b'3: -        }\n'}
+[1.569633] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.569695] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.569756] (driver) StdoutLine: {'line': b'3: -    void estop_callback(const std_msgs::msg::Bool::SharedPtr msg) {\n'}
+[1.569817] (driver) StdoutLine: {'line': b'3: -        estop_active_ = msg->data;\n'}
+[1.569877] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.569937] (driver) StdoutLine: {'line': b'3: -        if (estop_active_) {\n'}
+[1.569997] (driver) StdoutLine: {'line': b'3: -            RCLCPP_WARN(get_logger(), "E-stop activated. Stopping all motors.");\n'}
+[1.570058] (driver) StdoutLine: {'line': b'3: -\n'}
+[1.570117] (driver) StdoutLine: {'line': b'3: -            // Send zero velocity commands to stop motors\n'}
+[1.570177] (driver) StdoutLine: {'line': b'3: -            roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);\n'}
+[1.570238] (driver) StdoutLine: {'line': b'3: -            roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);\n'}
+[1.570298] (driver) StdoutLine: {'line': b'3: -        } else {\n'}
+[1.570358] (driver) StdoutLine: {'line': b'3: -            RCLCPP_INFO(get_logger(), "E-stop deactivated. Resuming normal operation.");\n'}
+[1.570418] (driver) StdoutLine: {'line': b'3: -        }\n'}
+[1.570478] (driver) StdoutLine: {'line': b'3: -    }\n'}
+[1.570556] (driver) StdoutLine: {'line': b'3: +  RoboclawDriver roboclaw;\n'}
+[1.570794] (driver) StdoutLine: {'line': b'3: +  double crawler_circumference_;\n'}
+[1.571108] (driver) StdoutLine: {'line': b'3: +  int counts_per_rev_;\n'}
+[1.571253] (driver) StdoutLine: {'line': b'3: +  int gearhead_ratio_;\n'}
+[1.571385] (driver) StdoutLine: {'line': b'3: +  int pulley_ratio_;\n'}
+[1.571516] (driver) StdoutLine: {'line': b'3: +  double counts_per_meter_;\n'}
+[1.571664] (driver) StdoutLine: {'line': b'3: +  bool estop_active_ = false;    // E-stop state\n'}
+[1.571796] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.571934] (driver) StdoutLine: {'line': b'3: +  rclcpp::Subscription<custom_interfaces::msg::DriverVelocity>::SharedPtr subscription_;\n'}
+[1.572065] (driver) StdoutLine: {'line': b'3: +  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr estop_subscription_;\n'}
+[1.572180] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.572293] (driver) StdoutLine: {'line': b'3: +  double velocity_to_counts_per_sec(double velocity) const\n'}
+[1.572421] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.572552] (driver) StdoutLine: {'line': b'3: +    return velocity * counts_per_meter_;\n'}
+[1.573459] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.573576] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.573686] (driver) StdoutLine: {'line': b'3: +  void init()\n'}
+[1.573796] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.573911] (driver) StdoutLine: {'line': b'3: +    roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);\n'}
+[1.574019] (driver) StdoutLine: {'line': b'3: +    roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);\n'}
+[1.574132] (driver) StdoutLine: {'line': b'3: +    roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);\n'}
+[1.574243] (driver) StdoutLine: {'line': b'3: +    roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);\n'}
+[1.574350] (driver) StdoutLine: {'line': b'3: +    roboclaw.resetEncoders();\n'}
+[1.574456] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.574563] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.574681] (driver) StdoutLine: {'line': b'3: +  void driver_callback(const custom_interfaces::msg::DriverVelocity & msg)\n'}
+[1.574790] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.574904] (driver) StdoutLine: {'line': b'3: +    if (estop_active_) {\n'}
+[1.575014] (driver) StdoutLine: {'line': b'3: +      RCLCPP_WARN(get_logger(), "E-stop is active. Ignoring motor commands.");\n'}
+[1.575128] (driver) StdoutLine: {'line': b'3: +      return;\n'}
+[1.575230] (driver) StdoutLine: {'line': b'3: +    }\n'}
+[1.575295] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.575357] (driver) StdoutLine: {'line': b'3: +    double M1_counts_per_sec = velocity_to_counts_per_sec(msg.m1_vel);\n'}
+[1.575419] (driver) StdoutLine: {'line': b'3: +    double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);\n'}
+[1.575480] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.575539] (driver) StdoutLine: {'line': b'3: +    if (!roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec)) {\n'}
+[1.575653] (driver) StdoutLine: {'line': b'3: +      RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");\n'}
+[1.575761] (driver) StdoutLine: {'line': b'3: +    }\n'}
+[1.575867] (driver) StdoutLine: {'line': b'3: +    if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec)) {\n'}
+[1.576005] (driver) StdoutLine: {'line': b'3: +      RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");\n'}
+[1.576115] (driver) StdoutLine: {'line': b'3: +    }\n'}
+[1.576221] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.576320] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.576384] (driver) StdoutLine: {'line': b'3: +  void estop_callback(const std_msgs::msg::Bool::SharedPtr msg)\n'}
+[1.576447] (driver) StdoutLine: {'line': b'3: +  {\n'}
+[1.576508] (driver) StdoutLine: {'line': b'3: +    estop_active_ = msg->data;\n'}
+[1.576569] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.576630] (driver) StdoutLine: {'line': b'3: +    if (estop_active_) {\n'}
+[1.576691] (driver) StdoutLine: {'line': b'3: +      RCLCPP_WARN(get_logger(), "E-stop activated. Stopping all motors.");\n'}
+[1.576760] (driver) StdoutLine: {'line': b'3: +\n'}
+[1.576822] (driver) StdoutLine: {'line': b'3: +      // Send zero velocity commands to stop motors\n'}
+[1.576884] (driver) StdoutLine: {'line': b'3: +      roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);\n'}
+[1.576946] (driver) StdoutLine: {'line': b'3: +      roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);\n'}
+[1.577047] (driver) StdoutLine: {'line': b'3: +    } else {\n'}
+[1.577155] (driver) StdoutLine: {'line': b'3: +      RCLCPP_INFO(get_logger(), "E-stop deactivated. Resuming normal operation.");\n'}
+[1.577264] (driver) StdoutLine: {'line': b'3: +    }\n'}
+[1.577370] (driver) StdoutLine: {'line': b'3: +  }\n'}
+[1.577436] (driver) StdoutLine: {'line': b'3: @@ -188,5 +208,6 @@\n'}
+[1.577498] (driver) StdoutLine: {'line': b'3: -int main(int argc, char* argv[]) {\n'}
+[1.577559] (driver) StdoutLine: {'line': b'3: -    rclcpp::init(argc, argv);\n'}
+[1.577620] (driver) StdoutLine: {'line': b'3: -    rclcpp::spin(std::make_shared<Driver>());\n'}
+[1.577680] (driver) StdoutLine: {'line': b'3: -    rclcpp::shutdown();\n'}
+[1.577739] (driver) StdoutLine: {'line': b'3: -    return 0;\n'}
+[1.577799] (driver) StdoutLine: {'line': b'3: +int main(int argc, char * argv[])\n'}
+[1.577859] (driver) StdoutLine: {'line': b'3: +{\n'}
+[1.577918] (driver) StdoutLine: {'line': b'3: +  rclcpp::init(argc, argv);\n'}
+[1.577977] (driver) StdoutLine: {'line': b'3: +  rclcpp::spin(std::make_shared<Driver>());\n'}
+[1.578041] (driver) StdoutLine: {'line': b'3: +  rclcpp::shutdown();\n'}
+[1.578113] (driver) StdoutLine: {'line': b'3: +  return 0;\n'}
+[1.578173] (driver) StdoutLine: {'line': b'3: \n'}
+[1.578232] (driver) StdoutLine: {'line': b'3: 1 files with code style divergence\n'}
+[1.578291] (driver) StdoutLine: {'line': b'3: -- run_test.py: return code 1\n'}
+[1.578351] (driver) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml'\n"}
+[1.578427] (driver) StdoutLine: {'line': b'3/4 Test #3: uncrustify .......................***Failed    0.21 sec\n'}
+[1.578492] (driver) StdoutLine: {'line': b"-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':\n"}
+[1.578553] (driver) StdoutLine: {'line': b' - /opt/ros/humble/bin/ament_uncrustify --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml\n'}
+[1.578614] (driver) StdoutLine: {'line': b"Code style divergence in file 'src/driver.cpp':\n"}
+[1.578675] (driver) StdoutLine: {'line': b'\n'}
+[1.578736] (driver) StdoutLine: {'line': b'--- src/driver.cpp\n'}
+[1.578796] (driver) StdoutLine: {'line': b'+++ src/driver.cpp.uncrustify\n'}
+[1.578856] (driver) StdoutLine: {'line': b'@@ -6 +6 @@\n'}
+[1.578917] (driver) StdoutLine: {'line': b'-#include <std_msgs/msg/bool.hpp> \n'}
+[1.578979] (driver) StdoutLine: {'line': b'+#include <std_msgs/msg/bool.hpp>\n'}
+[1.579039] (driver) StdoutLine: {'line': b'@@ -27 +27,2 @@\n'}
+[1.579098] (driver) StdoutLine: {'line': b'-class RoboclawDriver {\n'}
+[1.579212] (driver) StdoutLine: {'line': b'+class RoboclawDriver\n'}
+[1.579356] (driver) StdoutLine: {'line': b'+{\n'}
+[1.579465] (driver) StdoutLine: {'line': b'@@ -29,34 +30,39 @@\n'}
+[1.579544] (driver) StdoutLine: {'line': b'-    explicit RoboclawDriver(const string& port) : io(), serial(io, port) {\n'}
+[1.579623] (driver) StdoutLine: {'line': b'-        try {\n'}
+[1.579685] (driver) StdoutLine: {'line': b'-            serial.set_option(serial_port_base::baud_rate(SERIAL_BAUD_RATE));\n'}
+[1.579746] (driver) StdoutLine: {'line': b'-            serial.set_option(serial_port_base::character_size(8));\n'}
+[1.579807] (driver) StdoutLine: {'line': b'-            serial.set_option(serial_port_base::parity(serial_port_base::parity::none));\n'}
+[1.579867] (driver) StdoutLine: {'line': b'-            serial.set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));\n'}
+[1.579928] (driver) StdoutLine: {'line': b'-            serial.set_option(serial_port_base::flow_control(serial_port_base::flow_control::none));\n'}
+[1.579997] (driver) StdoutLine: {'line': b'-        } catch (const boost::system::system_error& e) {\n'}
+[1.580058] (driver) StdoutLine: {'line': b'-            throw runtime_error("Failed to configure serial port: " + string(e.what()));\n'}
+[1.580119] (driver) StdoutLine: {'line': b'-        }\n'}
+[1.580193] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.580302] (driver) StdoutLine: {'line': b'-\n'}
+[1.580408] (driver) StdoutLine: {'line': b'-    bool setMotorVelocity(int command, double counts_per_sec) {\n'}
+[1.580524] (driver) StdoutLine: {'line': b'-        vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};\n'}
+[1.580629] (driver) StdoutLine: {'line': b'-        appendInt32(data, static_cast<int>(counts_per_sec));\n'}
+[1.580694] (driver) StdoutLine: {'line': b'-        appendCRC(data);\n'}
+[1.580755] (driver) StdoutLine: {'line': b'-        return sendRoboclawCommand(data);\n'}
+[1.580816] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.580876] (driver) StdoutLine: {'line': b'-\n'}
+[1.580938] (driver) StdoutLine: {'line': b'-    bool setPIDConstants(int command, int K_p, int K_i, int K_d, int qpps) {\n'}
+[1.581002] (driver) StdoutLine: {'line': b'-        vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};\n'}
+[1.581062] (driver) StdoutLine: {'line': b'-        appendInt32(data, K_d);\n'}
+[1.581127] (driver) StdoutLine: {'line': b'-        appendInt32(data, K_p);\n'}
+[1.581187] (driver) StdoutLine: {'line': b'-        appendInt32(data, K_i);\n'}
+[1.581259] (driver) StdoutLine: {'line': b'-        appendInt32(data, qpps);\n'}
+[1.581323] (driver) StdoutLine: {'line': b'-        appendCRC(data);\n'}
+[1.581383] (driver) StdoutLine: {'line': b'-        return sendRoboclawCommand(data);\n'}
+[1.581442] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.581502] (driver) StdoutLine: {'line': b'-\n'}
+[1.581562] (driver) StdoutLine: {'line': b'-    bool resetEncoders() {\n'}
+[1.581629] (driver) StdoutLine: {'line': b'-        vector<uint8_t> data = {ROBOCLAW_ADDRESS, RESET_QUAD_ENCODER};\n'}
+[1.581698] (driver) StdoutLine: {'line': b'-        appendCRC(data);\n'}
+[1.581758] (driver) StdoutLine: {'line': b'-        return sendRoboclawCommand(data);\n'}
+[1.581818] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.581877] (driver) StdoutLine: {'line': b'+  explicit RoboclawDriver(const string & port)\n'}
+[1.581937] (driver) StdoutLine: {'line': b'+  : io(), serial(io, port)\n'}
+[1.581996] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.582055] (driver) StdoutLine: {'line': b'+    try {\n'}
+[1.582115] (driver) StdoutLine: {'line': b'+      serial.set_option(serial_port_base::baud_rate(SERIAL_BAUD_RATE));\n'}
+[1.582175] (driver) StdoutLine: {'line': b'+      serial.set_option(serial_port_base::character_size(8));\n'}
+[1.582252] (driver) StdoutLine: {'line': b'+      serial.set_option(serial_port_base::parity(serial_port_base::parity::none));\n'}
+[1.582326] (driver) StdoutLine: {'line': b'+      serial.set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));\n'}
+[1.582391] (driver) StdoutLine: {'line': b'+      serial.set_option(serial_port_base::flow_control(serial_port_base::flow_control::none));\n'}
+[1.582452] (driver) StdoutLine: {'line': b'+    } catch (const boost::system::system_error & e) {\n'}
+[1.582512] (driver) StdoutLine: {'line': b'+      throw runtime_error("Failed to configure serial port: " + string(e.what()));\n'}
+[1.582613] (driver) StdoutLine: {'line': b'+    }\n'}
+[1.582728] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.582796] (driver) StdoutLine: {'line': b'+\n'}
+[1.582857] (driver) StdoutLine: {'line': b'+  bool setMotorVelocity(int command, double counts_per_sec)\n'}
+[1.582918] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.582979] (driver) StdoutLine: {'line': b'+    vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};\n'}
+[1.583039] (driver) StdoutLine: {'line': b'+    appendInt32(data, static_cast<int>(counts_per_sec));\n'}
+[1.583099] (driver) StdoutLine: {'line': b'+    appendCRC(data);\n'}
+[1.583165] (driver) StdoutLine: {'line': b'+    return sendRoboclawCommand(data);\n'}
+[1.583225] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.583283] (driver) StdoutLine: {'line': b'+\n'}
+[1.583342] (driver) StdoutLine: {'line': b'+  bool setPIDConstants(int command, int K_p, int K_i, int K_d, int qpps)\n'}
+[1.583439] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.583548] (driver) StdoutLine: {'line': b'+    vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};\n'}
+[1.583670] (driver) StdoutLine: {'line': b'+    appendInt32(data, K_d);\n'}
+[1.583792] (driver) StdoutLine: {'line': b'+    appendInt32(data, K_p);\n'}
+[1.583862] (driver) StdoutLine: {'line': b'+    appendInt32(data, K_i);\n'}
+[1.583923] (driver) StdoutLine: {'line': b'+    appendInt32(data, qpps);\n'}
+[1.583982] (driver) StdoutLine: {'line': b'+    appendCRC(data);\n'}
+[1.584042] (driver) StdoutLine: {'line': b'+    return sendRoboclawCommand(data);\n'}
+[1.584102] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.584161] (driver) StdoutLine: {'line': b'+\n'}
+[1.584221] (driver) StdoutLine: {'line': b'+  bool resetEncoders()\n'}
+[1.584280] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.584339] (driver) StdoutLine: {'line': b'+    vector<uint8_t> data = {ROBOCLAW_ADDRESS, RESET_QUAD_ENCODER};\n'}
+[1.584398] (driver) StdoutLine: {'line': b'+    appendCRC(data);\n'}
+[1.584472] (driver) StdoutLine: {'line': b'+    return sendRoboclawCommand(data);\n'}
+[1.584542] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.584613] (driver) StdoutLine: {'line': b'@@ -65,39 +71,45 @@\n'}
+[1.584682] (driver) StdoutLine: {'line': b'-    io_service io;\n'}
+[1.584749] (driver) StdoutLine: {'line': b'-    serial_port serial;\n'}
+[1.584815] (driver) StdoutLine: {'line': b'-\n'}
+[1.584897] (driver) StdoutLine: {'line': b'-    bool sendRoboclawCommand(const vector<uint8_t>& data) {\n'}
+[1.584965] (driver) StdoutLine: {'line': b'-        try {\n'}
+[1.585034] (driver) StdoutLine: {'line': b'-            write(serial, buffer(data));\n'}
+[1.585101] (driver) StdoutLine: {'line': b'-            uint8_t response;\n'}
+[1.585168] (driver) StdoutLine: {'line': b'-            read(serial, buffer(&response, 1));\n'}
+[1.585234] (driver) StdoutLine: {'line': b'-            RCLCPP_DEBUG(rclcpp::get_logger("RoboclawDriver"), "Received Response: 0x%02X", response);\n'}
+[1.585301] (driver) StdoutLine: {'line': b'-            return true;\n'}
+[1.585367] (driver) StdoutLine: {'line': b'-        } catch (const boost::system::system_error& e) {\n'}
+[1.585434] (driver) StdoutLine: {'line': b'-            RCLCPP_ERROR(rclcpp::get_logger("RoboclawDriver"), "Serial Communication Error: %s", e.what());\n'}
+[1.585504] (driver) StdoutLine: {'line': b'-            return false;\n'}
+[1.585578] (driver) StdoutLine: {'line': b'-        }\n'}
+[1.585639] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.585699] (driver) StdoutLine: {'line': b'-\n'}
+[1.585759] (driver) StdoutLine: {'line': b'-    uint16_t calculateCRC(const vector<uint8_t>& data) {\n'}
+[1.585819] (driver) StdoutLine: {'line': b'-        uint16_t crc = 0;\n'}
+[1.585878] (driver) StdoutLine: {'line': b'-        for (auto byte : data) {\n'}
+[1.585981] (driver) StdoutLine: {'line': b'-            crc ^= static_cast<uint16_t>(byte) << 8;\n'}
+[1.586048] (driver) StdoutLine: {'line': b'-            for (int i = 0; i < 8; i++) {\n'}
+[1.586108] (driver) StdoutLine: {'line': b'-                crc = (crc & 0x8000) ? (crc << 1) ^ 0x1021 : (crc << 1);\n'}
+[1.586169] (driver) StdoutLine: {'line': b'-            }\n'}
+[1.586229] (driver) StdoutLine: {'line': b'-        }\n'}
+[1.586288] (driver) StdoutLine: {'line': b'-        return crc;\n'}
+[1.586348] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.586407] (driver) StdoutLine: {'line': b'-\n'}
+[1.586466] (driver) StdoutLine: {'line': b'-    // CRC\xe8\xbf\xbd\xe5\x8a\xa0\n'}
+[1.586527] (driver) StdoutLine: {'line': b'-    void appendCRC(vector<uint8_t>& data) {\n'}
+[1.586607] (driver) StdoutLine: {'line': b'-        uint16_t crc = calculateCRC(data);\n'}
+[1.586673] (driver) StdoutLine: {'line': b'-        data.push_back(static_cast<uint8_t>(crc >> 8));\n'}
+[1.586743] (driver) StdoutLine: {'line': b'-        data.push_back(static_cast<uint8_t>(crc & 0xFF));\n'}
+[1.586805] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.586866] (driver) StdoutLine: {'line': b'-\n'}
+[1.586927] (driver) StdoutLine: {'line': b'-    void appendInt32(vector<uint8_t>& data, int value) {\n'}
+[1.587004] (driver) StdoutLine: {'line': b'-        for (int i = 3; i >= 0; --i) {\n'}
+[1.587068] (driver) StdoutLine: {'line': b'-            data.push_back(static_cast<uint8_t>((value >> (8 * i)) & 0xFF));\n'}
+[1.587129] (driver) StdoutLine: {'line': b'-        }\n'}
+[1.587188] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.587248] (driver) StdoutLine: {'line': b'+  io_service io;\n'}
+[1.587308] (driver) StdoutLine: {'line': b'+  serial_port serial;\n'}
+[1.587366] (driver) StdoutLine: {'line': b'+\n'}
+[1.587426] (driver) StdoutLine: {'line': b'+  bool sendRoboclawCommand(const vector<uint8_t> & data)\n'}
+[1.587490] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.587555] (driver) StdoutLine: {'line': b'+    try {\n'}
+[1.587668] (driver) StdoutLine: {'line': b'+      write(serial, buffer(data));\n'}
+[1.587735] (driver) StdoutLine: {'line': b'+      uint8_t response;\n'}
+[1.587796] (driver) StdoutLine: {'line': b'+      read(serial, buffer(&response, 1));\n'}
+[1.587856] (driver) StdoutLine: {'line': b'+      RCLCPP_DEBUG(rclcpp::get_logger("RoboclawDriver"), "Received Response: 0x%02X", response);\n'}
+[1.587918] (driver) StdoutLine: {'line': b'+      return true;\n'}
+[1.587978] (driver) StdoutLine: {'line': b'+    } catch (const boost::system::system_error & e) {\n'}
+[1.588046] (driver) StdoutLine: {'line': b'+      RCLCPP_ERROR(\n'}
+[1.588122] (driver) StdoutLine: {'line': b'+        rclcpp::get_logger("RoboclawDriver"), "Serial Communication Error: %s",\n'}
+[1.588184] (driver) StdoutLine: {'line': b'+        e.what());\n'}
+[1.588245] (driver) StdoutLine: {'line': b'+      return false;\n'}
+[1.588304] (driver) StdoutLine: {'line': b'+    }\n'}
+[1.588364] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.588424] (driver) StdoutLine: {'line': b'+\n'}
+[1.588484] (driver) StdoutLine: {'line': b'+  uint16_t calculateCRC(const vector<uint8_t> & data)\n'}
+[1.588544] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.588605] (driver) StdoutLine: {'line': b'+    uint16_t crc = 0;\n'}
+[1.588665] (driver) StdoutLine: {'line': b'+    for (auto byte : data) {\n'}
+[1.588743] (driver) StdoutLine: {'line': b'+      crc ^= static_cast<uint16_t>(byte) << 8;\n'}
+[1.588807] (driver) StdoutLine: {'line': b'+      for (int i = 0; i < 8; i++) {\n'}
+[1.588869] (driver) StdoutLine: {'line': b'+        crc = (crc & 0x8000) ? (crc << 1) ^ 0x1021 : (crc << 1);\n'}
+[1.588929] (driver) StdoutLine: {'line': b'+      }\n'}
+[1.588989] (driver) StdoutLine: {'line': b'+    }\n'}
+[1.589049] (driver) StdoutLine: {'line': b'+    return crc;\n'}
+[1.589109] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.589233] (driver) StdoutLine: {'line': b'+\n'}
+[1.589328] (driver) StdoutLine: {'line': b'+  // CRC\xe8\xbf\xbd\xe5\x8a\xa0\n'}
+[1.589393] (driver) StdoutLine: {'line': b'+  void appendCRC(vector<uint8_t> & data)\n'}
+[1.589457] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.589518] (driver) StdoutLine: {'line': b'+    uint16_t crc = calculateCRC(data);\n'}
+[1.589579] (driver) StdoutLine: {'line': b'+    data.push_back(static_cast<uint8_t>(crc >> 8));\n'}
+[1.589639] (driver) StdoutLine: {'line': b'+    data.push_back(static_cast<uint8_t>(crc & 0xFF));\n'}
+[1.589700] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.589760] (driver) StdoutLine: {'line': b'+\n'}
+[1.589843] (driver) StdoutLine: {'line': b'+  void appendInt32(vector<uint8_t> & data, int value)\n'}
+[1.589906] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.589966] (driver) StdoutLine: {'line': b'+    for (int i = 3; i >= 0; --i) {\n'}
+[1.590031] (driver) StdoutLine: {'line': b'+      data.push_back(static_cast<uint8_t>((value >> (8 * i)) & 0xFF));\n'}
+[1.590100] (driver) StdoutLine: {'line': b'+    }\n'}
+[1.590167] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.590248] (driver) StdoutLine: {'line': b'@@ -107 +119,2 @@\n'}
+[1.590320] (driver) StdoutLine: {'line': b'-class Driver : public rclcpp::Node {\n'}
+[1.590382] (driver) StdoutLine: {'line': b'+class Driver : public rclcpp::Node\n'}
+[1.590442] (driver) StdoutLine: {'line': b'+{\n'}
+[1.590501] (driver) StdoutLine: {'line': b'@@ -109,22 +122,25 @@\n'}
+[1.590562] (driver) StdoutLine: {'line': b'-    Driver() : Node("driver"), roboclaw("/dev/ttyACM0") { \n'}
+[1.590623] (driver) StdoutLine: {'line': b'-        declare_parameter("crawler_circumference", 0.39);\n'}
+[1.590691] (driver) StdoutLine: {'line': b'-        declare_parameter("counts_per_rev", 256); // quad pulses per rev = counts per rev\n'}
+[1.590752] (driver) StdoutLine: {'line': b'-        declare_parameter("gearhead_ratio", 66); // \xe6\xb8\x9b\xe9\x80\x9f\xe6\xaf\x94\n'}
+[1.590813] (driver) StdoutLine: {'line': b'-        declare_parameter("pulley_ratio", 2);\n'}
+[1.590891] (driver) StdoutLine: {'line': b'-\n'}
+[1.590954] (driver) StdoutLine: {'line': b'-        crawler_circumference_ = get_parameter("crawler_circumference").as_double();\n'}
+[1.591015] (driver) StdoutLine: {'line': b'-        counts_per_rev_ = get_parameter("counts_per_rev").as_int();\n'}
+[1.591076] (driver) StdoutLine: {'line': b'-        gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();\n'}
+[1.591137] (driver) StdoutLine: {'line': b'-        pulley_ratio_ = get_parameter("pulley_ratio").as_int();\n'}
+[1.591197] (driver) StdoutLine: {'line': b'-\n'}
+[1.591262] (driver) StdoutLine: {'line': b'-        // velocity\xe3\x82\x92qpps\xe3\x81\xab\xe5\xa4\x89\xe6\x8f\x9b\xe3\x81\x99\xe3\x82\x8b\xe9\x9a\x9b\xe3\x81\xab\xe7\x94\xa8\xe3\x81\x84\xe3\x82\x8b\xe5\xae\x9a\xe6\x95\xb0\n'}
+[1.591336] (driver) StdoutLine: {'line': b'-        counts_per_meter_ = (counts_per_rev_ * gearhead_ratio_ * pulley_ratio_) / crawler_circumference_;\n'}
+[1.591398] (driver) StdoutLine: {'line': b'-\n'}
+[1.591458] (driver) StdoutLine: {'line': b'-        subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(\n'}
+[1.591517] (driver) StdoutLine: {'line': b'-            "/operator", 10, bind(&Driver::driver_callback, this, _1));\n'}
+[1.591597] (driver) StdoutLine: {'line': b'-\n'}
+[1.591659] (driver) StdoutLine: {'line': b'-        estop_subscription_ = create_subscription<std_msgs::msg::Bool>(\n'}
+[1.591719] (driver) StdoutLine: {'line': b'-            "/emergency_stop", 10, bind(&Driver::estop_callback, this, _1));\n'}
+[1.591780] (driver) StdoutLine: {'line': b'-\n'}
+[1.591839] (driver) StdoutLine: {'line': b'-        init();\n'}
+[1.591899] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.591975] (driver) StdoutLine: {'line': b'+  Driver()\n'}
+[1.592039] (driver) StdoutLine: {'line': b'+  : Node("driver"), roboclaw("/dev/ttyACM0")\n'}
+[1.592100] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.592159] (driver) StdoutLine: {'line': b'+    declare_parameter("crawler_circumference", 0.39);\n'}
+[1.592219] (driver) StdoutLine: {'line': b'+    declare_parameter("counts_per_rev", 256);     // quad pulses per rev = counts per rev\n'}
+[1.592278] (driver) StdoutLine: {'line': b'+    declare_parameter("gearhead_ratio", 66);     // \xe6\xb8\x9b\xe9\x80\x9f\xe6\xaf\x94\n'}
+[1.592356] (driver) StdoutLine: {'line': b'+    declare_parameter("pulley_ratio", 2);\n'}
+[1.592421] (driver) StdoutLine: {'line': b'+\n'}
+[1.592481] (driver) StdoutLine: {'line': b'+    crawler_circumference_ = get_parameter("crawler_circumference").as_double();\n'}
+[1.592541] (driver) StdoutLine: {'line': b'+    counts_per_rev_ = get_parameter("counts_per_rev").as_int();\n'}
+[1.592623] (driver) StdoutLine: {'line': b'+    gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();\n'}
+[1.592686] (driver) StdoutLine: {'line': b'+    pulley_ratio_ = get_parameter("pulley_ratio").as_int();\n'}
+[1.592747] (driver) StdoutLine: {'line': b'+\n'}
+[1.592806] (driver) StdoutLine: {'line': b'+    // velocity\xe3\x82\x92qpps\xe3\x81\xab\xe5\xa4\x89\xe6\x8f\x9b\xe3\x81\x99\xe3\x82\x8b\xe9\x9a\x9b\xe3\x81\xab\xe7\x94\xa8\xe3\x81\x84\xe3\x82\x8b\xe5\xae\x9a\xe6\x95\xb0\n'}
+[1.592869] (driver) StdoutLine: {'line': b'+    counts_per_meter_ = (counts_per_rev_ * gearhead_ratio_ * pulley_ratio_) /\n'}
+[1.592936] (driver) StdoutLine: {'line': b'+      crawler_circumference_;\n'}
+[1.593011] (driver) StdoutLine: {'line': b'+\n'}
+[1.593074] (driver) StdoutLine: {'line': b'+    subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(\n'}
+[1.593134] (driver) StdoutLine: {'line': b'+      "/operator", 10, bind(&Driver::driver_callback, this, _1));\n'}
+[1.593197] (driver) StdoutLine: {'line': b'+\n'}
+[1.593257] (driver) StdoutLine: {'line': b'+    estop_subscription_ = create_subscription<std_msgs::msg::Bool>(\n'}
+[1.593316] (driver) StdoutLine: {'line': b'+      "/emergency_stop", 10, bind(&Driver::estop_callback, this, _1));\n'}
+[1.593376] (driver) StdoutLine: {'line': b'+\n'}
+[1.593454] (driver) StdoutLine: {'line': b'+    init();\n'}
+[1.593516] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.593575] (driver) StdoutLine: {'line': b'@@ -133,53 +149,57 @@\n'}
+[1.593633] (driver) StdoutLine: {'line': b'-    RoboclawDriver roboclaw;\n'}
+[1.593692] (driver) StdoutLine: {'line': b'-    double crawler_circumference_;\n'}
+[1.593750] (driver) StdoutLine: {'line': b'-    int counts_per_rev_;\n'}
+[1.593809] (driver) StdoutLine: {'line': b'-    int gearhead_ratio_;\n'}
+[1.593867] (driver) StdoutLine: {'line': b'-    int pulley_ratio_;\n'}
+[1.593925] (driver) StdoutLine: {'line': b'-    double counts_per_meter_;\n'}
+[1.593983] (driver) StdoutLine: {'line': b'-    bool estop_active_ = false;  // E-stop state\n'}
+[1.594048] (driver) StdoutLine: {'line': b'-\n'}
+[1.594115] (driver) StdoutLine: {'line': b'-    rclcpp::Subscription<custom_interfaces::msg::DriverVelocity>::SharedPtr subscription_;\n'}
+[1.594176] (driver) StdoutLine: {'line': b'-    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr estop_subscription_;\n'}
+[1.594235] (driver) StdoutLine: {'line': b'-\n'}
+[1.594293] (driver) StdoutLine: {'line': b'-    double velocity_to_counts_per_sec(double velocity) const {\n'}
+[1.594353] (driver) StdoutLine: {'line': b'-        return velocity * counts_per_meter_;\n'}
+[1.594412] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.594478] (driver) StdoutLine: {'line': b'-\n'}
+[1.594545] (driver) StdoutLine: {'line': b'-    void init() {\n'}
+[1.594606] (driver) StdoutLine: {'line': b'-        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);\n'}
+[1.594666] (driver) StdoutLine: {'line': b'-        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);\n'}
+[1.594726] (driver) StdoutLine: {'line': b'-        roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);\n'}
+[1.594786] (driver) StdoutLine: {'line': b'-        roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);\n'}
+[1.594845] (driver) StdoutLine: {'line': b'-        roboclaw.resetEncoders();\n'}
+[1.594903] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.594962] (driver) StdoutLine: {'line': b'-\n'}
+[1.595021] (driver) StdoutLine: {'line': b'-    void driver_callback(const custom_interfaces::msg::DriverVelocity& msg) {\n'}
+[1.595081] (driver) StdoutLine: {'line': b'-        if (estop_active_) {\n'}
+[1.595157] (driver) StdoutLine: {'line': b'-            RCLCPP_WARN(get_logger(), "E-stop is active. Ignoring motor commands.");\n'}
+[1.595218] (driver) StdoutLine: {'line': b'-            return;\n'}
+[1.595278] (driver) StdoutLine: {'line': b'-        }\n'}
+[1.595337] (driver) StdoutLine: {'line': b'-\n'}
+[1.595396] (driver) StdoutLine: {'line': b'-        double M1_counts_per_sec = velocity_to_counts_per_sec(msg.m1_vel);\n'}
+[1.595456] (driver) StdoutLine: {'line': b'-        double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);\n'}
+[1.595516] (driver) StdoutLine: {'line': b'-\n'}
+[1.595610] (driver) StdoutLine: {'line': b'-        if (!roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec)) {\n'}
+[1.595675] (driver) StdoutLine: {'line': b'-            RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");\n'}
+[1.595737] (driver) StdoutLine: {'line': b'-        }\n'}
+[1.595798] (driver) StdoutLine: {'line': b'-        if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec)) {\n'}
+[1.595864] (driver) StdoutLine: {'line': b'-            RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");\n'}
+[1.596001] (driver) StdoutLine: {'line': b'-        }\n'}
+[1.596111] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.596224] (driver) StdoutLine: {'line': b'-\n'}
+[1.596292] (driver) StdoutLine: {'line': b'-    void estop_callback(const std_msgs::msg::Bool::SharedPtr msg) {\n'}
+[1.596355] (driver) StdoutLine: {'line': b'-        estop_active_ = msg->data;\n'}
+[1.596416] (driver) StdoutLine: {'line': b'-\n'}
+[1.596476] (driver) StdoutLine: {'line': b'-        if (estop_active_) {\n'}
+[1.596537] (driver) StdoutLine: {'line': b'-            RCLCPP_WARN(get_logger(), "E-stop activated. Stopping all motors.");\n'}
+[1.596598] (driver) StdoutLine: {'line': b'-\n'}
+[1.596678] (driver) StdoutLine: {'line': b'-            // Send zero velocity commands to stop motors\n'}
+[1.596743] (driver) StdoutLine: {'line': b'-            roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);\n'}
+[1.596803] (driver) StdoutLine: {'line': b'-            roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);\n'}
+[1.596871] (driver) StdoutLine: {'line': b'-        } else {\n'}
+[1.596932] (driver) StdoutLine: {'line': b'-            RCLCPP_INFO(get_logger(), "E-stop deactivated. Resuming normal operation.");\n'}
+[1.596992] (driver) StdoutLine: {'line': b'-        }\n'}
+[1.597052] (driver) StdoutLine: {'line': b'-    }\n'}
+[1.597111] (driver) StdoutLine: {'line': b'+  RoboclawDriver roboclaw;\n'}
+[1.597184] (driver) StdoutLine: {'line': b'+  double crawler_circumference_;\n'}
+[1.597244] (driver) StdoutLine: {'line': b'+  int counts_per_rev_;\n'}
+[1.597325] (driver) StdoutLine: {'line': b'+  int gearhead_ratio_;\n'}
+[1.597386] (driver) StdoutLine: {'line': b'+  int pulley_ratio_;\n'}
+[1.597446] (driver) StdoutLine: {'line': b'+  double counts_per_meter_;\n'}
+[1.597506] (driver) StdoutLine: {'line': b'+  bool estop_active_ = false;    // E-stop state\n'}
+[1.597567] (driver) StdoutLine: {'line': b'+\n'}
+[1.597626] (driver) StdoutLine: {'line': b'+  rclcpp::Subscription<custom_interfaces::msg::DriverVelocity>::SharedPtr subscription_;\n'}
+[1.597687] (driver) StdoutLine: {'line': b'+  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr estop_subscription_;\n'}
+[1.597765] (driver) StdoutLine: {'line': b'+\n'}
+[1.597825] (driver) StdoutLine: {'line': b'+  double velocity_to_counts_per_sec(double velocity) const\n'}
+[1.597886] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.597945] (driver) StdoutLine: {'line': b'+    return velocity * counts_per_meter_;\n'}
+[1.598004] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.598063] (driver) StdoutLine: {'line': b'+\n'}
+[1.598122] (driver) StdoutLine: {'line': b'+  void init()\n'}
+[1.598180] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.598239] (driver) StdoutLine: {'line': b'+    roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);\n'}
+[1.598299] (driver) StdoutLine: {'line': b'+    roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);\n'}
+[1.598376] (driver) StdoutLine: {'line': b'+    roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);\n'}
+[1.598439] (driver) StdoutLine: {'line': b'+    roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);\n'}
+[1.598499] (driver) StdoutLine: {'line': b'+    roboclaw.resetEncoders();\n'}
+[1.598559] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.598618] (driver) StdoutLine: {'line': b'+\n'}
+[1.598680] (driver) StdoutLine: {'line': b'+  void driver_callback(const custom_interfaces::msg::DriverVelocity & msg)\n'}
+[1.598749] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.598834] (driver) StdoutLine: {'line': b'+    if (estop_active_) {\n'}
+[1.598954] (driver) StdoutLine: {'line': b'+      RCLCPP_WARN(get_logger(), "E-stop is active. Ignoring motor commands.");\n'}
+[1.599068] (driver) StdoutLine: {'line': b'+      return;\n'}
+[1.599134] (driver) StdoutLine: {'line': b'+    }\n'}
+[1.599247] (driver) StdoutLine: {'line': b'+\n'}
+[1.599366] (driver) StdoutLine: {'line': b'+    double M1_counts_per_sec = velocity_to_counts_per_sec(msg.m1_vel);\n'}
+[1.599457] (driver) StdoutLine: {'line': b'+    double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);\n'}
+[1.599554] (driver) StdoutLine: {'line': b'+\n'}
+[1.599668] (driver) StdoutLine: {'line': b'+    if (!roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec)) {\n'}
+[1.599788] (driver) StdoutLine: {'line': b'+      RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");\n'}
+[1.599907] (driver) StdoutLine: {'line': b'+    }\n'}
+[1.600015] (driver) StdoutLine: {'line': b'+    if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec)) {\n'}
+[1.600128] (driver) StdoutLine: {'line': b'+      RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");\n'}
+[1.600235] (driver) StdoutLine: {'line': b'+    }\n'}
+[1.600341] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.600447] (driver) StdoutLine: {'line': b'+\n'}
+[1.600578] (driver) StdoutLine: {'line': b'+  void estop_callback(const std_msgs::msg::Bool::SharedPtr msg)\n'}
+[1.600688] (driver) StdoutLine: {'line': b'+  {\n'}
+[1.600794] (driver) StdoutLine: {'line': b'+    estop_active_ = msg->data;\n'}
+[1.600901] (driver) StdoutLine: {'line': b'+\n'}
+[1.600987] (driver) StdoutLine: {'line': b'+    if (estop_active_) {\n'}
+[1.601051] (driver) StdoutLine: {'line': b'+      RCLCPP_WARN(get_logger(), "E-stop activated. Stopping all motors.");\n'}
+[1.601161] (driver) StdoutLine: {'line': b'+\n'}
+[1.601287] (driver) StdoutLine: {'line': b'+      // Send zero velocity commands to stop motors\n'}
+[1.601395] (driver) StdoutLine: {'line': b'+      roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);\n'}
+[1.601502] (driver) StdoutLine: {'line': b'+      roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);\n'}
+[1.601614] (driver) StdoutLine: {'line': b'+    } else {\n'}
+[1.601737] (driver) StdoutLine: {'line': b'+      RCLCPP_INFO(get_logger(), "E-stop deactivated. Resuming normal operation.");\n'}
+[1.601878] (driver) StdoutLine: {'line': b'+    }\n'}
+[1.601992] (driver) StdoutLine: {'line': b'+  }\n'}
+[1.602070] (driver) StdoutLine: {'line': b'@@ -188,5 +208,6 @@\n'}
+[1.602131] (driver) StdoutLine: {'line': b'-int main(int argc, char* argv[]) {\n'}
+[1.602189] (-) TimerEvent: {}
+[1.602297] (driver) StdoutLine: {'line': b'-    rclcpp::init(argc, argv);\n'}
+[1.602443] (driver) StdoutLine: {'line': b'-    rclcpp::spin(std::make_shared<Driver>());\n'}
+[1.602740] (driver) StdoutLine: {'line': b'-    rclcpp::shutdown();\n'}
+[1.602851] (driver) StdoutLine: {'line': b'-    return 0;\n'}
+[1.602953] (driver) StdoutLine: {'line': b'+int main(int argc, char * argv[])\n'}
+[1.603054] (driver) StdoutLine: {'line': b'+{\n'}
+[1.603171] (driver) StdoutLine: {'line': b'+  rclcpp::init(argc, argv);\n'}
+[1.603347] (driver) StdoutLine: {'line': b'+  rclcpp::spin(std::make_shared<Driver>());\n'}
+[1.603524] (driver) StdoutLine: {'line': b'+  rclcpp::shutdown();\n'}
+[1.603757] (driver) StdoutLine: {'line': b'+  return 0;\n'}
+[1.603929] (driver) StdoutLine: {'line': b'\n'}
+[1.604052] (driver) StdoutLine: {'line': b'1 files with code style divergence\n'}
+[1.604213] (driver) StdoutLine: {'line': b'-- run_test.py: return code 1\n'}
+[1.604373] (driver) StdoutLine: {'line': b"-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml'\n"}
+[1.604565] (driver) StdoutLine: {'line': b'\n'}
+[1.604713] (driver) StdoutLine: {'line': b'test 4\n'}
+[1.604854] (driver) StdoutLine: {'line': b'    Start 4: xmllint\n'}
+[1.605014] (driver) StdoutLine: {'line': b'\n'}
+[1.605171] (driver) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml" "--package-name" "driver" "--output-file" "/root/working/rodep_ros2/yano_ws/build/driver/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml"\n'}
+[1.605364] (driver) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[1.646552] (driver) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':\n"}
+[1.646822] (driver) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml\n'}
+[1.702341] (-) TimerEvent: {}
+[1.802709] (-) TimerEvent: {}
+[1.903204] (-) TimerEvent: {}
+[2.003709] (-) TimerEvent: {}
+[2.104155] (-) TimerEvent: {}
+[2.204606] (-) TimerEvent: {}
+[2.235494] (driver) StdoutLine: {'line': b"4: File 'package.xml' is valid\n"}
+[2.235747] (driver) StdoutLine: {'line': b'4: \n'}
+[2.235875] (driver) StdoutLine: {'line': b'4: No problems found\n'}
+[2.248017] (driver) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[2.248457] (driver) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml'\n"}
+[2.258952] (driver) StdoutLine: {'line': b'4/4 Test #4: xmllint ..........................   Passed    0.69 sec\n'}
+[2.259414] (driver) StdoutLine: {'line': b'\n'}
+[2.259610] (driver) StdoutLine: {'line': b'50% tests passed\x1b[0;0m, \x1b[0;31m2 tests failed\x1b[0;0m out of 4\n'}
+[2.259688] (driver) StdoutLine: {'line': b'\n'}
+[2.259755] (driver) StdoutLine: {'line': b'Label Time Summary:\n'}
+[2.259819] (driver) StdoutLine: {'line': b'cppcheck      =   0.19 sec*proc (1 test)\n'}
+[2.259882] (driver) StdoutLine: {'line': b'lint_cmake    =   0.18 sec*proc (1 test)\n'}
+[2.259963] (driver) StdoutLine: {'line': b'linter        =   1.28 sec*proc (4 tests)\n'}
+[2.260025] (driver) StdoutLine: {'line': b'uncrustify    =   0.21 sec*proc (1 test)\n'}
+[2.260087] (driver) StdoutLine: {'line': b'xmllint       =   0.69 sec*proc (1 test)\n'}
+[2.260147] (driver) StdoutLine: {'line': b'\n'}
+[2.260207] (driver) StdoutLine: {'line': b'Total Test time (real) =   1.28 sec\n'}
+[2.260267] (driver) StdoutLine: {'line': b'\n'}
+[2.260326] (driver) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[2.260386] (driver) StdoutLine: {'line': b'\t\x1b[0;31m  2 - lint_cmake (Failed)\x1b[0;0m\n'}
+[2.260446] (driver) StdoutLine: {'line': b'\t\x1b[0;31m  3 - uncrustify (Failed)\x1b[0;0m\n'}
+[2.260827] (driver) StderrLine: {'line': b'Errors while running CTest\n'}
+[2.263427] (driver) CommandEnded: {'returncode': 8}
+[2.263901] (driver) TestFailure: {'identifier': 'driver'}
+[2.263946] (driver) JobEnded: {'identifier': 'driver', 'rc': 0}
+[2.264823] (-) EventReactorShutdown: {}

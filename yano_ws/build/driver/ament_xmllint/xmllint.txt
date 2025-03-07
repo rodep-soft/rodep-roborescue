@@ -1,0 +1,10 @@
+-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml
+
+File 'package.xml' is valid
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml'

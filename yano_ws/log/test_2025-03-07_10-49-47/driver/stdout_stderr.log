@@ -1,0 +1,429 @@
+UpdateCTestConfiguration  from :/root/working/rodep_ros2/yano_ws/build/driver/CTestConfiguration.ini
+Parse Config file:/root/working/rodep_ros2/yano_ws/build/driver/CTestConfiguration.ini
+   Site: cf33789d9224
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20250307-1049 - Experimental
+UpdateCTestConfiguration  from :/root/working/rodep_ros2/yano_ws/build/driver/CTestConfiguration.ini
+Parse Config file:/root/working/rodep_ros2/yano_ws/build/driver/CTestConfiguration.ini
+Test project /root/working/rodep_ros2/yano_ws/build/driver
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: cppcheck
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml" "--package-name" "driver" "--output-file" "/root/working/rodep_ros2/yano_ws/build/driver/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml"
+1: Test timeout computed to be: 300
+1: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':
+1:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml
+1: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+1: -- run_test.py: return code 0
+1: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/cppcheck.xunit.xml'
+1/4 Test #1: cppcheck .........................   Passed    0.25 sec
+test 2
+    Start 2: lint_cmake
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml" "--package-name" "driver" "--output-file" "/root/working/rodep_ros2/yano_ws/build/driver/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml"
+2: Test timeout computed to be: 60
+2: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':
+2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml
+2: CMakeLists.txt:23: Tab found; please use spaces [whitespace/tabs]
+2: CMakeLists.txt:23: Line ends in whitespace [whitespace/eol]
+2: 
+2: 
+2: 2 errors
+2: -- run_test.py: return code 1
+2: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml'
+2/4 Test #2: lint_cmake .......................***Failed    0.23 sec
+test 3
+    Start 3: uncrustify
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml" "--package-name" "driver" "--output-file" "/root/working/rodep_ros2/yano_ws/build/driver/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml"
+3: Test timeout computed to be: 60
+3: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':
+3:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml
+3: Code style divergence in file 'src/driver.cpp':
+3: 
+3: --- src/driver.cpp
+3: +++ src/driver.cpp.uncrustify
+3: @@ -6 +6 @@
+3: -#include <std_msgs/msg/bool.hpp> 
+3: +#include <std_msgs/msg/bool.hpp>
+3: @@ -27 +27,2 @@
+3: -class RoboclawDriver {
+3: +class RoboclawDriver
+3: +{
+3: @@ -29,34 +30,39 @@
+3: -    explicit RoboclawDriver(const string& port) : io(), serial(io, port) {
+3: -        try {
+3: -            serial.set_option(serial_port_base::baud_rate(SERIAL_BAUD_RATE));
+3: -            serial.set_option(serial_port_base::character_size(8));
+3: -            serial.set_option(serial_port_base::parity(serial_port_base::parity::none));
+3: -            serial.set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));
+3: -            serial.set_option(serial_port_base::flow_control(serial_port_base::flow_control::none));
+3: -        } catch (const boost::system::system_error& e) {
+3: -            throw runtime_error("Failed to configure serial port: " + string(e.what()));
+3: -        }
+3: -    }
+3: -
+3: -    bool setMotorVelocity(int command, double counts_per_sec) {
+3: -        vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};
+3: -        appendInt32(data, static_cast<int>(counts_per_sec));
+3: -        appendCRC(data);
+3: -        return sendRoboclawCommand(data);
+3: -    }
+3: -
+3: -    bool setPIDConstants(int command, int K_p, int K_i, int K_d, int qpps) {
+3: -        vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};
+3: -        appendInt32(data, K_d);
+3: -        appendInt32(data, K_p);
+3: -        appendInt32(data, K_i);
+3: -        appendInt32(data, qpps);
+3: -        appendCRC(data);
+3: -        return sendRoboclawCommand(data);
+3: -    }
+3: -
+3: -    bool resetEncoders() {
+3: -        vector<uint8_t> data = {ROBOCLAW_ADDRESS, RESET_QUAD_ENCODER};
+3: -        appendCRC(data);
+3: -        return sendRoboclawCommand(data);
+3: -    }
+3: +  explicit RoboclawDriver(const string & port)
+3: +  : io(), serial(io, port)
+3: +  {
+3: +    try {
+3: +      serial.set_option(serial_port_base::baud_rate(SERIAL_BAUD_RATE));
+3: +      serial.set_option(serial_port_base::character_size(8));
+3: +      serial.set_option(serial_port_base::parity(serial_port_base::parity::none));
+3: +      serial.set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));
+3: +      serial.set_option(serial_port_base::flow_control(serial_port_base::flow_control::none));
+3: +    } catch (const boost::system::system_error & e) {
+3: +      throw runtime_error("Failed to configure serial port: " + string(e.what()));
+3: +    }
+3: +  }
+3: +
+3: +  bool setMotorVelocity(int command, double counts_per_sec)
+3: +  {
+3: +    vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};
+3: +    appendInt32(data, static_cast<int>(counts_per_sec));
+3: +    appendCRC(data);
+3: +    return sendRoboclawCommand(data);
+3: +  }
+3: +
+3: +  bool setPIDConstants(int command, int K_p, int K_i, int K_d, int qpps)
+3: +  {
+3: +    vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};
+3: +    appendInt32(data, K_d);
+3: +    appendInt32(data, K_p);
+3: +    appendInt32(data, K_i);
+3: +    appendInt32(data, qpps);
+3: +    appendCRC(data);
+3: +    return sendRoboclawCommand(data);
+3: +  }
+3: +
+3: +  bool resetEncoders()
+3: +  {
+3: +    vector<uint8_t> data = {ROBOCLAW_ADDRESS, RESET_QUAD_ENCODER};
+3: +    appendCRC(data);
+3: +    return sendRoboclawCommand(data);
+3: +  }
+3: @@ -65,39 +71,45 @@
+3: -    io_service io;
+3: -    serial_port serial;
+3: -
+3: -    bool sendRoboclawCommand(const vector<uint8_t>& data) {
+3: -        try {
+3: -            write(serial, buffer(data));
+3: -            uint8_t response;
+3: -            read(serial, buffer(&response, 1));
+3: -            RCLCPP_DEBUG(rclcpp::get_logger("RoboclawDriver"), "Received Response: 0x%02X", response);
+3: -            return true;
+3: -        } catch (const boost::system::system_error& e) {
+3: -            RCLCPP_ERROR(rclcpp::get_logger("RoboclawDriver"), "Serial Communication Error: %s", e.what());
+3: -            return false;
+3: -        }
+3: -    }
+3: -
+3: -    uint16_t calculateCRC(const vector<uint8_t>& data) {
+3: -        uint16_t crc = 0;
+3: -        for (auto byte : data) {
+3: -            crc ^= static_cast<uint16_t>(byte) << 8;
+3: -            for (int i = 0; i < 8; i++) {
+3: -                crc = (crc & 0x8000) ? (crc << 1) ^ 0x1021 : (crc << 1);
+3: -            }
+3: -        }
+3: -        return crc;
+3: -    }
+3: -
+3: -    // CRC追加
+3: -    void appendCRC(vector<uint8_t>& data) {
+3: -        uint16_t crc = calculateCRC(data);
+3: -        data.push_back(static_cast<uint8_t>(crc >> 8));
+3: -        data.push_back(static_cast<uint8_t>(crc & 0xFF));
+3: -    }
+3: -
+3: -    void appendInt32(vector<uint8_t>& data, int value) {
+3: -        for (int i = 3; i >= 0; --i) {
+3: -            data.push_back(static_cast<uint8_t>((value >> (8 * i)) & 0xFF));
+3: -        }
+3: -    }
+3: +  io_service io;
+3: +  serial_port serial;
+3: +
+3: +  bool sendRoboclawCommand(const vector<uint8_t> & data)
+3: +  {
+3: +    try {
+3: +      write(serial, buffer(data));
+3: +      uint8_t response;
+3: +      read(serial, buffer(&response, 1));
+3: +      RCLCPP_DEBUG(rclcpp::get_logger("RoboclawDriver"), "Received Response: 0x%02X", response);
+3: +      return true;
+3: +    } catch (const boost::system::system_error & e) {
+3: +      RCLCPP_ERROR(
+3: +        rclcpp::get_logger("RoboclawDriver"), "Serial Communication Error: %s",
+3: +        e.what());
+3: +      return false;
+3: +    }
+3: +  }
+3: +
+3: +  uint16_t calculateCRC(const vector<uint8_t> & data)
+3: +  {
+3: +    uint16_t crc = 0;
+3: +    for (auto byte : data) {
+3: +      crc ^= static_cast<uint16_t>(byte) << 8;
+3: +      for (int i = 0; i < 8; i++) {
+3: +        crc = (crc & 0x8000) ? (crc << 1) ^ 0x1021 : (crc << 1);
+3: +      }
+3: +    }
+3: +    return crc;
+3: +  }
+3: +
+3: +  // CRC追加
+3: +  void appendCRC(vector<uint8_t> & data)
+3: +  {
+3: +    uint16_t crc = calculateCRC(data);
+3: +    data.push_back(static_cast<uint8_t>(crc >> 8));
+3: +    data.push_back(static_cast<uint8_t>(crc & 0xFF));
+3: +  }
+3: +
+3: +  void appendInt32(vector<uint8_t> & data, int value)
+3: +  {
+3: +    for (int i = 3; i >= 0; --i) {
+3: +      data.push_back(static_cast<uint8_t>((value >> (8 * i)) & 0xFF));
+3: +    }
+3: +  }
+3: @@ -107 +119,2 @@
+3: -class Driver : public rclcpp::Node {
+3: +class Driver : public rclcpp::Node
+3: +{
+3: @@ -109,22 +122,25 @@
+3: -    Driver() : Node("driver"), roboclaw("/dev/ttyACM0") { 
+3: -        declare_parameter("crawler_circumference", 0.39);
+3: -        declare_parameter("counts_per_rev", 256); // quad pulses per rev = counts per rev
+3: -        declare_parameter("gearhead_ratio", 66); // 減速比
+3: -        declare_parameter("pulley_ratio", 2);
+3: -
+3: -        crawler_circumference_ = get_parameter("crawler_circumference").as_double();
+3: -        counts_per_rev_ = get_parameter("counts_per_rev").as_int();
+3: -        gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();
+3: -        pulley_ratio_ = get_parameter("pulley_ratio").as_int();
+3: -
+3: -        // velocityをqppsに変換する際に用いる定数
+3: -        counts_per_meter_ = (counts_per_rev_ * gearhead_ratio_ * pulley_ratio_) / crawler_circumference_;
+3: -
+3: -        subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(
+3: -            "/operator", 10, bind(&Driver::driver_callback, this, _1));
+3: -
+3: -        estop_subscription_ = create_subscription<std_msgs::msg::Bool>(
+3: -            "/emergency_stop", 10, bind(&Driver::estop_callback, this, _1));
+3: -
+3: -        init();
+3: -    }
+3: +  Driver()
+3: +  : Node("driver"), roboclaw("/dev/ttyACM0")
+3: +  {
+3: +    declare_parameter("crawler_circumference", 0.39);
+3: +    declare_parameter("counts_per_rev", 256);     // quad pulses per rev = counts per rev
+3: +    declare_parameter("gearhead_ratio", 66);     // 減速比
+3: +    declare_parameter("pulley_ratio", 2);
+3: +
+3: +    crawler_circumference_ = get_parameter("crawler_circumference").as_double();
+3: +    counts_per_rev_ = get_parameter("counts_per_rev").as_int();
+3: +    gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();
+3: +    pulley_ratio_ = get_parameter("pulley_ratio").as_int();
+3: +
+3: +    // velocityをqppsに変換する際に用いる定数
+3: +    counts_per_meter_ = (counts_per_rev_ * gearhead_ratio_ * pulley_ratio_) /
+3: +      crawler_circumference_;
+3: +
+3: +    subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(
+3: +      "/operator", 10, bind(&Driver::driver_callback, this, _1));
+3: +
+3: +    estop_subscription_ = create_subscription<std_msgs::msg::Bool>(
+3: +      "/emergency_stop", 10, bind(&Driver::estop_callback, this, _1));
+3: +
+3: +    init();
+3: +  }
+3: @@ -133,53 +149,57 @@
+3: -    RoboclawDriver roboclaw;
+3: -    double crawler_circumference_;
+3: -    int counts_per_rev_;
+3: -    int gearhead_ratio_;
+3: -    int pulley_ratio_;
+3: -    double counts_per_meter_;
+3: -    bool estop_active_ = false;  // E-stop state
+3: -
+3: -    rclcpp::Subscription<custom_interfaces::msg::DriverVelocity>::SharedPtr subscription_;
+3: -    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr estop_subscription_;
+3: -
+3: -    double velocity_to_counts_per_sec(double velocity) const {
+3: -        return velocity * counts_per_meter_;
+3: -    }
+3: -
+3: -    void init() {
+3: -        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);
+3: -        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);
+3: -        roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);
+3: -        roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);
+3: -        roboclaw.resetEncoders();
+3: -    }
+3: -
+3: -    void driver_callback(const custom_interfaces::msg::DriverVelocity& msg) {
+3: -        if (estop_active_) {
+3: -            RCLCPP_WARN(get_logger(), "E-stop is active. Ignoring motor commands.");
+3: -            return;
+3: -        }
+3: -
+3: -        double M1_counts_per_sec = velocity_to_counts_per_sec(msg.m1_vel);
+3: -        double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);
+3: -
+3: -        if (!roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec)) {
+3: -            RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");
+3: -        }
+3: -        if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec)) {
+3: -            RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");
+3: -        }
+3: -    }
+3: -
+3: -    void estop_callback(const std_msgs::msg::Bool::SharedPtr msg) {
+3: -        estop_active_ = msg->data;
+3: -
+3: -        if (estop_active_) {
+3: -            RCLCPP_WARN(get_logger(), "E-stop activated. Stopping all motors.");
+3: -
+3: -            // Send zero velocity commands to stop motors
+3: -            roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);
+3: -            roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);
+3: -        } else {
+3: -            RCLCPP_INFO(get_logger(), "E-stop deactivated. Resuming normal operation.");
+3: -        }
+3: -    }
+3: +  RoboclawDriver roboclaw;
+3: +  double crawler_circumference_;
+3: +  int counts_per_rev_;
+3: +  int gearhead_ratio_;
+3: +  int pulley_ratio_;
+3: +  double counts_per_meter_;
+3: +  bool estop_active_ = false;    // E-stop state
+3: +
+3: +  rclcpp::Subscription<custom_interfaces::msg::DriverVelocity>::SharedPtr subscription_;
+3: +  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr estop_subscription_;
+3: +
+3: +  double velocity_to_counts_per_sec(double velocity) const
+3: +  {
+3: +    return velocity * counts_per_meter_;
+3: +  }
+3: +
+3: +  void init()
+3: +  {
+3: +    roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);
+3: +    roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);
+3: +    roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);
+3: +    roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);
+3: +    roboclaw.resetEncoders();
+3: +  }
+3: +
+3: +  void driver_callback(const custom_interfaces::msg::DriverVelocity & msg)
+3: +  {
+3: +    if (estop_active_) {
+3: +      RCLCPP_WARN(get_logger(), "E-stop is active. Ignoring motor commands.");
+3: +      return;
+3: +    }
+3: +
+3: +    double M1_counts_per_sec = velocity_to_counts_per_sec(msg.m1_vel);
+3: +    double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);
+3: +
+3: +    if (!roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec)) {
+3: +      RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");
+3: +    }
+3: +    if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec)) {
+3: +      RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");
+3: +    }
+3: +  }
+3: +
+3: +  void estop_callback(const std_msgs::msg::Bool::SharedPtr msg)
+3: +  {
+3: +    estop_active_ = msg->data;
+3: +
+3: +    if (estop_active_) {
+3: +      RCLCPP_WARN(get_logger(), "E-stop activated. Stopping all motors.");
+3: +
+3: +      // Send zero velocity commands to stop motors
+3: +      roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);
+3: +      roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);
+3: +    } else {
+3: +      RCLCPP_INFO(get_logger(), "E-stop deactivated. Resuming normal operation.");
+3: +    }
+3: +  }
+3: @@ -188,5 +208,6 @@
+3: -int main(int argc, char* argv[]) {
+3: -    rclcpp::init(argc, argv);
+3: -    rclcpp::spin(std::make_shared<Driver>());
+3: -    rclcpp::shutdown();
+3: -    return 0;
+3: +int main(int argc, char * argv[])
+3: +{
+3: +  rclcpp::init(argc, argv);
+3: +  rclcpp::spin(std::make_shared<Driver>());
+3: +  rclcpp::shutdown();
+3: +  return 0;
+3: 
+3: 1 files with code style divergence
+3: -- run_test.py: return code 1
+3: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/uncrustify.xunit.xml'
+3/4 Test #3: uncrustify .......................***Failed    0.27 sec
+test 4
+    Start 4: xmllint
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml" "--package-name" "driver" "--output-file" "/root/working/rodep_ros2/yano_ws/build/driver/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml"
+4: Test timeout computed to be: 60
+4: -- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':
+4:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml
+4: File 'package.xml' is valid
+4: 
+4: No problems found
+4: -- run_test.py: return code 0
+4: -- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/xmllint.xunit.xml'
+4/4 Test #4: xmllint ..........................   Passed    0.76 sec
+
+50% tests passed[0;0m, [0;31m2 tests failed[0;0m out of 4
+
+Label Time Summary:
+cppcheck      =   0.25 sec*proc (1 test)
+lint_cmake    =   0.23 sec*proc (1 test)
+linter        =   1.51 sec*proc (4 tests)
+uncrustify    =   0.27 sec*proc (1 test)
+xmllint       =   0.76 sec*proc (1 test)
+
+Total Test time (real) =   1.51 sec
+
+The following tests FAILED:
+	[0;31m  2 - lint_cmake (Failed)[0;0m
+	[0;31m  3 - uncrustify (Failed)[0;0m
+Errors while running CTest
+Output from these tests are in: /root/working/rodep_ros2/yano_ws/build/driver/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.

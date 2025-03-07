@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250307-1047-Experimental"
+	Name="cf33789d9224"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="cf33789d9224"
+	OSRelease="6.12.12-2-MANJARO"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Mon, 03 Feb 2025 16:27:19 +0000"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="78"
+	ProcessorCacheSize="4096"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="10239"
+	TotalPhysicalMemory="15864"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3000.17"
+	>
+	<Testing>
+		<StartDateTime>Mar 07 10:47 UTC</StartDateTime>
+		<StartTestTime>1741344428</StartTestTime>
+		<TestList>
+			<Test>./lint_cmake</Test>
+			<Test>./xmllint</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>lint_cmake</Name>
+			<Path>.</Path>
+			<FullName>./lint_cmake</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.198923</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/custom_interfaces':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml
+CMakeLists.txt:17: Tab found; please use spaces [whitespace/tabs]
+CMakeLists.txt:18: Tab found; please use spaces [whitespace/tabs]
+CMakeLists.txt:22: Tab found; please use spaces [whitespace/tabs]
+CMakeLists.txt:23: Tab found; please use spaces [whitespace/tabs]
+
+
+4 errors
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>lint_cmake</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="failed">
+			<Name>xmllint</Name>
+			<Path>.</Path>
+			<FullName>./xmllint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.01338</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/custom_interfaces':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml
+File 'package.xml' is invalid:
+/root/working/rodep_ros2/yano_ws/custom_interfaces/package.xml:15: element test_depend: Schemas validity error : Element 'test_depend': This element is not expected. Expected is one of ( member_of_group, export ).
+/root/working/rodep_ros2/yano_ws/custom_interfaces/package.xml fails to validate
+
+1 files are invalid
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>xmllint</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Mar 07 10:47 UTC</EndDateTime>
+		<EndTestTime>1741344429</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

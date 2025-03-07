@@ -1,0 +1,437 @@
+[0.000000] (-) TimerEvent: {}
+[0.001779] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.001938] (driver) JobQueued: {'identifier': 'driver', 'dependencies': OrderedDict([('custom_interfaces', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces')])}
+[0.001996] (operator) JobQueued: {'identifier': 'operator', 'dependencies': OrderedDict([('custom_interfaces', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces')])}
+[0.002041] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.018797] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.019505] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/root/working/rodep_ros2/yano_ws/custom_interfaces', '-DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/custom_interfaces'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/custom_interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.096603] (custom_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099471] (-) TimerEvent: {}
+[0.172915] (custom_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.186659] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199581] (-) TimerEvent: {}
+[0.278316] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.288612] (custom_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.288892] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.289440] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.293483] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299730] (-) TimerEvent: {}
+[0.400041] (-) TimerEvent: {}
+[0.403469] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.413978] (custom_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.414377] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.415031] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.420344] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500139] (-) TimerEvent: {}
+[0.600501] (-) TimerEvent: {}
+[0.622994] (custom_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.700628] (-) TimerEvent: {}
+[0.764955] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.770651] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.785368] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.800765] (-) TimerEvent: {}
+[0.858517] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.900908] (-) TimerEvent: {}
+[1.001184] (-) TimerEvent: {}
+[1.101515] (-) TimerEvent: {}
+[1.201855] (-) TimerEvent: {}
+[1.244652] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.301926] (-) TimerEvent: {}
+[1.402266] (-) TimerEvent: {}
+[1.488907] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.502381] (-) TimerEvent: {}
+[1.602725] (-) TimerEvent: {}
+[1.703098] (-) TimerEvent: {}
+[1.803404] (-) TimerEvent: {}
+[1.811387] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.843253] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.847435] (custom_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.878712] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.879029] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.879122] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.879193] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.903506] (-) TimerEvent: {}
+[1.909629] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.955308] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.993842] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.995864] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.998398] (custom_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.003614] (-) TimerEvent: {}
+[2.047339] (custom_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.063680] (custom_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /root/working/rodep_ros2/yano_ws/build/custom_interfaces\n'}
+[2.073900] (custom_interfaces) CommandEnded: {'returncode': 0}
+[2.074723] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[2.075453] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/rodep_ros2/yano_ws/build/custom_interfaces', '--', '-j4', '-l4'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/custom_interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.103723] (-) TimerEvent: {}
+[2.134824] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_generator_c\x1b[0m\n'}
+[2.146962] (custom_interfaces) StdoutLine: {'line': b'[  2%] Built target custom_interfaces__cpp\n'}
+[2.157510] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target custom_interfaces__rosidl_generator_c\n'}
+[2.166303] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.168551] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.168869] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[2.178788] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.187310] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.194712] (custom_interfaces) StdoutLine: {'line': b'[ 33%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[2.195052] (custom_interfaces) StdoutLine: {'line': b'[ 33%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[2.204172] (-) TimerEvent: {}
+[2.205817] (custom_interfaces) StdoutLine: {'line': b'[ 43%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[2.216094] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[2.216400] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.216578] (custom_interfaces) StdoutLine: {'line': b'[ 53%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[2.234502] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[2.234823] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[2.261161] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces\n'}
+[2.287418] (custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target custom_interfaces__py\n'}
+[2.300865] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_generator_py\x1b[0m\n'}
+[2.304258] (-) TimerEvent: {}
+[2.322250] (custom_interfaces) StdoutLine: {'line': b'[ 84%] Built target custom_interfaces__rosidl_generator_py\n'}
+[2.343023] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.343256] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.345250] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.365811] (custom_interfaces) StdoutLine: {'line': b'[ 94%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.366056] (custom_interfaces) StdoutLine: {'line': b'[ 94%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[2.369212] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[2.404356] (-) TimerEvent: {}
+[2.504725] (-) TimerEvent: {}
+[2.533437] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.534315] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[2.534633] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[2.534841] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[2.537528] (custom_interfaces) StdoutLine: {'line': b"reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[2.538333] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[2.571851] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[2.586911] (custom_interfaces) CommandEnded: {'returncode': 0}
+[2.587722] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[2.599751] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/rodep_ros2/yano_ws/build/custom_interfaces'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/custom_interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.604826] (-) TimerEvent: {}
+[2.611362] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.611808] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[2.611991] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.612255] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.612534] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.612855] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__struct.h\n'}
+[2.613022] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__functions.h\n'}
+[2.613174] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__functions.c\n'}
+[2.613352] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.h\n'}
+[2.613508] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/set_mode.h\n'}
+[2.613732] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.613914] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.614055] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.614343] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.h\n'}
+[2.614630] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__functions.h\n'}
+[2.614836] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__functions.c\n'}
+[2.615005] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__struct.h\n'}
+[2.615180] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/driver_velocity.h\n'}
+[2.615362] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[2.615505] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[2.615764] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[2.616055] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.616304] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.616490] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.616646] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[2.616824] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.617022] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.617171] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.617332] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_fastrtps_c.h\n'}
+[2.617539] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.617696] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.617903] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.618159] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.618496] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.c\n'}
+[2.618759] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_c.h\n'}
+[2.619055] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.619307] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.619544] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.c\n'}
+[2.619706] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_introspection_c.h\n'}
+[2.619967] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.620281] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.620719] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[2.620981] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.621340] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.621700] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.621916] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__builder.hpp\n'}
+[2.622118] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__traits.hpp\n'}
+[2.622281] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__struct.hpp\n'}
+[2.622581] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.hpp\n'}
+[2.622743] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/set_mode.hpp\n'}
+[2.622882] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.623073] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.623233] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/driver_velocity.hpp\n'}
+[2.623455] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.623623] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__struct.hpp\n'}
+[2.623911] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.hpp\n'}
+[2.624081] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__builder.hpp\n'}
+[2.624246] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__traits.hpp\n'}
+[2.624523] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.624698] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.624891] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.625100] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/dds_fastrtps\n'}
+[2.625263] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.625463] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.625646] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.625804] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.625973] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps\n'}
+[2.626238] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.626565] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.626717] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.626857] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.626993] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.627203] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.cpp\n'}
+[2.627327] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.627440] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.627560] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.627688] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.627810] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.cpp\n'}
+[2.627935] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.628046] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.628157] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[2.628267] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[2.628385] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[2.628508] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.628619] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.628708] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.628776] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.628840] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[2.628904] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.628997] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.629124] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv\n'}
+[2.629235] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_set_mode.py\n'}
+[2.629353] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py\n'}
+[2.629474] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_set_mode_s.c\n'}
+[2.629587] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.629699] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.629781] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg\n'}
+[2.629845] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_driver_velocity_s.c\n'}
+[2.629907] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_driver_velocity.py\n'}
+[2.629969] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py\n'}
+[2.630030] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[2.630091] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.630154] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[2.630215] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[2.669781] (custom_interfaces) StdoutLine: {'line': b"Listing '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[2.669969] (custom_interfaces) StdoutLine: {'line': b"Compiling '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py'...\n"}
+[2.670052] (custom_interfaces) StdoutLine: {'line': b"Listing '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...\n"}
+[2.670120] (custom_interfaces) StdoutLine: {'line': b"Listing '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv'...\n"}
+[2.676013] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.676714] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.677442] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.678148] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[2.678623] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/msg/DriverVelocity.idl\n'}
+[2.678874] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode.idl\n'}
+[2.679224] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/msg/DriverVelocity.msg\n'}
+[2.679512] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode.srv\n'}
+[2.679701] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode_Request.msg\n'}
+[2.679984] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode_Response.msg\n'}
+[2.680177] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/msg\n'}
+[2.680323] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/msg/DriverVelocity.msg\n'}
+[2.680530] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[2.680743] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[2.680897] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[2.681140] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[2.681377] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[2.681538] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[2.681763] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[2.681935] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[2.682123] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[2.682313] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[2.682543] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[2.682745] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[2.682921] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[2.683162] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.683320] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.683574] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.683728] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.683919] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.684130] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[2.684338] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.684528] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[2.684698] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.684942] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.685181] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.685430] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.685615] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[2.685913] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.686127] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[2.686322] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.686441] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.686576] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.686731] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.686882] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.687001] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.687121] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.687277] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.687419] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[2.687551] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[2.687698] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[2.689575] (custom_interfaces) CommandEnded: {'returncode': 0}
+[2.705013] (-) TimerEvent: {}
+[2.725882] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[2.727382] (driver) JobStarted: {'identifier': 'driver'}
+[2.731191] (operator) JobStarted: {'identifier': 'operator'}
+[2.739909] (driver) JobProgress: {'identifier': 'driver', 'progress': 'cmake'}
+[2.741574] (driver) Command: {'cmd': ['/usr/bin/cmake', '/root/working/rodep_ros2/yano_ws/src/driver', '-DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/driver'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[2.746404] (operator) JobProgress: {'identifier': 'operator', 'progress': 'cmake'}
+[2.747162] (operator) Command: {'cmd': ['/usr/bin/cmake', '/root/working/rodep_ros2/yano_ws/src/operator', '-DCMAKE_INSTALL_PREFIX=/root/working/rodep_ros2/yano_ws/install/operator'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/operator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/operator'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[2.805134] (-) TimerEvent: {}
+[2.830270] (driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.830967] (operator) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.905244] (-) TimerEvent: {}
+[2.907643] (operator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.908437] (driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.919825] (operator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.920589] (driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.005370] (-) TimerEvent: {}
+[3.014299] (driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.015327] (operator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.027092] (driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.027474] (driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.028275] (driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.032917] (driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.033298] (operator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.033745] (operator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.034534] (operator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.040736] (operator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.105484] (-) TimerEvent: {}
+[3.149907] (driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.158585] (operator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.160640] (driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.161048] (driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.161662] (driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.166836] (driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.170783] (operator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.171127] (operator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.171727] (operator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.177036] (operator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.205585] (-) TimerEvent: {}
+[3.305962] (-) TimerEvent: {}
+[3.376110] (driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.384981] (operator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.406070] (-) TimerEvent: {}
+[3.506415] (-) TimerEvent: {}
+[3.532000] (driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.540592] (operator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.606531] (-) TimerEvent: {}
+[3.606816] (driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.614949] (operator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.622657] (driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.628634] (operator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.642702] (driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.644320] (operator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.663562] (driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.664834] (operator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.690371] (driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.693817] (operator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.706636] (-) TimerEvent: {}
+[3.775282] (driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.781135] (driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.793821] (operator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.799679] (operator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.806738] (-) TimerEvent: {}
+[3.907081] (-) TimerEvent: {}
+[3.921848] (driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.939480] (operator) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.961435] (driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.976811] (operator) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.007188] (-) TimerEvent: {}
+[4.027969] (driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.041315] (operator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.046170] (driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.060157] (operator) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.107317] (-) TimerEvent: {}
+[4.143426] (driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.144285] (driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.158557] (operator) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.159664] (operator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.207412] (-) TimerEvent: {}
+[4.252556] (driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.254138] (driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.265661] (operator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.267391] (operator) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.307519] (-) TimerEvent: {}
+[4.344465] (driver) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.353891] (operator) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[4.363435] (driver) StdoutLine: {'line': b'-- Found custom_interfaces: 0.0.0 (/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake)\n'}
+[4.381787] (driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.400687] (operator) StdoutLine: {'line': b'-- Found custom_interfaces: 0.0.0 (/root/working/rodep_ros2/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake)\n'}
+[4.407612] (-) TimerEvent: {}
+[4.422792] (operator) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.507775] (-) TimerEvent: {}
+[4.524627] (driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.524932] (driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.525112] (driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.526610] (driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.529068] (driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.529228] (driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.530268] (driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.532505] (driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.555931] (driver) StdoutLine: {'line': b'-- Generating done\n'}
+[4.561090] (driver) StdoutLine: {'line': b'-- Build files have been written to: /root/working/rodep_ros2/yano_ws/build/driver\n'}
+[4.565732] (operator) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.566099] (operator) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.566304] (operator) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.567032] (operator) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.568252] (operator) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.568928] (operator) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.571409] (operator) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.571850] (operator) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.572696] (operator) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.572971] (driver) CommandEnded: {'returncode': 0}
+[4.573643] (driver) JobProgress: {'identifier': 'driver', 'progress': 'build'}
+[4.574165] (driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/rodep_ros2/yano_ws/build/driver', '--', '-j4', '-l4'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[4.575920] (operator) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.591172] (operator) StdoutLine: {'line': b'-- Generating done\n'}
+[4.597698] (operator) StdoutLine: {'line': b'-- Build files have been written to: /root/working/rodep_ros2/yano_ws/build/operator\n'}
+[4.607848] (-) TimerEvent: {}
+[4.610105] (operator) CommandEnded: {'returncode': 0}
+[4.611120] (operator) JobProgress: {'identifier': 'operator', 'progress': 'build'}
+[4.612017] (operator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/rodep_ros2/yano_ws/build/operator', '--', '-j4', '-l4'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/operator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/operator'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[4.633667] (driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target driver_node\x1b[0m\n'}
+[4.668348] (driver) StdoutLine: {'line': b'[100%] Built target driver_node\n'}
+[4.669624] (operator) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target operator_node\x1b[0m\n'}
+[4.682738] (driver) CommandEnded: {'returncode': 0}
+[4.683719] (driver) JobProgress: {'identifier': 'driver', 'progress': 'install'}
+[4.685135] (driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/rodep_ros2/yano_ws/build/driver'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[4.698362] (driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.698942] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/lib/driver/driver_node\n'}
+[4.699535] (operator) StdoutLine: {'line': b'[100%] Built target operator_node\n'}
+[4.699838] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/ament_index/resource_index/package_run_dependencies/driver\n'}
+[4.700031] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/ament_index/resource_index/parent_prefix_path/driver\n'}
+[4.700170] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/environment/ament_prefix_path.sh\n'}
+[4.700429] (driver) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/environment/ament_prefix_path.dsv\n'}
+[4.700567] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/environment/path.sh\n'}
+[4.700687] (driver) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/environment/path.dsv\n'}
+[4.700862] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/local_setup.bash\n'}
+[4.701065] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/local_setup.sh\n'}
+[4.701214] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/local_setup.zsh\n'}
+[4.702042] (driver) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/local_setup.dsv\n'}
+[4.702317] (driver) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.dsv\n'}
+[4.702469] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/ament_index/resource_index/packages/driver\n'}
+[4.702621] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/cmake/driverConfig.cmake\n'}
+[4.702765] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/cmake/driverConfig-version.cmake\n'}
+[4.702943] (driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.xml\n'}
+[4.704770] (driver) CommandEnded: {'returncode': 0}
+[4.707940] (-) TimerEvent: {}
+[4.724188] (driver) JobEnded: {'identifier': 'driver', 'rc': 0}
+[4.726184] (operator) CommandEnded: {'returncode': 0}
+[4.726957] (operator) JobProgress: {'identifier': 'operator', 'progress': 'install'}
+[4.727411] (operator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/rodep_ros2/yano_ws/build/operator'], 'cwd': '/root/working/rodep_ros2/yano_ws/build/operator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'cf33789d9224'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/root/working'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/rodep_ros2/yano_ws/build/operator'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[4.738520] (operator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.739151] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/lib/operator/operator_node\n'}
+[4.739692] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator\n'}
+[4.739947] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator\n'}
+[4.740123] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh\n'}
+[4.740342] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv\n'}
+[4.740578] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.sh\n'}
+[4.740763] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/environment/path.dsv\n'}
+[4.740963] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.bash\n'}
+[4.741181] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.sh\n'}
+[4.741405] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.zsh\n'}
+[4.741557] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/local_setup.dsv\n'}
+[4.741772] (operator) StdoutLine: {'line': b'-- Installing: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.dsv\n'}
+[4.742030] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/ament_index/resource_index/packages/operator\n'}
+[4.742268] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake\n'}
+[4.742461] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake\n'}
+[4.742595] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/rodep_ros2/yano_ws/install/operator/share/operator/package.xml\n'}
+[4.744968] (operator) CommandEnded: {'returncode': 0}
+[4.760942] (operator) JobEnded: {'identifier': 'operator', 'rc': 0}
+[4.762132] (-) EventReactorShutdown: {}

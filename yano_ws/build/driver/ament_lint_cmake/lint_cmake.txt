@@ -1,0 +1,12 @@
+-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/driver':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml
+
+CMakeLists.txt:23: Tab found; please use spaces [whitespace/tabs]
+CMakeLists.txt:23: Line ends in whitespace [whitespace/eol]
+
+
+2 errors
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/driver/test_results/driver/lint_cmake.xunit.xml'

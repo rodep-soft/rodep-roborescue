@@ -1,0 +1,9 @@
+-- run_test.py: invoking following command in '/root/working/rodep_ros2/yano_ws/src/operator':
+ - /opt/ros/humble/bin/ament_pep257 --xunit-file /root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/pep257.xunit.xml
+
+checking ./launch/operator_launch.py
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/root/working/rodep_ros2/yano_ws/build/operator/test_results/operator/pep257.xunit.xml'

@@ -1,0 +1,50 @@
+name: ROS 2 CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # mainブランチへのpushでトリガー
+  pull_request:
+    branches:
+      - main  # mainブランチへのプルリクエストでトリガー
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04  # GitHub ActionsのUbuntu環境を使用
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # リポジトリのコードをチェックアウト
+
+    - name: Set up Docker for ROS 2 Humble
+      uses: docker/setup-buildx-action@v2
+      with:
+        version: latest
+
+    - name: Build ROS 2 workspace
+      run: |
+        docker run --rm \
+          -v ${{ github.workspace }}:/workspace \
+          -w /workspace \
+          osrf/ros:humble-desktop \
+          bash -c "apt update && apt install -y python3-colcon-common-extensions && \
+                   source /opt/ros/humble/setup.bash && \
+                   colcon build --symlink-install"
+
+    - name: Run tests
+      run: |
+        docker run --rm \
+          -v ${{ github.workspace }}:/workspace \
+          -w /workspace \
+          osrf/ros:humble-desktop \
+          bash -c "source /opt/ros/humble/setup.bash && \
+                   colcon test"
+
+    - name: Upload test results
+      if: always()
+      run: |
+        docker run --rm \
+          -v ${{ github.workspace }}:/workspace \
+          -w /workspace \
+          osrf/ros:humble-desktop \
+          bash -c "cat /tmp/test_results/test_*.xml"

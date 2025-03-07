@@ -3,18 +3,18 @@ name: ROS 2 CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # mainブランチへのpushでトリガー
+      - main
   pull_request:
     branches:
-      - main  # mainブランチへのプルリクエストでトリガー
+      - main
 
 jobs:
   build:
-    runs-on: ubuntu-22.04  # GitHub ActionsのUbuntu環境を使用
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2  # リポジトリのコードをチェックアウト
+      uses: actions/checkout@v2
 
     - name: Set up Docker for ROS 2 Humble
       uses: docker/setup-buildx-action@v2
@@ -38,7 +38,17 @@ jobs:
           -w /workspace \
           osrf/ros:humble-desktop \
           bash -c "source /opt/ros/humble/setup.bash && \
-                   colcon test"
+                   colcon test --event-handlers console_direct+ && \
+                   colcon test-result --verbose"
+
+    - name: Debug test results path
+      if: always()
+      run: |
+        docker run --rm \
+          -v ${{ github.workspace }}:/workspace \
+          -w /workspace \
+          osrf/ros:humble-desktop \
+          bash -c "find /workspace -name '*.xml'"
 
     - name: Upload test results
       if: always()
@@ -47,4 +57,4 @@ jobs:
           -v ${{ github.workspace }}:/workspace \
           -w /workspace \
           osrf/ros:humble-desktop \
-          bash -c "cat /workspace/test_results/test_*.xml"  # テスト結果の保存先を修正
+          bash -c "cat /workspace/build/*/Testing/Temporary/*.xml || echo 'No test results found.'"

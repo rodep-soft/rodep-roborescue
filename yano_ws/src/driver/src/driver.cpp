@@ -54,7 +54,7 @@ public:
 
                 uint8_t response;
                 boost::asio::async_read(serial, boost::asio::buffer(&response, 1),
-                    [this, callback](const boost::system::error_code& ec, std::size_t /*bytes_transferred*/) {
+                [this, callback, response](const boost::system::error_code& ec, std::size_t /*bytes_transferred*/) {
                         if (ec) {
                             RCLCPP_ERROR(rclcpp::get_logger("RoboclawDriver"), "Serial Read Error: %s", ec.message().c_str());
                             callback(false);

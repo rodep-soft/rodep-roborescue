@@ -3,7 +3,7 @@
 #include <memory>
 #include <boost/asio.hpp>
 #include <rclcpp/rclcpp.hpp>
-#include <std_msgs/msg/bool.hpp> 
+#include <std_msgs/msg/bool.hpp>
 #include <custom_interfaces/msg/driver_velocity.hpp>
 
 using namespace std;
@@ -26,56 +26,86 @@ constexpr int QPPS = 86646;
 // RoboclawDriver Class
 class RoboclawDriver {
 public:
-    explicit RoboclawDriver(const string& port) : io(), serial(io, port) {
+    explicit RoboclawDriver(const string& port) 
+        : io(), serial(io, port), work(boost::asio::make_work_guard(io)) {
         try {
-            serial.set_option(serial_port_base::baud_rate(SERIAL_BAUD_RATE));
-            serial.set_option(serial_port_base::character_size(8));
-            serial.set_option(serial_port_base::parity(serial_port_base::parity::none));
-            serial.set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));
-            serial.set_option(serial_port_base::flow_control(serial_port_base::flow_control::none));
+            configureSerialPort();
+            io_thread_ = thread([this]() { io.run(); });
         } catch (const boost::system::system_error& e) {
             throw runtime_error("Failed to configure serial port: " + string(e.what()));
         }
     }
 
-    bool setMotorVelocity(int command, double counts_per_sec) {
+    ~RoboclawDriver() {
+        io.stop();
+        if (io_thread_.joinable()) {
+            io_thread_.join();
+        }
+    }
+
+    void asyncSendRoboclawCommand(const vector<uint8_t>& data, std::function<void(bool)> callback) {
+        boost::asio::async_write(serial, boost::asio::buffer(data),
+            [this, callback](const boost::system::error_code& ec, std::size_t /*bytes_transferred*/) {
+                if (ec) {
+                    RCLCPP_ERROR(rclcpp::get_logger("RoboclawDriver"), "Serial Write Error: %s", ec.message().c_str());
+                    callback(false);
+                    return;
+                }
+
+                uint8_t response;
+                boost::asio::async_read(serial, boost::asio::buffer(&response, 1),
+                    [this, callback](const boost::system::error_code& ec, std::size_t /*bytes_transferred*/) {
+                        if (ec) {
+                            RCLCPP_ERROR(rclcpp::get_logger("RoboclawDriver"), "Serial Read Error: %s", ec.message().c_str());
+                            callback(false);
+                            return;
+                        }
+
+                        RCLCPP_DEBUG(rclcpp::get_logger("RoboclawDriver"), "Received Response: 0x%02X", response);
+                        callback(true);
+                    });
+            });
+    }
+
+    bool setMotorVelocity(int command, double counts_per_sec, std::function<void(bool)> callback) {
         vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};
         appendInt32(data, static_cast<int>(counts_per_sec));
         appendCRC(data);
-        return sendRoboclawCommand(data);
+        asyncSendRoboclawCommand(data, callback);
+        return true;
     }
 
-    bool setPIDConstants(int command, int K_p, int K_i, int K_d, int qpps) {
+    bool setPIDConstants(int command, int K_p, int K_i, int K_d, int qpps, std::function<void(bool)> callback) {
         vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};
         appendInt32(data, K_d);
         appendInt32(data, K_p);
         appendInt32(data, K_i);
         appendInt32(data, qpps);
         appendCRC(data);
-        return sendRoboclawCommand(data);
+        asyncSendRoboclawCommand(data, callback);
+        return true;
     }
 
-    bool resetEncoders() {
+    bool resetEncoders(std::function<void(bool)> callback) {
         vector<uint8_t> data = {ROBOCLAW_ADDRESS, RESET_QUAD_ENCODER};
         appendCRC(data);
-        return sendRoboclawCommand(data);
+        asyncSendRoboclawCommand(data, callback);
+        return true;
     }
 
 private:
-    io_service io;
+    io_context io;
     serial_port serial;
+    thread io_thread_;
+    // io_context::work work;  // Keeps io_context running
+    boost::asio::executor_work_guard<boost::asio::io_context::executor_type> work;
 
-    bool sendRoboclawCommand(const vector<uint8_t>& data) {
-        try {
-            write(serial, buffer(data));
-            uint8_t response;
-            read(serial, buffer(&response, 1));
-            RCLCPP_DEBUG(rclcpp::get_logger("RoboclawDriver"), "Received Response: 0x%02X", response);
-            return true;
-        } catch (const boost::system::system_error& e) {
-            RCLCPP_ERROR(rclcpp::get_logger("RoboclawDriver"), "Serial Communication Error: %s", e.what());
-            return false;
-        }
+    void configureSerialPort() {
+        serial.set_option(serial_port_base::baud_rate(SERIAL_BAUD_RATE));
+        serial.set_option(serial_port_base::character_size(8));
+        serial.set_option(serial_port_base::parity(serial_port_base::parity::none));
+        serial.set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));
+        serial.set_option(serial_port_base::flow_control(serial_port_base::flow_control::none));
     }
 
     uint16_t calculateCRC(const vector<uint8_t>& data) {
@@ -89,7 +119,6 @@ private:
         return crc;
     }
 
-    // CRC追加
     void appendCRC(vector<uint8_t>& data) {
         uint16_t crc = calculateCRC(data);
         data.push_back(static_cast<uint8_t>(crc >> 8));
@@ -106,19 +135,14 @@ private:
 // ROS2 Driver Node
 class Driver : public rclcpp::Node {
 public:
-    Driver() : Node("driver"), roboclaw("/dev/ttyACM0") { 
+    Driver() : Node("driver"), roboclaw("/dev/ttyACM0") {
         declare_parameter("crawler_circumference", 0.39);
-        declare_parameter("counts_per_rev", 256); // quad pulses per rev = counts per rev
-        declare_parameter("gearhead_ratio", 66); // 減速比
+        declare_parameter("counts_per_rev", 256);
+        declare_parameter("gearhead_ratio", 66);
         declare_parameter("pulley_ratio", 2);
 
-        crawler_circumference_ = get_parameter("crawler_circumference").as_double();
-        counts_per_rev_ = get_parameter("counts_per_rev").as_int();
-        gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();
-        pulley_ratio_ = get_parameter("pulley_ratio").as_int();
-
-        // velocityをqppsに変換する際に用いる定数
-        counts_per_meter_ = (counts_per_rev_ * gearhead_ratio_ * pulley_ratio_) / crawler_circumference_;
+        // Initialize parameters
+        initParams();
 
         subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(
             "/operator", 10, bind(&Driver::driver_callback, this, _1));
@@ -141,16 +165,48 @@ private:
     rclcpp::Subscription<custom_interfaces::msg::DriverVelocity>::SharedPtr subscription_;
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr estop_subscription_;
 
-    double velocity_to_counts_per_sec(double velocity) const {
+    inline double velocity_to_counts_per_sec(double velocity) const {
         return velocity * counts_per_meter_;
     }
 
+    void initParams() {
+        crawler_circumference_ = get_parameter("crawler_circumference").as_double();
+        counts_per_rev_ = get_parameter("counts_per_rev").as_int();
+        gearhead_ratio_ = get_parameter("gearhead_ratio").as_int();
+        pulley_ratio_ = get_parameter("pulley_ratio").as_int();
+        counts_per_meter_ = (counts_per_rev_ * gearhead_ratio_ * pulley_ratio_) / crawler_circumference_;
+    }
+
     void init() {
-        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);
-        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);
-        roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);
-        roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS);
-        roboclaw.resetEncoders();
+        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0, [this](bool success) {
+            handleMotorInitResult(success, "M1");
+        });
+        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0, [this](bool success) {
+            handleMotorInitResult(success, "M2");
+        });
+        roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS, [this](bool success) {
+            handlePIDInitResult(success, "M1");
+        });
+        roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS, [this](bool success) {
+            handlePIDInitResult(success, "M2");
+        });
+        roboclaw.resetEncoders([this](bool success) {
+            if (!success) {
+                RCLCPP_ERROR(get_logger(), "Failed to reset encoders");
+            }
+        });
+    }
+
+    void handleMotorInitResult(bool success, const string& motor_name) {
+        if (!success) {
+            RCLCPP_ERROR(get_logger(), "Failed to initialize %s motor", motor_name.c_str());
+        }
+    }
+
+    void handlePIDInitResult(bool success, const string& motor_name) {
+        if (!success) {
+            RCLCPP_ERROR(get_logger(), "Failed to set PID constants for %s motor", motor_name.c_str());
+        }
     }
 
     void driver_callback(const custom_interfaces::msg::DriverVelocity& msg) {
@@ -162,12 +218,17 @@ private:
         double M1_counts_per_sec = velocity_to_counts_per_sec(msg.m1_vel);
         double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);
 
-        if (!roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec)) {
-            RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");
-        }
-        if (!roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec)) {
-            RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");
-        }
+        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec, [this](bool success) {
+            if (!success) {
+                RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");
+            }
+        });
+
+        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec, [this](bool success) {
+            if (!success) {
+                RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");
+            }
+        });
     }
 
     void estop_callback(const std_msgs::msg::Bool::SharedPtr msg) {
@@ -175,19 +236,29 @@ private:
 
         if (estop_active_) {
             RCLCPP_WARN(get_logger(), "E-stop activated. Stopping all motors.");
-
-            // Send zero velocity commands to stop motors
-            roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0);
-            roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0);
+            stopMotors();
         } else {
-            RCLCPP_INFO(get_logger(), "E-stop deactivated. Resuming normal operation.");
+            RCLCPP_INFO(get_logger(), "E-stop deactivated. Resuming motor control.");
         }
+    }
+
+    void stopMotors() {
+        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0, [](bool success) {
+            if (!success) {
+                RCLCPP_ERROR(rclcpp::get_logger("RoboclawDriver"), "Failed to stop M1 motor");
+            }
+        });
+        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0, [](bool success) {
+            if (!success) {
+                RCLCPP_ERROR(rclcpp::get_logger("RoboclawDriver"), "Failed to stop M2 motor");
+            }
+        });
     }
 };
 
-int main(int argc, char* argv[]) {
+int main(int argc, char * argv[]) {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<Driver>());
+    rclcpp::spin(make_shared<Driver>());
     rclcpp::shutdown();
     return 0;
 }

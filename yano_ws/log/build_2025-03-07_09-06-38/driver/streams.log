@@ -1,0 +1,25 @@
+[0.021s] Invoking command in '/root/working/rodep_ros2/yano_ws/build/driver': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/driver -- -j4 -l4
+[0.108s] [ 50%] [32mBuilding CXX object CMakeFiles/driver_node.dir/src/driver.cpp.o[0m
+[15.687s] [100%] [32m[1mLinking CXX executable driver_node[0m
+[16.508s] [100%] Built target driver_node
+[16.524s] Invoked command in '/root/working/rodep_ros2/yano_ws/build/driver' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/rodep_ros2/yano_ws/build/driver -- -j4 -l4
+[16.526s] Invoking command in '/root/working/rodep_ros2/yano_ws/build/driver': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/driver
+[16.536s] -- Install configuration: ""
+[16.537s] -- Installing: /root/working/rodep_ros2/yano_ws/install/driver/lib/driver/driver_node
+[16.545s] -- Set runtime path of "/root/working/rodep_ros2/yano_ws/install/driver/lib/driver/driver_node" to ""
+[16.545s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/ament_index/resource_index/package_run_dependencies/driver
+[16.545s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/ament_index/resource_index/parent_prefix_path/driver
+[16.546s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/environment/ament_prefix_path.sh
+[16.546s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/environment/ament_prefix_path.dsv
+[16.546s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/environment/path.sh
+[16.546s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/environment/path.dsv
+[16.546s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/local_setup.bash
+[16.546s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/local_setup.sh
+[16.546s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/local_setup.zsh
+[16.547s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/local_setup.dsv
+[16.547s] -- Installing: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.dsv
+[16.547s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/ament_index/resource_index/packages/driver
+[16.547s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/cmake/driverConfig.cmake
+[16.547s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/cmake/driverConfig-version.cmake
+[16.547s] -- Up-to-date: /root/working/rodep_ros2/yano_ws/install/driver/share/driver/package.xml
+[16.550s] Invoked command in '/root/working/rodep_ros2/yano_ws/build/driver' returned '0': AMENT_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/rodep_ros2/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/rodep_ros2/yano_ws/build/driver

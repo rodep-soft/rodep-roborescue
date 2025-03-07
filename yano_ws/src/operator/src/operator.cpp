@@ -49,12 +49,12 @@ private:
         if (msg.buttons.size() > 0)
         {
             // テスト
-            if (msg.buttons[0] == 1)  // ボタン0が押された場合
+            if (msg.buttons[4] == 1)  // ボタン0が押された場合
             {
                 mode_ = Mode::STOP;
                 RCLCPP_INFO(this->get_logger(), "Mode switched to STOP");
             }
-            else if (msg.buttons[1] == 1)  // ボタン1が押された場合
+            else if (msg.buttons[6] == 1)  // ボタン1が押された場合
             {
                 mode_ = Mode::DRIVE;
                 RCLCPP_INFO(this->get_logger(), "Mode switched to DRIVE");

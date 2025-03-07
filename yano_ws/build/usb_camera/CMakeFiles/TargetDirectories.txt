@@ -1,0 +1,10 @@
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/uninstall.dir
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/usb_camera_uninstall.dir
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/usb_camera.dir
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/test.dir
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/edit_cache.dir
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/rebuild_cache.dir
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/list_install_components.dir
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/install.dir
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/install/local.dir
+/root/test_ws/yano_ws/build/usb_camera/CMakeFiles/install/strip.dir

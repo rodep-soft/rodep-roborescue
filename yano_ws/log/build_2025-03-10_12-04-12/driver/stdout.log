@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target driver_node[0m
+[100%] Built target driver_node
+-- Install configuration: ""
+-- Installing: /root/working/test_ws/yano_ws/install/driver/lib/driver/driver_node
+-- Set runtime path of "/root/working/test_ws/yano_ws/install/driver/lib/driver/driver_node" to ""
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/ament_index/resource_index/package_run_dependencies/driver
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/ament_index/resource_index/parent_prefix_path/driver
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/environment/ament_prefix_path.sh
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/environment/ament_prefix_path.dsv
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/environment/path.sh
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/environment/path.dsv
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/local_setup.bash
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/local_setup.sh
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/local_setup.zsh
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/local_setup.dsv
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/package.dsv
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/ament_index/resource_index/packages/driver
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/cmake/driverConfig.cmake
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/cmake/driverConfig-version.cmake
+-- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/package.xml

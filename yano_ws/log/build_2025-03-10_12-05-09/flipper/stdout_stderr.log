@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target flipper[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/flipper.dir/src/flipper.cpp.o[0m
+[100%] [32m[1mLinking CXX executable flipper[0m
+[100%] Built target flipper
+-- Install configuration: ""
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/lib/flipper/flipper
+-- Set runtime path of "/root/working/test_ws/yano_ws/install/flipper/lib/flipper/flipper" to ""
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/ament_index/resource_index/package_run_dependencies/flipper
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/ament_index/resource_index/parent_prefix_path/flipper
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/environment/ament_prefix_path.sh
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/environment/ament_prefix_path.dsv
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/environment/path.sh
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/environment/path.dsv
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/local_setup.bash
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/local_setup.sh
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/local_setup.zsh
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/local_setup.dsv
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/package.dsv
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/ament_index/resource_index/packages/flipper
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/cmake/flipperConfig.cmake
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/cmake/flipperConfig-version.cmake
+-- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/package.xml

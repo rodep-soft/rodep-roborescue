@@ -1,0 +1,23 @@
+[0.079s] Invoking command in '/root/working/test_ws/yano_ws/build/flipper': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper -- -j4 -l4
+[0.137s] [35m[1mConsolidate compiler generated dependencies of target flipper[0m
+[0.171s] [100%] Built target flipper
+[0.209s] Invoked command in '/root/working/test_ws/yano_ws/build/flipper' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper -- -j4 -l4
+[0.211s] Invoking command in '/root/working/test_ws/yano_ws/build/flipper': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/flipper
+[0.226s] -- Install configuration: ""
+[0.227s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/lib/flipper/flipper
+[0.229s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/ament_index/resource_index/package_run_dependencies/flipper
+[0.229s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/ament_index/resource_index/parent_prefix_path/flipper
+[0.229s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/environment/ament_prefix_path.sh
+[0.229s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/environment/ament_prefix_path.dsv
+[0.230s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/environment/path.sh
+[0.230s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/environment/path.dsv
+[0.230s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/local_setup.bash
+[0.231s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/local_setup.sh
+[0.231s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/local_setup.zsh
+[0.231s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/local_setup.dsv
+[0.231s] -- Installing: /root/working/test_ws/yano_ws/install/flipper/share/flipper/package.dsv
+[0.231s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/ament_index/resource_index/packages/flipper
+[0.232s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/cmake/flipperConfig.cmake
+[0.232s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/cmake/flipperConfig-version.cmake
+[0.232s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper/share/flipper/package.xml
+[0.239s] Invoked command in '/root/working/test_ws/yano_ws/build/flipper' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/flipper

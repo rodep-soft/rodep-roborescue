@@ -22,6 +22,6 @@ jobs:
           -v ${{ github.workspace }}:/workspace \
           -w /workspace \
           osrf/ros:humble-desktop \
-          bash -c "apt update && apt install -y python3-colcon-common-extensions && \
+          bash -c "apt update && apt install -y python3-colcon-common-extensions ros-humble-dynamixel-sdk && \
                    source /opt/ros/humble/setup.bash && \
                    colcon build --symlink-install"

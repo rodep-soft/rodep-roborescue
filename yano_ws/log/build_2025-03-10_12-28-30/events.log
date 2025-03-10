@@ -1,0 +1,117 @@
+[0.000000] (-) TimerEvent: {}
+[0.000350] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.000420] (dynamixel_sdk) JobQueued: {'identifier': 'dynamixel_sdk', 'dependencies': OrderedDict()}
+[0.000462] (dynamixel_sdk_custom_interfaces) JobQueued: {'identifier': 'dynamixel_sdk_custom_interfaces', 'dependencies': OrderedDict()}
+[0.000520] (dynamixel_workbench_msgs) JobQueued: {'identifier': 'dynamixel_workbench_msgs', 'dependencies': OrderedDict()}
+[0.000556] (usb_camera) JobQueued: {'identifier': 'usb_camera', 'dependencies': OrderedDict()}
+[0.000636] (driver) JobQueued: {'identifier': 'driver', 'dependencies': OrderedDict([('custom_interfaces', '/root/working/test_ws/yano_ws/install/custom_interfaces')])}
+[0.000679] (dynamixel_sdk_examples) JobQueued: {'identifier': 'dynamixel_sdk_examples', 'dependencies': OrderedDict([('dynamixel_sdk', '/root/working/test_ws/yano_ws/install/dynamixel_sdk'), ('dynamixel_sdk_custom_interfaces', '/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces')])}
+[0.000717] (dynamixel_workbench_toolbox) JobQueued: {'identifier': 'dynamixel_workbench_toolbox', 'dependencies': OrderedDict([('dynamixel_sdk', '/root/working/test_ws/yano_ws/install/dynamixel_sdk')])}
+[0.000768] (flipper) JobQueued: {'identifier': 'flipper', 'dependencies': OrderedDict([('dynamixel_sdk', '/root/working/test_ws/yano_ws/install/dynamixel_sdk')])}
+[0.000814] (operator) JobQueued: {'identifier': 'operator', 'dependencies': OrderedDict([('custom_interfaces', '/root/working/test_ws/yano_ws/install/custom_interfaces')])}
+[0.000865] (dynamixel_workbench) JobQueued: {'identifier': 'dynamixel_workbench', 'dependencies': OrderedDict([('dynamixel_sdk', '/root/working/test_ws/yano_ws/install/dynamixel_sdk'), ('dynamixel_workbench_toolbox', '/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox')])}
+[0.001432] (dynamixel_sdk) JobStarted: {'identifier': 'dynamixel_sdk'}
+[0.009488] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.013336] (dynamixel_sdk_custom_interfaces) JobStarted: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.016443] (dynamixel_workbench_msgs) JobStarted: {'identifier': 'dynamixel_workbench_msgs'}
+[0.022928] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'cmake'}
+[0.023662] (dynamixel_sdk) Command: {'cmd': ['/usr/bin/cmake', '/root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk', '-DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_sdk'], 'cwd': '/root/working/test_ws/yano_ws/build/dynamixel_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', '506481e94dbe'), ('SHLVL', '2'), ('HOME', '/root'), ('OMF_PATH', '/root/.local/share/omf'), ('ROS_DISTRO', 'humble'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/dynamixel_sdk'), ('LC_ALL', 'C.UTF-8'), ('OMF_CONFIG', '/root/.config/omf'), ('COLCON', '1')]), 'shell': False}
+[0.026813] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.027450] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/root/working/test_ws/yano_ws/src/custom_interfaces', '-DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/custom_interfaces'], 'cwd': '/root/working/test_ws/yano_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', '506481e94dbe'), ('SHLVL', '2'), ('HOME', '/root'), ('OMF_PATH', '/root/.local/share/omf'), ('ROS_DISTRO', 'humble'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/custom_interfaces'), ('LC_ALL', 'C.UTF-8'), ('OMF_CONFIG', '/root/.config/omf'), ('COLCON', '1')]), 'shell': False}
+[0.030381] (dynamixel_sdk_custom_interfaces) JobProgress: {'identifier': 'dynamixel_sdk_custom_interfaces', 'progress': 'cmake'}
+[0.030983] (dynamixel_sdk_custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces', '-DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces'], 'cwd': '/root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', '506481e94dbe'), ('SHLVL', '2'), ('HOME', '/root'), ('OMF_PATH', '/root/.local/share/omf'), ('ROS_DISTRO', 'humble'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces'), ('LC_ALL', 'C.UTF-8'), ('OMF_CONFIG', '/root/.config/omf'), ('COLCON', '1')]), 'shell': False}
+[0.047062] (dynamixel_workbench_msgs) JobProgress: {'identifier': 'dynamixel_workbench_msgs', 'progress': 'cmake'}
+[0.048015] (dynamixel_workbench_msgs) Command: {'cmd': ['/usr/bin/cmake', '/root/working/test_ws/yano_ws/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs', '-DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs'], 'cwd': '/root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', '506481e94dbe'), ('SHLVL', '2'), ('HOME', '/root'), ('OMF_PATH', '/root/.local/share/omf'), ('ROS_DISTRO', 'humble'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs'), ('LC_ALL', 'C.UTF-8'), ('OMF_CONFIG', '/root/.config/omf'), ('COLCON', '1')]), 'shell': False}
+[0.073387] (custom_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.073678] (custom_interfaces) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.073848] (custom_interfaces) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.074035] (custom_interfaces) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.074183] (custom_interfaces) StderrLine: {'line': b'\n'}
+[0.074317] (custom_interfaces) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.074463] (custom_interfaces) StderrLine: {'line': b'  any of the following names:\n'}
+[0.074605] (custom_interfaces) StderrLine: {'line': b'\n'}
+[0.074746] (custom_interfaces) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.074888] (custom_interfaces) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.075030] (custom_interfaces) StderrLine: {'line': b'\n'}
+[0.075235] (custom_interfaces) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.075418] (custom_interfaces) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.075585] (custom_interfaces) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.075743] (custom_interfaces) StderrLine: {'line': b'  has been installed.\n'}
+[0.075899] (custom_interfaces) StderrLine: {'line': b'\n'}
+[0.076066] (custom_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.076395] (custom_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.077155] (dynamixel_sdk) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (find_package):\n'}
+[0.077626] (dynamixel_sdk) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.077797] (dynamixel_sdk) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.077951] (dynamixel_sdk) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.078448] (dynamixel_sdk) StderrLine: {'line': b'\n'}
+[0.079134] (dynamixel_sdk) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.079481] (dynamixel_sdk) StderrLine: {'line': b'  any of the following names:\n'}
+[0.079605] (dynamixel_sdk) StderrLine: {'line': b'\n'}
+[0.079723] (dynamixel_sdk) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.079838] (dynamixel_sdk) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.079953] (dynamixel_sdk) StderrLine: {'line': b'\n'}
+[0.080068] (dynamixel_sdk) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.080183] (dynamixel_sdk) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.080298] (dynamixel_sdk) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.080412] (dynamixel_sdk) StderrLine: {'line': b'  has been installed.\n'}
+[0.080544] (dynamixel_sdk) StderrLine: {'line': b'\n'}
+[0.080659] (dynamixel_sdk) StderrLine: {'line': b'\x1b[0m\n'}
+[0.080773] (custom_interfaces) StdoutLine: {'line': b'See also "/root/working/test_ws/yano_ws/build/custom_interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[0.080984] (dynamixel_sdk) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.081131] (dynamixel_sdk) StdoutLine: {'line': b'See also "/root/working/test_ws/yano_ws/build/dynamixel_sdk/CMakeFiles/CMakeOutput.log".\n'}
+[0.081288] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.082355] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'See also "/root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[0.082499] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.082685] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.082808] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.082922] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.083035] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'\n'}
+[0.083148] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.083261] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  any of the following names:\n'}
+[0.083425] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'\n'}
+[0.083553] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.083665] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.083794] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'\n'}
+[0.083908] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.084037] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.084166] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.084296] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  has been installed.\n'}
+[0.084424] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'\n'}
+[0.084552] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.084682] (custom_interfaces) CommandEnded: {'returncode': 1}
+[0.086466] (dynamixel_sdk) CommandEnded: {'returncode': 1}
+[0.092414] (dynamixel_sdk_custom_interfaces) CommandEnded: {'returncode': 1}
+[0.093171] (dynamixel_workbench_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:24 (find_package):\n'}
+[0.093653] (dynamixel_workbench_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.094938] (dynamixel_workbench_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.095163] (dynamixel_workbench_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.095341] (dynamixel_workbench_msgs) StderrLine: {'line': b'\n'}
+[0.095484] (dynamixel_workbench_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.095614] (dynamixel_workbench_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.095724] (dynamixel_workbench_msgs) StderrLine: {'line': b'\n'}
+[0.095835] (dynamixel_workbench_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.095944] (dynamixel_workbench_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.096057] (dynamixel_workbench_msgs) StderrLine: {'line': b'\n'}
+[0.096171] (dynamixel_workbench_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.096286] (dynamixel_workbench_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.096400] (dynamixel_workbench_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.096513] (dynamixel_workbench_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.096614] (dynamixel_workbench_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.096797] (dynamixel_workbench_msgs) StderrLine: {'line': b'\n'}
+[0.096915] (dynamixel_workbench_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.097041] (dynamixel_workbench_msgs) StdoutLine: {'line': b'See also "/root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.099948] (-) TimerEvent: {}
+[0.102220] (dynamixel_workbench_msgs) CommandEnded: {'returncode': 1}
+[0.126052] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 1}
+[0.128222] (dynamixel_sdk_custom_interfaces) JobEnded: {'identifier': 'dynamixel_sdk_custom_interfaces', 'rc': 'SIGINT'}
+[0.128718] (dynamixel_sdk) JobEnded: {'identifier': 'dynamixel_sdk', 'rc': 'SIGINT'}
+[0.129208] (dynamixel_workbench_msgs) JobEnded: {'identifier': 'dynamixel_workbench_msgs', 'rc': 'SIGINT'}
+[0.139266] (usb_camera) JobSkipped: {'identifier': 'usb_camera'}
+[0.139362] (driver) JobSkipped: {'identifier': 'driver'}
+[0.139387] (dynamixel_sdk_examples) JobSkipped: {'identifier': 'dynamixel_sdk_examples'}
+[0.139451] (dynamixel_workbench_toolbox) JobSkipped: {'identifier': 'dynamixel_workbench_toolbox'}
+[0.139486] (flipper) JobSkipped: {'identifier': 'flipper'}
+[0.139506] (operator) JobSkipped: {'identifier': 'operator'}
+[0.139525] (dynamixel_workbench) JobSkipped: {'identifier': 'dynamixel_workbench'}
+[0.139584] (-) EventReactorShutdown: {}

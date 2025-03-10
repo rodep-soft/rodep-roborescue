@@ -1,0 +1,75 @@
+[0.034s] Invoking command in '/root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /root/working/test_ws/yano_ws/src/dynamixel-workbench/dynamixel_workbench_toolbox -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox
+[0.162s] -- The C compiler identification is GNU 11.4.0
+[0.312s] -- The CXX compiler identification is GNU 11.4.0
+[0.337s] -- Detecting C compiler ABI info
+[0.616s] -- Detecting C compiler ABI info - done
+[0.646s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.651s] -- Detecting C compile features
+[0.652s] -- Detecting C compile features - done
+[0.666s] -- Detecting CXX compiler ABI info
+[1.052s] -- Detecting CXX compiler ABI info - done
+[1.077s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.077s] -- Detecting CXX compile features
+[1.078s] -- Detecting CXX compile features - done
+[1.086s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.497s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.890s] -- Found dynamixel_sdk: 3.8.1 (/root/working/test_ws/yano_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[1.940s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.525s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.585s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.675s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.800s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.978s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.488s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.521s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.966s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.120s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.409s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.479s] -- Looking for pthread.h
+[4.894s] -- Looking for pthread.h - found
+[4.894s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.331s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.337s] -- Found Threads: TRUE  
+[6.025s] -- Configuring done
+[6.060s] -- Generating done
+[6.084s] -- Build files have been written to: /root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox
+[6.120s] Invoked command in '/root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /root/working/test_ws/yano_ws/src/dynamixel-workbench/dynamixel_workbench_toolbox -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox
+[6.127s] Invoking command in '/root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox -- -j4 -l4
+[6.513s] [ 20%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_driver.cpp.o[0m
+[6.577s] [ 40%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_item.cpp.o[0m
+[6.604s] [ 60%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_tool.cpp.o[0m
+[6.619s] [ 80%] [32mBuilding CXX object CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp.o[0m
+[9.121s] [100%] [32m[1mLinking CXX shared library libdynamixel_workbench_toolbox.so[0m
+[9.585s] [100%] Built target dynamixel_workbench_toolbox
+[9.675s] Invoked command in '/root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox -- -j4 -l4
+[9.675s] Invoking command in '/root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox
+[9.700s] -- Install configuration: ""
+[9.700s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so
+[9.704s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so" to ""
+[9.717s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/include/
+[9.718s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox
+[9.718s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_item.h
+[9.719s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_driver.h
+[9.719s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_workbench.h
+[9.719s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_tool.h
+[9.719s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/library_path.sh
+[9.719s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/library_path.dsv
+[9.719s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/ament_index/resource_index/package_run_dependencies/dynamixel_workbench_toolbox
+[9.719s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/ament_index/resource_index/parent_prefix_path/dynamixel_workbench_toolbox
+[9.719s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/ament_prefix_path.sh
+[9.720s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/ament_prefix_path.dsv
+[9.720s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/path.sh
+[9.720s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/path.dsv
+[9.720s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.bash
+[9.720s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.sh
+[9.720s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.zsh
+[9.720s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.dsv
+[9.720s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.dsv
+[9.743s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/ament_index/resource_index/packages/dynamixel_workbench_toolbox
+[9.743s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.743s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.743s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/ament_cmake_export_libraries-extras.cmake
+[9.744s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/dynamixel_workbench_toolboxConfig.cmake
+[9.745s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/dynamixel_workbench_toolboxConfig-version.cmake
+[9.747s] -- Installing: /root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.xml
+[9.748s] Invoked command in '/root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox

@@ -1,0 +1,32 @@
+[0.017s] Invoking command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces': /usr/bin/cmake /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces
+[0.140s] -- The C compiler identification is GNU 11.4.0
+[0.269s] -- The CXX compiler identification is GNU 11.4.0
+[0.284s] -- Detecting C compiler ABI info
+[0.442s] -- Detecting C compiler ABI info - done
+[0.467s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.467s] -- Detecting C compile features
+[0.468s] -- Detecting C compile features - done
+[0.475s] -- Detecting CXX compiler ABI info
+[0.667s] -- Detecting CXX compiler ABI info - done
+[0.703s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.703s] -- Detecting CXX compile features
+[0.703s] -- Detecting CXX compile features - done
+[0.723s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.723s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.723s]   has asked CMake to find a package configuration file provided by
+[0.723s]   "ament_cmake", but CMake did not find one.
+[0.723s] 
+[0.723s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.723s]   any of the following names:
+[0.723s] 
+[0.724s]     ament_cmakeConfig.cmake
+[0.724s]     ament_cmake-config.cmake
+[0.724s] 
+[0.724s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.724s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.724s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.724s]   has been installed.
+[0.724s] 
+[0.724s] [0m
+[0.724s] -- Configuring incomplete, errors occurred!
+[0.724s] See also "/root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/CMakeOutput.log".

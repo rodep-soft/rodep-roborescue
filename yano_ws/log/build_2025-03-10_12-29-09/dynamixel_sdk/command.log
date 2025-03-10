@@ -1,0 +1,6 @@
+Invoking command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_sdk
+Invoked command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_sdk
+Invoking command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/dynamixel_sdk -- -j4 -l4
+Invoked command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/dynamixel_sdk -- -j4 -l4
+Invoking command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/dynamixel_sdk
+Invoked command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/dynamixel_sdk

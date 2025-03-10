@@ -1,0 +1,33 @@
+[0.023s] Invoking command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk': /usr/bin/cmake /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_sdk
+[0.134s] -- The C compiler identification is GNU 11.4.0
+[0.264s] -- The CXX compiler identification is GNU 11.4.0
+[0.280s] -- Detecting C compiler ABI info
+[0.415s] -- Detecting C compiler ABI info - done
+[0.432s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.433s] -- Detecting C compile features
+[0.434s] -- Detecting C compile features - done
+[0.445s] -- Detecting CXX compiler ABI info
+[0.606s] -- Detecting CXX compiler ABI info - done
+[0.627s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.628s] -- Detecting CXX compile features
+[0.629s] -- Detecting CXX compile features - done
+[0.661s] [31mCMake Error at CMakeLists.txt:18 (find_package):
+[0.664s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.664s]   has asked CMake to find a package configuration file provided by
+[0.664s]   "ament_cmake", but CMake did not find one.
+[0.664s] 
+[0.664s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.665s]   any of the following names:
+[0.665s] 
+[0.665s]     ament_cmakeConfig.cmake
+[0.665s]     ament_cmake-config.cmake
+[0.665s] 
+[0.666s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.666s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.666s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.666s]   has been installed.
+[0.666s] 
+[0.666s] [0m
+[0.666s] -- Configuring incomplete, errors occurred!
+[0.667s] See also "/root/working/test_ws/yano_ws/build/dynamixel_sdk/CMakeFiles/CMakeOutput.log".
+[0.669s] Invoked command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk' returned '1': /usr/bin/cmake /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_sdk

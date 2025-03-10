@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/test_ws/yano_ws/src/custom_interfaces
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/test_ws/yano_ws/build/custom_interfaces
+CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/custom_interfaces
 
 # Utility rule file for custom_interfaces__cpp.
 
@@ -95,8 +95,8 @@ rosidl_generator_cpp/custom_interfaces/msg/driver_velocity.hpp: /opt/ros/humble/
 rosidl_generator_cpp/custom_interfaces/msg/driver_velocity.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_interfaces/msg/driver_velocity.hpp: rosidl_adapter/custom_interfaces/msg/DriverVelocity.idl
 rosidl_generator_cpp/custom_interfaces/msg/driver_velocity.hpp: rosidl_adapter/custom_interfaces/srv/SetMode.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/test_ws/yano_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /root/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/working/test_ws/yano_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /root/working/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/custom_interfaces/msg/detail/driver_velocity__builder.hpp: rosidl_generator_cpp/custom_interfaces/msg/driver_velocity.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/driver_velocity__builder.hpp
@@ -148,6 +148,6 @@ CMakeFiles/custom_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/custom_interfaces__cpp.dir/clean
 
 CMakeFiles/custom_interfaces__cpp.dir/depend:
-	cd /root/test_ws/yano_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/test_ws/yano_ws/src/custom_interfaces /root/test_ws/yano_ws/src/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces /root/test_ws/yano_ws/build/custom_interfaces/CMakeFiles/custom_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/working/test_ws/yano_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/src/custom_interfaces /root/working/test_ws/yano_ws/src/custom_interfaces /root/working/test_ws/yano_ws/build/custom_interfaces /root/working/test_ws/yano_ws/build/custom_interfaces /root/working/test_ws/yano_ws/build/custom_interfaces/CMakeFiles/custom_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_interfaces__cpp.dir/depend
 

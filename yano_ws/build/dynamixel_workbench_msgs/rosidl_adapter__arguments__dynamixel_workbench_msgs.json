@@ -1,0 +1,25 @@
+{
+  "package_name": "dynamixel_workbench_msgs",
+  "non_idl_tuples": [
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/AX.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/EX.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/MX.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/MX2.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/MX2Ext.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/MXExt.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/PRO.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/PROExt.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/RX.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XH.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XL.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XL320.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XM.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XMExt.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/DynamixelState.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/DynamixelStateList.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/DynamixelInfo.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/DynamixelLoadInfo.msg",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:srv/GetDynamixelInfo.srv",
+    "/root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs:srv/DynamixelCommand.srv"
+  ]
+}

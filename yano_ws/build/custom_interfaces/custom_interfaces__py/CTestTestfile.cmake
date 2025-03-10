@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /root/test_ws/yano_ws/build/custom_interfaces/custom_interfaces__py
-# Build directory: /root/test_ws/yano_ws/build/custom_interfaces/custom_interfaces__py
+# Source directory: /root/working/test_ws/yano_ws/build/custom_interfaces/custom_interfaces__py
+# Build directory: /root/working/test_ws/yano_ws/build/custom_interfaces/custom_interfaces__py
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/test_ws/yano_ws/src/usb_camera/src/usb_camera.cpp" "CMakeFiles/usb_camera.dir/src/usb_camera.cpp.o" "gcc" "CMakeFiles/usb_camera.dir/src/usb_camera.cpp.o.d"
+  "/root/working/test_ws/yano_ws/src/usb_camera/src/usb_camera.cpp" "CMakeFiles/usb_camera.dir/src/usb_camera.cpp.o" "gcc" "CMakeFiles/usb_camera.dir/src/usb_camera.cpp.o.d"
   )
 
 # Targets to which this target links.

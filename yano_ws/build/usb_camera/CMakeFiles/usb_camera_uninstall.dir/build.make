@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/test_ws/yano_ws/src/usb_camera
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/usb_camera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/test_ws/yano_ws/build/usb_camera
+CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/usb_camera
 
 # Utility rule file for usb_camera_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/usb_camera_uninstall.dir/compiler_depend.make
 include CMakeFiles/usb_camera_uninstall.dir/progress.make
 
 CMakeFiles/usb_camera_uninstall:
-	/usr/bin/cmake -P /root/test_ws/yano_ws/build/usb_camera/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/working/test_ws/yano_ws/build/usb_camera/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 usb_camera_uninstall: CMakeFiles/usb_camera_uninstall
 usb_camera_uninstall: CMakeFiles/usb_camera_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/usb_camera_uninstall.dir/clean:
 .PHONY : CMakeFiles/usb_camera_uninstall.dir/clean
 
 CMakeFiles/usb_camera_uninstall.dir/depend:
-	cd /root/test_ws/yano_ws/build/usb_camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/test_ws/yano_ws/src/usb_camera /root/test_ws/yano_ws/src/usb_camera /root/test_ws/yano_ws/build/usb_camera /root/test_ws/yano_ws/build/usb_camera /root/test_ws/yano_ws/build/usb_camera/CMakeFiles/usb_camera_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/working/test_ws/yano_ws/build/usb_camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/src/usb_camera /root/working/test_ws/yano_ws/src/usb_camera /root/working/test_ws/yano_ws/build/usb_camera /root/working/test_ws/yano_ws/build/usb_camera /root/working/test_ws/yano_ws/build/usb_camera/CMakeFiles/usb_camera_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/usb_camera_uninstall.dir/depend
 

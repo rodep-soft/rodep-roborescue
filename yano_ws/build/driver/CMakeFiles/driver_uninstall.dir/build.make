@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/test_ws/yano_ws/src/driver
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/test_ws/yano_ws/build/driver
+CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/driver
 
 # Utility rule file for driver_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/driver_uninstall.dir/compiler_depend.make
 include CMakeFiles/driver_uninstall.dir/progress.make
 
 CMakeFiles/driver_uninstall:
-	/usr/bin/cmake -P /root/test_ws/yano_ws/build/driver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/working/test_ws/yano_ws/build/driver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 driver_uninstall: CMakeFiles/driver_uninstall
 driver_uninstall: CMakeFiles/driver_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/driver_uninstall.dir/clean:
 .PHONY : CMakeFiles/driver_uninstall.dir/clean
 
 CMakeFiles/driver_uninstall.dir/depend:
-	cd /root/test_ws/yano_ws/build/driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/test_ws/yano_ws/src/driver /root/test_ws/yano_ws/src/driver /root/test_ws/yano_ws/build/driver /root/test_ws/yano_ws/build/driver /root/test_ws/yano_ws/build/driver/CMakeFiles/driver_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/working/test_ws/yano_ws/build/driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/src/driver /root/working/test_ws/yano_ws/src/driver /root/working/test_ws/yano_ws/build/driver /root/working/test_ws/yano_ws/build/driver /root/working/test_ws/yano_ws/build/driver/CMakeFiles/driver_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/driver_uninstall.dir/depend
 

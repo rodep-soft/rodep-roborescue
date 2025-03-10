@@ -1,0 +1,4 @@
+Invoking command in '/root/working/test_ws/yano_ws/build/usb_camera': /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/usb_camera -- -j4 -l4
+Invoked command in '/root/working/test_ws/yano_ws/build/usb_camera' returned '0': /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/usb_camera -- -j4 -l4
+Invoking command in '/root/working/test_ws/yano_ws/build/usb_camera': /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/usb_camera
+Invoked command in '/root/working/test_ws/yano_ws/build/usb_camera' returned '0': /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/usb_camera

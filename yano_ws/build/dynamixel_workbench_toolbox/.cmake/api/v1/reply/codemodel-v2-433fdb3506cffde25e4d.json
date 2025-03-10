@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-178a2a402a111957b47d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dynamixel_workbench_toolbox",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dynamixel_workbench_toolbox::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dynamixel_workbench_toolbox-c3d96a567b5cfd9e7599.json",
+					"name" : "dynamixel_workbench_toolbox",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dynamixel_workbench_toolbox_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dynamixel_workbench_toolbox_uninstall-824d1b1096544d26348a.json",
+					"name" : "dynamixel_workbench_toolbox_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0c4fcb6e113a821e62fe.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/working/test_ws/yano_ws/build/dynamixel_workbench_toolbox",
+		"source" : "/root/working/test_ws/yano_ws/dynamixel-workbench/dynamixel_workbench_toolbox"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

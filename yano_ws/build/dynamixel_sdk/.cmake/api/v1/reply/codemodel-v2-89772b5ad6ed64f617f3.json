@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-17e7a1d5b833995cd326.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dynamixel_sdk",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dynamixel_sdk::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dynamixel_sdk-05d38f59a73d49c724b1.json",
+					"name" : "dynamixel_sdk",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dynamixel_sdk_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dynamixel_sdk_uninstall-c08cfd3b7a7e779b0060.json",
+					"name" : "dynamixel_sdk_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-06541538f69eade62930.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/working/test_ws/yano_ws/build/dynamixel_sdk",
+		"source" : "/root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

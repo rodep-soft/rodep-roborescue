@@ -1,5 +1,5 @@
 CMakeFiles/usb_camera.dir/src/usb_camera.cpp.o: \
- /root/test_ws/yano_ws/src/usb_camera/src/usb_camera.cpp \
+ /root/working/test_ws/yano_ws/src/usb_camera/src/usb_camera.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \

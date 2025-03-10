@@ -1,0 +1,15 @@
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/ament_index/resource_index/package_run_dependencies/dynamixel_workbench
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/ament_index/resource_index/parent_prefix_path/dynamixel_workbench
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/environment/ament_prefix_path.sh
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/environment/ament_prefix_path.dsv
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/environment/path.sh
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/environment/path.dsv
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/local_setup.bash
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/local_setup.sh
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/local_setup.zsh
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/local_setup.dsv
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/package.dsv
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/ament_index/resource_index/packages/dynamixel_workbench
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/cmake/dynamixel_workbenchConfig.cmake
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/cmake/dynamixel_workbenchConfig-version.cmake
+/root/working/test_ws/yano_ws/install/dynamixel_workbench/share/dynamixel_workbench/package.xml

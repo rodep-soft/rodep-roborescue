@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/test_ws/yano_ws/src/operator
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/operator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/test_ws/yano_ws/build/operator
+CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/operator
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/test_ws/yano_ws/build/operator/CMakeFiles /root/test_ws/yano_ws/build/operator//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/working/test_ws/yano_ws/build/operator/CMakeFiles /root/working/test_ws/yano_ws/build/operator//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/test_ws/yano_ws/build/operator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/working/test_ws/yano_ws/build/operator/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

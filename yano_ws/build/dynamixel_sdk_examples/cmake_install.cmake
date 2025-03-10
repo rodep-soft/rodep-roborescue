@@ -1,4 +1,4 @@
-# Install script for directory: /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples
+# Install script for directory: /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -118,7 +118,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples" TYPE FILE FILES "/root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples" TYPE FILE FILES "/root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

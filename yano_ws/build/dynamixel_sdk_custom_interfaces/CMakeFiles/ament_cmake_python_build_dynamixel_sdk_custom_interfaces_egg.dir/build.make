@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg.dir/clea
 .PHONY : CMakeFiles/ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg.dir/depend:
-	cd /root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces /root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces /root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces /root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces /root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces /root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces /root/working/test_ws/yano_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg.dir/depend
 

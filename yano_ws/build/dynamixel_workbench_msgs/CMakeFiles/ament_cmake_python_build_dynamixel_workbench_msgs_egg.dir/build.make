@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/depend:
-	cd /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs/CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs/CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/depend
 

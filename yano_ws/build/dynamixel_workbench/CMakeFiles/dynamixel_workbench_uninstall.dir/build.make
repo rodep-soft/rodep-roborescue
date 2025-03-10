@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/dynamixel-workbench/dynamixel_workbench
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/dynamixel-workbench/dynamixel_workbench
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/dynamixel_workbench
@@ -82,6 +82,6 @@ CMakeFiles/dynamixel_workbench_uninstall.dir/clean:
 .PHONY : CMakeFiles/dynamixel_workbench_uninstall.dir/clean
 
 CMakeFiles/dynamixel_workbench_uninstall.dir/depend:
-	cd /root/working/test_ws/yano_ws/build/dynamixel_workbench && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/dynamixel-workbench/dynamixel_workbench /root/working/test_ws/yano_ws/dynamixel-workbench/dynamixel_workbench /root/working/test_ws/yano_ws/build/dynamixel_workbench /root/working/test_ws/yano_ws/build/dynamixel_workbench /root/working/test_ws/yano_ws/build/dynamixel_workbench/CMakeFiles/dynamixel_workbench_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/working/test_ws/yano_ws/build/dynamixel_workbench && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/src/dynamixel-workbench/dynamixel_workbench /root/working/test_ws/yano_ws/src/dynamixel-workbench/dynamixel_workbench /root/working/test_ws/yano_ws/build/dynamixel_workbench /root/working/test_ws/yano_ws/build/dynamixel_workbench /root/working/test_ws/yano_ws/build/dynamixel_workbench/CMakeFiles/dynamixel_workbench_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dynamixel_workbench_uninstall.dir/depend
 

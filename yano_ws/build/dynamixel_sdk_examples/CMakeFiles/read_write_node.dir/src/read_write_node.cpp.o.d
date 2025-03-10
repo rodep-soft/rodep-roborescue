@@ -1,5 +1,5 @@
 CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o: \
- /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp \
+ /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/cstdio \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -638,4 +638,4 @@ CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
  /opt/ros/humble/include/rcutils/rcutils/cmdline_parser.h \
- /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples/include/read_write_node.hpp
+ /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/include/read_write_node.hpp

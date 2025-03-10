@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /root/working/test_ws/yano_ws/dynamixel-workbench/dynamixel_workbench
+# Source directory: /root/working/test_ws/yano_ws/src/dynamixel-workbench/dynamixel_workbench
 # Build directory: /root/working/test_ws/yano_ws/build/dynamixel_workbench
 # 
 # This file includes the relevant testing commands required for 

@@ -1,0 +1,72 @@
+[0.075s] Invoking command in '/root/working/test_ws/yano_ws/build/operator': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /root/working/test_ws/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/operator
+[0.359s] -- The C compiler identification is GNU 11.4.0
+[0.619s] -- The CXX compiler identification is GNU 11.4.0
+[0.657s] -- Detecting C compiler ABI info
+[1.002s] -- Detecting C compiler ABI info - done
+[1.041s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.041s] -- Detecting C compile features
+[1.043s] -- Detecting C compile features - done
+[1.071s] -- Detecting CXX compiler ABI info
+[1.489s] -- Detecting CXX compiler ABI info - done
+[1.540s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.540s] -- Detecting CXX compile features
+[1.542s] -- Detecting CXX compile features - done
+[1.576s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.245s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.789s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[3.010s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.030s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.058s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.139s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.243s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.627s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.657s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.195s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.336s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.517s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.549s] -- Looking for pthread.h
+[4.820s] -- Looking for pthread.h - found
+[4.820s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.151s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.152s] -- Found Threads: TRUE  
+[5.457s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.628s] -- Found custom_interfaces: 0.0.0 (/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[5.694s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.959s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.959s] -- Configured cppcheck include dirs: 
+[5.959s] -- Configured cppcheck exclude dirs and/or files: 
+[5.961s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.965s] -- Added test 'lint_cmake' to check CMake code style
+[5.965s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.969s] -- Added test 'uncrustify' to check C / C++ code style
+[5.970s] -- Configured uncrustify additional arguments: 
+[5.972s] -- Added test 'xmllint' to check XML markup files
+[5.979s] -- Configuring done
+[6.002s] -- Generating done
+[6.021s] -- Build files have been written to: /root/working/test_ws/yano_ws/build/operator
+[6.041s] Invoked command in '/root/working/test_ws/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /root/working/test_ws/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/operator
+[6.046s] Invoking command in '/root/working/test_ws/yano_ws/build/operator': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/operator -- -j4 -l4
+[6.279s] [ 50%] [32mBuilding CXX object CMakeFiles/operator_node.dir/src/operator.cpp.o[0m
+[26.117s] [100%] [32m[1mLinking CXX executable operator_node[0m
+[26.806s] [100%] Built target operator_node
+[26.821s] Invoked command in '/root/working/test_ws/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/operator -- -j4 -l4
+[26.823s] Invoking command in '/root/working/test_ws/yano_ws/build/operator': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/operator
+[26.834s] -- Install configuration: ""
+[26.834s] -- Installing: /root/working/test_ws/yano_ws/install/operator/lib/operator/operator_node
+[26.842s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/operator/lib/operator/operator_node" to ""
+[26.842s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator
+[26.842s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator
+[26.842s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh
+[26.843s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv
+[26.843s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/path.sh
+[26.844s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/path.dsv
+[26.844s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.bash
+[26.844s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.sh
+[26.845s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.zsh
+[26.845s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.dsv
+[26.845s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/package.dsv
+[26.846s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/packages/operator
+[26.847s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake
+[26.847s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake
+[26.847s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/package.xml
+[26.851s] Invoked command in '/root/working/test_ws/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/operator

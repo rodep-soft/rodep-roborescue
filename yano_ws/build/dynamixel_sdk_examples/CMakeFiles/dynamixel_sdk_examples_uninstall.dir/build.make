@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples
@@ -82,6 +82,6 @@ CMakeFiles/dynamixel_sdk_examples_uninstall.dir/clean:
 .PHONY : CMakeFiles/dynamixel_sdk_examples_uninstall.dir/clean
 
 CMakeFiles/dynamixel_sdk_examples_uninstall.dir/depend:
-	cd /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dynamixel_sdk_examples_uninstall.dir/depend
 

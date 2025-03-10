@@ -266,7 +266,7 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 Python3_EXECUTABLE:FILEPATH=/usr/bin/python3
 
 //Name of the computer/site where compile is being run
-SITE:STRING=cf33789d9224
+SITE:STRING=506481e94dbe
 
 //The directory containing a CMake configuration file for TinyXML2.
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
@@ -389,7 +389,7 @@ dynamixel_sdk_examples_BINARY_DIR:STATIC=/root/working/test_ws/yano_ws/build/dyn
 dynamixel_sdk_examples_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-dynamixel_sdk_examples_SOURCE_DIR:STATIC=/root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples
+dynamixel_sdk_examples_SOURCE_DIR:STATIC=/root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples
 
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
@@ -615,7 +615,7 @@ CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples
+CMAKE_HOME_DIRECTORY:INTERNAL=/root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

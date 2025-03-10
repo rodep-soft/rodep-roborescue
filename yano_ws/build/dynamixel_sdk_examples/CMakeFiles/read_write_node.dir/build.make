@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples
@@ -70,18 +70,18 @@ include CMakeFiles/read_write_node.dir/progress.make
 include CMakeFiles/read_write_node.dir/flags.make
 
 CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o: CMakeFiles/read_write_node.dir/flags.make
-CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o: /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp
+CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o: /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp
 CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o: CMakeFiles/read_write_node.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/working/test_ws/yano_ws/build/dynamixel_sdk_examples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o -MF CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o.d -o CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o -c /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o -MF CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o.d -o CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o -c /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp
 
 CMakeFiles/read_write_node.dir/src/read_write_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/read_write_node.dir/src/read_write_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp > CMakeFiles/read_write_node.dir/src/read_write_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp > CMakeFiles/read_write_node.dir/src/read_write_node.cpp.i
 
 CMakeFiles/read_write_node.dir/src/read_write_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/read_write_node.dir/src/read_write_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp -o CMakeFiles/read_write_node.dir/src/read_write_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp -o CMakeFiles/read_write_node.dir/src/read_write_node.cpp.s
 
 # Object files for target read_write_node
 read_write_node_OBJECTS = \
@@ -168,6 +168,6 @@ CMakeFiles/read_write_node.dir/clean:
 .PHONY : CMakeFiles/read_write_node.dir/clean
 
 CMakeFiles/read_write_node.dir/depend:
-	cd /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples /root/working/test_ws/yano_ws/DynamixelSDK/ros/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples/CMakeFiles/read_write_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples /root/working/test_ws/yano_ws/build/dynamixel_sdk_examples/CMakeFiles/read_write_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/read_write_node.dir/depend
 

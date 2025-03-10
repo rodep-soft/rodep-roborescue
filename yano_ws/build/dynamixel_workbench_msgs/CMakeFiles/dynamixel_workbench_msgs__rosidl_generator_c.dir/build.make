@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs
+CMAKE_SOURCE_DIR = /root/working/test_ws/yano_ws/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs
@@ -877,6 +877,6 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_c.dir/depend: rosidl_gener
 CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/dynamixel_workbench_msgs/srv/detail/get_dynamixel_info__type_support.h
 CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/dynamixel_workbench_msgs/srv/dynamixel_command.h
 CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/dynamixel_workbench_msgs/srv/get_dynamixel_info.h
-	cd /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/dynamixel-workbench-msgs/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/working/test_ws/yano_ws/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs /root/working/test_ws/yano_ws/build/dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_c.dir/depend
 

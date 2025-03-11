@@ -1,0 +1,49 @@
+[0.026s] Invoking command in '/root/working/test_ws/yano_ws/build/usb_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/usb_camera -- -j4 -l4
+[0.065s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.308s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.366s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.372s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.387s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.407s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.434s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.515s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.519s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.723s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.843s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.907s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.946s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.082s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.084s] -- Configured cppcheck include dirs: 
+[1.085s] -- Configured cppcheck exclude dirs and/or files: 
+[1.086s] -- Added test 'lint_cmake' to check CMake code style
+[1.086s] -- Added test 'uncrustify' to check C / C++ code style
+[1.087s] -- Configured uncrustify additional arguments: 
+[1.088s] -- Added test 'xmllint' to check XML markup files
+[1.089s] -- Configuring done
+[1.120s] -- Generating done
+[1.131s] -- Build files have been written to: /root/working/test_ws/yano_ws/build/usb_camera
+[1.165s] [35m[1mConsolidate compiler generated dependencies of target usb_camera[0m
+[1.205s] [ 50%] [32mBuilding CXX object CMakeFiles/usb_camera.dir/src/usb_camera.cpp.o[0m
+[13.263s] [100%] [32m[1mLinking CXX executable usb_camera[0m
+[14.381s] [100%] Built target usb_camera
+[14.400s] Invoked command in '/root/working/test_ws/yano_ws/build/usb_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/usb_camera -- -j4 -l4
+[14.403s] Invoking command in '/root/working/test_ws/yano_ws/build/usb_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/usb_camera
+[14.416s] -- Install configuration: ""
+[14.416s] -- Installing: /root/working/test_ws/yano_ws/install/usb_camera/lib/usb_camera/usb_camera
+[14.419s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/usb_camera/lib/usb_camera/usb_camera" to ""
+[14.419s] -- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/ament_index/resource_index/package_run_dependencies/usb_camera
+[14.419s] -- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/ament_index/resource_index/parent_prefix_path/usb_camera
+[14.419s] -- Installing: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/ament_prefix_path.sh
+[14.419s] -- Installing: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/ament_prefix_path.dsv
+[14.420s] -- Installing: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/path.sh
+[14.420s] -- Installing: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/path.dsv
+[14.420s] -- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.bash
+[14.421s] -- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.sh
+[14.421s] -- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.zsh
+[14.421s] -- Installing: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.dsv
+[14.421s] -- Installing: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.dsv
+[14.421s] -- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/ament_index/resource_index/packages/usb_camera
+[14.422s] -- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/cmake/usb_cameraConfig.cmake
+[14.422s] -- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/cmake/usb_cameraConfig-version.cmake
+[14.422s] -- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.xml
+[14.425s] Invoked command in '/root/working/test_ws/yano_ws/build/usb_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/usb_camera

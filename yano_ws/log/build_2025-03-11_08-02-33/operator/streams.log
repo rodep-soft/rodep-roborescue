@@ -1,0 +1,73 @@
+[0.044s] Invoking command in '/root/working/test_ws/yano_ws/build/operator': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/operator -- -j4 -l4
+[0.112s] [35m[1mConsolidate compiler generated dependencies of target operator_node[0m
+[0.139s] [ 50%] [32mBuilding CXX object CMakeFiles/operator_node.dir/src/operator.cpp.o[0m
+[3.480s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.480s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.480s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.480s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.480s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.481s]                  from [01m[K/root/working/test_ws/yano_ws/src/operator/src/operator.cpp:8[m[K:
+[3.481s] [01m[K/root/working/test_ws/yano_ws/src/operator/src/operator.cpp:[m[K In member function ‘[01m[Kvoid Operator::joy_callback(const Joy&)[m[K’:
+[3.482s] [01m[K/root/working/test_ws/yano_ws/src/operator/src/operator.cpp:84:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K-Wformat=[m[K]
+[3.482s]    84 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"%d"[m[K, [32m[Km1_vel[m[K);
+[3.482s]       |                                             [01;35m[K^~~~[m[K  [32m[K~~~~~~[m[K
+[3.482s]       |                                                   [32m[K|[m[K
+[3.482s]       |                                                   [32m[Kdouble[m[K
+[3.482s] [01m[K/root/working/test_ws/yano_ws/src/operator/src/operator.cpp:84:47:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.482s]    84 |             RCLCPP_INFO(this->get_logger(), "[01;36m[K%d[m[K", m1_vel);
+[3.482s]       |                                              [01;36m[K~^[m[K
+[3.483s]       |                                               [01;36m[K|[m[K
+[3.483s]       |                                               [01;36m[Kint[m[K
+[3.483s]       |                                              [32m[K%f[m[K
+[3.483s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.483s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.483s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.483s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.483s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.483s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.484s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.484s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.484s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.484s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.484s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.484s]                  from [01m[K/root/working/test_ws/yano_ws/src/operator/src/operator.cpp:8[m[K:
+[3.484s] [01m[K/root/working/test_ws/yano_ws/src/operator/src/operator.cpp:85:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K-Wformat=[m[K]
+[3.484s]    85 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"%d"[m[K, [32m[Km2_vel[m[K);
+[3.484s]       |                                             [01;35m[K^~~~[m[K  [32m[K~~~~~~[m[K
+[3.485s]       |                                                   [32m[K|[m[K
+[3.485s]       |                                                   [32m[Kdouble[m[K
+[3.485s] [01m[K/root/working/test_ws/yano_ws/src/operator/src/operator.cpp:85:47:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.485s]    85 |             RCLCPP_INFO(this->get_logger(), "[01;36m[K%d[m[K", m2_vel);
+[3.485s]       |                                              [01;36m[K~^[m[K
+[3.485s]       |                                               [01;36m[K|[m[K
+[3.485s]       |                                               [01;36m[Kint[m[K
+[3.485s]       |                                              [32m[K%f[m[K
+[12.462s] [100%] [32m[1mLinking CXX executable operator_node[0m
+[13.148s] [100%] Built target operator_node
+[13.164s] Invoked command in '/root/working/test_ws/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/operator -- -j4 -l4
+[13.167s] Invoking command in '/root/working/test_ws/yano_ws/build/operator': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/operator
+[13.178s] -- Install configuration: ""
+[13.178s] -- Installing: /root/working/test_ws/yano_ws/install/operator/lib/operator/operator_node
+[13.184s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/operator/lib/operator/operator_node" to ""
+[13.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator
+[13.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator
+[13.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh
+[13.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv
+[13.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/path.sh
+[13.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/path.dsv
+[13.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.bash
+[13.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.sh
+[13.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.zsh
+[13.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.dsv
+[13.186s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/package.dsv
+[13.186s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/packages/operator
+[13.186s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake
+[13.186s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake
+[13.186s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/package.xml
+[13.188s] Invoked command in '/root/working/test_ws/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/operator

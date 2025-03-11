@@ -80,6 +80,9 @@ private:
 
             m1_vel = std::clamp<float>(m1_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
             m2_vel = std::clamp<float>(m2_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
+
+            RCLCPP_INFO(this->get_logger(), "%f", m1_vel);
+            RCLCPP_INFO(this->get_logger(), "%f", m2_vel);
         }
 
         auto message = custom_interfaces::msg::DriverVelocity();

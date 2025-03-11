@@ -145,7 +145,7 @@ public:
         initParams();
 
         subscription_ = create_subscription<custom_interfaces::msg::DriverVelocity>(
-            "/operator", 10, bind(&Driver::driver_callback, this, _1));
+            "/driver", 10, bind(&Driver::driver_callback, this, _1));
 
         estop_subscription_ = create_subscription<std_msgs::msg::Bool>(
             "/emergency_stop", 10, bind(&Driver::estop_callback, this, _1));

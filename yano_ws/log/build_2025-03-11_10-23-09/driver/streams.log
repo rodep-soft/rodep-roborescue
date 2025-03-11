@@ -1,0 +1,26 @@
+[0.016s] Invoking command in '/root/working/test_ws/yano_ws/build/driver': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/driver -- -j4 -l4
+[0.079s] [35m[1mConsolidate compiler generated dependencies of target driver_node[0m
+[0.119s] [ 50%] [32mBuilding CXX object CMakeFiles/driver_node.dir/src/driver.cpp.o[0m
+[17.962s] [100%] [32m[1mLinking CXX executable driver_node[0m
+[18.867s] [100%] Built target driver_node
+[18.881s] Invoked command in '/root/working/test_ws/yano_ws/build/driver' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/driver -- -j4 -l4
+[18.882s] Invoking command in '/root/working/test_ws/yano_ws/build/driver': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/driver
+[18.892s] -- Install configuration: ""
+[18.892s] -- Installing: /root/working/test_ws/yano_ws/install/driver/lib/driver/driver_node
+[18.903s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/driver/lib/driver/driver_node" to ""
+[18.904s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/ament_index/resource_index/package_run_dependencies/driver
+[18.904s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/ament_index/resource_index/parent_prefix_path/driver
+[18.904s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/environment/ament_prefix_path.sh
+[18.904s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/environment/ament_prefix_path.dsv
+[18.905s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/environment/path.sh
+[18.905s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/environment/path.dsv
+[18.905s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/local_setup.bash
+[18.905s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/local_setup.sh
+[18.905s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/local_setup.zsh
+[18.906s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/local_setup.dsv
+[18.906s] -- Installing: /root/working/test_ws/yano_ws/install/driver/share/driver/package.dsv
+[18.906s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/ament_index/resource_index/packages/driver
+[18.906s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/cmake/driverConfig.cmake
+[18.906s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/cmake/driverConfig-version.cmake
+[18.906s] -- Up-to-date: /root/working/test_ws/yano_ws/install/driver/share/driver/package.xml
+[18.908s] Invoked command in '/root/working/test_ws/yano_ws/build/driver' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/driver

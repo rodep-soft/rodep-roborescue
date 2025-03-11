@@ -67,10 +67,12 @@ public:
             });
     }
 
-    bool setMotorVelocity(int command, double counts_per_sec, std::function<void(bool)> callback) {
+    bool setMotorVelocity(int command, double/*int*/ counts_per_sec, std::function<void(bool)> callback) {
         vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};
-        appendInt32(data, static_cast<int>(counts_per_sec));
-        appendCRC(data);
+        //test
+	appendInt32(data, static_cast<int>(counts_per_sec));
+        //data.push_back(counts_per_sec);
+	appendCRC(data);
         asyncSendRoboclawCommand(data, callback);
         return true;
     }
@@ -135,7 +137,7 @@ private:
 // ROS2 Driver Node
 class Driver : public rclcpp::Node {
 public:
-    Driver() : Node("driver"), roboclaw("/dev/ttyACM0") {
+    Driver() : Node("driver"), roboclaw("/dev/ttyACM1") {
         declare_parameter("crawler_circumference", 0.39);
         declare_parameter("counts_per_rev", 256);
         declare_parameter("gearhead_ratio", 66);
@@ -178,10 +180,10 @@ private:
     }
 
     void init() {
-        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0, [this](bool success) {
+        roboclaw.setMotorVelocity(35, 0, [this](bool success) {
             handleMotorInitResult(success, "M1");
         });
-        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0, [this](bool success) {
+        roboclaw.setMotorVelocity(36, 0, [this](bool success) {
             handleMotorInitResult(success, "M2");
         });
         roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS, [this](bool success) {
@@ -193,14 +195,16 @@ private:
         roboclaw.resetEncoders([this](bool success) {
             if (!success) {
                 RCLCPP_ERROR(get_logger(), "Failed to reset encoders");
-            }
+            } 
         });
     }
 
     void handleMotorInitResult(bool success, const string& motor_name) {
         if (!success) {
             RCLCPP_ERROR(get_logger(), "Failed to initialize %s motor", motor_name.c_str());
-        }
+        } else if (success) {
+	    RCLCPP_INFO(get_logger(), "success!");
+	}
     }
 
     void handlePIDInitResult(bool success, const string& motor_name) {
@@ -217,14 +221,15 @@ private:
 
         double M1_counts_per_sec = velocity_to_counts_per_sec(msg.m1_vel);
         double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);
-
-        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec, [this](bool success) {
+	
+	//test 
+        roboclaw.setMotorVelocity(35, M1_counts_per_sec, [this](bool success) {
             if (!success) {
                 RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");
             }
         });
 
-        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec, [this](bool success) {
+        roboclaw.setMotorVelocity(36, M2_counts_per_sec, [this](bool success) {
             if (!success) {
                 RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");
             }

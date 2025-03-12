@@ -272,7 +272,7 @@ SITE:STRING=758821bc95ec
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libdynamixel_sdk.so
+_lib:FILEPATH=/opt/ros/humble/lib/libdynamixel_workbench_toolbox.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
@@ -364,8 +364,14 @@ ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
 
+//The directory containing a CMake configuration file for custom_interfaces.
+custom_interfaces_DIR:PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake
+
 //The directory containing a CMake configuration file for dynamixel_sdk.
 dynamixel_sdk_DIR:PATH=/opt/ros/humble/share/dynamixel_sdk/cmake
+
+//The directory containing a CMake configuration file for dynamixel_workbench_toolbox.
+dynamixel_workbench_toolbox_DIR:PATH=/opt/ros/humble/share/dynamixel_workbench_toolbox/cmake
 
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr

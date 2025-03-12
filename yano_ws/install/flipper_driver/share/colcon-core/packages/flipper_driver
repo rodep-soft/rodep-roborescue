@@ -1,1 +1,1 @@
-dynamixel_sdk:rclcpp
+custom_interfaces:dynamixel_workbench_toolbox:rclcpp:std_msgs

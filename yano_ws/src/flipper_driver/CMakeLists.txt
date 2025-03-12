@@ -11,20 +11,31 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(dynamixel_sdk REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(custom_interfaces REQUIRED)
+find_package(dynamixel_workbench_toolbox REQUIRED)
 
 add_executable(flipper_driver_node src/flipper_driver.cpp)
 
 ament_target_dependencies(
 	flipper_driver_node
 	rclcpp
-	dynamixel_sdk
+	std_msgs
+	dynamixel_workbench_toolbox
+	custom_interfaces
 )
+
+include_directories(
+  include
+  ${dynamixel_workbench_toolbox_INCLUDE_DIRS}
+)
+
 
 install(TARGETS
 	flipper_driver_node
 	DESTINATION lib/${PROJECT_NAME}
 )
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

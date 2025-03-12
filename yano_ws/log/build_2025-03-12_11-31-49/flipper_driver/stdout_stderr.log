@@ -1,0 +1,89 @@
+[35m[1mConsolidate compiler generated dependencies of target flipper_driver_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/flipper_driver_node.dir/src/flipper_driver.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:1[m[K:
+[01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:[m[K In member function ‘[01m[Kbool FlipperDriver::initDynamixel()[m[K’:
+[01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:66:50:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Klong int[m[K’ [[01;35m[K-Wformat=[m[K]
+   66 |                 RCLCPP_ERROR(this->get_logger(), [01;35m[K"Failed to ping Dynamixel motor with ID %d"[m[K, [32m[Kid[m[K);
+      |                                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~[m[K
+      |                                                                                               [32m[K|[m[K
+      |                                                                                               [32m[Klong int[m[K
+[01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:66:91:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   66 |                 RCLCPP_ERROR(this->get_logger(), "Failed to ping Dynamixel motor with ID [01;36m[K%d[m[K", id);
+      |                                                                                          [01;36m[K~^[m[K
+      |                                                                                           [01;36m[K|[m[K
+      |                                                                                           [01;36m[Kint[m[K
+      |                                                                                          [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:1[m[K:
+[01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:[m[K In member function ‘[01m[Kvoid FlipperDriver::driver_callback(const DriverVelocity&)[m[K’:
+[01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:93:50:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K-Wformat=[m[K]
+   93 |                 RCLCPP_ERROR(this->get_logger(), [01;35m[K"Failed to set goal velocity for Dynamixel motor with ID %d"[m[K, dynamixel_ids_[i]);
+      |                                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:93:108:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   93 |                 RCLCPP_ERROR(this->get_logger(), "Failed to set goal velocity for Dynamixel motor with ID [01;36m[K%d[m[K", dynamixel_ids_[i]);
+      |                                                                                                           [01;36m[K~^[m[K
+      |                                                                                                            [01;36m[K|[m[K
+      |                                                                                                            [01;36m[Kint[m[K
+      |                                                                                                           [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:1[m[K:
+[01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:95:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K-Wformat=[m[K]
+   95 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"Set goal velocity to %d for Dynamixel motor with ID %d"[m[K, velocities[i], dynamixel_ids_[i]);
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:95:103:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   95 |                 RCLCPP_INFO(this->get_logger(), "Set goal velocity to %d for Dynamixel motor with ID [01;36m[K%d[m[K", velocities[i], dynamixel_ids_[i]);
+      |                                                                                                      [01;36m[K~^[m[K
+      |                                                                                                       [01;36m[K|[m[K
+      |                                                                                                       [01;36m[Kint[m[K
+      |                                                                                                      [32m[K%ld[m[K
+[100%] [32m[1mLinking CXX executable flipper_driver_node[0m
+[100%] Built target flipper_driver_node
+-- Install configuration: ""
+-- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/lib/flipper_driver/flipper_driver_node
+-- Set runtime path of "/root/working/test_ws/yano_ws/install/flipper_driver/lib/flipper_driver/flipper_driver_node" to ""
+-- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/package_run_dependencies/flipper_driver
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/parent_prefix_path/flipper_driver
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.sh
+-- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.sh
+-- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.dsv
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.bash
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.sh
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.zsh
+-- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.dsv
+-- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.dsv
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/packages/flipper_driver
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig.cmake
+-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig-version.cmake
+-- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.xml

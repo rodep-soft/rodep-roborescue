@@ -24,11 +24,20 @@ def generate_launch_description():
 
         # Launch the operator node
         Node(
-            package='driver',  # Replace with the actual package name
-            executable='driver_node',  # The executable for the operator node
-            name='driver_node',  # Name of the node
+            package='crawler_driver',  # Replace with the actual package name
+            executable='crawler_driver_node',  # The executable for the operator node
+            name='crawler_driver_node',  # Name of the node
             output='screen',  # Output logs to screen
             parameters=[],
             remappings=[]
+        ),
+        Node(
+            package='flipper_driver',
+            executable='flipper_driver_node',
+            name='flipper_driver_node',
+            output='screen',
+            parameters=[],
+            remappings=[]
+
         ),
     ])

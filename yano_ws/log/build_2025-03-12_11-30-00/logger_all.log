@@ -1,0 +1,470 @@
+[0.203s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.203s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x717d426eaf80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x717d427c7f40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x717d427c7f40>>, mixin_verb=('build',))
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.414s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.420s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.420s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/working/test_ws/yano_ws'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore_ament_install'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_pkg']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_pkg'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_meta']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_meta'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ros']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ros'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['cmake', 'python']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'cmake'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['python_setup_py']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python_setup_py'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore_ament_install'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_pkg']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_pkg'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_meta']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_meta'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ros']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ros'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['cmake', 'python']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'cmake'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['python_setup_py']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python_setup_py'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/crawler_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/crawler_driver) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/crawler_driver) by extension 'ignore_ament_install'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/crawler_driver) by extensions ['colcon_pkg']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/crawler_driver) by extension 'colcon_pkg'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/crawler_driver) by extensions ['colcon_meta']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/crawler_driver) by extension 'colcon_meta'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/crawler_driver) by extensions ['ros']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/crawler_driver) by extension 'ros'
+[0.447s] DEBUG:colcon.colcon_core.package_identification:Package 'src/crawler_driver' with type 'ros.ament_cmake' and name 'crawler_driver'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore_ament_install'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_pkg'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ros'
+[0.448s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['ignore', 'ignore_ament_install']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'ignore'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'ignore_ament_install'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['colcon_pkg']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'colcon_pkg'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['colcon_meta']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'colcon_meta'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['ros']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'ros'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['cmake', 'python']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'cmake'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'python'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['python_setup_py']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'python_setup_py'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'ignore_ament_install'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['colcon_pkg']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'colcon_pkg'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['colcon_meta']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'colcon_meta'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['ros']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'ros'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['cmake', 'python']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'cmake'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'python'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['python_setup_py']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'python_setup_py'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/flipper_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/flipper_driver) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/flipper_driver) by extension 'ignore_ament_install'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/flipper_driver) by extensions ['colcon_pkg']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/flipper_driver) by extension 'colcon_pkg'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/flipper_driver) by extensions ['colcon_meta']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/flipper_driver) by extension 'colcon_meta'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/flipper_driver) by extensions ['ros']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/flipper_driver) by extension 'ros'
+[0.452s] DEBUG:colcon.colcon_core.package_identification:Package 'src/flipper_driver' with type 'ros.ament_cmake' and name 'flipper_driver'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'ignore_ament_install'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extensions ['colcon_pkg']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'colcon_pkg'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extensions ['colcon_meta']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'colcon_meta'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extensions ['ros']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/operator) by extension 'ros'
+[0.453s] DEBUG:colcon.colcon_core.package_identification:Package 'src/operator' with type 'ros.ament_cmake' and name 'operator'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_camera) by extension 'ignore'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_camera) by extension 'ignore_ament_install'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_camera) by extensions ['colcon_pkg']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_camera) by extension 'colcon_pkg'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_camera) by extensions ['colcon_meta']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_camera) by extension 'colcon_meta'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_camera) by extensions ['ros']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_camera) by extension 'ros'
+[0.455s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usb_camera' with type 'ros.ament_cmake' and name 'usb_camera'
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.485s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.485s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/working/test_ws/yano_ws/build/custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/working/test_ws/yano_ws/install/custom_interfaces', 'merge_install': False, 'path': '/root/working/test_ws/yano_ws/src/custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'usb_camera' build argument 'cmake_args' from command line to 'None'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'usb_camera' build argument 'cmake_target' from command line to 'None'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'usb_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'usb_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'usb_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'usb_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'usb_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'usb_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'usb_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.486s] DEBUG:colcon.colcon_core.verb:Building package 'usb_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/working/test_ws/yano_ws/build/usb_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/working/test_ws/yano_ws/install/usb_camera', 'merge_install': False, 'path': '/root/working/test_ws/yano_ws/src/usb_camera', 'symlink_install': False, 'test_result_base': None}
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'crawler_driver' build argument 'cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'crawler_driver' build argument 'cmake_target' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'crawler_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'crawler_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'crawler_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'crawler_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'crawler_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'crawler_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'crawler_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.487s] DEBUG:colcon.colcon_core.verb:Building package 'crawler_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/working/test_ws/yano_ws/build/crawler_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/working/test_ws/yano_ws/install/crawler_driver', 'merge_install': False, 'path': '/root/working/test_ws/yano_ws/src/crawler_driver', 'symlink_install': False, 'test_result_base': None}
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'flipper_driver' build argument 'cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'flipper_driver' build argument 'cmake_target' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'flipper_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'flipper_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'flipper_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'flipper_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'flipper_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'flipper_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'flipper_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.488s] DEBUG:colcon.colcon_core.verb:Building package 'flipper_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/working/test_ws/yano_ws/build/flipper_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/working/test_ws/yano_ws/install/flipper_driver', 'merge_install': False, 'path': '/root/working/test_ws/yano_ws/src/flipper_driver', 'symlink_install': False, 'test_result_base': None}
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_target' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_clean_first' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'cmake_force_configure' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'ament_cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'operator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.488s] DEBUG:colcon.colcon_core.verb:Building package 'operator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/working/test_ws/yano_ws/build/operator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/working/test_ws/yano_ws/install/operator', 'merge_install': False, 'path': '/root/working/test_ws/yano_ws/src/operator', 'symlink_install': False, 'test_result_base': None}
+[0.489s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.490s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.491s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/working/test_ws/yano_ws/src/custom_interfaces' with build type 'ament_cmake'
+[0.491s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/working/test_ws/yano_ws/src/custom_interfaces'
+[0.495s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.496s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.496s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.499s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/working/test_ws/yano_ws/install/flipper' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.499s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/working/test_ws/yano_ws/install/dynamixel_workbench' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.499s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.500s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.500s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.500s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.500s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/working/test_ws/yano_ws/install/dynamixel_sdk' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.500s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/working/test_ws/yano_ws/install/driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.501s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/working/test_ws/yano_ws/install/flipper' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.501s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/working/test_ws/yano_ws/install/dynamixel_workbench' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.501s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/working/test_ws/yano_ws/install/dynamixel_sdk' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/working/test_ws/yano_ws/install/driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.509s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/working/test_ws/yano_ws/src/usb_camera' with build type 'ament_cmake'
+[0.510s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/working/test_ws/yano_ws/src/usb_camera'
+[0.510s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.510s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/test_ws/yano_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/custom_interfaces -- -j4 -l4
+[0.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/test_ws/yano_ws/build/usb_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/usb_camera -- -j4 -l4
+[0.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/test_ws/yano_ws/build/usb_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/usb_camera -- -j4 -l4
+[0.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/test_ws/yano_ws/build/usb_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/usb_camera
+[0.741s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_camera)
+[0.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/test_ws/yano_ws/build/usb_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/usb_camera
+[0.747s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera' for CMake module files
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera' for CMake config files
+[0.749s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_camera', 'cmake_prefix_path')
+[0.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/hook/cmake_prefix_path.ps1'
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/hook/cmake_prefix_path.dsv'
+[0.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/hook/cmake_prefix_path.sh'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/lib'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/bin'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/lib/pkgconfig/usb_camera.pc'
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/lib/python3.10/site-packages'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/bin'
+[0.759s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.ps1'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.dsv'
+[0.763s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.sh'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.bash'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.zsh'
+[0.769s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/test_ws/yano_ws/install/usb_camera/share/colcon-core/packages/usb_camera)
+[0.770s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_camera)
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera' for CMake module files
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera' for CMake config files
+[0.772s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_camera', 'cmake_prefix_path')
+[0.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/hook/cmake_prefix_path.ps1'
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/hook/cmake_prefix_path.dsv'
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/hook/cmake_prefix_path.sh'
+[0.776s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/lib'
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/bin'
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/lib/pkgconfig/usb_camera.pc'
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/lib/python3.10/site-packages'
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/usb_camera/bin'
+[0.779s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.ps1'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.dsv'
+[0.781s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.sh'
+[0.782s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.bash'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.zsh'
+[0.783s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/test_ws/yano_ws/install/usb_camera/share/colcon-core/packages/usb_camera)
+[1.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/test_ws/yano_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/custom_interfaces -- -j4 -l4
+[1.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/test_ws/yano_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/custom_interfaces
+[1.285s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[1.285s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces' for CMake module files
+[1.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/test_ws/yano_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/custom_interfaces
+[1.287s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces' for CMake config files
+[1.288s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[1.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[1.289s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[1.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[1.291s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/lib'
+[1.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[1.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[1.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[1.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/bin'
+[1.294s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[1.294s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/lib/python3.10/site-packages'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/bin'
+[1.295s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[1.297s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.sh'
+[1.298s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.bash'
+[1.298s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[1.299s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/test_ws/yano_ws/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[1.300s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[1.301s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces' for CMake module files
+[1.302s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces' for CMake config files
+[1.304s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[1.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[1.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[1.307s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/lib'
+[1.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[1.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[1.308s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[1.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[1.309s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/bin'
+[1.309s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[1.309s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/lib/python3.10/site-packages'
+[1.310s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/custom_interfaces/bin'
+[1.310s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[1.311s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[1.312s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.sh'
+[1.312s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.bash'
+[1.313s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[1.314s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/test_ws/yano_ws/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[1.314s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/working/test_ws/yano_ws/src/crawler_driver' with build type 'ament_cmake'
+[1.314s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/working/test_ws/yano_ws/src/crawler_driver'
+[1.315s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.315s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.323s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/working/test_ws/yano_ws/src/flipper_driver' with build type 'ament_cmake'
+[1.324s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/working/test_ws/yano_ws/src/flipper_driver'
+[1.324s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.324s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.333s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/working/test_ws/yano_ws/src/operator' with build type 'ament_cmake'
+[1.333s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/working/test_ws/yano_ws/src/operator'
+[1.334s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j4 -l4
+[1.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/test_ws/yano_ws/build/flipper_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper_driver -- -j4 -l4
+[1.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/test_ws/yano_ws/build/operator': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/operator -- -j4 -l4
+[1.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/test_ws/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/operator -- -j4 -l4
+[1.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/test_ws/yano_ws/build/operator': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/operator
+[1.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j4 -l4
+[1.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/crawler_driver
+[1.542s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(operator)
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator' for CMake module files
+[1.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/test_ws/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/operator
+[1.546s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator' for CMake config files
+[1.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('operator', 'cmake_prefix_path')
+[1.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.ps1'
+[1.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.dsv'
+[1.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.sh'
+[1.553s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/lib'
+[1.553s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/bin'
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/lib/pkgconfig/operator.pc'
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/lib/python3.10/site-packages'
+[1.556s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/bin'
+[1.556s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/operator/share/operator/package.ps1'
+[1.557s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/test_ws/yano_ws/install/operator/share/operator/package.dsv'
+[1.558s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/operator/share/operator/package.sh'
+[1.559s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/operator/share/operator/package.bash'
+[1.560s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/operator/share/operator/package.zsh'
+[1.561s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/test_ws/yano_ws/install/operator/share/colcon-core/packages/operator)
+[1.562s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(operator)
+[1.562s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator' for CMake module files
+[1.563s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator' for CMake config files
+[1.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('operator', 'cmake_prefix_path')
+[1.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.ps1'
+[1.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.dsv'
+[1.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/operator/share/operator/hook/cmake_prefix_path.sh'
+[1.566s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/lib'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/bin'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/lib/pkgconfig/operator.pc'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/lib/python3.10/site-packages'
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/operator/bin'
+[1.568s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/operator/share/operator/package.ps1'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/test_ws/yano_ws/install/operator/share/operator/package.dsv'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/operator/share/operator/package.sh'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/operator/share/operator/package.bash'
+[1.572s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/operator/share/operator/package.zsh'
+[1.573s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/test_ws/yano_ws/install/operator/share/colcon-core/packages/operator)
+[1.576s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crawler_driver)
+[1.576s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver' for CMake module files
+[1.577s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/crawler_driver
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver' for CMake config files
+[1.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('crawler_driver', 'cmake_prefix_path')
+[1.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/hook/cmake_prefix_path.ps1'
+[1.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/hook/cmake_prefix_path.dsv'
+[1.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/hook/cmake_prefix_path.sh'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/lib'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/bin'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/lib/pkgconfig/crawler_driver.pc'
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/lib/python3.10/site-packages'
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/bin'
+[1.584s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.ps1'
+[1.585s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.dsv'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.sh'
+[1.587s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.bash'
+[1.588s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.zsh'
+[1.588s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/test_ws/yano_ws/install/crawler_driver/share/colcon-core/packages/crawler_driver)
+[1.589s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crawler_driver)
+[1.589s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver' for CMake module files
+[1.590s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver' for CMake config files
+[1.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('crawler_driver', 'cmake_prefix_path')
+[1.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/hook/cmake_prefix_path.ps1'
+[1.592s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/hook/cmake_prefix_path.dsv'
+[1.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/hook/cmake_prefix_path.sh'
+[1.593s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/lib'
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/bin'
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/lib/pkgconfig/crawler_driver.pc'
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/lib/python3.10/site-packages'
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/crawler_driver/bin'
+[1.595s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.ps1'
+[1.596s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.dsv'
+[1.597s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.sh'
+[1.597s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.bash'
+[1.598s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.zsh'
+[1.598s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/test_ws/yano_ws/install/crawler_driver/share/colcon-core/packages/crawler_driver)
+[9.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/working/test_ws/yano_ws/build/flipper_driver' returned '2': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper_driver -- -j4 -l4
+[9.980s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(flipper_driver)
+[9.980s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/flipper_driver' for CMake module files
+[9.981s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/flipper_driver' for CMake config files
+[9.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('flipper_driver', 'cmake_prefix_path')
+[9.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/hook/cmake_prefix_path.ps1'
+[9.983s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/hook/cmake_prefix_path.dsv'
+[9.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/hook/cmake_prefix_path.sh'
+[9.984s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/flipper_driver/lib'
+[9.984s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/flipper_driver/bin'
+[9.984s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/flipper_driver/lib/pkgconfig/flipper_driver.pc'
+[9.984s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/flipper_driver/lib/python3.10/site-packages'
+[9.985s] Level 1:colcon.colcon_core.environment:checking '/root/working/test_ws/yano_ws/install/flipper_driver/bin'
+[9.985s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.ps1'
+[9.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.dsv'
+[9.987s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.sh'
+[9.988s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.bash'
+[9.988s] INFO:colcon.colcon_core.shell:Creating package script '/root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.zsh'
+[9.989s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/working/test_ws/yano_ws/install/flipper_driver/share/colcon-core/packages/flipper_driver)
+[10.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[10.001s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.030s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[10.030s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.030s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.030s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.030s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[10.030s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.031s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/working/test_ws/yano_ws/install/local_setup.ps1'
+[10.032s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/working/test_ws/yano_ws/install/_local_setup_util_ps1.py'
+[10.034s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/working/test_ws/yano_ws/install/setup.ps1'
+[10.036s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/working/test_ws/yano_ws/install/local_setup.sh'
+[10.037s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/working/test_ws/yano_ws/install/_local_setup_util_sh.py'
+[10.038s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/working/test_ws/yano_ws/install/setup.sh'
+[10.040s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/working/test_ws/yano_ws/install/local_setup.bash'
+[10.040s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/working/test_ws/yano_ws/install/setup.bash'
+[10.042s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/working/test_ws/yano_ws/install/local_setup.zsh'
+[10.042s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/working/test_ws/yano_ws/install/setup.zsh'

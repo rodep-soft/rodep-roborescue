@@ -68,13 +68,13 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
     _fields_and_field_types = {
         'm1_vel': 'float',
         'm2_vel': 'float',
-        'flipper_vel': 'sequence<float>',
+        'flipper_vel': 'sequence<int32>',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('int32')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -83,7 +83,7 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.m1_vel = kwargs.get('m1_vel', float())
         self.m2_vel = kwargs.get('m2_vel', float())
-        self.flipper_vel = array.array('f', kwargs.get('flipper_vel', []))
+        self.flipper_vel = array.array('i', kwargs.get('flipper_vel', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -165,8 +165,8 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
     @flipper_vel.setter
     def flipper_vel(self, value):
         if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'flipper_vel' array.array() must have the type code of 'f'"
+            assert value.typecode == 'i', \
+                "The 'flipper_vel' array.array() must have the type code of 'i'"
             self._flipper_vel = value
             return
         if __debug__:
@@ -180,7 +180,7 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
                   isinstance(value, UserList)) and
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
-                 all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'flipper_vel' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._flipper_vel = array.array('f', value)
+                 all(isinstance(v, int) for v in value) and
+                 all(val >= -2147483648 and val < 2147483648 for val in value)), \
+                "The 'flipper_vel' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
+        self._flipper_vel = array.array('i', value)

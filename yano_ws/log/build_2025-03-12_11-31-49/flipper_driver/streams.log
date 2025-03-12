@@ -1,0 +1,93 @@
+[0.034s] Invoking command in '/root/working/test_ws/yano_ws/build/flipper_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper_driver -- -j4 -l4
+[0.113s] [35m[1mConsolidate compiler generated dependencies of target flipper_driver_node[0m
+[0.144s] [ 50%] [32mBuilding CXX object CMakeFiles/flipper_driver_node.dir/src/flipper_driver.cpp.o[0m
+[3.848s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.850s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.850s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.850s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.850s]                  from [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:1[m[K:
+[3.850s] [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:[m[K In member function ‘[01m[Kbool FlipperDriver::initDynamixel()[m[K’:
+[3.850s] [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:66:50:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Klong int[m[K’ [[01;35m[K-Wformat=[m[K]
+[3.850s]    66 |                 RCLCPP_ERROR(this->get_logger(), [01;35m[K"Failed to ping Dynamixel motor with ID %d"[m[K, [32m[Kid[m[K);
+[3.850s]       |                                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~[m[K
+[3.850s]       |                                                                                               [32m[K|[m[K
+[3.851s]       |                                                                                               [32m[Klong int[m[K
+[3.851s] [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:66:91:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.851s]    66 |                 RCLCPP_ERROR(this->get_logger(), "Failed to ping Dynamixel motor with ID [01;36m[K%d[m[K", id);
+[3.851s]       |                                                                                          [01;36m[K~^[m[K
+[3.851s]       |                                                                                           [01;36m[K|[m[K
+[3.851s]       |                                                                                           [01;36m[Kint[m[K
+[3.851s]       |                                                                                          [32m[K%ld[m[K
+[3.852s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.853s]                  from [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:1[m[K:
+[3.853s] [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:[m[K In member function ‘[01m[Kvoid FlipperDriver::driver_callback(const DriverVelocity&)[m[K’:
+[3.853s] [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:93:50:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K-Wformat=[m[K]
+[3.853s]    93 |                 RCLCPP_ERROR(this->get_logger(), [01;35m[K"Failed to set goal velocity for Dynamixel motor with ID %d"[m[K, dynamixel_ids_[i]);
+[3.854s]       |                                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.854s] [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:93:108:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.854s]    93 |                 RCLCPP_ERROR(this->get_logger(), "Failed to set goal velocity for Dynamixel motor with ID [01;36m[K%d[m[K", dynamixel_ids_[i]);
+[3.854s]       |                                                                                                           [01;36m[K~^[m[K
+[3.854s]       |                                                                                                            [01;36m[K|[m[K
+[3.854s]       |                                                                                                            [01;36m[Kint[m[K
+[3.854s]       |                                                                                                           [32m[K%ld[m[K
+[3.854s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.854s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.854s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.855s]                  from [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:1[m[K:
+[3.856s] [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:95:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K-Wformat=[m[K]
+[3.856s]    95 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"Set goal velocity to %d for Dynamixel motor with ID %d"[m[K, velocities[i], dynamixel_ids_[i]);
+[3.856s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.856s] [01m[K/root/working/test_ws/yano_ws/src/flipper_driver/src/flipper_driver.cpp:95:103:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.856s]    95 |                 RCLCPP_INFO(this->get_logger(), "Set goal velocity to %d for Dynamixel motor with ID [01;36m[K%d[m[K", velocities[i], dynamixel_ids_[i]);
+[3.856s]       |                                                                                                      [01;36m[K~^[m[K
+[3.856s]       |                                                                                                       [01;36m[K|[m[K
+[3.856s]       |                                                                                                       [01;36m[Kint[m[K
+[3.856s]       |                                                                                                      [32m[K%ld[m[K
+[15.883s] [100%] [32m[1mLinking CXX executable flipper_driver_node[0m
+[17.014s] [100%] Built target flipper_driver_node
+[17.034s] Invoked command in '/root/working/test_ws/yano_ws/build/flipper_driver' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper_driver -- -j4 -l4
+[17.036s] Invoking command in '/root/working/test_ws/yano_ws/build/flipper_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/flipper_driver
+[17.050s] -- Install configuration: ""
+[17.050s] -- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/lib/flipper_driver/flipper_driver_node
+[17.058s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/flipper_driver/lib/flipper_driver/flipper_driver_node" to ""
+[17.058s] -- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/package_run_dependencies/flipper_driver
+[17.058s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/parent_prefix_path/flipper_driver
+[17.059s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.sh
+[17.059s] -- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.dsv
+[17.059s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.sh
+[17.059s] -- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.dsv
+[17.059s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.bash
+[17.060s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.sh
+[17.060s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.zsh
+[17.060s] -- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.dsv
+[17.060s] -- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.dsv
+[17.061s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/packages/flipper_driver
+[17.061s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig.cmake
+[17.062s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig-version.cmake
+[17.062s] -- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.xml
+[17.065s] Invoked command in '/root/working/test_ws/yano_ws/build/flipper_driver' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/flipper_driver

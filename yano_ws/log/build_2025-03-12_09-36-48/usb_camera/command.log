@@ -1,0 +1,6 @@
+Invoking command in '/root/working/test_ws/yano_ws/build/usb_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/working/test_ws/yano_ws/src/usb_camera -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/usb_camera
+Invoked command in '/root/working/test_ws/yano_ws/build/usb_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/working/test_ws/yano_ws/src/usb_camera -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/usb_camera
+Invoking command in '/root/working/test_ws/yano_ws/build/usb_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/usb_camera -- -j4 -l4
+Invoked command in '/root/working/test_ws/yano_ws/build/usb_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/usb_camera -- -j4 -l4
+Invoking command in '/root/working/test_ws/yano_ws/build/usb_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/usb_camera
+Invoked command in '/root/working/test_ws/yano_ws/build/usb_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/usb_camera

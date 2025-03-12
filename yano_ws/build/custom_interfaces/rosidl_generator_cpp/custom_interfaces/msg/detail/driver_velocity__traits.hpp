@@ -36,6 +36,24 @@ inline void to_flow_style_yaml(
   {
     out << "m2_vel: ";
     rosidl_generator_traits::value_to_yaml(msg.m2_vel, out);
+    out << ", ";
+  }
+
+  // member: flipper_vel
+  {
+    if (msg.flipper_vel.size() == 0) {
+      out << "flipper_vel: []";
+    } else {
+      out << "flipper_vel: [";
+      size_t pending_items = msg.flipper_vel.size();
+      for (auto item : msg.flipper_vel) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -62,6 +80,26 @@ inline void to_block_style_yaml(
     out << "m2_vel: ";
     rosidl_generator_traits::value_to_yaml(msg.m2_vel, out);
     out << "\n";
+  }
+
+  // member: flipper_vel
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.flipper_vel.size() == 0) {
+      out << "flipper_vel: []\n";
+    } else {
+      out << "flipper_vel:\n";
+      for (auto item : msg.flipper_vel) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
   }
 }  // NOLINT(readability/fn_size)
 
@@ -111,11 +149,11 @@ inline const char * name<custom_interfaces::msg::DriverVelocity>()
 
 template<>
 struct has_fixed_size<custom_interfaces::msg::DriverVelocity>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<custom_interfaces::msg::DriverVelocity>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<custom_interfaces::msg::DriverVelocity>

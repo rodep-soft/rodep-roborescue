@@ -15,6 +15,10 @@ module custom_interfaces {
       @verbatim (language="comment", text=
         "velocity for the right crawler")
       float m2_vel;
+
+      @verbatim (language="comment", text=
+        "velocity for the flippers")
+      sequence<float> flipper_vel;
     };
   };
 };

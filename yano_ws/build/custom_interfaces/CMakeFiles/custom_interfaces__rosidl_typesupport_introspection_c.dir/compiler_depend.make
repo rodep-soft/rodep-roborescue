@@ -63,7 +63,9 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_type
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/custom_interfaces/msg/detail/driver_velocity__struct.h
+  rosidl_generator_c/custom_interfaces/msg/detail/driver_velocity__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
 CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/set_mode__type_support.c.o: rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/set_mode__type_support.c \
   /usr/include/stdc-predef.h \
@@ -162,6 +164,8 @@ rosidl_generator_c/custom_interfaces/msg/detail/driver_velocity__struct.h:
 rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 

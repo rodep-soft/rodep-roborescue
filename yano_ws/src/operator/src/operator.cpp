@@ -24,7 +24,7 @@ public:
         subscription_ = this->create_subscription<sensor_msgs::msg::Joy>(
             "/joy", 10, std::bind(&Operator::joy_callback, this, _1));
 
-        publisher_ = this->create_publisher<custom_interfaces::msg::DriverVelocity>("/driver", 10);
+        publisher_ = this->create_publisher<custom_interfaces::msg::DriverVelocity>("/crawler_driver", 10);
         
         service_ = this->create_service<custom_interfaces::srv::SetMode>(
             "/set_mode", std::bind(&Operator::set_mode_callback, this, _1, _2));
@@ -34,6 +34,7 @@ private:
     static constexpr float WIDTH = 0.29f;
     static constexpr float MAX_SPEED = 0.5f;
     static constexpr float DEADZONE = 0.1f;
+    static constexpr float FLIPPER_SPEED = 100.0f;
 
     float m1_vel, m2_vel;
     Mode mode_;
@@ -88,7 +89,51 @@ private:
         auto message = custom_interfaces::msg::DriverVelocity();
         message.m1_vel = m1_vel;
         message.m2_vel = m2_vel;
+
+        int flipper1_sign = 0;
+        int flipper2_sign = 0;
+        int flipper3_sign = 0;
+        int flipper4_sign = 0;
+        float flipper1_speed = 0;
+        float flipper2_speed = 0;
+        float flipper3_speed = 0;
+        float flipper4_speed = 0;
+
+        if (msg.buttons[9] == 1) {
+          flipper1_sign = 1;
+        } else if (msg.axes[4] < -0.95) {
+          flipper1_sign = -1;
+        }
+        flipper1_speed = FLIPPER_SPEED * flipper1_sign;
+
+        if (msg.buttons[10] == 1) {
+          flipper2_sign = 1;
+        } else if (msg.axes[5] < -0.95) {
+          flipper2_sign = -1;
+        }
+        flipper2_speed = FLIPPER_SPEED * flipper2_sign;
+
+        if (msg.buttons[11] == 1) {
+          flipper3_sign = 1;
+        } else if (msg.buttons[12] == 1) {
+          flipper3_sign = -1;
+        }
+        flipper3_speed = FLIPPER_SPEED * flipper3_sign;
+
+        if (msg.buttons[3] == 1) {
+          flipper4_sign = 1;
+        } else if (msg.buttons[0] == 1) {
+          flipper4_sign = -1;
+        }
+        flipper4_speed = FLIPPER_SPEED * flipper4_sign;
+
+        message.flipper_vel[0] = flipper1_speed;
+        message.flipper_vel[1] = flipper2_speed;
+        message.flipper_vel[2] = flipper3_speed;
+        message.flipper_vel[3] = flipper4_speed;
+
         publisher_->publish(message);
+
     }
 
     void set_mode_callback(const std::shared_ptr<custom_interfaces::srv::SetMode::Request> request,

@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_DriverVelocity_flipper_vel
+{
+public:
+  explicit Init_DriverVelocity_flipper_vel(::custom_interfaces::msg::DriverVelocity & msg)
+  : msg_(msg)
+  {}
+  ::custom_interfaces::msg::DriverVelocity flipper_vel(::custom_interfaces::msg::DriverVelocity::_flipper_vel_type arg)
+  {
+    msg_.flipper_vel = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_interfaces::msg::DriverVelocity msg_;
+};
+
 class Init_DriverVelocity_m2_vel
 {
 public:
   explicit Init_DriverVelocity_m2_vel(::custom_interfaces::msg::DriverVelocity & msg)
   : msg_(msg)
   {}
-  ::custom_interfaces::msg::DriverVelocity m2_vel(::custom_interfaces::msg::DriverVelocity::_m2_vel_type arg)
+  Init_DriverVelocity_flipper_vel m2_vel(::custom_interfaces::msg::DriverVelocity::_m2_vel_type arg)
   {
     msg_.m2_vel = std::move(arg);
-    return std::move(msg_);
+    return Init_DriverVelocity_flipper_vel(msg_);
   }
 
 private:

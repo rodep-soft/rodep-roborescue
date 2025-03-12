@@ -1,0 +1,70 @@
+[0.026s] Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake /root/working/test_ws/yano_ws/src/crawler_driver -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/crawler_driver
+[0.155s] -- The C compiler identification is GNU 11.4.0
+[0.265s] -- The CXX compiler identification is GNU 11.4.0
+[0.282s] -- Detecting C compiler ABI info
+[0.418s] -- Detecting C compiler ABI info - done
+[0.434s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.434s] -- Detecting C compile features
+[0.435s] -- Detecting C compile features - done
+[0.439s] -- Detecting CXX compiler ABI info
+[0.572s] -- Detecting CXX compiler ABI info - done
+[0.590s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.590s] -- Detecting CXX compile features
+[0.592s] -- Detecting CXX compile features - done
+[0.599s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.894s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.087s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.184s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.197s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.216s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.243s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.275s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.370s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.377s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.567s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.622s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.702s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.727s] -- Looking for pthread.h
+[1.851s] -- Looking for pthread.h - found
+[1.853s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.981s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.983s] -- Found Threads: TRUE  
+[2.098s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.117s] -- Found custom_interfaces: 0.0.0 (/root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[2.142s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.289s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.289s] -- Configured cppcheck include dirs: 
+[2.289s] -- Configured cppcheck exclude dirs and/or files: 
+[2.290s] -- Added test 'lint_cmake' to check CMake code style
+[2.292s] -- Added test 'uncrustify' to check C / C++ code style
+[2.292s] -- Configured uncrustify additional arguments: 
+[2.293s] -- Added test 'xmllint' to check XML markup files
+[2.296s] -- Configuring done
+[2.313s] -- Generating done
+[2.322s] -- Build files have been written to: /root/working/test_ws/yano_ws/build/crawler_driver
+[2.351s] Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake /root/working/test_ws/yano_ws/src/crawler_driver -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/crawler_driver
+[2.351s] Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j4 -l4
+[2.458s] [ 50%] [32mBuilding CXX object CMakeFiles/crawler_driver_node.dir/src/crawler_driver.cpp.o[0m
+[20.989s] [100%] [32m[1mLinking CXX executable crawler_driver_node[0m
+[21.936s] [100%] Built target crawler_driver_node
+[21.951s] Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j4 -l4
+[21.952s] Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/crawler_driver
+[21.963s] -- Install configuration: ""
+[21.963s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/lib/crawler_driver/crawler_driver_node
+[21.970s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/crawler_driver/lib/crawler_driver/crawler_driver_node" to ""
+[21.970s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/package_run_dependencies/crawler_driver
+[21.970s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/parent_prefix_path/crawler_driver
+[21.971s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.sh
+[21.971s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.dsv
+[21.971s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.sh
+[21.972s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.dsv
+[21.972s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.bash
+[21.972s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.sh
+[21.973s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.zsh
+[21.973s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.dsv
+[21.973s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.dsv
+[21.973s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/packages/crawler_driver
+[21.974s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig.cmake
+[21.974s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig-version.cmake
+[21.974s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.xml
+[21.976s] Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper:/root/working/test_ws/yano_ws/install/dynamixel_workbench:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs:/root/working/test_ws/yano_ws/install/dynamixel_sdk_examples:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces:/root/working/test_ws/yano_ws/install/dynamixel_sdk:/root/working/test_ws/yano_ws/install/driver:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_toolbox/lib:/root/working/test_ws/yano_ws/install/dynamixel_workbench_msgs/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk_custom_interfaces/lib:/root/working/test_ws/yano_ws/install/dynamixel_sdk/lib /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/crawler_driver

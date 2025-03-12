@@ -36,6 +36,10 @@ cdr_serialize(
   cdr << ros_message.m1_vel;
   // Member: m2_vel
   cdr << ros_message.m2_vel;
+  // Member: flipper_vel
+  {
+    cdr << ros_message.flipper_vel;
+  }
   return true;
 }
 
@@ -50,6 +54,11 @@ cdr_deserialize(
 
   // Member: m2_vel
   cdr >> ros_message.m2_vel;
+
+  // Member: flipper_vel
+  {
+    cdr >> ros_message.flipper_vel;
+  }
 
   return true;
 }
@@ -77,6 +86,16 @@ get_serialized_size(
   {
     size_t item_size = sizeof(ros_message.m2_vel);
     current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: flipper_vel
+  {
+    size_t array_size = ros_message.flipper_vel.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.flipper_vel[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -121,6 +140,19 @@ max_serialized_size_DriverVelocity(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: flipper_vel
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -129,7 +161,7 @@ max_serialized_size_DriverVelocity(
     using DataType = custom_interfaces::msg::DriverVelocity;
     is_plain =
       (
-      offsetof(DataType, m2_vel) +
+      offsetof(DataType, flipper_vel) +
       last_member_size
       ) == ret_val;
   }

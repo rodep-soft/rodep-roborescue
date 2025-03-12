@@ -1,2 +1,0 @@
-Invoking command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk': /usr/bin/cmake /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_sdk
-Invoked command in '/root/working/test_ws/yano_ws/build/dynamixel_sdk' returned '1': /usr/bin/cmake /root/working/test_ws/yano_ws/src/DynamixelSDK/ros/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/root/working/test_ws/yano_ws/install/dynamixel_sdk

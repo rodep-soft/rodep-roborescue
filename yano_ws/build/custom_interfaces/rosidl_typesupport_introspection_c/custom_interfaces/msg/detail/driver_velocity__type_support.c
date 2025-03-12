@@ -12,6 +12,10 @@
 #include "custom_interfaces/msg/detail/driver_velocity__struct.h"
 
 
+// Include directives for member types
+// Member `flipper_vel`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,7 +35,62 @@ void custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c_
   custom_interfaces__msg__DriverVelocity__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_message_member_array[2] = {
+size_t custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__size_function__DriverVelocity__flipper_vel(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_const_function__DriverVelocity__flipper_vel(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_function__DriverVelocity__flipper_vel(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__fetch_function__DriverVelocity__flipper_vel(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const float * item =
+    ((const float *)
+    custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_const_function__DriverVelocity__flipper_vel(untyped_member, index));
+  float * value =
+    (float *)(untyped_value);
+  *value = *item;
+}
+
+void custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__assign_function__DriverVelocity__flipper_vel(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  float * item =
+    ((float *)
+    custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_function__DriverVelocity__flipper_vel(untyped_member, index));
+  const float * value =
+    (const float *)(untyped_value);
+  *item = *value;
+}
+
+bool custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__resize_function__DriverVelocity__flipper_vel(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_message_member_array[3] = {
   {
     "m1_vel",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -65,13 +124,30 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "flipper_vel",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interfaces__msg__DriverVelocity, flipper_vel),  // bytes offset in struct
+    NULL,  // default value
+    custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__size_function__DriverVelocity__flipper_vel,  // size() function pointer
+    custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_const_function__DriverVelocity__flipper_vel,  // get_const(index) function pointer
+    custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_function__DriverVelocity__flipper_vel,  // get(index) function pointer
+    custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__fetch_function__DriverVelocity__flipper_vel,  // fetch(index, &value) function pointer
+    custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__assign_function__DriverVelocity__flipper_vel,  // assign(index, value) function pointer
+    custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__resize_function__DriverVelocity__flipper_vel  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_message_members = {
   "custom_interfaces__msg",  // message namespace
   "DriverVelocity",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(custom_interfaces__msg__DriverVelocity),
   custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_message_member_array,  // message members
   custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_init_function,  // function to initialize message memory (memory has to be allocated)

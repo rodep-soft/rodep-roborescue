@@ -37,7 +37,52 @@ void DriverVelocity_fini_function(void * message_memory)
   typed_message->~DriverVelocity();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember DriverVelocity_message_member_array[2] = {
+size_t size_function__DriverVelocity__flipper_vel(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__DriverVelocity__flipper_vel(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__DriverVelocity__flipper_vel(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__DriverVelocity__flipper_vel(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const float *>(
+    get_const_function__DriverVelocity__flipper_vel(untyped_member, index));
+  auto & value = *reinterpret_cast<float *>(untyped_value);
+  value = item;
+}
+
+void assign_function__DriverVelocity__flipper_vel(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<float *>(
+    get_function__DriverVelocity__flipper_vel(untyped_member, index));
+  const auto & value = *reinterpret_cast<const float *>(untyped_value);
+  item = value;
+}
+
+void resize_function__DriverVelocity__flipper_vel(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<float> *>(untyped_member);
+  member->resize(size);
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember DriverVelocity_message_member_array[3] = {
   {
     "m1_vel",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -71,13 +116,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember DriverVelocit
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "flipper_vel",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interfaces::msg::DriverVelocity, flipper_vel),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__DriverVelocity__flipper_vel,  // size() function pointer
+    get_const_function__DriverVelocity__flipper_vel,  // get_const(index) function pointer
+    get_function__DriverVelocity__flipper_vel,  // get(index) function pointer
+    fetch_function__DriverVelocity__flipper_vel,  // fetch(index, &value) function pointer
+    assign_function__DriverVelocity__flipper_vel,  // assign(index, value) function pointer
+    resize_function__DriverVelocity__flipper_vel  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers DriverVelocity_message_members = {
   "custom_interfaces::msg",  // message namespace
   "DriverVelocity",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(custom_interfaces::msg::DriverVelocity),
   DriverVelocity_message_member_array,  // message members
   DriverVelocity_init_function,  // function to initialize message memory (memory has to be allocated)

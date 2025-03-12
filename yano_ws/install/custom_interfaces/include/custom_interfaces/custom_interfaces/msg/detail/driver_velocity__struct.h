@@ -17,6 +17,10 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'flipper_vel'
+#include "rosidl_runtime_c/primitives_sequence.h"
+
 /// Struct defined in msg/DriverVelocity in the package custom_interfaces.
 /**
   * DriverVelocity.msg
@@ -27,6 +31,8 @@ typedef struct custom_interfaces__msg__DriverVelocity
   float m1_vel;
   /// velocity for the right crawler
   float m2_vel;
+  /// velocity for the flippers
+  rosidl_runtime_c__float__Sequence flipper_vel;
 } custom_interfaces__msg__DriverVelocity;
 
 // Struct for a sequence of custom_interfaces__msg__DriverVelocity.

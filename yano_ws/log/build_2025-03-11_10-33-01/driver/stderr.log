@@ -1,4 +1,0 @@
-[01m[K/root/working/test_ws/yano_ws/src/driver/src/driver.cpp:[m[K In member function ‘[01m[Kvoid Driver::driver_callback(const DriverVelocity&)[m[K’:
-[01m[K/root/working/test_ws/yano_ws/src/driver/src/driver.cpp:222:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KM1_counts_per_sec[m[K’ [[01;35m[K-Wunused-variable[m[K]
-  222 |         double [01;35m[KM1_counts_per_sec[m[K = velocity_to_counts_per_sec(msg.m1_vel);
-      |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K

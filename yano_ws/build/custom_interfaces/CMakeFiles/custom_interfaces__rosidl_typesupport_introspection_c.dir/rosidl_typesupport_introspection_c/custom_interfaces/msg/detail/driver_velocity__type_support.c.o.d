@@ -56,4 +56,6 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_type
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /root/working/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
- /root/working/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/driver_velocity__struct.h
+ /root/working/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/driver_velocity__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

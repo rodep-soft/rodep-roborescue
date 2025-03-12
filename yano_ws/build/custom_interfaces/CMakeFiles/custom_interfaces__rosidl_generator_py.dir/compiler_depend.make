@@ -249,8 +249,10 @@ CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/custom_interfaces/msg/detail/driver_velocity__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/custom_interfaces/msg/detail/driver_velocity__functions.h \
-  rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+  rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
 CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/srv/_set_mode_s.c.o: rosidl_generator_py/custom_interfaces/srv/_set_mode_s.c \
   /usr/include/stdc-predef.h \
@@ -886,6 +888,8 @@ rosidl_generator_c/custom_interfaces/srv/detail/set_mode__functions.h:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 

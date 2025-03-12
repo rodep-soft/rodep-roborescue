@@ -34,6 +34,8 @@ extern "C"
 {
 #endif
 
+#include "rosidl_runtime_c/primitives_sequence.h"  // flipper_vel
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // flipper_vel
 
 // forward declare type support functions
 
@@ -59,6 +61,14 @@ static bool _DriverVelocity__cdr_serialize(
     cdr << ros_message->m2_vel;
   }
 
+  // Field name: flipper_vel
+  {
+    size_t size = ros_message->flipper_vel.size;
+    auto array_ptr = ros_message->flipper_vel.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
   return true;
 }
 
@@ -79,6 +89,22 @@ static bool _DriverVelocity__cdr_deserialize(
   // Field name: m2_vel
   {
     cdr >> ros_message->m2_vel;
+  }
+
+  // Field name: flipper_vel
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->flipper_vel.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->flipper_vel);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->flipper_vel, size)) {
+      fprintf(stderr, "failed to create array for field 'flipper_vel'");
+      return false;
+    }
+    auto array_ptr = ros_message->flipper_vel.data;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -108,6 +134,17 @@ size_t get_serialized_size_custom_interfaces__msg__DriverVelocity(
   {
     size_t item_size = sizeof(ros_message->m2_vel);
     current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name flipper_vel
+  {
+    size_t array_size = ros_message->flipper_vel.size;
+    auto array_ptr = ros_message->flipper_vel.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -155,6 +192,18 @@ size_t max_serialized_size_custom_interfaces__msg__DriverVelocity(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: flipper_vel
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -164,7 +213,7 @@ size_t max_serialized_size_custom_interfaces__msg__DriverVelocity(
     using DataType = custom_interfaces__msg__DriverVelocity;
     is_plain =
       (
-      offsetof(DataType, m2_vel) +
+      offsetof(DataType, flipper_vel) +
       last_member_size
       ) == ret_val;
   }

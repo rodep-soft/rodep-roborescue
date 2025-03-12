@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'flipper_vel'
+import array  # noqa: E402, I100
+
 import builtins  # noqa: E402, I100
 
 import math  # noqa: E402, I100
@@ -59,16 +62,19 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
     __slots__ = [
         '_m1_vel',
         '_m2_vel',
+        '_flipper_vel',
     ]
 
     _fields_and_field_types = {
         'm1_vel': 'float',
         'm2_vel': 'float',
+        'flipper_vel': 'sequence<float>',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -77,6 +83,7 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.m1_vel = kwargs.get('m1_vel', float())
         self.m2_vel = kwargs.get('m2_vel', float())
+        self.flipper_vel = array.array('f', kwargs.get('flipper_vel', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -110,6 +117,8 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
         if self.m1_vel != other.m1_vel:
             return False
         if self.m2_vel != other.m2_vel:
+            return False
+        if self.flipper_vel != other.flipper_vel:
             return False
         return True
 
@@ -147,3 +156,31 @@ class DriverVelocity(metaclass=Metaclass_DriverVelocity):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'm2_vel' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._m2_vel = value
+
+    @builtins.property
+    def flipper_vel(self):
+        """Message field 'flipper_vel'."""
+        return self._flipper_vel
+
+    @flipper_vel.setter
+    def flipper_vel(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'flipper_vel' array.array() must have the type code of 'f'"
+            self._flipper_vel = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'flipper_vel' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._flipper_vel = array.array('f', value)

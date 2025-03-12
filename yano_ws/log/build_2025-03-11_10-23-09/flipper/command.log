@@ -1,4 +1,0 @@
-Invoking command in '/root/working/test_ws/yano_ws/build/flipper': /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper -- -j4 -l4
-Invoked command in '/root/working/test_ws/yano_ws/build/flipper' returned '0': /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper -- -j4 -l4
-Invoking command in '/root/working/test_ws/yano_ws/build/flipper': /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/flipper
-Invoked command in '/root/working/test_ws/yano_ws/build/flipper' returned '0': /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/flipper

@@ -61,6 +61,9 @@ struct DriverVelocity_
   using _m2_vel_type =
     float;
   _m2_vel_type m2_vel;
+  using _flipper_vel_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _flipper_vel_type flipper_vel;
 
   // setters for named parameter idiom
   Type & set__m1_vel(
@@ -73,6 +76,12 @@ struct DriverVelocity_
     const float & _arg)
   {
     this->m2_vel = _arg;
+    return *this;
+  }
+  Type & set__flipper_vel(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->flipper_vel = _arg;
     return *this;
   }
 
@@ -122,6 +131,9 @@ struct DriverVelocity_
       return false;
     }
     if (this->m2_vel != other.m2_vel) {
+      return false;
+    }
+    if (this->flipper_vel != other.flipper_vel) {
       return false;
     }
     return true;

@@ -11,6 +11,10 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `flipper_vel`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
 bool
 custom_interfaces__msg__DriverVelocity__init(custom_interfaces__msg__DriverVelocity * msg)
 {
@@ -19,6 +23,11 @@ custom_interfaces__msg__DriverVelocity__init(custom_interfaces__msg__DriverVeloc
   }
   // m1_vel
   // m2_vel
+  // flipper_vel
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->flipper_vel, 0)) {
+    custom_interfaces__msg__DriverVelocity__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -30,6 +39,8 @@ custom_interfaces__msg__DriverVelocity__fini(custom_interfaces__msg__DriverVeloc
   }
   // m1_vel
   // m2_vel
+  // flipper_vel
+  rosidl_runtime_c__float__Sequence__fini(&msg->flipper_vel);
 }
 
 bool
@@ -44,6 +55,12 @@ custom_interfaces__msg__DriverVelocity__are_equal(const custom_interfaces__msg__
   }
   // m2_vel
   if (lhs->m2_vel != rhs->m2_vel) {
+    return false;
+  }
+  // flipper_vel
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->flipper_vel), &(rhs->flipper_vel)))
+  {
     return false;
   }
   return true;
@@ -61,6 +78,12 @@ custom_interfaces__msg__DriverVelocity__copy(
   output->m1_vel = input->m1_vel;
   // m2_vel
   output->m2_vel = input->m2_vel;
+  // flipper_vel
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->flipper_vel), &(output->flipper_vel)))
+  {
+    return false;
+  }
   return true;
 }
 

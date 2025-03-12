@@ -1,0 +1,26 @@
+[0.029s] Invoking command in '/root/working/test_ws/yano_ws/build/flipper_driver': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper_driver -- -j4 -l4
+[0.101s] [35m[1mConsolidate compiler generated dependencies of target flipper_driver_node[0m
+[0.134s] [ 50%] [32mBuilding CXX object CMakeFiles/flipper_driver_node.dir/src/flipper_driver.cpp.o[0m
+[15.266s] [100%] [32m[1mLinking CXX executable flipper_driver_node[0m
+[16.147s] [100%] Built target flipper_driver_node
+[16.163s] Invoked command in '/root/working/test_ws/yano_ws/build/flipper_driver' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/flipper_driver -- -j4 -l4
+[16.165s] Invoking command in '/root/working/test_ws/yano_ws/build/flipper_driver': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/flipper_driver
+[16.175s] -- Install configuration: ""
+[16.175s] -- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/lib/flipper_driver/flipper_driver_node
+[16.183s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/flipper_driver/lib/flipper_driver/flipper_driver_node" to ""
+[16.183s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/package_run_dependencies/flipper_driver
+[16.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/parent_prefix_path/flipper_driver
+[16.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.sh
+[16.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.dsv
+[16.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.sh
+[16.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.dsv
+[16.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.bash
+[16.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.sh
+[16.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.zsh
+[16.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.dsv
+[16.185s] -- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.dsv
+[16.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/packages/flipper_driver
+[16.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig.cmake
+[16.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig-version.cmake
+[16.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.xml
+[16.187s] Invoked command in '/root/working/test_ws/yano_ws/build/flipper_driver' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/flipper_driver

@@ -1,0 +1,25 @@
+[0.039s] Invoking command in '/root/working/test_ws/yano_ws/build/operator': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/operator -- -j4 -l4
+[0.142s] [ 50%] [32mBuilding CXX object CMakeFiles/operator_node.dir/src/operator.cpp.o[0m
+[12.785s] [100%] [32m[1mLinking CXX executable operator_node[0m
+[13.503s] [100%] Built target operator_node
+[13.519s] Invoked command in '/root/working/test_ws/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/operator -- -j4 -l4
+[13.520s] Invoking command in '/root/working/test_ws/yano_ws/build/operator': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/operator
+[13.531s] -- Install configuration: ""
+[13.532s] -- Installing: /root/working/test_ws/yano_ws/install/operator/lib/operator/operator_node
+[13.538s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/operator/lib/operator/operator_node" to ""
+[13.538s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator
+[13.539s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator
+[13.539s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh
+[13.539s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv
+[13.539s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/path.sh
+[13.539s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/path.dsv
+[13.539s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.bash
+[13.540s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.sh
+[13.540s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.zsh
+[13.540s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.dsv
+[13.540s] -- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/package.dsv
+[13.540s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/packages/operator
+[13.540s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake
+[13.540s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake
+[13.540s] -- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/package.xml
+[13.543s] Invoked command in '/root/working/test_ws/yano_ws/build/operator' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/operator

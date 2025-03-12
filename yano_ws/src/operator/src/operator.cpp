@@ -24,7 +24,8 @@ public:
         subscription_ = this->create_subscription<sensor_msgs::msg::Joy>(
             "/joy", 10, std::bind(&Operator::joy_callback, this, _1));
 
-        publisher_ = this->create_publisher<custom_interfaces::msg::DriverVelocity>("/crawler_driver", 10);
+        crawler_publisher_ = this->create_publisher<custom_interfaces::msg::DriverVelocity>("/crawler_driver", 10);
+        flipper_publisher_ = this->create_publisher<custom_interfaces::msg::DriverVelocity>("/flipper_driver", 10);
         
         service_ = this->create_service<custom_interfaces::srv::SetMode>(
             "/set_mode", std::bind(&Operator::set_mode_callback, this, _1, _2));
@@ -127,16 +128,17 @@ private:
         }
         flipper4_speed = FLIPPER_SPEED * flipper4_sign;
 
+	message.flipper_vel.resize(4);
         message.flipper_vel[0] = flipper1_speed;
         message.flipper_vel[1] = flipper2_speed;
         message.flipper_vel[2] = flipper3_speed;
         message.flipper_vel[3] = flipper4_speed;
 
-        publisher_->publish(message);
-
+        crawler_publisher_->publish(message);
+        flipper_publisher_->publish(message);
     }
 
-    void set_mode_callback(const std::shared_ptr<custom_interfaces::srv::SetMode::Request> request,
+    void set_mode_callback(const std::shared_ptr<custom_interfaces::srv::SetMode::Request>& request,
                            std::shared_ptr<custom_interfaces::srv::SetMode::Response> response)
     {
         if (request->mode == "STOP")
@@ -159,7 +161,8 @@ private:
     }
 
     rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr subscription_;
-    rclcpp::Publisher<custom_interfaces::msg::DriverVelocity>::SharedPtr publisher_;
+    rclcpp::Publisher<custom_interfaces::msg::DriverVelocity>::SharedPtr crawler_publisher_;
+    rclcpp::Publisher<custom_interfaces::msg::DriverVelocity>::SharedPtr flipper_publisher_;
     rclcpp::Service<custom_interfaces::srv::SetMode>::SharedPtr service_;
 };
 

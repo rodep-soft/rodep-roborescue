@@ -11,7 +11,7 @@ using std::placeholders::_1;
 class FlipperDriver : public rclcpp::Node {
 public:
     FlipperDriver() : Node("flipper_driver") {
-        declare_parameter("port_name", "/dev/ttyUSB0");
+        declare_parameter("port_name", "/dev/ttyUSB1");
         declare_parameter("baud_rate", 115200);
         declare_parameter("dynamixel_ids", std::vector<int>({1, 2, 3, 4}));
         // declare_parameter("protocol_version", 2.0);

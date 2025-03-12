@@ -12,8 +12,10 @@ using std::placeholders::_1; // std::bind
 
 // Constants
 constexpr int ROBOCLAW_ADDRESS = 0x80;
-constexpr int M1_MOTOR_COMMAND = 6;
-constexpr int M2_MOTOR_COMMAND = 7;
+//constexpr int M1_MOTOR_COMMAND = 6;
+//constexpr int M2_MOTOR_COMMAND = 7;
+constexpr int M1_MOTOR_COMMAND = 35;
+constexpr int M2_MOTOR_COMMAND = 36;
 constexpr int M1_ENCODER_COMMAND = 92;
 constexpr int M2_ENCODER_COMMAND = 93;
 constexpr int M1_SET_PID_CONSTANTS_COMMAND = 28;
@@ -180,10 +182,10 @@ private:
     }
 
     void init() {
-        roboclaw.setMotorVelocity(35, 0, [this](bool success) {
+        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, 0, [this](bool success) {
             handleMotorInitResult(success, "M1");
         });
-        roboclaw.setMotorVelocity(36, 0, [this](bool success) {
+        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0, [this](bool success) {
             handleMotorInitResult(success, "M2");
         });
         roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS, [this](bool success) {
@@ -223,13 +225,13 @@ private:
         double M2_counts_per_sec = velocity_to_counts_per_sec(msg.m2_vel);
 	
 	//test 
-        roboclaw.setMotorVelocity(35, M1_counts_per_sec, [this](bool success) {
+        roboclaw.setMotorVelocity(M1_MOTOR_COMMAND, M1_counts_per_sec, [this](bool success) {
             if (!success) {
                 RCLCPP_ERROR(get_logger(), "Failed to send command to M1 motor");
             }
         });
 
-        roboclaw.setMotorVelocity(36, M2_counts_per_sec, [this](bool success) {
+        roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, M2_counts_per_sec, [this](bool success) {
             if (!success) {
                 RCLCPP_ERROR(get_logger(), "Failed to send command to M2 motor");
             }

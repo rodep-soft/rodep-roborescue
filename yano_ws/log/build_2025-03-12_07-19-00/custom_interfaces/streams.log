@@ -1,0 +1,259 @@
+[0.042s] Invoking command in '/root/working/test_ws/yano_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/custom_interfaces -- -j4 -l4
+[0.105s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.362s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.371s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.378s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.473s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.973s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.338s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.827s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.868s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.908s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.908s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.908s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.927s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.944s] -- Added test 'lint_cmake' to check CMake code style
+[1.946s] -- Added test 'xmllint' to check XML markup files
+[1.949s] -- Configuring done
+[2.002s] -- Generating done
+[2.023s] -- Build files have been written to: /root/working/test_ws/yano_ws/build/custom_interfaces
+[2.066s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_generator_c[0m
+[2.091s] [  2%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/driver_velocity__functions.c.o[0m
+[2.099s] [  5%] Built target custom_interfaces__cpp
+[2.110s] [  5%] Built target ament_cmake_python_copy_custom_interfaces
+[2.111s] [  7%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_mode__functions.c.o[0m
+[2.137s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.161s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_cpp[0m
+[2.175s] [ 10%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/driver_velocity__type_support.cpp.o[0m
+[2.201s] [ 12%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/driver_velocity__type_support.cpp.o[0m
+[2.281s] [ 15%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/set_mode__type_support.cpp.o[0m
+[2.310s] [ 17%] [32m[1mLinking C shared library libcustom_interfaces__rosidl_generator_c.so[0m
+[2.486s] [ 20%] Built target custom_interfaces__rosidl_generator_c
+[2.526s] [ 23%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/srv/set_mode__type_support.cpp.o[0m
+[3.205s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_cpp[0m
+[3.273s] [ 25%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/driver_velocity__type_support.cpp.o[0m
+[3.743s] [ 28%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_cpp.so[0m
+[3.943s] [ 30%] Built target custom_interfaces__rosidl_typesupport_cpp
+[3.983s] [ 33%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.992s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c[0m
+[4.062s] [ 35%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/driver_velocity__type_support_c.cpp.o[0m
+[4.211s] running egg_info
+[4.212s] writing custom_interfaces.egg-info/PKG-INFO
+[4.213s] writing dependency_links to custom_interfaces.egg-info/dependency_links.txt
+[4.213s] writing top-level names to custom_interfaces.egg-info/top_level.txt
+[4.221s] reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[4.225s] writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[4.306s] [ 35%] Built target ament_cmake_python_build_custom_interfaces_egg
+[4.329s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_c[0m
+[4.380s] [ 38%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/driver_velocity__type_support.c.o[0m
+[4.433s] [ 41%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.475s] [ 43%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/set_mode__type_support.cpp.o[0m
+[4.488s] [ 46%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/set_mode__type_support.c.o[0m
+[4.635s] [ 48%] [32m[1mLinking C shared library libcustom_interfaces__rosidl_typesupport_introspection_c.so[0m
+[4.762s] [ 51%] Built target custom_interfaces__rosidl_typesupport_introspection_c
+[4.809s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_c[0m
+[4.820s] [ 53%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_mode__type_support_c.cpp.o[0m
+[4.866s] [ 56%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/driver_velocity__type_support.cpp.o[0m
+[4.993s] [ 58%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/srv/set_mode__type_support.cpp.o[0m
+[5.129s] [ 61%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_c.so[0m
+[5.331s] [ 64%] Built target custom_interfaces__rosidl_typesupport_c
+[5.642s] [ 66%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[5.799s] [ 69%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp
+[5.816s] [ 71%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[5.962s] [ 74%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c
+[5.997s] [ 74%] Built target custom_interfaces
+[6.027s] [ 76%] Built target custom_interfaces__py
+[6.043s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_generator_py[0m
+[6.072s] [ 79%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/srv/_set_mode_s.c.o[0m
+[6.078s] [ 82%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_driver_velocity_s.c.o[0m
+[6.474s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so[0m
+[6.578s] [ 84%] Built target custom_interfaces__rosidl_generator_py
+[6.601s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[6.602s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_c__pyext[0m
+[6.609s] [35m[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[6.636s] [ 87%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.642s] [ 89%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[6.642s] [ 92%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.940s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.959s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.028s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.040s] [100%] Built target custom_interfaces__rosidl_typesupport_c__pyext
+[7.050s] [100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext
+[7.112s] [100%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[7.140s] Invoked command in '/root/working/test_ws/yano_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/custom_interfaces -- -j4 -l4
+[7.158s] Invoking command in '/root/working/test_ws/yano_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/custom_interfaces
+[7.178s] -- Install configuration: ""
+[7.178s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces
+[7.178s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[7.178s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[7.178s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[7.178s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__struct.h
+[7.179s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__functions.h
+[7.179s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__functions.c
+[7.179s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.h
+[7.179s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/set_mode.h
+[7.179s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[7.179s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+[7.179s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[7.179s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.h
+[7.180s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__functions.h
+[7.180s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__functions.c
+[7.180s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__struct.h
+[7.180s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/driver_velocity.h
+[7.180s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh
+[7.181s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv
+[7.181s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so
+[7.181s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so" to ""
+[7.181s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[7.181s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[7.181s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[7.181s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_c.h
+[7.181s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[7.181s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.182s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[7.182s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_fastrtps_c.h
+[7.182s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
+[7.182s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[7.182s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[7.182s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[7.183s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[7.183s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.c
+[7.183s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_c.h
+[7.183s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[7.183s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[7.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.c
+[7.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_introspection_c.h
+[7.184s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.184s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so
+[7.184s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[7.184s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so
+[7.185s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so" to ""
+[7.185s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[7.186s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[7.186s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[7.186s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__builder.hpp
+[7.186s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__traits.hpp
+[7.187s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__struct.hpp
+[7.187s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.hpp
+[7.187s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/set_mode.hpp
+[7.187s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[7.187s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.187s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/driver_velocity.hpp
+[7.187s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[7.188s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__struct.hpp
+[7.188s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.hpp
+[7.188s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__builder.hpp
+[7.188s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__traits.hpp
+[7.188s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[7.188s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[7.188s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[7.188s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/dds_fastrtps
+[7.189s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[7.189s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[7.189s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[7.189s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[7.189s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps
+[7.189s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.190s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[7.190s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.190s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[7.190s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[7.190s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[7.190s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.cpp
+[7.190s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_cpp.hpp
+[7.190s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[7.190s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[7.191s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_introspection_cpp.hpp
+[7.191s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.cpp
+[7.191s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so
+[7.191s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[7.191s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so
+[7.192s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so" to ""
+[7.192s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh
+[7.192s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv
+[7.193s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info
+[7.193s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[7.193s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[7.193s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[7.194s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[7.194s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces
+[7.194s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.194s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.195s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv
+[7.195s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_set_mode.py
+[7.195s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py
+[7.195s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_set_mode_s.c
+[7.195s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.195s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.196s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg
+[7.196s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_driver_velocity_s.c
+[7.196s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_driver_velocity.py
+[7.196s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py
+[7.196s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py
+[7.196s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[7.197s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c
+[7.197s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so
+[7.273s] Listing '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...
+[7.275s] Compiling '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py'...
+[7.275s] Listing '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...
+[7.275s] Compiling '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py'...
+[7.276s] Compiling '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_driver_velocity.py'...
+[7.276s] Listing '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv'...
+[7.276s] Compiling '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py'...
+[7.277s] Compiling '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_set_mode.py'...
+[7.284s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.285s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.285s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.286s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.287s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.288s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.288s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so
+[7.289s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so" to ""
+[7.290s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/msg/DriverVelocity.idl
+[7.290s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode.idl
+[7.290s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/msg/DriverVelocity.msg
+[7.290s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode.srv
+[7.290s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode_Request.msg
+[7.290s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode_Response.msg
+[7.291s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/msg
+[7.291s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/msg/DriverVelocity.msg
+[7.291s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces
+[7.291s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces
+[7.291s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh
+[7.292s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv
+[7.292s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh
+[7.292s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv
+[7.293s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash
+[7.293s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh
+[7.293s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh
+[7.294s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv
+[7.295s] -- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.dsv
+[7.295s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces
+[7.295s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake
+[7.296s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake
+[7.296s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[7.296s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.296s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[7.296s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.297s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake
+[7.297s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[7.297s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake
+[7.297s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.297s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.297s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[7.298s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.298s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake
+[7.298s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[7.298s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake
+[7.298s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[7.298s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake
+[7.299s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.299s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[7.299s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[7.299s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.299s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.300s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.300s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake
+[7.300s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake
+[7.300s] -- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.xml
+[7.303s] Invoked command in '/root/working/test_ws/yano_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/custom_interfaces

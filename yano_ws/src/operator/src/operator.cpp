@@ -34,7 +34,7 @@ private:
     static constexpr float WIDTH = 0.29f;
     static constexpr float MAX_SPEED = 0.5f;
     static constexpr float DEADZONE = 0.1f;
-    static constexpr float FLIPPER_SPEED = 100.0f;
+    static constexpr int FLIPPER_SPEED = 100;
 
     float m1_vel, m2_vel;
     Mode mode_;
@@ -94,10 +94,10 @@ private:
         int flipper2_sign = 0;
         int flipper3_sign = 0;
         int flipper4_sign = 0;
-        float flipper1_speed = 0;
-        float flipper2_speed = 0;
-        float flipper3_speed = 0;
-        float flipper4_speed = 0;
+        int flipper1_speed = 0;
+        int flipper2_speed = 0;
+        int flipper3_speed = 0;
+        int flipper4_speed = 0;
 
         if (msg.buttons[9] == 1) {
           flipper1_sign = 1;

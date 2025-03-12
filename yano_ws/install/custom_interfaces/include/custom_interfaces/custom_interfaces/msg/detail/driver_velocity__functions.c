@@ -24,7 +24,7 @@ custom_interfaces__msg__DriverVelocity__init(custom_interfaces__msg__DriverVeloc
   // m1_vel
   // m2_vel
   // flipper_vel
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->flipper_vel, 0)) {
+  if (!rosidl_runtime_c__int32__Sequence__init(&msg->flipper_vel, 0)) {
     custom_interfaces__msg__DriverVelocity__fini(msg);
     return false;
   }
@@ -40,7 +40,7 @@ custom_interfaces__msg__DriverVelocity__fini(custom_interfaces__msg__DriverVeloc
   // m1_vel
   // m2_vel
   // flipper_vel
-  rosidl_runtime_c__float__Sequence__fini(&msg->flipper_vel);
+  rosidl_runtime_c__int32__Sequence__fini(&msg->flipper_vel);
 }
 
 bool
@@ -58,7 +58,7 @@ custom_interfaces__msg__DriverVelocity__are_equal(const custom_interfaces__msg__
     return false;
   }
   // flipper_vel
-  if (!rosidl_runtime_c__float__Sequence__are_equal(
+  if (!rosidl_runtime_c__int32__Sequence__are_equal(
       &(lhs->flipper_vel), &(rhs->flipper_vel)))
   {
     return false;
@@ -79,7 +79,7 @@ custom_interfaces__msg__DriverVelocity__copy(
   // m2_vel
   output->m2_vel = input->m2_vel;
   // flipper_vel
-  if (!rosidl_runtime_c__float__Sequence__copy(
+  if (!rosidl_runtime_c__int32__Sequence__copy(
       &(input->flipper_vel), &(output->flipper_vel)))
   {
     return false;

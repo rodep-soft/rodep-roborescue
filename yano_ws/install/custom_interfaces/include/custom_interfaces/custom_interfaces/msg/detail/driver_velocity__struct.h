@@ -32,7 +32,7 @@ typedef struct custom_interfaces__msg__DriverVelocity
   /// velocity for the right crawler
   float m2_vel;
   /// velocity for the flippers
-  rosidl_runtime_c__float__Sequence flipper_vel;
+  rosidl_runtime_c__int32__Sequence flipper_vel;
 } custom_interfaces__msg__DriverVelocity;
 
 // Struct for a sequence of custom_interfaces__msg__DriverVelocity.

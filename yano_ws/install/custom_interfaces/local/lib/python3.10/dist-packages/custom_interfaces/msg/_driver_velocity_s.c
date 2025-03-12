@@ -84,14 +84,14 @@ bool custom_interfaces__msg__driver_velocity__convert_from_py(PyObject * _pymsg,
         Py_DECREF(field);
         return false;
       }
-      Py_ssize_t size = view.len / sizeof(float);
-      if (!rosidl_runtime_c__float__Sequence__init(&(ros_message->flipper_vel), size)) {
-        PyErr_SetString(PyExc_RuntimeError, "unable to create float__Sequence ros_message");
+      Py_ssize_t size = view.len / sizeof(int32_t);
+      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->flipper_vel), size)) {
+        PyErr_SetString(PyExc_RuntimeError, "unable to create int32__Sequence ros_message");
         PyBuffer_Release(&view);
         Py_DECREF(field);
         return false;
       }
-      float * dest = ros_message->flipper_vel.data;
+      int32_t * dest = ros_message->flipper_vel.data;
       rc = PyBuffer_ToContiguous(dest, &view, view.len, 'C');
       if (rc < 0) {
         PyBuffer_Release(&view);
@@ -111,13 +111,13 @@ bool custom_interfaces__msg__driver_velocity__convert_from_py(PyObject * _pymsg,
         Py_DECREF(field);
         return false;
       }
-      if (!rosidl_runtime_c__float__Sequence__init(&(ros_message->flipper_vel), size)) {
-        PyErr_SetString(PyExc_RuntimeError, "unable to create float__Sequence ros_message");
+      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->flipper_vel), size)) {
+        PyErr_SetString(PyExc_RuntimeError, "unable to create int32__Sequence ros_message");
         Py_DECREF(seq_field);
         Py_DECREF(field);
         return false;
       }
-      float * dest = ros_message->flipper_vel.data;
+      int32_t * dest = ros_message->flipper_vel.data;
       for (Py_ssize_t i = 0; i < size; ++i) {
         PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
         if (!item) {
@@ -125,9 +125,9 @@ bool custom_interfaces__msg__driver_velocity__convert_from_py(PyObject * _pymsg,
           Py_DECREF(field);
           return false;
         }
-        assert(PyFloat_Check(item));
-        float tmp = (float)PyFloat_AS_DOUBLE(item);
-        memcpy(&dest[i], &tmp, sizeof(float));
+        assert(PyLong_Check(item));
+        int32_t tmp = (int32_t)PyLong_AsLong(item);
+        memcpy(&dest[i], &tmp, sizeof(int32_t));
       }
       Py_DECREF(seq_field);
     }
@@ -191,7 +191,7 @@ PyObject * custom_interfaces__msg__driver_velocity__convert_to_py(void * raw_ros
     assert(itemsize_attr != NULL);
     size_t itemsize = PyLong_AsSize_t(itemsize_attr);
     Py_DECREF(itemsize_attr);
-    if (itemsize != sizeof(float)) {
+    if (itemsize != sizeof(int32_t)) {
       PyErr_SetString(PyExc_RuntimeError, "itemsize doesn't match expectation");
       Py_DECREF(field);
       return NULL;
@@ -220,8 +220,8 @@ PyObject * custom_interfaces__msg__driver_velocity__convert_to_py(void * raw_ros
       // populating the array.array using the frombytes method
       PyObject * frombytes = PyObject_GetAttrString(field, "frombytes");
       assert(frombytes != NULL);
-      float * src = &(ros_message->flipper_vel.data[0]);
-      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->flipper_vel.size * sizeof(float));
+      int32_t * src = &(ros_message->flipper_vel.data[0]);
+      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->flipper_vel.size * sizeof(int32_t));
       assert(data != NULL);
       PyObject * ret = PyObject_CallFunctionObjArgs(frombytes, data, NULL);
       Py_DECREF(data);

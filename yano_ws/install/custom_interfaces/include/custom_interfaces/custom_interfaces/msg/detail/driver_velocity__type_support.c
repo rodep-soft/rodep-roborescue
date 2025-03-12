@@ -38,56 +38,56 @@ void custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c_
 size_t custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__size_function__DriverVelocity__flipper_vel(
   const void * untyped_member)
 {
-  const rosidl_runtime_c__float__Sequence * member =
-    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  const rosidl_runtime_c__int32__Sequence * member =
+    (const rosidl_runtime_c__int32__Sequence *)(untyped_member);
   return member->size;
 }
 
 const void * custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_const_function__DriverVelocity__flipper_vel(
   const void * untyped_member, size_t index)
 {
-  const rosidl_runtime_c__float__Sequence * member =
-    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  const rosidl_runtime_c__int32__Sequence * member =
+    (const rosidl_runtime_c__int32__Sequence *)(untyped_member);
   return &member->data[index];
 }
 
 void * custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_function__DriverVelocity__flipper_vel(
   void * untyped_member, size_t index)
 {
-  rosidl_runtime_c__float__Sequence * member =
-    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__int32__Sequence * member =
+    (rosidl_runtime_c__int32__Sequence *)(untyped_member);
   return &member->data[index];
 }
 
 void custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__fetch_function__DriverVelocity__flipper_vel(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const float * item =
-    ((const float *)
+  const int32_t * item =
+    ((const int32_t *)
     custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_const_function__DriverVelocity__flipper_vel(untyped_member, index));
-  float * value =
-    (float *)(untyped_value);
+  int32_t * value =
+    (int32_t *)(untyped_value);
   *value = *item;
 }
 
 void custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__assign_function__DriverVelocity__flipper_vel(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  float * item =
-    ((float *)
+  int32_t * item =
+    ((int32_t *)
     custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__get_function__DriverVelocity__flipper_vel(untyped_member, index));
-  const float * value =
-    (const float *)(untyped_value);
+  const int32_t * value =
+    (const int32_t *)(untyped_value);
   *item = *value;
 }
 
 bool custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__resize_function__DriverVelocity__flipper_vel(
   void * untyped_member, size_t size)
 {
-  rosidl_runtime_c__float__Sequence * member =
-    (rosidl_runtime_c__float__Sequence *)(untyped_member);
-  rosidl_runtime_c__float__Sequence__fini(member);
-  return rosidl_runtime_c__float__Sequence__init(member, size);
+  rosidl_runtime_c__int32__Sequence * member =
+    (rosidl_runtime_c__int32__Sequence *)(untyped_member);
+  rosidl_runtime_c__int32__Sequence__fini(member);
+  return rosidl_runtime_c__int32__Sequence__init(member, size);
 }
 
 static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_message_member_array[3] = {
@@ -127,7 +127,7 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
   },
   {
     "flipper_vel",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array

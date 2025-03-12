@@ -18,7 +18,7 @@ module custom_interfaces {
 
       @verbatim (language="comment", text=
         "velocity for the flippers")
-      sequence<float> flipper_vel;
+      sequence<int32> flipper_vel;
     };
   };
 };

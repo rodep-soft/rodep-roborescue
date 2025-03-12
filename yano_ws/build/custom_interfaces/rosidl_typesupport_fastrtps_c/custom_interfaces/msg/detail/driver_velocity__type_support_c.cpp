@@ -97,9 +97,9 @@ static bool _DriverVelocity__cdr_deserialize(
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
     if (ros_message->flipper_vel.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->flipper_vel);
+      rosidl_runtime_c__int32__Sequence__fini(&ros_message->flipper_vel);
     }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->flipper_vel, size)) {
+    if (!rosidl_runtime_c__int32__Sequence__init(&ros_message->flipper_vel, size)) {
       fprintf(stderr, "failed to create array for field 'flipper_vel'");
       return false;
     }

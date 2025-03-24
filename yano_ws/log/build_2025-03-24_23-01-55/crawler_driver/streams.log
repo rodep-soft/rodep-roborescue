@@ -1,0 +1,26 @@
+[0.008s] Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j16 -l16
+[0.033s] [35m[1mConsolidate compiler generated dependencies of target crawler_driver_node[0m
+[0.047s] [ 50%] [32mBuilding CXX object CMakeFiles/crawler_driver_node.dir/src/crawler_driver.cpp.o[0m
+[7.018s] [100%] [32m[1mLinking CXX executable crawler_driver_node[0m
+[7.322s] [100%] Built target crawler_driver_node
+[7.327s] Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j16 -l16
+[7.327s] Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/crawler_driver
+[7.331s] -- Install configuration: ""
+[7.331s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/lib/crawler_driver/crawler_driver_node
+[7.334s] -- Set runtime path of "/root/working/test_ws/yano_ws/install/crawler_driver/lib/crawler_driver/crawler_driver_node" to ""
+[7.334s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/package_run_dependencies/crawler_driver
+[7.334s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/parent_prefix_path/crawler_driver
+[7.334s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.sh
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.dsv
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.sh
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.dsv
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.bash
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.sh
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.zsh
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.dsv
+[7.335s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.dsv
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/packages/crawler_driver
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig.cmake
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig-version.cmake
+[7.335s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.xml
+[7.336s] Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '0': AMENT_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/crawler_driver

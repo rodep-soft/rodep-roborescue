@@ -1,0 +1,4 @@
+[01m[K/root/working/test_ws/yano_ws/src/crawler_driver/src/crawler_driver.cpp:[m[K In member function ‘[01m[Kvoid RoboclawDriver::appendFloat32(std::vector<unsigned char>&, float)[m[K’:
+[01m[K/root/working/test_ws/yano_ws/src/crawler_driver/src/crawler_driver.cpp:141:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  141 |         for (int i = 0; [01;35m[Ki < sizeof(float)[m[K; ++i) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K

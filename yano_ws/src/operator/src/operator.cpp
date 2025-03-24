@@ -33,9 +33,9 @@ public:
 
 private:
     static constexpr float WIDTH = 0.29f;
-    static constexpr float MAX_SPEED = 0.5f;
+    static constexpr float MAX_SPEED = 0.7f;
     static constexpr float DEADZONE = 0.1f;
-    static constexpr int FLIPPER_SPEED = 100;
+    static constexpr int FLIPPER_SPEED = 1000;
 
     float m1_vel, m2_vel;
     Mode mode_;

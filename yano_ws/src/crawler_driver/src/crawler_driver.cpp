@@ -23,7 +23,8 @@ constexpr int M2_SET_PID_CONSTANTS_COMMAND = 29;
 constexpr int SERIAL_BAUD_RATE = 38400;
 constexpr int SERIAL_TIMEOUT_MS = 1000;
 constexpr int RESET_QUAD_ENCODER = 20;
-constexpr int QPPS = 86646;
+constexpr int M1_QPPS = 53250;
+constexpr int M2_QPPS = 50062;
 
 // RoboclawDriver Class
 class RoboclawDriver {
@@ -79,11 +80,11 @@ public:
         return true;
     }
 
-    bool setPIDConstants(int command, int K_p, int K_i, int K_d, int qpps, std::function<void(bool)> callback) {
+    bool setPIDConstants(int command, float K_p, float K_i, float K_d, int qpps, std::function<void(bool)> callback) {
         vector<uint8_t> data = {ROBOCLAW_ADDRESS, static_cast<uint8_t>(command)};
-        appendInt32(data, K_d);
-        appendInt32(data, K_p);
-        appendInt32(data, K_i);
+        appendFloat32(data, K_d);
+        appendFloat32(data, K_p);
+        appendFloat32(data, K_i);
         appendInt32(data, qpps);
         appendCRC(data);
         asyncSendRoboclawCommand(data, callback);
@@ -134,12 +135,20 @@ private:
             data.push_back(static_cast<uint8_t>((value >> (8 * i)) & 0xFF));
         }
     }
+
+    void appendFloat32(vector<uint8_t>& data, float value) {
+    	uint8_t* bytes = reinterpret_cast<uint8_t*>(&value);
+    	for (size_t i = 0; i < sizeof(float); ++i) {
+        	data.push_back(bytes[i]);
+    	}
+    }
+
 };
 
 // ROS2 Driver Node
 class CrawlerDriver : public rclcpp::Node {
 public:
-    CrawlerDriver() : Node("crawler_driver"), roboclaw("/dev/ttyACM1") {
+    CrawlerDriver() : Node("crawler_driver"), roboclaw("/dev/ttyACM0") {
         declare_parameter("crawler_circumference", 0.39);
         declare_parameter("counts_per_rev", 256);
         declare_parameter("gearhead_ratio", 66);
@@ -188,10 +197,10 @@ private:
         roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0, [this](bool success) {
             handleMotorInitResult(success, "M2");
         });
-        roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS, [this](bool success) {
+        roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0.46f, 0.02f, 0.0f, M1_QPPS, [this](bool success) {
             handlePIDInitResult(success, "M1");
         });
-        roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0, 0, 0, QPPS, [this](bool success) {
+        roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0.44f, 0.02f, 0.0f, M2_QPPS, [this](bool success) {
             handlePIDInitResult(success, "M2");
         });
         roboclaw.resetEncoders([this](bool success) {

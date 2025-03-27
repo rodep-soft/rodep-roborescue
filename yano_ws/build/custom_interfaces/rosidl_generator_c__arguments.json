@@ -1,26 +1,48 @@
 {
   "package_name": "custom_interfaces",
-  "output_dir": "/root/working/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces",
-  "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
+  "output_dir": "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/root/working/test_ws/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/DriverVelocity.idl",
-    "/root/working/test_ws/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/SetMode.idl"
+    "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/DriverVelocity.idl",
+    "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/SetMode.idl"
+  ],
+  "ros_interface_files": [
+    "/home/rodep/rodep/test_ws/yano_ws/src/custom_interfaces/msg/DriverVelocity.msg",
+    "/home/rodep/rodep/test_ws/yano_ws/src/custom_interfaces/srv/SetMode.srv"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
   ],
   "target_dependencies": [
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl.h.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
-    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/root/working/test_ws/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/DriverVelocity.idl",
-    "/root/working/test_ws/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/SetMode.idl"
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/python3.12/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/DriverVelocity.idl",
+    "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/SetMode.idl",
+    "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "type_description_tuples": [
+    "msg/DriverVelocity.idl:/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_type_description/custom_interfaces/msg/DriverVelocity.json",
+    "srv/SetMode.idl:/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_type_description/custom_interfaces/srv/SetMode.json"
   ]
 }

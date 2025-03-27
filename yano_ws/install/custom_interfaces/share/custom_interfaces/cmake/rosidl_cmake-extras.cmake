@@ -1,4 +1,4 @@
 # generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
 
 set(custom_interfaces_IDL_FILES "msg/DriverVelocity.idl;srv/SetMode.idl")
-set(custom_interfaces_INTERFACE_FILES "msg/DriverVelocity.msg;srv/SetMode.srv;srv/SetMode_Request.msg;srv/SetMode_Response.msg")
+set(custom_interfaces_INTERFACE_FILES "msg/DriverVelocity.msg;srv/SetMode.srv")

@@ -51,12 +51,12 @@ private:
         if (msg.buttons.size() > 0)
         {
             // テスト
-            if (msg.buttons[4] == 1)  // ボタン0が押された場合
+            if (msg.buttons[8] == 1)  // ボタン0が押された場合
             {
                 mode_ = Mode::STOP;
                 RCLCPP_INFO(this->get_logger(), "Mode switched to STOP");
             }
-            else if (msg.buttons[6] == 1)  // ボタン1が押された場合
+            else if (msg.buttons[9] == 1)  // ボタン1が押された場合
             {
                 mode_ = Mode::DRIVE;
                 RCLCPP_INFO(this->get_logger(), "Mode switched to DRIVE");
@@ -78,7 +78,7 @@ private:
             }
 
             float m1_axis_y = applyDeadzone(std::clamp<float>(msg.axes[1], -0.95f, 0.95f), DEADZONE);
-            float m2_axis_y = applyDeadzone(std::clamp<float>(msg.axes[3], -0.95f, 0.95f), DEADZONE);
+            float m2_axis_y = applyDeadzone(std::clamp<float>(msg.axes[4], -0.95f, 0.95f), DEADZONE);
 
             m1_vel = std::clamp<float>(m1_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
             m2_vel = -1.0  * std::clamp<float>(m2_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);

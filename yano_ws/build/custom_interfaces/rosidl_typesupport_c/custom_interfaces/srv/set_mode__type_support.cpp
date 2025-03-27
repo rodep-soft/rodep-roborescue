@@ -6,6 +6,7 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "custom_interfaces/srv/detail/set_mode__struct.h"
 #include "custom_interfaces/srv/detail/set_mode__type_support.h"
+#include "custom_interfaces/srv/detail/set_mode__functions.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -72,6 +73,9 @@ static const rosidl_message_type_support_t SetMode_Request_message_type_support_
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_SetMode_Request_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
+  &custom_interfaces__srv__SetMode_Request__get_type_hash,
+  &custom_interfaces__srv__SetMode_Request__get_type_description,
+  &custom_interfaces__srv__SetMode_Request__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -102,6 +106,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, custom_i
 // #include "custom_interfaces/srv/detail/set_mode__struct.h"
 // already included above
 // #include "custom_interfaces/srv/detail/set_mode__type_support.h"
+// already included above
+// #include "custom_interfaces/srv/detail/set_mode__functions.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -173,6 +179,9 @@ static const rosidl_message_type_support_t SetMode_Response_message_type_support
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_SetMode_Response_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
+  &custom_interfaces__srv__SetMode_Response__get_type_hash,
+  &custom_interfaces__srv__SetMode_Response__get_type_description,
+  &custom_interfaces__srv__SetMode_Response__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -197,14 +206,22 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, custom_i
 
 // already included above
 // #include "cstddef"
-#include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "custom_interfaces/srv/detail/set_mode__struct.h"
 // already included above
 // #include "custom_interfaces/srv/detail/set_mode__type_support.h"
 // already included above
+// #include "custom_interfaces/srv/detail/set_mode__functions.h"
+// already included above
 // #include "rosidl_typesupport_c/identifier.h"
-#include "rosidl_typesupport_c/service_type_support_dispatch.h"
+// already included above
+// #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 // already included above
 // #include "rosidl_typesupport_c/type_support_map.h"
+// already included above
+// #include "rosidl_typesupport_c/visibility_control.h"
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
 
@@ -217,6 +234,105 @@ namespace srv
 namespace rosidl_typesupport_c
 {
 
+typedef struct _SetMode_Event_type_support_ids_t
+{
+  const char * typesupport_identifier[2];
+} _SetMode_Event_type_support_ids_t;
+
+static const _SetMode_Event_type_support_ids_t _SetMode_Event_message_typesupport_ids = {
+  {
+    "rosidl_typesupport_fastrtps_c",  // ::rosidl_typesupport_fastrtps_c::typesupport_identifier,
+    "rosidl_typesupport_introspection_c",  // ::rosidl_typesupport_introspection_c::typesupport_identifier,
+  }
+};
+
+typedef struct _SetMode_Event_type_support_symbol_names_t
+{
+  const char * symbol_name[2];
+} _SetMode_Event_type_support_symbol_names_t;
+
+#define STRINGIFY_(s) #s
+#define STRINGIFY(s) STRINGIFY_(s)
+
+static const _SetMode_Event_type_support_symbol_names_t _SetMode_Event_message_typesupport_symbol_names = {
+  {
+    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, custom_interfaces, srv, SetMode_Event)),
+    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_interfaces, srv, SetMode_Event)),
+  }
+};
+
+typedef struct _SetMode_Event_type_support_data_t
+{
+  void * data[2];
+} _SetMode_Event_type_support_data_t;
+
+static _SetMode_Event_type_support_data_t _SetMode_Event_message_typesupport_data = {
+  {
+    0,  // will store the shared library later
+    0,  // will store the shared library later
+  }
+};
+
+static const type_support_map_t _SetMode_Event_message_typesupport_map = {
+  2,
+  "custom_interfaces",
+  &_SetMode_Event_message_typesupport_ids.typesupport_identifier[0],
+  &_SetMode_Event_message_typesupport_symbol_names.symbol_name[0],
+  &_SetMode_Event_message_typesupport_data.data[0],
+};
+
+static const rosidl_message_type_support_t SetMode_Event_message_type_support_handle = {
+  rosidl_typesupport_c__typesupport_identifier,
+  reinterpret_cast<const type_support_map_t *>(&_SetMode_Event_message_typesupport_map),
+  rosidl_typesupport_c__get_message_typesupport_handle_function,
+  &custom_interfaces__srv__SetMode_Event__get_type_hash,
+  &custom_interfaces__srv__SetMode_Event__get_type_description,
+  &custom_interfaces__srv__SetMode_Event__get_type_description_sources,
+};
+
+}  // namespace rosidl_typesupport_c
+
+}  // namespace srv
+
+}  // namespace custom_interfaces
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, custom_interfaces, srv, SetMode_Event)() {
+  return &::custom_interfaces::srv::rosidl_typesupport_c::SetMode_Event_message_type_support_handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+
+// already included above
+// #include "cstddef"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "custom_interfaces/srv/detail/set_mode__type_support.h"
+// already included above
+// #include "rosidl_typesupport_c/identifier.h"
+#include "rosidl_typesupport_c/service_type_support_dispatch.h"
+// already included above
+// #include "rosidl_typesupport_c/type_support_map.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+#include "service_msgs/msg/service_event_info.h"
+#include "builtin_interfaces/msg/time.h"
+
+namespace custom_interfaces
+{
+
+namespace srv
+{
+
+namespace rosidl_typesupport_c
+{
 typedef struct _SetMode_type_support_ids_t
 {
   const char * typesupport_identifier[2];
@@ -268,6 +384,24 @@ static const rosidl_service_type_support_t SetMode_service_type_support_handle =
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_SetMode_service_typesupport_map),
   rosidl_typesupport_c__get_service_typesupport_handle_function,
+  &SetMode_Request_message_type_support_handle,
+  &SetMode_Response_message_type_support_handle,
+  &SetMode_Event_message_type_support_handle,
+  ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_CREATE_EVENT_MESSAGE_SYMBOL_NAME(
+    rosidl_typesupport_c,
+    custom_interfaces,
+    srv,
+    SetMode
+  ),
+  ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_DESTROY_EVENT_MESSAGE_SYMBOL_NAME(
+    rosidl_typesupport_c,
+    custom_interfaces,
+    srv,
+    SetMode
+  ),
+  &custom_interfaces__srv__SetMode__get_type_hash,
+  &custom_interfaces__srv__SetMode__get_type_description,
+  &custom_interfaces__srv__SetMode__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c

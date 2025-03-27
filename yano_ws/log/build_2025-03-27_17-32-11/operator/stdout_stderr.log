@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/operator_node.dir/src/operator.cpp.o[0m
+[100%] [32m[1mLinking CXX executable operator_node[0m
+[100%] Built target operator_node
+-- Install configuration: ""
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/lib/operator/operator_node
+-- Set non-toolchain portion of runtime path of "/home/rodep/rodep/test_ws/yano_ws/install/operator/lib/operator/operator_node" to ""
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/environment/path.sh
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/environment/path.dsv
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/local_setup.bash
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/local_setup.sh
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/local_setup.zsh
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/local_setup.dsv
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/package.dsv
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/ament_index/resource_index/packages/operator
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake
+-- Up-to-date: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/package.xml

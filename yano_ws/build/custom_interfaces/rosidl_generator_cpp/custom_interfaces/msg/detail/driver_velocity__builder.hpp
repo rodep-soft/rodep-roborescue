@@ -2,6 +2,9 @@
 // with input from custom_interfaces:msg/DriverVelocity.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "custom_interfaces/msg/driver_velocity.hpp"
+
+
 #ifndef CUSTOM_INTERFACES__MSG__DETAIL__DRIVER_VELOCITY__BUILDER_HPP_
 #define CUSTOM_INTERFACES__MSG__DETAIL__DRIVER_VELOCITY__BUILDER_HPP_
 

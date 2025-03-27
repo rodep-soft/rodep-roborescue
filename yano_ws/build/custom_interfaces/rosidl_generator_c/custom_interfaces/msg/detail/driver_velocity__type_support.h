@@ -2,6 +2,9 @@
 // with input from custom_interfaces:msg/DriverVelocity.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "custom_interfaces/msg/driver_velocity.h"
+
+
 #ifndef CUSTOM_INTERFACES__MSG__DETAIL__DRIVER_VELOCITY__TYPE_SUPPORT_H_
 #define CUSTOM_INTERFACES__MSG__DETAIL__DRIVER_VELOCITY__TYPE_SUPPORT_H_
 
@@ -24,7 +27,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   custom_interfaces,
   msg,
   DriverVelocity
-)();
+)(void);
 
 #ifdef __cplusplus
 }

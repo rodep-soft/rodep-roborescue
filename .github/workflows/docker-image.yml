@@ -22,6 +22,6 @@ jobs:
           -v ${{ github.workspace }}:/workspace \
           -w /workspace \
           osrf/ros:jazzy-desktop \
-          bash -c "apt update && apt install -y python3-colcon-common-extensions ros-humble-dynamixel-sdk ros-humble-dynamixel-workbench ros-jazzy-cv-bridge && \
-                   source /opt/ros/humble/setup.bash && \
+          bash -c "apt update && apt install -y python3-colcon-common-extensions ros-jazzy-dynamixel-sdk ros-jazzy-dynamixel-workbench ros-jazzy-cv-bridge && \
+                   source /opt/ros/jazzy/setup.bash && \
                    colcon build --symlink-install"

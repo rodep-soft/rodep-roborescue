@@ -1,0 +1,17 @@
+[0.029s] Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j4 -l4
+[0.105s] [35m[1mConsolidate compiler generated dependencies of target crawler_driver_node[0m
+[0.151s] [ 50%] [32mBuilding CXX object CMakeFiles/crawler_driver_node.dir/src/crawler_driver.cpp.o[0m
+[4.087s] [01m[K/root/working/test_ws/yano_ws/src/crawler_driver/src/crawler_driver.cpp:[m[K In member function ‘[01m[Kvoid RoboclawDriver::appendFloat32(std::vector<unsigned char>&, float)[m[K’:
+[4.087s] [01m[K/root/working/test_ws/yano_ws/src/crawler_driver/src/crawler_driver.cpp:145:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kvalue[m[K’
+[4.087s]   145 |             data.push_back(static_cast<uint8_t>((static_cast<int>[01;31m[Kvalue[m[K >> (8 * i)) & 0xFF));
+[4.087s]       |                                                                  [01;31m[K^~~~~[m[K
+[4.088s] [01m[K/root/working/test_ws/yano_ws/src/crawler_driver/src/crawler_driver.cpp:145:72:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kfloat[m[K’ and ‘[01m[Kint[m[K’ to binary ‘[01m[Koperator>>[m[K’
+[4.088s]   145 |        data.push_back(static_cast<uint8_t>((static_cast<int>[32m[Kvalue[m[K [01;31m[K>>[m[K [34m[K(8 * i)[m[K) & 0xFF));
+[4.088s]       |                                                             [32m[K~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~[m[K
+[4.088s]       |                                                             [32m[K|[m[K           [34m[K|[m[K
+[4.088s]       |                                                             [32m[Kfloat[m[K       [34m[Kint[m[K
+[4.088s] 
+[8.668s] gmake[2]: *** [CMakeFiles/crawler_driver_node.dir/build.make:76: CMakeFiles/crawler_driver_node.dir/src/crawler_driver.cpp.o] Error 1
+[8.668s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/crawler_driver_node.dir/all] Error 2
+[8.669s] gmake: *** [Makefile:146: all] Error 2
+[8.672s] Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '2': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j4 -l4

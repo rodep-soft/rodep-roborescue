@@ -1,0 +1,479 @@
+[0.000000] (-) TimerEvent: {}
+[0.000462] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.000578] (usb_camera) JobQueued: {'identifier': 'usb_camera', 'dependencies': OrderedDict()}
+[0.000673] (crawler_driver) JobQueued: {'identifier': 'crawler_driver', 'dependencies': OrderedDict([('custom_interfaces', '/root/working/test_ws/yano_ws/install/custom_interfaces')])}
+[0.000717] (flipper_driver) JobQueued: {'identifier': 'flipper_driver', 'dependencies': OrderedDict([('custom_interfaces', '/root/working/test_ws/yano_ws/install/custom_interfaces')])}
+[0.000759] (operator) JobQueued: {'identifier': 'operator', 'dependencies': OrderedDict([('custom_interfaces', '/root/working/test_ws/yano_ws/install/custom_interfaces')])}
+[0.000797] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.014604] (usb_camera) JobStarted: {'identifier': 'usb_camera'}
+[0.022572] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.023621] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[0.024565] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/test_ws/yano_ws/build/custom_interfaces', '--', '-j4', '-l4'], 'cwd': '/root/working/test_ws/yano_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/custom_interfaces'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.030207] (usb_camera) JobProgress: {'identifier': 'usb_camera', 'progress': 'cmake'}
+[0.031107] (usb_camera) JobProgress: {'identifier': 'usb_camera', 'progress': 'build'}
+[0.031779] (usb_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/test_ws/yano_ws/build/usb_camera', '--', '-j4', '-l4'], 'cwd': '/root/working/test_ws/yano_ws/build/usb_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/usb_camera'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.099972] (-) TimerEvent: {}
+[0.119299] (custom_interfaces) StdoutLine: {'line': b'[  2%] Built target custom_interfaces__cpp\n'}
+[0.124356] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target custom_interfaces__rosidl_generator_c\n'}
+[0.145980] (usb_camera) StdoutLine: {'line': b'[100%] Built target usb_camera\n'}
+[0.151017] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[0.168553] (usb_camera) CommandEnded: {'returncode': 0}
+[0.170709] (usb_camera) JobProgress: {'identifier': 'usb_camera', 'progress': 'install'}
+[0.170807] (custom_interfaces) StdoutLine: {'line': b'[ 23%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.178155] (custom_interfaces) StdoutLine: {'line': b'[ 33%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.182929] (custom_interfaces) StdoutLine: {'line': b'[ 43%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[0.186431] (usb_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/test_ws/yano_ws/build/usb_camera'], 'cwd': '/root/working/test_ws/yano_ws/build/usb_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/usb_camera'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.200102] (-) TimerEvent: {}
+[0.204815] (usb_camera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.207188] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/lib/usb_camera/usb_camera\n'}
+[0.207559] (custom_interfaces) StdoutLine: {'line': b'[ 53%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.208759] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/ament_index/resource_index/package_run_dependencies/usb_camera\n'}
+[0.209286] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/ament_index/resource_index/parent_prefix_path/usb_camera\n'}
+[0.209721] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/ament_prefix_path.sh\n'}
+[0.210181] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/ament_prefix_path.dsv\n'}
+[0.210722] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/path.sh\n'}
+[0.210930] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/path.dsv\n'}
+[0.211564] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.bash\n'}
+[0.211736] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.sh\n'}
+[0.212010] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.zsh\n'}
+[0.212243] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.dsv\n'}
+[0.212479] (usb_camera) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.dsv\n'}
+[0.214774] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/ament_index/resource_index/packages/usb_camera\n'}
+[0.215152] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/cmake/usb_cameraConfig.cmake\n'}
+[0.215466] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/cmake/usb_cameraConfig-version.cmake\n'}
+[0.215759] (usb_camera) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.xml\n'}
+[0.217658] (usb_camera) CommandEnded: {'returncode': 0}
+[0.229373] (custom_interfaces) StdoutLine: {'line': b'[ 64%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.234403] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[0.259801] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces\n'}
+[0.275564] (usb_camera) JobEnded: {'identifier': 'usb_camera', 'rc': 0}
+[0.293511] (custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target custom_interfaces__py\n'}
+[0.300205] (-) TimerEvent: {}
+[0.326478] (custom_interfaces) StdoutLine: {'line': b'[ 84%] Built target custom_interfaces__rosidl_generator_py\n'}
+[0.367370] (custom_interfaces) StdoutLine: {'line': b'[ 89%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.369028] (custom_interfaces) StdoutLine: {'line': b'[ 94%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.370189] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.400335] (-) TimerEvent: {}
+[0.500613] (-) TimerEvent: {}
+[0.547395] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.548394] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[0.548763] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[0.549080] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[0.553024] (custom_interfaces) StdoutLine: {'line': b"reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[0.554027] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[0.588168] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[0.600764] (-) TimerEvent: {}
+[0.604132] (custom_interfaces) CommandEnded: {'returncode': 0}
+[0.605222] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[0.605629] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/test_ws/yano_ws/build/custom_interfaces'], 'cwd': '/root/working/test_ws/yano_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/custom_interfaces'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.617583] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.617922] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[0.618079] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.618219] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[0.618356] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[0.618556] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__struct.h\n'}
+[0.618814] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__functions.h\n'}
+[0.618972] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__functions.c\n'}
+[0.619110] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.h\n'}
+[0.619246] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/set_mode.h\n'}
+[0.619379] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.619501] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.619627] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.619753] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.h\n'}
+[0.619913] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__functions.h\n'}
+[0.620043] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__functions.c\n'}
+[0.620184] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__struct.h\n'}
+[0.620522] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/driver_velocity.h\n'}
+[0.620649] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[0.620789] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[0.620926] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[0.621162] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.621303] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[0.621438] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[0.621569] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[0.621686] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.621803] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.621920] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.622036] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_fastrtps_c.h\n'}
+[0.622153] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.622289] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.622422] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[0.622562] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[0.622689] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.c\n'}
+[0.622812] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_c.h\n'}
+[0.622940] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.623064] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.623237] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.c\n'}
+[0.623524] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_introspection_c.h\n'}
+[0.623682] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.623899] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.624104] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[0.624243] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.624378] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[0.624514] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[0.624648] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__builder.hpp\n'}
+[0.624782] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__traits.hpp\n'}
+[0.624915] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__struct.hpp\n'}
+[0.625049] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.hpp\n'}
+[0.625183] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/set_mode.hpp\n'}
+[0.625316] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.625554] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.625668] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/driver_velocity.hpp\n'}
+[0.625808] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.625919] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__struct.hpp\n'}
+[0.626029] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.hpp\n'}
+[0.626141] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__builder.hpp\n'}
+[0.626251] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__traits.hpp\n'}
+[0.626364] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.626521] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[0.626633] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[0.626760] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/dds_fastrtps\n'}
+[0.626893] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.627200] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.627337] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.627473] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.627615] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps\n'}
+[0.627748] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.627881] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.628022] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.628148] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[0.628275] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[0.628401] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__type_support.cpp\n'}
+[0.628528] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.628670] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.628803] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.628937] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.629070] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/driver_velocity__type_support.cpp\n'}
+[0.629204] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.629374] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.629618] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[0.629739] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[0.629849] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[0.629958] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.630075] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.630186] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.630308] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.630430] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[0.630547] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.630658] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.630776] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv\n'}
+[0.630886] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_set_mode.py\n'}
+[0.630995] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py\n'}
+[0.631106] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_set_mode_s.c\n'}
+[0.631191] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.631262] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.631327] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg\n'}
+[0.631390] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_driver_velocity_s.c\n'}
+[0.631452] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_driver_velocity.py\n'}
+[0.631518] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py\n'}
+[0.631579] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[0.631640] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.631702] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.631774] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[0.669376] (custom_interfaces) StdoutLine: {'line': b"Listing '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[0.669544] (custom_interfaces) StdoutLine: {'line': b"Listing '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...\n"}
+[0.669636] (custom_interfaces) StdoutLine: {'line': b"Listing '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv'...\n"}
+[0.675335] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.675968] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.676688] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.677343] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[0.677796] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/msg/DriverVelocity.idl\n'}
+[0.678057] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode.idl\n'}
+[0.678341] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/msg/DriverVelocity.msg\n'}
+[0.678639] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode.srv\n'}
+[0.678781] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode_Request.msg\n'}
+[0.678909] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/srv/SetMode_Response.msg\n'}
+[0.679034] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/msg\n'}
+[0.679157] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/msg/DriverVelocity.msg\n'}
+[0.679373] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[0.679503] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[0.679649] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[0.679838] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.679978] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[0.680112] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[0.680245] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[0.680471] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[0.680601] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[0.680728] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[0.680845] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[0.680961] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[0.681077] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.681193] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.681309] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.681429] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.681629] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.681826] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.681968] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.682106] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.682240] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.682439] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.682580] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.682721] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.682862] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.682996] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.683129] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.683263] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.683395] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.683624] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.683773] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.683893] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.684004] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.684113] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.684222] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.684331] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.684441] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[0.684550] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[0.684659] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[0.686314] (custom_interfaces) CommandEnded: {'returncode': 0}
+[0.700829] (-) TimerEvent: {}
+[0.707507] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[0.709697] (crawler_driver) JobStarted: {'identifier': 'crawler_driver'}
+[0.715369] (flipper_driver) JobStarted: {'identifier': 'flipper_driver'}
+[0.721720] (operator) JobStarted: {'identifier': 'operator'}
+[0.732667] (crawler_driver) JobProgress: {'identifier': 'crawler_driver', 'progress': 'cmake'}
+[0.733818] (crawler_driver) JobProgress: {'identifier': 'crawler_driver', 'progress': 'build'}
+[0.734410] (crawler_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/test_ws/yano_ws/build/crawler_driver', '--', '-j4', '-l4'], 'cwd': '/root/working/test_ws/yano_ws/build/crawler_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/crawler_driver'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble')]), 'shell': False}
+[0.736807] (flipper_driver) JobProgress: {'identifier': 'flipper_driver', 'progress': 'cmake'}
+[0.737673] (flipper_driver) JobProgress: {'identifier': 'flipper_driver', 'progress': 'build'}
+[0.738117] (flipper_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/test_ws/yano_ws/build/flipper_driver', '--', '-j4', '-l4'], 'cwd': '/root/working/test_ws/yano_ws/build/flipper_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/flipper_driver'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble')]), 'shell': False}
+[0.742437] (operator) JobProgress: {'identifier': 'operator', 'progress': 'cmake'}
+[0.743645] (operator) JobProgress: {'identifier': 'operator', 'progress': 'build'}
+[0.744369] (operator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/working/test_ws/yano_ws/build/operator', '--', '-j4', '-l4'], 'cwd': '/root/working/test_ws/yano_ws/build/operator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/operator'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble')]), 'shell': False}
+[0.800946] (-) TimerEvent: {}
+[0.812948] (crawler_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target crawler_driver_node\x1b[0m\n'}
+[0.836907] (flipper_driver) StdoutLine: {'line': b'[100%] Built target flipper_driver_node\n'}
+[0.848209] (operator) StdoutLine: {'line': b'[100%] Built target operator_node\n'}
+[0.851738] (flipper_driver) CommandEnded: {'returncode': 0}
+[0.852827] (flipper_driver) JobProgress: {'identifier': 'flipper_driver', 'progress': 'install'}
+[0.853286] (flipper_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/test_ws/yano_ws/build/flipper_driver'], 'cwd': '/root/working/test_ws/yano_ws/build/flipper_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/flipper_driver'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble')]), 'shell': False}
+[0.856001] (crawler_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/crawler_driver_node.dir/src/crawler_driver.cpp.o\x1b[0m\n'}
+[0.867654] (flipper_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.868029] (operator) CommandEnded: {'returncode': 0}
+[0.869134] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/lib/flipper_driver/flipper_driver_node\n'}
+[0.869365] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/package_run_dependencies/flipper_driver\n'}
+[0.869627] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/parent_prefix_path/flipper_driver\n'}
+[0.871602] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.sh\n'}
+[0.873349] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.dsv\n'}
+[0.873537] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.sh\n'}
+[0.874917] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.dsv\n'}
+[0.875251] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.bash\n'}
+[0.875439] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.sh\n'}
+[0.875580] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.zsh\n'}
+[0.875742] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.dsv\n'}
+[0.875878] (flipper_driver) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.dsv\n'}
+[0.876045] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/packages/flipper_driver\n'}
+[0.876185] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig.cmake\n'}
+[0.876305] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig-version.cmake\n'}
+[0.876478] (flipper_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.xml\n'}
+[0.876599] (operator) JobProgress: {'identifier': 'operator', 'progress': 'install'}
+[0.876643] (operator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/test_ws/yano_ws/build/operator'], 'cwd': '/root/working/test_ws/yano_ws/build/operator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/operator'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble')]), 'shell': False}
+[0.877223] (flipper_driver) CommandEnded: {'returncode': 0}
+[0.882924] (operator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.884916] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/lib/operator/operator_node\n'}
+[0.885673] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator\n'}
+[0.885893] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator\n'}
+[0.886098] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh\n'}
+[0.886241] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv\n'}
+[0.886370] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/path.sh\n'}
+[0.886501] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/environment/path.dsv\n'}
+[0.886629] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.bash\n'}
+[0.886755] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.sh\n'}
+[0.887003] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.zsh\n'}
+[0.887315] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/local_setup.dsv\n'}
+[0.887457] (operator) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/operator/share/operator/package.dsv\n'}
+[0.887591] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/ament_index/resource_index/packages/operator\n'}
+[0.887725] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake\n'}
+[0.887858] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake\n'}
+[0.887994] (operator) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/operator/share/operator/package.xml\n'}
+[0.898463] (flipper_driver) JobEnded: {'identifier': 'flipper_driver', 'rc': 0}
+[0.901715] (-) TimerEvent: {}
+[0.902310] (operator) CommandEnded: {'returncode': 0}
+[0.928939] (operator) JobEnded: {'identifier': 'operator', 'rc': 0}
+[1.001865] (-) TimerEvent: {}
+[1.102172] (-) TimerEvent: {}
+[1.202460] (-) TimerEvent: {}
+[1.302755] (-) TimerEvent: {}
+[1.403087] (-) TimerEvent: {}
+[1.503387] (-) TimerEvent: {}
+[1.603723] (-) TimerEvent: {}
+[1.704033] (-) TimerEvent: {}
+[1.804381] (-) TimerEvent: {}
+[1.904715] (-) TimerEvent: {}
+[2.004998] (-) TimerEvent: {}
+[2.105283] (-) TimerEvent: {}
+[2.205594] (-) TimerEvent: {}
+[2.305923] (-) TimerEvent: {}
+[2.406267] (-) TimerEvent: {}
+[2.506594] (-) TimerEvent: {}
+[2.606892] (-) TimerEvent: {}
+[2.707211] (-) TimerEvent: {}
+[2.807554] (-) TimerEvent: {}
+[2.907894] (-) TimerEvent: {}
+[3.008214] (-) TimerEvent: {}
+[3.108498] (-) TimerEvent: {}
+[3.208798] (-) TimerEvent: {}
+[3.309143] (-) TimerEvent: {}
+[3.409449] (-) TimerEvent: {}
+[3.509761] (-) TimerEvent: {}
+[3.610088] (-) TimerEvent: {}
+[3.710438] (-) TimerEvent: {}
+[3.810739] (-) TimerEvent: {}
+[3.911062] (-) TimerEvent: {}
+[4.011372] (-) TimerEvent: {}
+[4.111662] (-) TimerEvent: {}
+[4.211994] (-) TimerEvent: {}
+[4.312326] (-) TimerEvent: {}
+[4.412645] (-) TimerEvent: {}
+[4.512990] (-) TimerEvent: {}
+[4.613244] (-) TimerEvent: {}
+[4.713520] (-) TimerEvent: {}
+[4.813962] (-) TimerEvent: {}
+[4.914308] (-) TimerEvent: {}
+[5.014668] (-) TimerEvent: {}
+[5.115069] (-) TimerEvent: {}
+[5.215429] (-) TimerEvent: {}
+[5.315767] (-) TimerEvent: {}
+[5.416069] (-) TimerEvent: {}
+[5.516375] (-) TimerEvent: {}
+[5.616660] (-) TimerEvent: {}
+[5.716980] (-) TimerEvent: {}
+[5.817386] (-) TimerEvent: {}
+[5.917779] (-) TimerEvent: {}
+[6.018180] (-) TimerEvent: {}
+[6.118576] (-) TimerEvent: {}
+[6.218970] (-) TimerEvent: {}
+[6.319386] (-) TimerEvent: {}
+[6.419756] (-) TimerEvent: {}
+[6.520114] (-) TimerEvent: {}
+[6.620526] (-) TimerEvent: {}
+[6.720874] (-) TimerEvent: {}
+[6.821286] (-) TimerEvent: {}
+[6.921627] (-) TimerEvent: {}
+[7.022005] (-) TimerEvent: {}
+[7.122345] (-) TimerEvent: {}
+[7.222750] (-) TimerEvent: {}
+[7.323112] (-) TimerEvent: {}
+[7.423420] (-) TimerEvent: {}
+[7.523852] (-) TimerEvent: {}
+[7.624230] (-) TimerEvent: {}
+[7.724571] (-) TimerEvent: {}
+[7.824877] (-) TimerEvent: {}
+[7.925227] (-) TimerEvent: {}
+[8.025537] (-) TimerEvent: {}
+[8.125835] (-) TimerEvent: {}
+[8.226123] (-) TimerEvent: {}
+[8.326413] (-) TimerEvent: {}
+[8.426750] (-) TimerEvent: {}
+[8.527117] (-) TimerEvent: {}
+[8.627449] (-) TimerEvent: {}
+[8.727808] (-) TimerEvent: {}
+[8.828154] (-) TimerEvent: {}
+[8.928502] (-) TimerEvent: {}
+[9.028897] (-) TimerEvent: {}
+[9.129239] (-) TimerEvent: {}
+[9.229647] (-) TimerEvent: {}
+[9.329989] (-) TimerEvent: {}
+[9.430354] (-) TimerEvent: {}
+[9.530663] (-) TimerEvent: {}
+[9.631052] (-) TimerEvent: {}
+[9.731745] (-) TimerEvent: {}
+[9.832084] (-) TimerEvent: {}
+[9.932469] (-) TimerEvent: {}
+[10.032832] (-) TimerEvent: {}
+[10.133202] (-) TimerEvent: {}
+[10.233532] (-) TimerEvent: {}
+[10.333897] (-) TimerEvent: {}
+[10.434223] (-) TimerEvent: {}
+[10.534541] (-) TimerEvent: {}
+[10.634950] (-) TimerEvent: {}
+[10.735361] (-) TimerEvent: {}
+[10.835660] (-) TimerEvent: {}
+[10.935988] (-) TimerEvent: {}
+[11.036320] (-) TimerEvent: {}
+[11.136647] (-) TimerEvent: {}
+[11.237001] (-) TimerEvent: {}
+[11.337280] (-) TimerEvent: {}
+[11.437587] (-) TimerEvent: {}
+[11.537883] (-) TimerEvent: {}
+[11.638194] (-) TimerEvent: {}
+[11.738539] (-) TimerEvent: {}
+[11.838856] (-) TimerEvent: {}
+[11.939179] (-) TimerEvent: {}
+[12.039513] (-) TimerEvent: {}
+[12.139822] (-) TimerEvent: {}
+[12.240110] (-) TimerEvent: {}
+[12.340434] (-) TimerEvent: {}
+[12.440749] (-) TimerEvent: {}
+[12.541076] (-) TimerEvent: {}
+[12.641391] (-) TimerEvent: {}
+[12.741670] (-) TimerEvent: {}
+[12.841953] (-) TimerEvent: {}
+[12.942263] (-) TimerEvent: {}
+[13.042565] (-) TimerEvent: {}
+[13.142894] (-) TimerEvent: {}
+[13.243174] (-) TimerEvent: {}
+[13.343484] (-) TimerEvent: {}
+[13.443853] (-) TimerEvent: {}
+[13.544169] (-) TimerEvent: {}
+[13.644473] (-) TimerEvent: {}
+[13.744760] (-) TimerEvent: {}
+[13.845060] (-) TimerEvent: {}
+[13.945390] (-) TimerEvent: {}
+[14.045704] (-) TimerEvent: {}
+[14.146039] (-) TimerEvent: {}
+[14.246375] (-) TimerEvent: {}
+[14.346731] (-) TimerEvent: {}
+[14.447053] (-) TimerEvent: {}
+[14.547356] (-) TimerEvent: {}
+[14.647677] (-) TimerEvent: {}
+[14.748006] (-) TimerEvent: {}
+[14.848316] (-) TimerEvent: {}
+[14.948618] (-) TimerEvent: {}
+[15.049024] (-) TimerEvent: {}
+[15.149381] (-) TimerEvent: {}
+[15.249793] (-) TimerEvent: {}
+[15.356752] (-) TimerEvent: {}
+[15.457055] (-) TimerEvent: {}
+[15.557379] (-) TimerEvent: {}
+[15.657722] (-) TimerEvent: {}
+[15.758052] (-) TimerEvent: {}
+[15.858383] (-) TimerEvent: {}
+[15.958723] (-) TimerEvent: {}
+[16.059029] (-) TimerEvent: {}
+[16.159354] (-) TimerEvent: {}
+[16.259686] (-) TimerEvent: {}
+[16.309030] (crawler_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable crawler_driver_node\x1b[0m\n'}
+[16.359844] (-) TimerEvent: {}
+[16.460309] (-) TimerEvent: {}
+[16.560688] (-) TimerEvent: {}
+[16.661080] (-) TimerEvent: {}
+[16.761408] (-) TimerEvent: {}
+[16.861748] (-) TimerEvent: {}
+[16.962085] (-) TimerEvent: {}
+[17.062381] (-) TimerEvent: {}
+[17.162678] (-) TimerEvent: {}
+[17.176458] (crawler_driver) StdoutLine: {'line': b'[100%] Built target crawler_driver_node\n'}
+[17.190662] (crawler_driver) CommandEnded: {'returncode': 0}
+[17.191474] (crawler_driver) JobProgress: {'identifier': 'crawler_driver', 'progress': 'install'}
+[17.191868] (crawler_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/working/test_ws/yano_ws/build/crawler_driver'], 'cwd': '/root/working/test_ws/yano_ws/build/crawler_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('HOSTNAME', 'c21a76593242'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/working/test_ws/yano_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/working/test_ws/yano_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/root/working/test_ws/yano_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/working/test_ws/yano_ws/build/crawler_driver'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/working/test_ws/yano_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble')]), 'shell': False}
+[17.201818] (crawler_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.202289] (crawler_driver) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/lib/crawler_driver/crawler_driver_node\n'}
+[17.210109] (crawler_driver) StdoutLine: {'line': b'-- Set runtime path of "/root/working/test_ws/yano_ws/install/crawler_driver/lib/crawler_driver/crawler_driver_node" to ""\n'}
+[17.210491] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/package_run_dependencies/crawler_driver\n'}
+[17.210769] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/parent_prefix_path/crawler_driver\n'}
+[17.211029] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.sh\n'}
+[17.211269] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.dsv\n'}
+[17.211529] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.sh\n'}
+[17.211685] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.dsv\n'}
+[17.211891] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.bash\n'}
+[17.212161] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.sh\n'}
+[17.212332] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.zsh\n'}
+[17.212451] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.dsv\n'}
+[17.212575] (crawler_driver) StdoutLine: {'line': b'-- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.dsv\n'}
+[17.212695] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/packages/crawler_driver\n'}
+[17.212843] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig.cmake\n'}
+[17.212987] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig-version.cmake\n'}
+[17.213129] (crawler_driver) StdoutLine: {'line': b'-- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.xml\n'}
+[17.215356] (crawler_driver) CommandEnded: {'returncode': 0}
+[17.230154] (crawler_driver) JobEnded: {'identifier': 'crawler_driver', 'rc': 0}
+[17.231527] (-) EventReactorShutdown: {}

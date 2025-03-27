@@ -1,0 +1,23 @@
+[0.033s] Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j4 -l4
+[0.121s] [35m[1mConsolidate compiler generated dependencies of target crawler_driver_node[0m
+[0.240s] [100%] Built target crawler_driver_node
+[0.254s] Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --build /root/working/test_ws/yano_ws/build/crawler_driver -- -j4 -l4
+[0.257s] Invoking command in '/root/working/test_ws/yano_ws/build/crawler_driver': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/crawler_driver
+[0.269s] -- Install configuration: ""
+[0.270s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/lib/crawler_driver/crawler_driver_node
+[0.271s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/package_run_dependencies/crawler_driver
+[0.271s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/parent_prefix_path/crawler_driver
+[0.271s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.sh
+[0.271s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.dsv
+[0.272s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.sh
+[0.272s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.dsv
+[0.272s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.bash
+[0.273s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.sh
+[0.273s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.zsh
+[0.273s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.dsv
+[0.273s] -- Installing: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.dsv
+[0.273s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/packages/crawler_driver
+[0.273s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig.cmake
+[0.274s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig-version.cmake
+[0.274s] -- Up-to-date: /root/working/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.xml
+[0.277s] Invoked command in '/root/working/test_ws/yano_ws/build/crawler_driver' returned '0': CMAKE_PREFIX_PATH=/root/working/test_ws/yano_ws/install/custom_interfaces:/root/working/test_ws/yano_ws/install/usb_camera:/root/working/test_ws/yano_ws/install/operator:/root/working/test_ws/yano_ws/install/flipper_driver:/root/working/test_ws/yano_ws/install/crawler_driver:/opt/ros/humble /usr/bin/cmake --install /root/working/test_ws/yano_ws/build/crawler_driver

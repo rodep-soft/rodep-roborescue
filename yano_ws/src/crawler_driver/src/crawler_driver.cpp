@@ -137,10 +137,13 @@ private:
     }
 
     void appendFloat32(vector<uint8_t>& data, float value) {
-    	uint8_t* bytes = reinterpret_cast<uint8_t*>(&value);
-    	for (size_t i = 0; i < sizeof(float); ++i) {
-        	data.push_back(bytes[i]);
-    	}
+    	// uint8_t* bytes = reinterpret_cast<uint8_t*>(&value);
+    	//for (size_t i = 0; i < sizeof(float); ++i) {
+        //	data.push_back(bytes[i]);
+    	//}
+	for (int i = 3; i >= 0; --i) {
+	    data.push_back(static_cast<uint8_t>((static_cast<int>(value) >> (8 * i)) & 0xFF));
+	}
     }
 
 };
@@ -197,10 +200,10 @@ private:
         roboclaw.setMotorVelocity(M2_MOTOR_COMMAND, 0, [this](bool success) {
             handleMotorInitResult(success, "M2");
         });
-        roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0.46f, 0.02f, 0.0f, M1_QPPS, [this](bool success) {
+        roboclaw.setPIDConstants(M1_SET_PID_CONSTANTS_COMMAND, 0.464f, 0.021f, 0.0f, M1_QPPS, [this](bool success) {
             handlePIDInitResult(success, "M1");
         });
-        roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0.44f, 0.02f, 0.0f, M2_QPPS, [this](bool success) {
+        roboclaw.setPIDConstants(M2_SET_PID_CONSTANTS_COMMAND, 0.438f, 0.020f, 0.0f, M2_QPPS, [this](bool success) {
             handlePIDInitResult(success, "M2");
         });
         roboclaw.resetEncoders([this](bool success) {

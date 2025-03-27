@@ -1,0 +1,13 @@
+[01m[K/root/working/test_ws/yano_ws/src/crawler_driver/src/crawler_driver.cpp:[m[K In member function ‘[01m[Kvoid RoboclawDriver::appendFloat32(std::vector<unsigned char>&, float)[m[K’:
+[01m[K/root/working/test_ws/yano_ws/src/crawler_driver/src/crawler_driver.cpp:145:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kvalue[m[K’
+  145 |             data.push_back(static_cast<uint8_t>((static_cast<int>[01;31m[Kvalue[m[K >> (8 * i)) & 0xFF));
+      |                                                                  [01;31m[K^~~~~[m[K
+[01m[K/root/working/test_ws/yano_ws/src/crawler_driver/src/crawler_driver.cpp:145:72:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kfloat[m[K’ and ‘[01m[Kint[m[K’ to binary ‘[01m[Koperator>>[m[K’
+  145 |        data.push_back(static_cast<uint8_t>((static_cast<int>[32m[Kvalue[m[K [01;31m[K>>[m[K [34m[K(8 * i)[m[K) & 0xFF));
+      |                                                             [32m[K~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~[m[K
+      |                                                             [32m[K|[m[K           [34m[K|[m[K
+      |                                                             [32m[Kfloat[m[K       [34m[Kint[m[K
+
+gmake[2]: *** [CMakeFiles/crawler_driver_node.dir/build.make:76: CMakeFiles/crawler_driver_node.dir/src/crawler_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/crawler_driver_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

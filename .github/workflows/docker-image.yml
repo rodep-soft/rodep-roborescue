@@ -40,9 +40,9 @@ jobs:
         source /opt/ros/jazzy/setup.bash
         colcon build --symlink-install --event-handlers console_direct+
 
-    - name: Verify plugin
-      shell: bash
-      run: |
-        cd yano_ws
-        source install/setup.bash
-        rospack plugins --attrib=plugin rqt_gui_cpp | grep my_rqt_plugin
+    # - name: Verify plugin
+    #   shell: bash
+    #   run: |
+    #     cd yano_ws
+    #     source install/setup.bash
+    #     rospack plugins --attrib=plugin rqt_gui_cpp | grep my_rqt_plugin

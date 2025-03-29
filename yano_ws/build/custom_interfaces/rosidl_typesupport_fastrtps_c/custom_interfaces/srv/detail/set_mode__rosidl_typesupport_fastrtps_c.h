@@ -9,23 +9,11 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-#include "custom_interfaces/srv/detail/set_mode__struct.h"
-#include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-bool cdr_serialize_custom_interfaces__srv__SetMode_Request(
-  const custom_interfaces__srv__SetMode_Request * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-bool cdr_deserialize_custom_interfaces__srv__SetMode_Request(
-  eprosima::fastcdr::Cdr &,
-  custom_interfaces__srv__SetMode_Request * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
 size_t get_serialized_size_custom_interfaces__srv__SetMode_Request(
@@ -34,22 +22,6 @@ size_t get_serialized_size_custom_interfaces__srv__SetMode_Request(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
 size_t max_serialized_size_custom_interfaces__srv__SetMode_Request(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-bool cdr_serialize_key_custom_interfaces__srv__SetMode_Request(
-  const custom_interfaces__srv__SetMode_Request * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-size_t get_serialized_size_key_custom_interfaces__srv__SetMode_Request(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-size_t max_serialized_size_key_custom_interfaces__srv__SetMode_Request(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -70,25 +42,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c,
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "custom_interfaces/srv/detail/set_mode__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-bool cdr_serialize_custom_interfaces__srv__SetMode_Response(
-  const custom_interfaces__srv__SetMode_Response * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-bool cdr_deserialize_custom_interfaces__srv__SetMode_Response(
-  eprosima::fastcdr::Cdr &,
-  custom_interfaces__srv__SetMode_Response * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
 size_t get_serialized_size_custom_interfaces__srv__SetMode_Response(
@@ -102,87 +60,8 @@ size_t max_serialized_size_custom_interfaces__srv__SetMode_Response(
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-bool cdr_serialize_key_custom_interfaces__srv__SetMode_Response(
-  const custom_interfaces__srv__SetMode_Response * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-size_t get_serialized_size_key_custom_interfaces__srv__SetMode_Response(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-size_t max_serialized_size_key_custom_interfaces__srv__SetMode_Response(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, custom_interfaces, srv, SetMode_Response)();
-
-#ifdef __cplusplus
-}
-#endif
-
-// already included above
-// #include <stddef.h>
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_typesupport_interface/macros.h"
-// already included above
-// #include "custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-// already included above
-// #include "custom_interfaces/srv/detail/set_mode__struct.h"
-// already included above
-// #include "fastcdr/Cdr.h"
-
-#ifdef __cplusplus
-extern "C"
-{
-#endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-bool cdr_serialize_custom_interfaces__srv__SetMode_Event(
-  const custom_interfaces__srv__SetMode_Event * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-bool cdr_deserialize_custom_interfaces__srv__SetMode_Event(
-  eprosima::fastcdr::Cdr &,
-  custom_interfaces__srv__SetMode_Event * ros_message);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-size_t get_serialized_size_custom_interfaces__srv__SetMode_Event(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-size_t max_serialized_size_custom_interfaces__srv__SetMode_Event(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-bool cdr_serialize_key_custom_interfaces__srv__SetMode_Event(
-  const custom_interfaces__srv__SetMode_Event * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-size_t get_serialized_size_key_custom_interfaces__srv__SetMode_Event(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-size_t max_serialized_size_key_custom_interfaces__srv__SetMode_Event(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_interfaces
-const rosidl_message_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, custom_interfaces, srv, SetMode_Event)();
 
 #ifdef __cplusplus
 }

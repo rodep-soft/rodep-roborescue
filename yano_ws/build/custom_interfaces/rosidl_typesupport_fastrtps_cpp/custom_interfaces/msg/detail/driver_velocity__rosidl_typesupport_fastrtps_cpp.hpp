@@ -5,7 +5,6 @@
 #ifndef CUSTOM_INTERFACES__MSG__DETAIL__DRIVER_VELOCITY__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 #define CUSTOM_INTERFACES__MSG__DETAIL__DRIVER_VELOCITY__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 
-#include <cstddef>
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h"
@@ -55,25 +54,6 @@ get_serialized_size(
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_interfaces
 max_serialized_size_DriverVelocity(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-bool
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_interfaces
-cdr_serialize_key(
-  const custom_interfaces::msg::DriverVelocity & ros_message,
-  eprosima::fastcdr::Cdr &);
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_interfaces
-get_serialized_size_key(
-  const custom_interfaces::msg::DriverVelocity & ros_message,
-  size_t current_alignment);
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_interfaces
-max_serialized_size_key_DriverVelocity(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

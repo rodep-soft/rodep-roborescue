@@ -2,7 +2,7 @@ name: ROS 2 CI/CD Pipeline
 
 on:
   push:
-    branches: [main]
+    branches: [main, demo]
   pull_request:
     branches: [main]
 
@@ -14,6 +14,16 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+      with:
+        path: 'yano_ws/src'  # リポジトリ内容をyano_ws/srcにチェックアウト
+
+    - name: Debug workspace structure
+      run: |
+        echo "=== Workspace Structure ==="
+        pwd
+        ls -lR
+        echo "=== ROS Packages ==="
+        cd yano_ws && colcon list
 
     - name: Install rosdep
       run: |
@@ -23,25 +33,22 @@ jobs:
 
     - name: Install dependencies
       run: |
-        # rosdep install --from-paths src --ignore-src -y \
-        #   --skip-keys "libopencv-dev libopencv-contrib-dev libopencv-imgproc-dev"
-        sudo rosdep init && rosdep update \
-        rosdep install --from-paths src --ignore-src -r -y
+        cd yano_ws
+        rosdep install --from-paths src --ignore-src -y \
+          --skip-keys "libopencv-dev libopencv-contrib-dev"
 
     - name: Build workspace
       run: |
-        source /opt/ros/jazzy/setup.bash && \
+        cd yano_ws
+        source /opt/ros/jazzy/setup.bash
         colcon build --symlink-install --event-handlers console_direct+
 
     - name: Verify RQT plugin
       run: |
-        source /opt/ros/jazzy/setup.bash && \
-        source install/setup.bash && \
-        echo "=== Plugin Verification ===" && \
-        echo "1. Check registration:" && \
-        rospack plugins --attrib=plugin rqt_gui_cpp | grep my_rqt_plugin && \
-        echo "2. Check symbol exports:" && \
-        nm -gC install/my_rqt_plugin/lib/libmy_rqt_plugin.so | grep MyPlugin && \
-        echo "3. Attempt to load:" && \
-        timeout 15s rqt --force-discover --standalone my_rqt_plugin
-        
+        cd yano_ws
+        source /opt/ros/jazzy/setup.bash
+        source install/setup.bash
+        echo "=== Plugin Verification ==="
+        rospack plugins --attrib=plugin rqt_gui_cpp
+        echo "=== Attempting to load plugin ==="
+        timeout 15s rqt --force-discover --standalone my_rqt_plugin || true

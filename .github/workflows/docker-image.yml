@@ -17,14 +17,13 @@ jobs:
       with:
         path: 'yano_ws/src'
 
-    - name: Set up workspace
+    - name: Set up rosdep
+      shell: bash
       run: |
-        mkdir -p yano_ws
-        cd yano_ws
-        if [ ! -d src ]; then
-          ln -s ../yano_ws/src src || true
-        fi
-        colcon list
+        sudo apt-get update
+        sudo apt-get install -y python3-rosdep
+        sudo rosdep init || true  # 既に初期化済みの場合を想定
+        rosdep update
 
     - name: Install dependencies
       shell: bash

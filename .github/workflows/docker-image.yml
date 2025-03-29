@@ -17,38 +17,33 @@ jobs:
       with:
         path: 'yano_ws/src'
 
-    - name: Debug workspace structure
+    - name: Set up workspace
       run: |
-        echo "=== Workspace Structure ==="
-        pwd
-        ls -lR
-        echo "=== ROS Packages ==="
-        cd yano_ws && colcon list
-
-    - name: Install rosdep
-      run: |
-        apt-get update && apt-get install -y python3-rosdep
-        rosdep init || true
-        rosdep update
+        mkdir -p yano_ws
+        cd yano_ws
+        if [ ! -d src ]; then
+          ln -s ../yano_ws/src src || true
+        fi
+        colcon list
 
     - name: Install dependencies
+      shell: bash
       run: |
         cd yano_ws
+        source /opt/ros/jazzy/setup.bash
         rosdep install --from-paths src --ignore-src -y \
           --skip-keys "libopencv-dev libopencv-contrib-dev"
 
     - name: Build workspace
+      shell: bash
       run: |
         cd yano_ws
-        . /opt/ros/jazzy/setup.bash  # source → . に変更
+        source /opt/ros/jazzy/setup.bash
         colcon build --symlink-install --event-handlers console_direct+
 
-    - name: Verify RQT plugin
+    - name: Verify plugin
+      shell: bash
       run: |
         cd yano_ws
-        . /opt/ros/jazzy/setup.bash  # source → . に変更
-        . install/setup.bash
-        echo "=== Plugin Verification ==="
-        rospack plugins --attrib=plugin rqt_gui_cpp
-        echo "=== Attempting to load plugin ==="
-        timeout 15s rqt --force-discover --standalone my_rqt_plugin || true
+        source install/setup.bash
+        rospack plugins --attrib=plugin rqt_gui_cpp | grep my_rqt_plugin

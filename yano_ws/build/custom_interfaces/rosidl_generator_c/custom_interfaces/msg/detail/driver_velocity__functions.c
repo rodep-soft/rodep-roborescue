@@ -88,7 +88,7 @@ custom_interfaces__msg__DriverVelocity__copy(
 }
 
 custom_interfaces__msg__DriverVelocity *
-custom_interfaces__msg__DriverVelocity__create(void)
+custom_interfaces__msg__DriverVelocity__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   custom_interfaces__msg__DriverVelocity * msg = (custom_interfaces__msg__DriverVelocity *)allocator.allocate(sizeof(custom_interfaces__msg__DriverVelocity), allocator.state);

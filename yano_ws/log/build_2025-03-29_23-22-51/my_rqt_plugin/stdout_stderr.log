@@ -1,0 +1,3 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/my_rqt_plugin.dir/src/my_plugin.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libmy_rqt_plugin.so[0m
+[100%] Built target my_rqt_plugin

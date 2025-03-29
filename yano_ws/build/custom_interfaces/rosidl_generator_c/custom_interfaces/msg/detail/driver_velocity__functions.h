@@ -2,9 +2,6 @@
 // with input from custom_interfaces:msg/DriverVelocity.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "custom_interfaces/msg/driver_velocity.h"
-
-
 #ifndef CUSTOM_INTERFACES__MSG__DETAIL__DRIVER_VELOCITY__FUNCTIONS_H_
 #define CUSTOM_INTERFACES__MSG__DETAIL__DRIVER_VELOCITY__FUNCTIONS_H_
 
@@ -16,12 +13,6 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
-#include "rosidl_runtime_c/action_type_support_struct.h"
-#include "rosidl_runtime_c/message_type_support_struct.h"
-#include "rosidl_runtime_c/service_type_support_struct.h"
-#include "rosidl_runtime_c/type_description/type_description__struct.h"
-#include "rosidl_runtime_c/type_description/type_source__struct.h"
-#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "custom_interfaces/msg/rosidl_generator_c__visibility_control.h"
 
@@ -62,7 +53,7 @@ custom_interfaces__msg__DriverVelocity__fini(custom_interfaces__msg__DriverVeloc
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_interfaces
 custom_interfaces__msg__DriverVelocity *
-custom_interfaces__msg__DriverVelocity__create(void);
+custom_interfaces__msg__DriverVelocity__create();
 
 /// Destroy msg/DriverVelocity message.
 /**
@@ -101,30 +92,6 @@ bool
 custom_interfaces__msg__DriverVelocity__copy(
   const custom_interfaces__msg__DriverVelocity * input,
   custom_interfaces__msg__DriverVelocity * output);
-
-/// Retrieve pointer to the hash of the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_custom_interfaces
-const rosidl_type_hash_t *
-custom_interfaces__msg__DriverVelocity__get_type_hash(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_custom_interfaces
-const rosidl_runtime_c__type_description__TypeDescription *
-custom_interfaces__msg__DriverVelocity__get_type_description(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the single raw source text that defined this type.
-ROSIDL_GENERATOR_C_PUBLIC_custom_interfaces
-const rosidl_runtime_c__type_description__TypeSource *
-custom_interfaces__msg__DriverVelocity__get_individual_type_description_source(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the recursive raw sources that defined the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_custom_interfaces
-const rosidl_runtime_c__type_description__TypeSource__Sequence *
-custom_interfaces__msg__DriverVelocity__get_type_description_sources(
-  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of msg/DriverVelocity messages.
 /**

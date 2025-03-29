@@ -1,0 +1,1 @@
+Invoking command in '/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin -- -j12 -l12

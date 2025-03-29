@@ -1,0 +1,10 @@
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/uninstall.dir
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/my_rqt_plugin_uninstall.dir
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/my_rqt_plugin.dir
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/test.dir
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/edit_cache.dir
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/rebuild_cache.dir
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/list_install_components.dir
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/install.dir
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/install/local.dir
+/home/tatsv/working/test_ws/yano_ws/build/my_rqt_plugin/CMakeFiles/install/strip.dir

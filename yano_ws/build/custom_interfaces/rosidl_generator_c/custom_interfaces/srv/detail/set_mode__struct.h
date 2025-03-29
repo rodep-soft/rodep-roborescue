@@ -2,9 +2,6 @@
 // with input from custom_interfaces:srv/SetMode.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "custom_interfaces/srv/set_mode.h"
-
-
 #ifndef CUSTOM_INTERFACES__SRV__DETAIL__SET_MODE__STRUCT_H_
 #define CUSTOM_INTERFACES__SRV__DETAIL__SET_MODE__STRUCT_H_
 
@@ -42,6 +39,7 @@ typedef struct custom_interfaces__srv__SetMode_Request__Sequence
   size_t capacity;
 } custom_interfaces__srv__SetMode_Request__Sequence;
 
+
 // Constants defined in the message
 
 /// Struct defined in srv/SetMode in the package custom_interfaces.
@@ -59,42 +57,6 @@ typedef struct custom_interfaces__srv__SetMode_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } custom_interfaces__srv__SetMode_Response__Sequence;
-
-// Constants defined in the message
-
-// Include directives for member types
-// Member 'info'
-#include "service_msgs/msg/detail/service_event_info__struct.h"
-
-// constants for array fields with an upper bound
-// request
-enum
-{
-  custom_interfaces__srv__SetMode_Event__request__MAX_SIZE = 1
-};
-// response
-enum
-{
-  custom_interfaces__srv__SetMode_Event__response__MAX_SIZE = 1
-};
-
-/// Struct defined in srv/SetMode in the package custom_interfaces.
-typedef struct custom_interfaces__srv__SetMode_Event
-{
-  service_msgs__msg__ServiceEventInfo info;
-  custom_interfaces__srv__SetMode_Request__Sequence request;
-  custom_interfaces__srv__SetMode_Response__Sequence response;
-} custom_interfaces__srv__SetMode_Event;
-
-// Struct for a sequence of custom_interfaces__srv__SetMode_Event.
-typedef struct custom_interfaces__srv__SetMode_Event__Sequence
-{
-  custom_interfaces__srv__SetMode_Event * data;
-  /// The number of valid items in data
-  size_t size;
-  /// The number of allocated items in data
-  size_t capacity;
-} custom_interfaces__srv__SetMode_Event__Sequence;
 
 #ifdef __cplusplus
 }

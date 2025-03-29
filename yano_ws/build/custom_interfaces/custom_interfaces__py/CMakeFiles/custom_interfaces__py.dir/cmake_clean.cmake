@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
-  "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c"
-  "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
-  "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/__init__.py"
-  "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_driver_velocity.py"
-  "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_driver_velocity_s.c"
-  "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/__init__.py"
-  "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/_set_mode.py"
-  "/home/rodep/rodep/test_ws/yano_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/_set_mode_s.c"
+  "../rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c"
+  "../rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "../rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
+  "../rosidl_generator_py/custom_interfaces/msg/__init__.py"
+  "../rosidl_generator_py/custom_interfaces/msg/_driver_velocity.py"
+  "../rosidl_generator_py/custom_interfaces/msg/_driver_velocity_s.c"
+  "../rosidl_generator_py/custom_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/custom_interfaces/srv/_set_mode.py"
+  "../rosidl_generator_py/custom_interfaces/srv/_set_mode_s.c"
   "CMakeFiles/custom_interfaces__py"
 )
 

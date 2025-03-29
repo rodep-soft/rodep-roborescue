@@ -96,7 +96,6 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -114,7 +113,6 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -132,7 +130,6 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     true,  // is array
     0,  // array size
     false,  // is upper bound
@@ -152,7 +149,6 @@ static const rosidl_typesupport_introspection_c__MessageMembers custom_interface
   "DriverVelocity",  // message name
   3,  // number of fields
   sizeof(custom_interfaces__msg__DriverVelocity),
-  false,  // has_any_key_member_
   custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_message_member_array,  // message members
   custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_init_function,  // function to initialize message memory (memory has to be allocated)
   custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_fini_function  // function to terminate message instance (will not free memory)
@@ -164,9 +160,6 @@ static rosidl_message_type_support_t custom_interfaces__msg__DriverVelocity__ros
   0,
   &custom_interfaces__msg__DriverVelocity__rosidl_typesupport_introspection_c__DriverVelocity_message_members,
   get_message_typesupport_handle_function,
-  &custom_interfaces__msg__DriverVelocity__get_type_hash,
-  &custom_interfaces__msg__DriverVelocity__get_type_description,
-  &custom_interfaces__msg__DriverVelocity__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_custom_interfaces

@@ -2,26 +2,43 @@ name: ROS 2 CI/CD Pipeline
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build:
+  build_and_test:
     runs-on: ubuntu-24.04
+    container: osrf/ros:jazzy-desktop
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Build ROS 2 workspace
+    - name: Install rosdep
       run: |
-        docker run --rm \
-          -v ${{ github.workspace }}:/workspace \
-          -w /workspace \
-          osrf/ros:jazzy-desktop \
-          bash -c "apt update && apt install -y python3-colcon-common-extensions ros-jazzy-dynamixel-sdk ros-jazzy-dynamixel-workbench ros-jazzy-cv-bridge && \
-                   source /opt/ros/jazzy/setup.bash && \
-                   colcon build --symlink-install"
+        apt-get update && apt-get install -y python3-rosdep
+        rosdep init || true
+        rosdep update
+
+    - name: Install dependencies
+      run: |
+        rosdep install --from-paths src --ignore-src -y \
+          --skip-keys "libopencv-dev libopencv-contrib-dev libopencv-imgproc-dev"
+
+    - name: Build workspace
+      run: |
+        source /opt/ros/jazzy/setup.bash && \
+        colcon build --symlink-install --event-handlers console_direct+
+
+    - name: Verify RQT plugin
+      run: |
+        source /opt/ros/jazzy/setup.bash && \
+        source install/setup.bash && \
+        echo "=== Plugin Verification ===" && \
+        echo "1. Check registration:" && \
+        rospack plugins --attrib=plugin rqt_gui_cpp | grep my_rqt_plugin && \
+        echo "2. Check symbol exports:" && \
+        nm -gC install/my_rqt_plugin/lib/libmy_rqt_plugin.so | grep MyPlugin && \
+        echo "3. Attempt to load:" && \
+        timeout 15s rqt --force-discover --standalone my_rqt_plugin

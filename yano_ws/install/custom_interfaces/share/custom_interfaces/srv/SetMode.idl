@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_interfaces/srv/SetMode.srv
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "SetMode.srv")
+    struct SetMode_Request {
+      @verbatim (language="comment", text=
+        "request" "\n"
+        "\"STOP\" or \"DRIVE\"")
+      string mode;
+    };
+    @verbatim (language="comment", text=
+      "response")
+    struct SetMode_Response {
+      boolean success;
+    };
+  };
+};

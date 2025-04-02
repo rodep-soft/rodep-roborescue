@@ -80,8 +80,8 @@ private:
             float m1_axis_y = applyDeadzone(std::clamp<float>(msg.axes[1], -0.95f, 0.95f), DEADZONE);
             float m2_axis_y = applyDeadzone(std::clamp<float>(msg.axes[4], -0.95f, 0.95f), DEADZONE);
 
-            m1_vel = std::clamp<float>(m1_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
-            m2_vel = -1.0  * std::clamp<float>(m2_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
+            m1_vel = -1.0 * std::clamp<float>(m1_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
+            m2_vel = std::clamp<float>(m2_axis_y * MAX_SPEED, -MAX_SPEED, MAX_SPEED);
 
             //RCLCPP_INFO(this->get_logger(), "%f", m1_vel);
             //RCLCPP_INFO(this->get_logger(), "%f", m2_vel);

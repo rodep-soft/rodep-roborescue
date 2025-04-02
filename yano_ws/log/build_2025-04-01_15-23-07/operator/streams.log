@@ -1,0 +1,67 @@
+[0.008s] Invoking command in '/home/rodep/rodep/test_ws/yano_ws/build/operator': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/rodep/rodep/test_ws/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/home/rodep/rodep/test_ws/yano_ws/install/operator
+[0.053s] -- The C compiler identification is GNU 13.3.0
+[0.103s] -- The CXX compiler identification is GNU 13.3.0
+[0.115s] -- Detecting C compiler ABI info
+[0.185s] -- Detecting C compiler ABI info - done
+[0.195s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.195s] -- Detecting C compile features
+[0.196s] -- Detecting C compile features - done
+[0.203s] -- Detecting CXX compiler ABI info
+[0.286s] -- Detecting CXX compiler ABI info - done
+[0.303s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.303s] -- Detecting CXX compile features
+[0.304s] -- Detecting CXX compile features - done
+[0.307s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.454s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.564s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.619s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.639s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.654s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.671s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.746s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.748s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.824s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.852s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.885s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.963s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.028s] -- Found custom_interfaces: 0.0.0 (/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[1.047s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.154s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.155s] -- Configured cppcheck include dirs: 
+[1.155s] -- Configured cppcheck exclude dirs and/or files: 
+[1.155s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.155s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.156s] -- Added test 'lint_cmake' to check CMake code style
+[1.156s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.157s] -- Added test 'uncrustify' to check C / C++ code style
+[1.157s] -- Configured uncrustify additional arguments: 
+[1.158s] -- Added test 'xmllint' to check XML markup files
+[1.159s] -- Configuring done (1.1s)
+[1.170s] -- Generating done (0.0s)
+[1.173s] -- Build files have been written to: /home/rodep/rodep/test_ws/yano_ws/build/operator
+[1.183s] Invoked command in '/home/rodep/rodep/test_ws/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/rodep/rodep/test_ws/yano_ws/src/operator -DCMAKE_INSTALL_PREFIX=/home/rodep/rodep/test_ws/yano_ws/install/operator
+[1.184s] Invoking command in '/home/rodep/rodep/test_ws/yano_ws/build/operator': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rodep/rodep/test_ws/yano_ws/build/operator -- -j8 -l8
+[1.224s] [ 50%] [32mBuilding CXX object CMakeFiles/operator_node.dir/src/operator.cpp.o[0m
+[9.459s] [100%] [32m[1mLinking CXX executable operator_node[0m
+[9.764s] [100%] Built target operator_node
+[9.773s] Invoked command in '/home/rodep/rodep/test_ws/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rodep/rodep/test_ws/yano_ws/build/operator -- -j8 -l8
+[9.774s] Invoking command in '/home/rodep/rodep/test_ws/yano_ws/build/operator': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rodep/rodep/test_ws/yano_ws/build/operator
+[9.780s] -- Install configuration: ""
+[9.780s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/lib/operator/operator_node
+[9.783s] -- Set non-toolchain portion of runtime path of "/home/rodep/rodep/test_ws/yano_ws/install/operator/lib/operator/operator_node" to ""
+[9.783s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/ament_index/resource_index/package_run_dependencies/operator
+[9.784s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/ament_index/resource_index/parent_prefix_path/operator
+[9.784s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.sh
+[9.784s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/environment/ament_prefix_path.dsv
+[9.784s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/environment/path.sh
+[9.784s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/environment/path.dsv
+[9.784s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/local_setup.bash
+[9.784s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/local_setup.sh
+[9.785s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/local_setup.zsh
+[9.785s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/local_setup.dsv
+[9.785s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/package.dsv
+[9.785s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/ament_index/resource_index/packages/operator
+[9.785s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig.cmake
+[9.785s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/cmake/operatorConfig-version.cmake
+[9.785s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/operator/share/operator/package.xml
+[9.786s] Invoked command in '/home/rodep/rodep/test_ws/yano_ws/build/operator' returned '0': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rodep/rodep/test_ws/yano_ws/build/operator

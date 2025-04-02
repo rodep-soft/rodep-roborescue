@@ -1,7 +1,0 @@
-[01m[K/home/tatsv/working/test_ws/yano_ws/src/usb_camera/src/usb_camera.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
-    3 | #include [01;31m[K<cv_bridge/cv_bridge.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/usb_camera.dir/build.make:76: CMakeFiles/usb_camera.dir/src/usb_camera.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/usb_camera.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

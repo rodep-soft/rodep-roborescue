@@ -1,0 +1,16 @@
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/lib/flipper_driver/flipper_driver_node
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/package_run_dependencies/flipper_driver
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/parent_prefix_path/flipper_driver
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.sh
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/ament_prefix_path.dsv
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.sh
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/environment/path.dsv
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.bash
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.sh
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.zsh
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/local_setup.dsv
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.dsv
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/ament_index/resource_index/packages/flipper_driver
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig.cmake
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/cmake/flipper_driverConfig-version.cmake
+/home/rodep/rodep/test_ws/yano_ws/install/flipper_driver/share/flipper_driver/package.xml

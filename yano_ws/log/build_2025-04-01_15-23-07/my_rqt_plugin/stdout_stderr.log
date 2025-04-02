@@ -1,0 +1,55 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rqt_gui_cpp: 1.6.0 (/opt/ros/jazzy/share/rqt_gui_cpp/cmake)
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rodep/rodep/test_ws/yano_ws/build/my_rqt_plugin
+[ 50%] [32mBuilding CXX object CMakeFiles/my_rqt_plugin.dir/src/my_plugin.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libmy_rqt_plugin.so[0m
+[100%] Built target my_rqt_plugin
+-- Install configuration: ""
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/plugin.xml
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/include
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/include/my_rqt_plugin
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/include/my_rqt_plugin/my_plugin.hpp
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/lib/libmy_rqt_plugin.so
+-- Set non-toolchain portion of runtime path of "/home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/lib/libmy_rqt_plugin.so" to ""
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/ament_index/resource_index/package_run_dependencies/my_rqt_plugin
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/ament_index/resource_index/parent_prefix_path/my_rqt_plugin
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/environment/ament_prefix_path.sh
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/environment/ament_prefix_path.dsv
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/environment/path.sh
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/environment/path.dsv
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/local_setup.bash
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/local_setup.sh
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/local_setup.zsh
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/local_setup.dsv
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/package.dsv
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/ament_index/resource_index/packages/my_rqt_plugin
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/ament_index/resource_index/my_rqt_plugin__pluginlib__plugin/my_rqt_plugin
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/cmake/my_rqt_pluginConfig.cmake
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/cmake/my_rqt_pluginConfig-version.cmake
+-- Installing: /home/rodep/rodep/test_ws/yano_ws/install/my_rqt_plugin/share/my_rqt_plugin/package.xml

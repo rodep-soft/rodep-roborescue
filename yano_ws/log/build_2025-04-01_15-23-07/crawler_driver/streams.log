@@ -1,0 +1,65 @@
+[0.009s] Invoking command in '/home/rodep/rodep/test_ws/yano_ws/build/crawler_driver': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/rodep/rodep/test_ws/yano_ws/src/crawler_driver -DCMAKE_INSTALL_PREFIX=/home/rodep/rodep/test_ws/yano_ws/install/crawler_driver
+[0.056s] -- The C compiler identification is GNU 13.3.0
+[0.106s] -- The CXX compiler identification is GNU 13.3.0
+[0.119s] -- Detecting C compiler ABI info
+[0.190s] -- Detecting C compiler ABI info - done
+[0.199s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.200s] -- Detecting C compile features
+[0.200s] -- Detecting C compile features - done
+[0.208s] -- Detecting CXX compiler ABI info
+[0.291s] -- Detecting CXX compiler ABI info - done
+[0.300s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.301s] -- Detecting CXX compile features
+[0.301s] -- Detecting CXX compile features - done
+[0.303s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.440s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.546s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.590s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.610s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.635s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.655s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.732s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.734s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.803s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.822s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.845s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.919s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.935s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.950s] -- Found custom_interfaces: 0.0.0 (/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[0.969s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.076s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.076s] -- Configured cppcheck include dirs: 
+[1.076s] -- Configured cppcheck exclude dirs and/or files: 
+[1.076s] -- Added test 'lint_cmake' to check CMake code style
+[1.077s] -- Added test 'uncrustify' to check C / C++ code style
+[1.077s] -- Configured uncrustify additional arguments: 
+[1.078s] -- Added test 'xmllint' to check XML markup files
+[1.080s] -- Configuring done (1.1s)
+[1.090s] -- Generating done (0.0s)
+[1.094s] -- Build files have been written to: /home/rodep/rodep/test_ws/yano_ws/build/crawler_driver
+[1.104s] Invoked command in '/home/rodep/rodep/test_ws/yano_ws/build/crawler_driver' returned '0': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/rodep/rodep/test_ws/yano_ws/src/crawler_driver -DCMAKE_INSTALL_PREFIX=/home/rodep/rodep/test_ws/yano_ws/install/crawler_driver
+[1.105s] Invoking command in '/home/rodep/rodep/test_ws/yano_ws/build/crawler_driver': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rodep/rodep/test_ws/yano_ws/build/crawler_driver -- -j8 -l8
+[1.146s] [ 50%] [32mBuilding CXX object CMakeFiles/crawler_driver_node.dir/src/crawler_driver.cpp.o[0m
+[12.722s] [100%] [32m[1mLinking CXX executable crawler_driver_node[0m
+[13.057s] [100%] Built target crawler_driver_node
+[13.066s] Invoked command in '/home/rodep/rodep/test_ws/yano_ws/build/crawler_driver' returned '0': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rodep/rodep/test_ws/yano_ws/build/crawler_driver -- -j8 -l8
+[13.067s] Invoking command in '/home/rodep/rodep/test_ws/yano_ws/build/crawler_driver': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rodep/rodep/test_ws/yano_ws/build/crawler_driver
+[13.073s] -- Install configuration: ""
+[13.074s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/lib/crawler_driver/crawler_driver_node
+[13.078s] -- Set non-toolchain portion of runtime path of "/home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/lib/crawler_driver/crawler_driver_node" to ""
+[13.078s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/package_run_dependencies/crawler_driver
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/parent_prefix_path/crawler_driver
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.sh
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/ament_prefix_path.dsv
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.sh
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/environment/path.dsv
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.bash
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.sh
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.zsh
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/local_setup.dsv
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.dsv
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/ament_index/resource_index/packages/crawler_driver
+[13.079s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig.cmake
+[13.080s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/cmake/crawler_driverConfig-version.cmake
+[13.080s] -- Installing: /home/rodep/rodep/test_ws/yano_ws/install/crawler_driver/share/crawler_driver/package.xml
+[13.081s] Invoked command in '/home/rodep/rodep/test_ws/yano_ws/build/crawler_driver' returned '0': AMENT_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rodep/rodep/test_ws/yano_ws/install/custom_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rodep/rodep/test_ws/yano_ws/build/crawler_driver

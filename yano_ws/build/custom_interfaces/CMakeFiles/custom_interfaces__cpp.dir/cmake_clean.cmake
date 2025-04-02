@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_interfaces/msg/detail/driver_velocity__traits.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/detail/driver_velocity__type_support.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/driver_velocity.hpp"
+  "rosidl_generator_cpp/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/detail/set_mode__builder.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/detail/set_mode__struct.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/detail/set_mode__traits.hpp"

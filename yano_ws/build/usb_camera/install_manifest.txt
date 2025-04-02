@@ -1,0 +1,16 @@
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/lib/usb_camera/usb_camera
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/ament_index/resource_index/package_run_dependencies/usb_camera
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/ament_index/resource_index/parent_prefix_path/usb_camera
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/ament_prefix_path.sh
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/ament_prefix_path.dsv
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/path.sh
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/environment/path.dsv
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.bash
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.sh
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.zsh
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/local_setup.dsv
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.dsv
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/ament_index/resource_index/packages/usb_camera
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/cmake/usb_cameraConfig.cmake
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/cmake/usb_cameraConfig-version.cmake
+/home/rodep/rodep/test_ws/yano_ws/install/usb_camera/share/usb_camera/package.xml

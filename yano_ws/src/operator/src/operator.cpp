@@ -100,30 +100,34 @@ private:
         int flipper3_speed = 0;
         int flipper4_speed = 0;
 
-        if (msg.buttons[9] == 1) {
-          flipper1_sign = 1;
-        } else if (msg.axes[4] < -0.95) {
+	// left backward
+        if (msg.axes[7] == 1) {
           flipper1_sign = -1;
+        } else if (msg.axes[7] == -1) {
+          flipper1_sign = 1;
         }
         flipper1_speed = FLIPPER_SPEED * flipper1_sign;
 
-        if (msg.buttons[10] == 1) {
-          flipper2_sign = 1;
-        } else if (msg.axes[5] < -0.95) {
+	// right backward
+        if (msg.buttons[2] == 1) {
           flipper2_sign = -1;
+        } else if (msg.buttons[0] == 1) {
+          flipper2_sign = 1;
         }
         flipper2_speed = FLIPPER_SPEED * flipper2_sign;
 
-        if (msg.buttons[11] == 1) {
-          flipper3_sign = 1;
-        } else if (msg.buttons[12] == 1) {
+	// left forward
+        if (msg.axes[2] == -1) {
           flipper3_sign = -1;
-        }
+        } else if (msg.buttons[4] == 1) {
+          flipper3_sign = 1;
+       }
         flipper3_speed = FLIPPER_SPEED * flipper3_sign;
 
-        if (msg.buttons[3] == 1) {
+	// right forward
+        if (msg.buttons[5] == 1) {
           flipper4_sign = 1;
-        } else if (msg.buttons[0] == 1) {
+        } else if (msg.axes[5] == -1) {
           flipper4_sign = -1;
         }
         flipper4_speed = FLIPPER_SPEED * flipper4_sign;

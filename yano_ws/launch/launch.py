@@ -36,7 +36,7 @@ def generate_launch_description():
             executable='flipper_driver_node',
             name='flipper_driver_node',
             output='screen',
-            parameters=[{'port_name': '/dev/ttyUSB0'}],
+            parameters=[],
             remappings=[]
 
         ),

@@ -151,7 +151,7 @@ private:
 // ROS2 Driver Node
 class CrawlerDriver : public rclcpp::Node {
 public:
-    CrawlerDriver() : Node("crawler_driver"), roboclaw("/dev/ttyACM0") {
+    CrawlerDriver() : Node("crawler_driver"), roboclaw("/dev/roboclaw") {
         declare_parameter("crawler_circumference", 0.39);
         declare_parameter("counts_per_rev", 256);
         declare_parameter("gearhead_ratio", 66);

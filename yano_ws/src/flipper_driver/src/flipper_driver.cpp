@@ -11,7 +11,7 @@ using std::placeholders::_1;
 class FlipperDriver : public rclcpp::Node {
 public:
     FlipperDriver() : Node("flipper_driver") {
-        declare_parameter("port_name", "/dev/ttyUSB0");
+        declare_parameter("port_name", "/dev/dynamixel");
         declare_parameter("baud_rate", 115200);
         declare_parameter("dynamixel_ids", std::vector<int>({1, 2, 3, 4}));
         // declare_parameter("protocol_version", 2.0);
@@ -92,7 +92,7 @@ private:
             if (!dxl_wb_.goalVelocity(dynamixel_ids_[i], velocities[i])) {
                 RCLCPP_ERROR(this->get_logger(), "Failed to set goal velocity for Dynamixel motor with ID %ld", dynamixel_ids_[i]);
             } else {
-                RCLCPP_INFO(this->get_logger(), "Set goal velocity to %d for Dynamixel motor with ID %ld", velocities[i], dynamixel_ids_[i]);
+		//RCLCPP_INFO(this->get_logger(), "Set goal velocity to %d for Dynamixel motor with ID %ld", velocities[i], dynamixel_ids_[i]);
             }
         }
     }

@@ -1,0 +1,29 @@
+BasedOnStyle: Google
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+
+# 行の最大長（デフォルトは 80、実用上100〜120が読みやすい）
+ColumnLimit: 100
+
+# ブレース（{}）の配置
+BreakBeforeBraces: Allman
+
+# if, for などの後にスペースを入れる（一般的に読みやすい）
+SpaceBeforeParens: ControlStatements
+
+# 空関数を1行にしない
+AllowShortFunctionsOnASingleLine: Empty
+
+# = や , を揃えることでdiffが少なくなる
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignOperands: true
+
+# include順の整理
+SortIncludes: true
+IncludeBlocks: Preserve
+
+# コメントの整形
+ReflowComments: true
+

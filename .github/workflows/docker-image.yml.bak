@@ -1,0 +1,27 @@
+name: ROS 2 CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Build ROS 2 workspace
+      run: |
+        docker run --rm \
+          -v ${{ github.workspace }}:/workspace \
+          -w /workspace \
+          osrf/ros:jazzy-desktop \
+          bash -c "apt update && apt install -y python3-colcon-common-extensions ros-jazzy-dynamixel-sdk ros-jazzy-dynamixel-workbench ros-jazzy-cv-bridge && \
+                   source /opt/ros/jazzy/setup.bash && \
+                   colcon build --symlink-install"

@@ -1,0 +1,18 @@
+if type "clang-format" > /dev/null 2>&1
+then
+  untracked_src=$(git ls-files '*.cpp' '*.c' '*.hpp' '*.h' --others --exclude-standard)
+  for src in $untracked_src; do
+    clang-format -i $src
+  done
+  
+  unstaged_src=$(git diff --name-only -- '*.cpp' '*.c' '*.hpp' '*.h')
+  for src in $unstaged_src; do
+    clang-format -i $src
+  done
+  
+  staged_src=$(git diff --name-only --cached -- '*.cpp' '*.c' '*.hpp' '*.h')
+  for src in $staged_src; do
+    clang-format -i $src
+    git add $src
+  done
+fi

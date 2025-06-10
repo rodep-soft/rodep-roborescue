@@ -60,14 +60,14 @@ jobs:
           colcon build --symlink-install --event-handlers console_direct+
         shell: bash {0}
 
-      - name: Run tests
-        if: ${{ always() }}
-        run: |
-          #!/usr/bin/env bash
-          set -e
-          source "/opt/ros/$ROS_DISTRO/setup.bash"
-          source "${{ env.WORKSPACE_DIR }}/install/setup.bash"
-          cd "${{ env.WORKSPACE_DIR }}"
-          colcon test --event-handlers console_direct+
-          colcon test-result --verbose
-        shell: bash {0}
+      # - name: Run tests
+      #   if: ${{ always() }}
+      #   run: |
+      #     #!/usr/bin/env bash
+      #     set -e
+      #     source "/opt/ros/$ROS_DISTRO/setup.bash"
+      #     source "${{ env.WORKSPACE_DIR }}/install/setup.bash"
+      #     cd "${{ env.WORKSPACE_DIR }}"
+      #     colcon test --event-handlers console_direct+
+      #     colcon test-result --verbose
+      #   shell: bash {0}

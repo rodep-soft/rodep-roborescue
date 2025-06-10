@@ -18,28 +18,44 @@ jobs:
   build:
     name: Build ROS 2 Workspace
     runs-on: ubuntu-24.04
+    container:
+      image: osrf/ros:jazzy-desktop
+      options: --workdir /workspace
+
+    env:
+      WORKSPACE_DIR: ${{ github.event.inputs.workspace || 'main_ws' }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          path: ${{ env.WORKSPACE_DIR }}/src
 
-      - name: Setup rosdep cache on runner
+      - name: Setup ROS environment
         run: |
-          sudo apt-get update
+          source /opt/ros/$ROS_DISTRO/setup.bash
+          sudo apt-get update -qq
           sudo apt-get install -y python3-colcon-common-extensions
-          sudo rosdep init || true
+          sudo rosdep init --skip-keys "src" || true
           rosdep update
 
-      - name: Build ROS 2 workspace inside Docker
-        env:
-          WORKSPACE_DIR: ${{ github.event.inputs.workspace }}
+      - name: Install dependencies
         run: |
-          docker run --rm \
-            -v ${{ github.workspace }}:/workspace \
-            -w /workspace/${WORKSPACE_DIR} \
-            osrf/ros:jazzy-desktop \
-            bash -c "\
-              source /opt/ros/jazzy/setup.bash && \
-              rosdep install --from-paths src --ignore-src -r -y && \
-              colcon build --symlink-install"
+          source /opt/ros/$ROS_DISTRO/setup.bash
+          cd ${{ env.WORKSPACE_DIR }}
+          rosdep install --from-paths src --ignore-src -r -y --skip-keys "src"
 
+      - name: Build workspace
+        run: |
+          source /opt/ros/$ROS_DISTRO/setup.bash
+          cd ${{ env.WORKSPACE_DIR }}
+          colcon build --symlink-install --event-handlers console_direct+
+
+      # - name: Run tests (optional)
+      #   if: ${{ always() }}
+      #   run: |
+      #     source /opt/ros/$ROS_DISTRO/setup.bash
+      #     source ${{ env.WORKSPACE_DIR }}/install/setup.bash
+      #     cd ${{ env.WORKSPACE_DIR }}
+      #     colcon test --event-handlers console_direct+
+      #     colcon test-result --verbose

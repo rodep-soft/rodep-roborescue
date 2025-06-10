@@ -1,7 +1,0 @@
-<library path="my_rqt_plugin">
-  <class name="my_rqt_plugin/MyPlugin" 
-         type="my_rqt_plugin::MyPlugin" 
-         base_class_type="rqt_gui_cpp::Plugin">
-    <description>My Custom RQT Plugin</description>
-  </class>
-</library>

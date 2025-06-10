@@ -33,29 +33,29 @@ jobs:
 
       - name: Setup ROS environment
         run: |
-          source /opt/ros/$ROS_DISTRO/setup.bash
+          . /opt/ros/$ROS_DISTRO/setup.bash
           sudo apt-get update -qq
           sudo apt-get install -y python3-colcon-common-extensions
-          sudo rosdep init --skip-keys "src" || true
+          sudo rosdep init || true
           rosdep update
 
       - name: Install dependencies
         run: |
-          source /opt/ros/$ROS_DISTRO/setup.bash
+          . /opt/ros/$ROS_DISTRO/setup.bash
           cd ${{ env.WORKSPACE_DIR }}
-          rosdep install --from-paths src --ignore-src -r -y --skip-keys "src"
+          rosdep install --from-paths src --ignore-src -r -y
 
       - name: Build workspace
         run: |
-          source /opt/ros/$ROS_DISTRO/setup.bash
+          . /opt/ros/$ROS_DISTRO/setup.bash
           cd ${{ env.WORKSPACE_DIR }}
           colcon build --symlink-install --event-handlers console_direct+
 
-      # - name: Run tests (optional)
-      #   if: ${{ always() }}
-      #   run: |
-      #     source /opt/ros/$ROS_DISTRO/setup.bash
-      #     source ${{ env.WORKSPACE_DIR }}/install/setup.bash
-      #     cd ${{ env.WORKSPACE_DIR }}
-      #     colcon test --event-handlers console_direct+
-      #     colcon test-result --verbose
+      - name: Run tests
+        if: ${{ always() }}
+        run: |
+          . /opt/ros/$ROS_DISTRO/setup.bash
+          . ${{ env.WORKSPACE_DIR }}/install/setup.bash
+          cd ${{ env.WORKSPACE_DIR }}
+          colcon test --event-handlers console_direct+
+          colcon test-result --verbose

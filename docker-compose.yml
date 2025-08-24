@@ -1,0 +1,6 @@
+services:
+  robocup:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    

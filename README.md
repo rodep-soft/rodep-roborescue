@@ -12,8 +12,11 @@ fix/      → バグ修正            (bugfix)
 hotfix/   → 緊急修正            (hotfix)
 ci/       → CI/CDや自動化       (ci)
 chore/    → 環境設定・雑務       (devやmiscをまとめる)
+docker/   → Docker             (ci以外のDocker関連作業全般)
 docs/     → ドキュメント修正
 refactor/ → リファクタリング
 test/     → テスト追加/修正
 dev/      → 開発中              (曖昧。推奨はしないが管理が難しければ使ってよい)
+
+### commit message rules
 

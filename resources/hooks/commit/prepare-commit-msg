@@ -1,0 +1,10 @@
+#!/bin/sh
+MSG_FILE=$1
+BRANCH=$(git symbolic-ref --short HEAD)    # 現在のブランチ名取得
+PREFIX="${BRANCH%%/*}"                     # ブランチ名の / までをprefixに
+
+# すでに prefix: が付いてなければ追加
+if ! grep -qE "^[a-zA-Z0-9_-]+:" "$MSG_FILE"; then
+  sed -i "1s/^/$PREFIX: /" "$MSG_FILE"
+fi
+

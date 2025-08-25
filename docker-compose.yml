@@ -7,6 +7,13 @@ services:
     privileged: true
     tty: true
     stdin_open: true
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix # X11転送
+    environment:
+      - CCACHE_DIR=/root/.ccache
+      - PATH="/usr/lib/ccache:$PATH"
+      - CCACHE_MAXSIZE=30G
+      - DISPLAY=${DISPLAY}
   
 
 # volumes and so on.
